@@ -4,9 +4,9 @@ title: About
 ---
 
 <p class="message">
-  <em>The more I learn, the more I realize how much I don't know.</em> ― <strong>Albert Einstein</strong>
+  <em>"Everything in this world is already connected, you just have to see it".</em> ― <strong>Unkown</strong>
 </p>
 
-I consider myself a tinkerer and problem solver. I have a strong attachment to Linux and DIY mindset. Currently I am working on - [EasyEngine](https://github.com/EasyEngine/easyengine/).
+ I am firm beliver in the above phrase, so much so I made a blog about it!!
 
 Thanks for reading!

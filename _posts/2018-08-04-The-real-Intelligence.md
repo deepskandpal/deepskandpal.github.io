@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello, World!
+title: The real intelligence, what the hell it is and why should we care?
 ---
 
-I feel it is necessary to start with [Hello, World!](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) when exploring anything new. That's all for now. :)
+The real intelligence
