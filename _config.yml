@@ -1,0 +1,27 @@
+
+title:               "10MinuteShortStories"
+tagline:             'Simple Short Stories about ordinary people in extra ordinary circumstances'
+description:         'When it comes to writing a story Ignorance is a Bliss'
+url:                 https://deepskandpal.github.io/
+baseurl:             ''
+paginate:            5
+future:              true
+
+# About/contact
+author:
+  name:              Deepanshu Kandpal
+  url:               https://twitter.com/atdeepanshu
+  email:             dkandpalz@gmail.com
+
+# Custom vars
+version:             0.0.1
+
+# Google Analytics
+analytics:
+  provider               : google
+  google:
+    tracking_id          : 'UA-123173812-1'
+
+plugins:
+  - jekyll-paginate
+  - jemoji
