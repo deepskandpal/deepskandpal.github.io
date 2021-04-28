@@ -1,0 +1,4 @@
+baseURL = "https://deepskandpal.github.io/"
+languageCode = "en-us"
+title = "404EngineerNotFound"
+theme = "ananke"
