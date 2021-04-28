@@ -1,0 +1,6 @@
+baseurl = "https://deepskandpal.github.io/"
+languageCode = "en-us"
+title = "404EngineerNotFound"
+Copyright = "© Deepanshu 2020"
+canonifyurls = true
+theme = "ananke"
