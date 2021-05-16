@@ -26,10 +26,30 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/deepskandpal.github.io\/posts\/start-ds\/"
-        },"genre": "posts","wordCount":  274 ,
+        },"genre": "posts","keywords": "python, data science","wordCount":  539 ,
         "url": "https:\/\/deepskandpal.github.io\/posts\/start-ds\/","datePublished": "2021-05-08T13:35:40+05:30","dateModified": "2021-05-08T13:35:40+05:30","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","description": ""
     }
-    </script></head>
+    </script><script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https:\/\/deepskandpal.github.io\/"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Journal",
+            "item": "https://deepskandpal.github.io/categories/journal/"
+        },{
+                "@type": "ListItem",
+                "position": 3,
+                "name": "First steps towards data science project: Sensei Version 1"
+            }]
+    }
+</script></head>
     <body data-header-desktop="" data-header-mobile=""><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
         <div id="mask"></div><div class="wrapper"><header>
@@ -138,16 +158,18 @@
                     <div class="post-all-meta">
                         <nav class="breadcrumbs">
     <ol>
-        <li><a href="https://deepskandpal.github.io/">Home </a></li><li>First steps towards data science project: Sensei Version 1</li>
+        <li><a href="https://deepskandpal.github.io/">Home </a></li><li><a href="https://deepskandpal.github.io/categories/journal/">Journal </a></li><li>First steps towards data science project: Sensei Version 1</li>
     </ol>
 </nav>
-                        <h1 class="single-title flipInX">First steps towards data science project: Sensei Version 1</h1><div class="post-meta summary-post-meta"><span class="post-meta-date meta-item">
+                        <h1 class="single-title flipInX">First steps towards data science project: Sensei Version 1</h1><div class="post-meta summary-post-meta"><span class="post-category meta-item">
+                                <a href="https://deepskandpal.github.io/categories/journal/"><span class="svg-icon icon-folder"></span>Journal</a>
+                            </span><span class="post-meta-date meta-item">
                                 <span class="svg-icon icon-clock"></span><time class="timeago" datetime="2021-05-08">2021-05-08</time>
                             </span><span class="post-meta-words meta-item">
-                                <span class="svg-icon icon-pencil"></span>274 words
+                                <span class="svg-icon icon-pencil"></span>539 words
                             </span>
                             <span class="post-meta-reading meta-item">
-                                <span class="svg-icon icon-stopwatch"></span>2 minutes
+                                <span class="svg-icon icon-stopwatch"></span>3 minutes
                             </span>
                         </div>
 
@@ -166,16 +188,15 @@
                             <span>Contents</span>
                         </div>
                         <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-                    </div><p>As mentioned in my previous blog post about learning some stuff for my data science journey. I concluded by stating that I need a project which does the following</p>
+                    </div><p>As mentioned in my previous <a href="https://404engineernotfound.ml/posts/ds-project/" target="_blank" rel="noopener noreffer">blog post</a> about learning some stuff for my data science journey. I concluded by stating that I need a project which does the following</p>
 <ol>
 <li>Help me learn the things I listed</li>
 <li>Is in the domain of  <em>solving business problems using data science techniques</em></li>
 </ol>
-<p>through multiple trial and errors I have finally come to a conclusion of creating a dashboard which lets you do codeless ML techniques like what h2o.ai and data robots or the SPSS modeller from IBM provide but at the same time give visualizations and summaries just like a tableau or a powerBI dashboard.</p>
-<p>lukily I was able to find a project which has a similar framework for codeless solutions, Apache Superset. Apache superset is a highly scalable visualization tool written in python and react which provides codeless visualization  toolkits for structured data. oh and also its open source!!. I realized I would like to make something similar but for ML techniques. Say for example <em>market basket analysis</em> , just like how in superset you can either connect to a data base of your choice or upload a CSV to do visualization , I would want something similar in my platform where in a user can upload data or connect db and with a few clicks get the results of a market analysis <em>support</em>, <em>confidence</em>, <em>lift</em> infront of them with a nice summary.</p>
+<p>Through multiple trial and errors I have finally come to a conclusion of creating a dashboard which lets you do codeless ML techniques like what h2o.ai and data robots or the SPSS modeller from IBM provide but at the same time give visualizations and summaries just like a tableau or a powerBI dashboard. Also  the above mentioned examples still require some understanding of ML and has a drag and drop component attached to it. I am targeting <em>one click</em> solutions.</p>
+<p>Luckily I was able to find a project which has a similar framework for codeless solutions, <a href="https://superset.apache.org/" target="_blank" rel="noopener noreffer">Apache Superset</a>. Apache superset is a highly scalable visualization tool written in python and react which provides codeless visualization  toolkits for structured data. oh and also its open source!!. I realized I would like to make something similar but for ML techniques. Say for example <em>market basket analysis</em> , just like how in superset you can either connect to a data base of your choice or upload a CSV to do visualization , I would want something similar in my platform where in a user can upload data or connect db and with a few clicks get the results of a market analysis <em>support</em>, <em>confidence</em>, <em>lift</em> infront of them with a nice summary.</p>
 <p>I tried to find any open source tools which are already present and used but couldn&rsquo;t find any, if you know about any post it in the comments below.</p>
-<p>So far here is what i have an idea</p>
-<p>I have presented it below :</p>
+<p>So far here is what i have an idea  I have presented it below :</p>
 <p>
 
 
@@ -188,12 +209,17 @@
          src="https://deepskandpal.github.io/posts/start-ds/diag_huec05a82ec3cba3e1e26907e4eede1173_285640_1600x0_resize_q100_box_2.png"
          alt="image-20210516135215396"
          title="diag.png"
-    /></p></div><footer>
+    /></p>
+<p>Its not much But i guess its pretty clear what are my inital thoughts. Since its a web app so obviously it will have a front end and backend. I chose react because I have never worked with any frontend framework before so for me every library will be a learning curve. It didn&rsquo;t matter what I chose. So I chose the one which I have heard the most about.</p>
+<p>For backend I am going with Django as I am a python developer so I would be comfortable with a python backend. Also integrating ML algorithms whether shallow learning or deep learning based is far more scalable and easy in python. Django and celery go hand in hand for handling large scale asynchronous tasks.</p>
+<p>The other thing I have sort of figured out is the name. I am thinking of calling it <em><strong>Sensei</strong></em>. If you ask my thought process, it was quiet Simple. Just like a <em>Sensei</em> guides a student to the right path, I am hoping that this platform guides people in the right direction using Machine learning. Kind of ambitious, I know.</p>
+<p>The only things that I am doubtfull about are the file storage system and data base for structured data. I have created a <a href="https://github.com/deepskandpal/Sensei/projects/1" target="_blank" rel="noopener noreffer">github project</a> where I can keep a track of my progress. Along with whatever POCs I need to do in order to zero down my options.</p>
+<p>Stay tuned for more updates.</p></div><footer>
                         <div class="post">
 
 
 <div class="post-share"></div>
-</div>
+<div class="post-tags"><a href="https://deepskandpal.github.io/tags/python/" class="tag">python</a><a href="https://deepskandpal.github.io/tags/data-science/" class="tag">Data Science</a></div></div>
                 </footer></div>
         <div id="toc-final"></div>
         </div>
