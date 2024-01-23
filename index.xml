@@ -13,7 +13,9 @@
       <pubDate>Mon, 22 Jan 2024 18:18:09 +0530</pubDate>
       
       <guid>https://deepskandpal.github.io/blogs/animal-update/</guid>
-      <description></description>
+      <description>Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
+Gist Simple Shortcode {{&amp;lt; gist spf13 7896402 &amp;#34;img.html&amp;#34; &amp;gt;}} Twitter Simple Shortcode {{&amp;lt; tweet GoHugoIO 1315233626070503424 &amp;gt;}} Profile is a customizable single-page portfolio theme for Hugo featuring a contact form and blog. Made by @gurusabarishh.https://t.co/KwYcwfdy16
+&amp;mdash; GoHugo.io (@GoHugoIO) October 11, 2020 Vimeo Simple Shortcode {{&amp;lt; vimeo 146022717 &amp;gt;}} Youtube Simple Shortcode {{&amp;lt; youtube w7Ft2ymGmfc &amp;gt;}} Theme Custom Shortcodes These shortcodes are not Hugo built-ins, but are provided by the theme.</description>
     </item>
     
     <item>
@@ -22,9 +24,7 @@
       <pubDate>Sun, 21 Jan 2024 18:18:09 +0530</pubDate>
       
       <guid>https://deepskandpal.github.io/blogs/animal-gpt/</guid>
-      <description>Lorem est tota propiore conpellat pectoribus de pectora summo.
-Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.
-Exierant elisi ambit vivere dedere Duce pollice Eris modo Spargitque ferrea quos palude Rursus nulli murmur; hastile inridet ut ab gravi sententia!</description>
+      <description>Animal is a 2023 action film. The movie if I have to review is a good one time watch with solid performances by the cast and some amazing action performances. But the interesting thing was the discourse around the film. A lot of people where having mixed reactions to the film&amp;rsquo;s messaging and certain scenes were getting questioned. There is not much I would like to go into but the amount of content getting produced over the this discourse was interesting and I thought, Since I am a ML engineer and a Movies fan.</description>
     </item>
     
   </channel>
