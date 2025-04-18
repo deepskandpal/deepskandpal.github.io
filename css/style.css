@@ -1,0 +1,662 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#hero {
+    text-align: center;
+    background-color: transparent;
+    box-shadow: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#hero h3 {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #007bff;
+}
+
+section h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #eee;
+    color: #666;
+}
+
+footer .social-links {
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Bookshelf Styles */
+.bookshelf-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow books to wrap to next line */
+    gap: 20px; /* Spacing between books */
+    margin-top: 1rem;
+    padding-bottom: 1rem; /* Space below the row */
+}
+
+.book-item {
+    flex: 0 0 auto; /* Don't grow, don't shrink, base size on content */
+    width: 150px; /* Adjust width as needed */
+    text-align: center;
+}
+
+.book-item a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.book-item img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #eee; /* Subtle border */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.book-item img:hover {
+    transform: scale(1.05);
+}
+
+.book-placeholder {
+    width: 100%;
+    height: 200px; /* Adjust height to roughly match images */
+    border: 1px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Single Book Page Styles */
+.book-single h2 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: none;
+}
+
+.book-details {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* Wrap content below image on small screens */
+}
+
+.book-cover {
+    flex: 0 0 200px; /* Fixed width for cover */
+}
+
+.book-cover img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #eee;
+}
+
+.book-content {
+    flex: 1; /* Take remaining space */
+    min-width: 250px; /* Ensure content area doesn't get too small */
+}
+
+.purchase-link {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.purchase-link:hover {
+    background-color: #0056b3;
+}
+
+/* Homepage Preview Container */
+.preview-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 30px; /* Space between preview items */
+    margin-top: 2rem;
+}
+
+.preview-item {
+    flex: 1; /* Allow items to grow and shrink */
+    min-width: 250px; /* Minimum width before wrapping */
+    /* Reuse existing section styling for background, padding, etc. */
+}
+
+/* Specific preview styling adjustments (optional) */
+.preview-item h2 {
+    font-size: 1.3rem; /* Slightly smaller headings for previews */
+}
+
+.preview-item .posts-list,
+.preview-item .bookshelf-row-preview {
+    /* Add any specific styling for the content within previews if needed */
+}
+
+.preview-item .post-item-summary h3 {
+     font-size: 1.1rem;
+     margin-bottom: 0.3rem;
+}
+.preview-item .post-item-summary p {
+     font-size: 0.9rem;
+     color: #555;
+     line-height: 1.5;
+}
+
+
+/* Bookshelf Preview Specific */
+.bookshelf-row-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Smaller gap for preview */
+}
+
+.book-item-preview {
+     flex: 0 0 auto;
+     width: 80px; /* Smaller width for preview covers */
+}
+
+.book-item-preview img {
+     max-width: 100%;
+     height: auto;
+     border: 1px solid #eee;
+     box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.book-placeholder-preview {
+    width: 100%;
+    height: 110px; /* Smaller placeholder */
+    border: 1px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 0.7rem;
+    color: #666;
+    text-align: center;
+}
+
+/* About Section Flex Layout */
+.about-section-flex {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    gap: 40px; /* Space between text and image */
+    flex-wrap: wrap; /* Allow image to wrap below text on small screens */
+}
+
+.about-text {
+    flex: 2; /* Allow text to take more space */
+    min-width: 300px;
+}
+
+.about-image {
+    flex: 1; /* Allow image to take less space */
+    min-width: 200px;
+    text-align: center; /* Center the image within its container */
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+}
+
+/* Single Paper Page Styles */
+.paper-single {
+    /* Add specific container styles if needed, otherwise relies on main */
+}
+
+.paper-categories {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.category-pill {
+    display: inline-block;
+    background-color: #e9ecef;
+    padding: 0.2em 0.6em;
+    margin-left: 5px;
+    border-radius: 10px;
+    font-size: 0.85em;
+}
+
+.paper-single h1 {
+    font-size: 2.8rem; /* Larger title */
+    margin-bottom: 1rem;
+    border-bottom: none; /* Remove default border if conflicting */
+    line-height: 1.3;
+}
+
+.paper-meta {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 2rem;
+}
+
+.paper-content {
+    margin-top: 2rem;
+    line-height: 1.7;
+    font-size: 1.1rem; /* Slightly larger font for readability */
+}
+
+.paper-content h1,
+.paper-content h2,
+.paper-content h3,
+.paper-content h4 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.paper-content p {
+    margin-bottom: 1.2rem;
+}
+
+.paper-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem 0;
+    display: block;
+    border-radius: 4px; /* Optional */
+}
+
+.paper-reference {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+    font-size: 0.95rem;
+    background-color: #f8f9fa; /* Slight background */
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.paper-reference strong {
+    color: #333;
+}
+
+.paper-disclaimer {
+    margin-top: 1rem;
+    color: #555;
+    font-size: 0.9em;
+}
+
+/* Creations Section Styles */
+
+.creations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    margin-top: 1rem;
+}
+
+.creation-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    position: relative; /* Needed for positioning the external link */
+    display: flex; /* Use flexbox for structure */
+    flex-direction: column; /* Stack image and content vertically */
+}
+
+.creation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.card-link-wrapper {
+    text-decoration: none;
+    color: inherit;
+    display: flex; 
+    flex-direction: column;
+    flex-grow: 1; /* Allow wrapper to take up space */
+}
+
+.card-image {
+    width: 100%;
+    height: 180px; /* Fixed height for card images */
+    object-fit: cover; /* Cover the area, cropping if needed */
+    display: block;
+}
+
+.card-image-placeholder {
+    width: 100%;
+    height: 180px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+}
+.card-image-placeholder::before {
+    content: "🖼️"; /* Placeholder icon */
+    font-size: 2rem;
+}
+
+
+.card-content {
+    padding: 15px;
+    flex-grow: 1; /* Allow content to push tags down */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.card-summary {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    flex-grow: 1; /* Push tags to bottom */
+    margin-bottom: 10px;
+}
+
+.card-tags {
+    margin-top: auto; /* Push tags to the bottom */
+}
+
+.tag {
+    display: inline-block;
+    background-color: #e9ecef;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    margin-right: 5px;
+    margin-top: 5px;
+    color: #495057;
+}
+
+.project-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.2s ease;
+}
+
+.project-link:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Single Creation Page Styles */
+.creation-single h1 {
+    /* Similar to paper? Adjust if needed */
+     font-size: 2.8rem;
+     margin-bottom: 1rem;
+     border-bottom: none;
+     line-height: 1.3;
+}
+
+.creation-meta {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.creation-meta strong {
+    color: #000;
+}
+
+.creation-meta a {
+    color: #0056b3;
+    text-decoration: none;
+}
+.creation-meta a:hover {
+    text-decoration: underline;
+}
+
+
+.creation-featured-image {
+    margin: 2rem 0;
+}
+
+.creation-featured-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.creation-content {
+    /* Similar to paper? Adjust if needed */
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.creation-content h2, .creation-content h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Creations Preview Specific */
+.creations-grid-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Smaller columns for preview */
+    gap: 15px;
+}
+
+.creation-card-preview {
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.creation-card-preview a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.creation-card-preview img {
+    max-width: 100%;
+    height: 80px; /* Smaller image height */
+    object-fit: cover;
+    display: block;
+}
+
+.card-image-placeholder-preview {
+    width: 100%;
+    height: 80px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+}
+.card-image-placeholder-preview::before {
+    content: "🖼️";
+    font-size: 1.5rem;
+}
+
+.card-title-preview {
+    font-size: 0.8rem;
+    padding: 8px;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-link-preview {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+/* General Button Styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    color: #fff; /* Ensure text color remains white on hover */
+    text-decoration: none;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+/* Resume Button Specifics */
+.resume-button i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Subtle Resume Button (on About page) */
+.resume-button-subtle {
+    background-color: #f8f9fa; /* Lighter background */
+    color: #343a40; /* Darker text */
+    padding: 6px 12px; /* Smaller padding */
+    font-size: 0.9rem; /* Smaller font */
+    border: 1px solid #dee2e6; /* Subtle border */
+    font-weight: normal;
+}
+
+.resume-button-subtle:hover {
+    background-color: #e9ecef; /* Slightly darker hover */
+    color: #212529;
+    border-color: #ced4da;
+}
+
+.resume-button-subtle i {
+     margin-right: 5px;
+}

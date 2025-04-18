@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GenAI on 404EngineerNotFound</title><link>https://deepskandpal.github.io/categories/genai/</link><description>Recent content in GenAI on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 20 Mar 2024 14:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/categories/genai/index.xml" rel="self" type="application/rss+xml"/><item><title>Animal GPT</title><link>https://deepskandpal.github.io/creations/animal-gpt/</link><pubDate>Wed, 20 Mar 2024 14:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/creations/animal-gpt/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This is a brief summary of the example project, highlighting its main purpose or key feature. It&amp;rsquo;s used on the card display.&lt;/p>
+&lt;h2 id="details">Details&lt;/h2>
+&lt;p>Here you can write a full description of the project.&lt;/p>
+&lt;ul>
+&lt;li>Explain the goals.&lt;/li>
+&lt;li>Describe the technologies used.&lt;/li>
+&lt;li>Discuss challenges faced and solutions implemented.&lt;/li>
+&lt;li>Include code snippets or further images if relevant using Markdown.&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code class="language-go-html" data-lang="go-html">{{/* Example code snippet */}}
+&lt;/code>&lt;/pre></description></item></channel></rss>
