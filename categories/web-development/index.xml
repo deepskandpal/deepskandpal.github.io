@@ -6,14 +6,14 @@
     <description>Recent content in Web Development on 404EngineerNotFound</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Mar 2024 14:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Apr 2024 09:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/web-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Example Project Showcase</title>
-      <link>http://localhost:1313/creations/example-project/</link>
-      <pubDate>Wed, 20 Mar 2024 14:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/creations/example-project/</guid>
-      <description>Overview This is a brief summary of the example project, highlighting its main purpose or key feature. It&amp;rsquo;s used on the card display.&#xA;Details Here you can write a full description of the project.&#xA;Explain the goals. Describe the technologies used. Discuss challenges faced and solutions implemented. Include code snippets or further images if relevant using Markdown. {{/* Example code snippet */}} </description>
+      <title>Example Blog Post</title>
+      <link>http://localhost:1313/blog/example-blog-post/</link>
+      <pubDate>Wed, 10 Apr 2024 09:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/example-blog-post/</guid>
+      <description>This is the content of an example blog post.&#xA;It belongs to the Hugo and Web Development categories.</description>
     </item>
   </channel>
 </rss>

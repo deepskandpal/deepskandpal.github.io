@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Engineering for Data Scientists on 404EngineerNotFound</title><link>https://deepskandpal.github.io/categories/engineering-for-data-scientists/</link><description>Recent content in Engineering for Data Scientists on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 13 Apr 2025 11:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/categories/engineering-for-data-scientists/index.xml" rel="self" type="application/rss+xml"/><item><title>Multi Processing , Multi Threading, AsyncIO: Demystefied from DS perspective</title><link>https://deepskandpal.github.io/blog/test-blog/</link><pubDate>Sun, 13 Apr 2025 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/blog/test-blog/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Engineering for Data Scientists on 404EngineerNotFound</title>
+    <link>http://localhost:1313/categories/engineering-for-data-scientists/</link>
+    <description>Recent content in Engineering for Data Scientists on 404EngineerNotFound</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Apr 2025 11:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/engineering-for-data-scientists/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multi Processing , Multi Threading, AsyncIO: Demystefied from DS perspective</title>
+      <link>http://localhost:1313/blog/test-blog/</link>
+      <pubDate>Sun, 13 Apr 2025 11:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/test-blog/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
