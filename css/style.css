@@ -660,3 +660,212 @@ footer p {
 .resume-button-subtle i {
      margin-right: 5px;
 }
+
+/* DSA Log Styles */
+
+/* Dashboard */
+.dsa-dashboard {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid #dee2e6;
+}
+
+.dsa-dashboard h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 0.5rem;
+}
+
+.dashboard-stats,
+.dashboard-topics,
+.dashboard-recent {
+    margin-bottom: 1rem;
+}
+
+.dashboard-stats div {
+    margin-bottom: 0.5rem;
+}
+
+.dashboard-topics strong {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.topic-pill {
+    display: inline-block;
+    background-color: #e9ecef;
+    padding: 0.2em 0.6em;
+    margin: 2px;
+    border-radius: 10px;
+    font-size: 0.85em;
+    color: #495057;
+}
+
+.dashboard-recent strong {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.dashboard-recent ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.dashboard-recent li {
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+.dashboard-recent li time {
+    color: #6c757d;
+    font-size: 0.85em;
+    margin-left: 5px;
+}
+
+/* Difficulty Styling */
+.difficulty-easy { color: #28a745; font-weight: bold; }
+.difficulty-medium { color: #ffc107; font-weight: bold; }
+.difficulty-hard { color: #dc3545; font-weight: bold; }
+.difficulty-other { color: #6c757d; font-weight: bold; }
+
+
+/* Single DSA Log Page */
+.dsa-single h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: none;
+}
+
+.dsa-meta {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.6;
+    border: 1px solid #eee;
+}
+ .dsa-meta p {
+    margin-bottom: 0.5rem;
+ }
+.dsa-meta p:last-child {
+    margin-bottom: 0;
+ }
+
+.dsa-meta strong {
+    color: #000;
+}
+.dsa-meta a {
+    color: #0056b3;
+    text-decoration: none;
+}
+ .dsa-meta a:hover {
+    text-decoration: underline;
+ }
+ .dsa-meta .fas { /* Icon styling */
+    font-size: 0.8em;
+    margin-left: 3px;
+ }
+
+.dsa-content {
+    margin-top: 1.5rem;
+    line-height: 1.7;
+}
+.dsa-content h2, .dsa-content h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.dsa-content pre {
+    background-color: #f0f0f0; /* Simple background for code blocks */
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto; /* Allow horizontal scroll for long code lines */
+}
+.dsa-content code {
+    font-family: monospace;
+}
+
+/* Navigation Dropdown Styles */
+.main-nav {
+    /* Base styling is already there */
+}
+
+.nav-item {
+    position: relative; /* Needed for absolute positioning of dropdown */
+}
+
+.dropdown-menu {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 100%; /* Position below the parent */
+    left: 0;
+    margin-top: 5px; /* Add small gap */
+    background-color: #fff; /* White background */
+    border: 1px solid #eee; /* Slightly lighter border */
+    border-radius: 4px; /* Add rounded corners */
+    list-style: none;
+    padding: 5px 0; /* Slightly reduced vertical padding */
+    margin: 0;
+    min-width: 180px; /* Slightly wider */
+    z-index: 1000; /* Ensure it's above other elements */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* Slightly adjusted shadow */
+}
+
+.nav-item:hover .dropdown-menu,
+.nav-item:focus-within .dropdown-menu { /* Keep open if focused within */
+    display: block; /* Show on hover */
+}
+
+.dropdown-item a {
+    display: block;
+    padding: 10px 15px; /* Reduced left/right padding */
+    color: #333; /* Dark text color */
+    text-decoration: none;
+    white-space: nowrap; /* Prevent wrapping */
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out; /* Add transition */
+}
+
+.dropdown-item a:hover {
+    background-color: #f0f0f0; /* Lighter grey background on hover */
+    color: #0056b3; /* Slightly darker blue for hover text */
+}
+
+/* Ensure FontAwesome caret aligns nicely */
+.nav-item a .fa-caret-down {
+    margin-left: 5px;
+}
+
+/* Basic Table Styling */
+.post-content table {
+  width: 100%; /* Make table take full width */
+  border-collapse: collapse; /* Collapse borders into a single line */
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 0.9em; /* Slightly smaller font for tables */
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid #ddd; /* Light grey border */
+  padding: 8px 12px; /* Add some padding */
+  text-align: left; /* Align text to the left */
+  vertical-align: top; /* Align content to the top */
+}
+
+.post-content th {
+  background-color: #f2f2f2; /* Light grey background for headers */
+  font-weight: bold;
+}
+
+.post-content tr:nth-child(even) {
+  /* background-color: #f9f9f9; */ /* Optional: subtle striping */
+}
+
+/* Ensure table respects container width */
+.post-content .table-container {
+    overflow-x: auto;
+    margin-bottom: 1em;
+}

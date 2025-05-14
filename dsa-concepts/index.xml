@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dsa-Concepts on 404EngineerNotFound</title><link>https://deepskandpal.github.io/dsa-concepts/</link><description>Recent content in Dsa-Concepts on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/dsa-concepts/index.xml" rel="self" type="application/rss+xml"/><item><title>Arrays</title><link>https://deepskandpal.github.io/dsa-concepts/arrays/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/arrays/</guid><description>&lt;h2 id="introduction-to-arrays">Introduction to Arrays&lt;/h2>
+&lt;p>An array is a fundamental data structure used to store a collection of elements, typically of the same data type, in contiguous memory locations. Each element is identified by an index or a key.&lt;/p>
+&lt;h2 id="key-characteristics">Key Characteristics&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Fixed Size (Static Arrays):&lt;/strong> In many languages, traditional arrays have a fixed size defined at creation.&lt;/li>
+&lt;li>&lt;strong>Dynamic Size (Dynamic Arrays/Lists):&lt;/strong> Languages like Python offer dynamic arrays (lists) that can grow or shrink.&lt;/li>
+&lt;li>&lt;strong>Contiguous Memory:&lt;/strong> Elements are stored next to each other, allowing for efficient index-based access.&lt;/li>
+&lt;li>&lt;strong>O(1) Access:&lt;/strong> Accessing an element by its index is typically a constant time operation.&lt;/li>
+&lt;li>&lt;strong>O(n) Insertion/Deletion (Worst Case):&lt;/strong> Inserting or deleting elements in the middle may require shifting subsequent elements.&lt;/li>
+&lt;/ul>
+&lt;h2 id="common-operations--complexity">Common Operations &amp;amp; Complexity&lt;/h2>
+&lt;ul>
+&lt;li>Access (by index): O(1)&lt;/li>
+&lt;li>Search (linear): O(n)&lt;/li>
+&lt;li>Insertion (at end, amortized for dynamic): O(1)&lt;/li>
+&lt;li>Insertion (at beginning/middle): O(n)&lt;/li>
+&lt;li>Deletion (at end): O(1)&lt;/li>
+&lt;li>Deletion (at beginning/middle): O(n)&lt;/li>
+&lt;/ul>
+&lt;h2 id="use-cases">Use Cases&lt;/h2>
+&lt;ul>
+&lt;li>Storing lists of items.&lt;/li>
+&lt;li>Implementing other data structures (stacks, queues).&lt;/li>
+&lt;li>Lookup tables (when used with indices).&lt;/li>
+&lt;/ul></description></item><item><title>Hashing</title><link>https://deepskandpal.github.io/dsa-concepts/hashing/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/hashing/</guid><description>&lt;h2 id="introduction-to-hashing">Introduction to Hashing&lt;/h2>
+&lt;p>Hashing is the process of converting an input item (key) into a fixed-size value, typically an integer index, using a hash function. This index is then used to place or locate the item in a data structure, most commonly a hash table (hash map or dictionary).&lt;/p>
+&lt;h2 id="key-concepts">Key Concepts&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Hash Function:&lt;/strong> A function that maps keys to indices. A good hash function should be fast to compute and distribute keys uniformly across the available indices.&lt;/li>
+&lt;li>&lt;strong>Hash Table:&lt;/strong> A data structure that uses a hash function to map keys to values for efficient lookups.&lt;/li>
+&lt;li>&lt;strong>Collisions:&lt;/strong> Occur when two different keys map to the same index.&lt;/li>
+&lt;li>&lt;strong>Collision Resolution:&lt;/strong> Strategies to handle collisions, such as:
+* &lt;strong>Separate Chaining:&lt;/strong> Each index points to a linked list (or other structure) containing all keys that hash to that index.
+* &lt;strong>Open Addressing (Probing):&lt;/strong> If an index is occupied, probe for the next available slot (linear probing, quadratic probing, double hashing).&lt;/li>
+&lt;/ul>
+&lt;h2 id="common-operations--complexity-average-case-for-hash-tables">Common Operations &amp;amp; Complexity (Average Case for Hash Tables)&lt;/h2>
+&lt;ul>
+&lt;li>Insertion: O(1)&lt;/li>
+&lt;li>Deletion: O(1)&lt;/li>
+&lt;li>Search: O(1)&lt;/li>
+&lt;li>&lt;em>(Worst Case for all can be O(n) if collisions are poorly handled or hash function is bad)&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;h2 id="use-cases">Use Cases&lt;/h2>
+&lt;ul>
+&lt;li>Implementing dictionaries/hash maps.&lt;/li>
+&lt;li>Database indexing.&lt;/li>
+&lt;li>Caching.&lt;/li>
+&lt;li>Checking for duplicates.&lt;/li>
+&lt;/ul></description></item><item><title>Linked Lists</title><link>https://deepskandpal.github.io/dsa-concepts/linked-lists/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/linked-lists/</guid><description/></item></channel></rss>
