@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Three Pointers on 404EngineerNotFound</title>
+    <link>http://localhost:1313/tags/three-pointers/</link>
+    <description>Recent content in Three Pointers on 404EngineerNotFound</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 May 2025 20:04:51 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/three-pointers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dutch National Flag</title>
+      <link>http://localhost:1313/dsa-log/dutch-national-flag/</link>
+      <pubDate>Wed, 14 May 2025 20:04:51 +0530</pubDate>
+      <guid>http://localhost:1313/dsa-log/dutch-national-flag/</guid>
+      <description>&lt;h2 id=&#34;problem-description&#34;&gt;Problem Description&lt;/h2&gt;&#xA;&lt;p&gt;Given an array A and an index pivot_idx, rearrange A such that all elements less than &lt;code&gt;A[pivot_idx]&lt;/code&gt; (the pivot value) come first, followed by all elements equal to the pivot, and finally all elements greater than the pivot. This must be done in-place.&lt;/p&gt;&#xA;&lt;h2 id=&#34;solution-approach&#34;&gt;Solution Approach&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Let &#xA;A  = [0, 1, 2, 0, 2, 1, 1]&#xA;pivot_idx = 1&#xA;pivot_value = A[pivot_idx] = 1&#xA;We maintain three pointers (our “fingers”):&#xA;&#xA;smaller: end of the “LESS THAN pivot” zone.&#xA;&#xA;Anything to its left is &amp;lt; pivot_value.&#xA;&#xA;Starts at 0.&#xA;&#xA;equal: the current “inspector” pointer.&#xA;&#xA;Points to the element under examination.&#xA;&#xA;Starts at 0.&#xA;&#xA;larger: start of the “GREATER THAN pivot” zone (from the right end).&#xA;&#xA;Anything at or to its right is &amp;gt; pivot_value.&#xA;&#xA;Starts at len(A) (one past the end).&#xA;&#xA;&#xA;A[0...smaller-1]   = LESS zone      (empty)&#xA;A[smaller...equal-1] = EQUAL zone    (empty)&#xA;A[equal...larger-1]  = UNCLASSIFIED  (the whole array)&#xA;A[larger...end]    = GREATER zone    (empty)&#xA;&#xA;We loop while equal &amp;lt; larger:&#xA;&#xA;while equal &amp;lt; larger:&#xA;    if A[equal] &amp;lt; pivot_value:&#xA;        swap(A[smaller], A[equal])&#xA;        smaller += 1&#xA;        equal += 1&#xA;&#xA;    elif A[equal] == pivot_value:&#xA;        # Already in the EQUAL zone&#xA;        equal += 1&#xA;&#xA;    else:  # A[equal] &amp;gt; pivot_value&#xA;        larger -= 1&#xA;        swap(A[equal], A[larger])&#xA;        # do not increment `equal`!&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Step-by-Step Walkthrough&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

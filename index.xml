@@ -1,8 +1,267 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>404EngineerNotFound</title><link>https://deepskandpal.github.io/</link><description>Recent content on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 03 May 2025 22:38:57 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>System Prompts that I found usefull</title><link>https://deepskandpal.github.io/tech-writings/prompts/</link><pubDate>Sat, 03 May 2025 22:38:57 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/prompts/</guid><description>&lt;p>Below is the list of system prompts i use for different tasks with gemini 2.5 pro model&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>404EngineerNotFound</title><link>https://deepskandpal.github.io/</link><description>Recent content on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 03 May 2025 22:38:57 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Chapter 1: The Machine Learning Landscape</title><link>https://deepskandpal.github.io/bookshelf/hands-on-ml/chapter-1/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-ml/chapter-1/</guid><description>&lt;h1 id="notes-for-chapter-1">Notes for Chapter 1&lt;/h1>
+&lt;p>This chapter introduces the basics of Machine Learning.&lt;/p>
+&lt;ul>
+&lt;li>What is ML?&lt;/li>
+&lt;li>Why use ML?&lt;/li>
+&lt;li>Types of ML systems.&lt;/li>
+&lt;/ul></description></item><item><title>Chapter 2: End-to-End Machine Learning Project</title><link>https://deepskandpal.github.io/bookshelf/hands-on-ml/chapter-2/</link><pubDate>Thu, 22 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-ml/chapter-2/</guid><description>&lt;h1 id="notes-for-chapter-2">Notes for Chapter 2&lt;/h1>
+&lt;p>This chapter walks through a sample project.&lt;/p>
+&lt;ul>
+&lt;li>Get the data&lt;/li>
+&lt;li>Discover and visualize data&lt;/li>
+&lt;li>Prepare data for ML algorithms.&lt;/li>
+&lt;/ul></description></item><item><title>Chapter 6: Statistics</title><link>https://deepskandpal.github.io/bookshelf/201-ds-interview/chapter-6/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/201-ds-interview/chapter-6/</guid><description>&lt;p>Statistics is a core component of any data scientist&amp;rsquo;s toolkit. Since many commercial layers of a data science pipeline are built from statistical foundations (for example, A/B testing), knowing foundational topics of statistics is essential.&lt;/p>
+&lt;p>Interviewers love to test a candidate&amp;rsquo;s knowledge about the statistic basics, starting with topics like the Central Limit Theorem and the Law of Large Numbers, and then progressing on to the concepts underlying hypothesis-testing, particularly p-values and confidence intervals, as well as Type 1 and Type II error, and their interpretations. All of those topics play an important role in the statistical underpinning of A/B testing. Additionally, derivations and manipulations involving random variables of various probability distributions are also common, particularly in finance interviews. Lastly, a common topic in more technical interviews will involve utilizing MLE and/or MAP.&lt;/p></description></item><item><title>System Prompts that I found usefull</title><link>https://deepskandpal.github.io/tech-writings/prompts/</link><pubDate>Sat, 03 May 2025 22:38:57 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/prompts/</guid><description>&lt;p>Below is the list of system prompts i use for different tasks with gemini 2.5 pro model&lt;/p>
 &lt;h1 id="for-learning-dsa">For learning DSA&lt;/h1>
 &lt;p>&lt;code>you are an expert DSA expert who specializes in teaching how to track coding problems you have written books and specializes in coaching those students who run away from DSA. Your ability to boil down even complex problems and concepts into very simple intuitive first principals based explanation makes you the best in the trade . You are starting a new course based on the book elements of programming interview in python. You will cover each chapters core topics and also cover each section and the core problems in that chapter. &lt;/code>&lt;/p></description></item><item><title>Sequential Test and Adaptive Experimental Design</title><link>https://deepskandpal.github.io/papershelf/msprt/</link><pubDate>Sun, 27 Apr 2025 19:30:00 +0000</pubDate><guid>https://deepskandpal.github.io/papershelf/msprt/</guid><description/></item><item><title>The Matrix Calculus You Need For Deep Learning</title><link>https://deepskandpal.github.io/papershelf/maths/</link><pubDate>Sun, 27 Apr 2025 19:30:00 +0000</pubDate><guid>https://deepskandpal.github.io/papershelf/maths/</guid><description/></item><item><title/><link>https://deepskandpal.github.io/stories/ek-kahani-aisibhi/</link><pubDate>Fri, 25 Apr 2025 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/stories/ek-kahani-aisibhi/</guid><description/></item><item><title>Multi Processing , Multi Threading, AsyncIO: A Guide to Python Concurrency for Data Scientists</title><link>https://deepskandpal.github.io/tech-writings/concurrency-ds/</link><pubDate>Fri, 25 Apr 2025 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/tech-writings/concurrency-ds/</guid><description>&lt;p>&lt;strong>The problem : Help! My Python SDXL Script Isn&amp;rsquo;t Faster with Asyncio/Threading/Multiprocessing. Why?&lt;/strong>&lt;/p>
 &lt;p>You&amp;rsquo;ve built a cool script, maybe generating image variations with SDXL (&lt;a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0">Stable Diffusion XL model&lt;/a>) like one of our engineers. It works, but it&amp;rsquo;s slow. You think, &amp;ldquo;I know! Parallelism!&amp;rdquo; You try asyncio, then multithreading, maybe even multiprocessing. But&amp;hellip; nothing speeds up significantly, or you just hit weird errors, especially in your Jupyter Notebook. Sounds familiar?&lt;/p>
-&lt;p>This is a common hurdle when data science tasks meet heavier computation. Let&amp;rsquo;s demystify Python&amp;rsquo;s asyncio, multithreading, and multiprocessing, touching on the underlying Operating System (OS) ideas and Python&amp;rsquo;s infamous GIL.&lt;/p></description></item><item><title>About</title><link>https://deepskandpal.github.io/about/</link><pubDate>Mon, 14 Apr 2025 22:29:36 +0530</pubDate><guid>https://deepskandpal.github.io/about/</guid><description>&lt;p>Hi—I’m Deepanshu Kandpal. Over the past eight years I’ve jumped between e‑commerce, telecom, consulting and cybersecurity, always chasing that moment when clever code becomes real‑world impact. Right now at KnowBe4 I’m building LLM‑powered agents that sniff out threats and automate responses at scale. Before that at Farfetch I helped grow an A/B testing platform to handle 100K+ queries a day across 300 TB of data—learning firsthand how to coordinate agile teams across continents. On the side, I tinker with LangChef, my open‑source framework for LLM experimentation. I actually got my start as an iOS developer at Jio, crafting AI assistants that now handle over 3 million queries daily and take a huge load off call‑center teams.&lt;/p></description></item><item><title>Current Workout Plan</title><link>https://deepskandpal.github.io/fitness-log/workout-plan/</link><pubDate>Thu, 01 Aug 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/fitness-log/workout-plan/</guid><description>&lt;p>&lt;strong>Important Notes Before You Start:&lt;/strong>&lt;/p>
+&lt;p>This is a common hurdle when data science tasks meet heavier computation. Let&amp;rsquo;s demystify Python&amp;rsquo;s asyncio, multithreading, and multiprocessing, touching on the underlying Operating System (OS) ideas and Python&amp;rsquo;s infamous GIL.&lt;/p></description></item><item><title>About</title><link>https://deepskandpal.github.io/about/</link><pubDate>Mon, 14 Apr 2025 22:29:36 +0530</pubDate><guid>https://deepskandpal.github.io/about/</guid><description>&lt;p>Hi—I’m Deepanshu Kandpal. Over the past eight years I’ve jumped between e‑commerce, telecom, consulting and cybersecurity, always chasing that moment when clever code becomes real‑world impact. Right now at KnowBe4 I’m building LLM‑powered agents that sniff out threats and automate responses at scale. Before that at Farfetch I helped grow an A/B testing platform to handle 100K+ queries a day across 300 TB of data—learning firsthand how to coordinate agile teams across continents. On the side, I tinker with LangChef, my open‑source framework for LLM experimentation. I actually got my start as an iOS developer at Jio, crafting AI assistants that now handle over 3 million queries daily and take a huge load off call‑center teams.&lt;/p></description></item><item><title>Current Workout Plan</title><link>https://deepskandpal.github.io/fitness-log/diet-plan/</link><pubDate>Thu, 01 Aug 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/fitness-log/diet-plan/</guid><description>&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Day&lt;/th>
+ &lt;th style="text-align: left">Meal Time&lt;/th>
+ &lt;th style="text-align: left">Meal Description&lt;/th>
+ &lt;th style="text-align: left">Notes / Katori Guide&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;strong>Day 1 (e.g., Monday)&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Early Morning (Pre-Workout)&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 Banana OR Small handful of almonds (5-6)&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Breakfast&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">3-4 Egg Omelette (with onions, tomatoes, capsicum, spinach) + 1 Whole Wheat Roti OR 1 slice Whole Wheat Toast&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Mid-Morning Snack&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 MK Sprouts Salad (moong, chana) with lemon juice &amp;amp; chaat masala&lt;/td>
+ &lt;td style="text-align: left">MK: ~150ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Lunch&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 LK Chicken Curry (focus on chicken pieces) OR 1 LK Paneer Bhurji/Curry + 1 LK Mixed Vegetable Sabzi (e.g., Gobi, Carrot, Peas) + 1 MK Cooked Brown Rice OR 2 Whole Wheat Rotis + Generous Green Salad&lt;/td>
+ &lt;td style="text-align: left">LK: ~240ml, MK: ~150ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Evening Snack&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 Apple OR Pear + Small handful of Roasted Chana (unsalted)&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Dinner&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 LK Baked/Grilled Fish OR 1 LK Tofu Stir-fry with plenty of vegetables + 1 MK Dal (e.g., Moong Dal) + 1 LK Lauki/Bhindi Sabzi + 1 Whole Wheat Roti (optional)&lt;/td>
+ &lt;td style="text-align: left">LK: ~240ml, MK: ~150ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;strong>Day 2 (e.g., Tuesday)&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Early Morning (Pre-Workout)&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">Small sweet potato (boiled) OR 1 small apple&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Breakfast&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">2 Moong Dal Chillas OR Besan Chillas (medium size) stuffed with 1 SK grated paneer/vegetables + 1 SK Mint-coriander chutney (no sugar)&lt;/td>
+ &lt;td style="text-align: left">SK: ~110ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Mid-Morning Snack&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 Orange OR 1 MK Papaya&lt;/td>
+ &lt;td style="text-align: left">MK: ~150ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Lunch&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 LK Rajma Curry OR Chana Masala + 1 LK Palak Sabzi (spinach preparation) + 1 MK Quinoa OR 2 Millets (Bajra/Jowar) Rotis + Generous Green Salad&lt;/td>
+ &lt;td style="text-align: left">LK: ~240ml, MK: ~150ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Evening Snack&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1-2 Boiled Eggs (if you eat eggs) OR Handful of peanuts (approx. 20-25)&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Dinner&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 LK Paneer Tikka (grilled/baked) OR 1 LK Soy Chunk Curry + 1 MK Vegetable Raita (plain yogurt) OR Large mixed bean salad + 1 LK Baingan Bharta OR Cabbage Sabzi&lt;/td>
+ &lt;td style="text-align: left">LK: ~240ml, MK: ~150ml. &lt;em>Avoid sugary/mayo-based Raita.&lt;/em>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;strong>Day 3 (e.g., Wednesday)&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Breakfast&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 MK Vegetable Poha (with peas, carrots, onions) + 1 SK roasted peanuts sprinkled on top + 1 Glass Unsweetened Lassi OR Buttermilk (Chaas)&lt;/td>
+ &lt;td style="text-align: left">MK: ~150ml, SK: ~110ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Mid-Morning Snack&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 Guava OR 1 Pomegranate&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Lunch&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 LK Mixed Dal (e.g., Toor + Masoor) + 1 LK Methi Aloo Sabzi (more methi, less aloo) + 1 MK Cooked Rice OR 2 Whole Wheat Rotis + Generous Green Salad&lt;/td>
+ &lt;td style="text-align: left">LK: ~240ml, MK: ~150ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Evening Snack&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 MK Fruit Salad (mixed fruits)&lt;/td>
+ &lt;td style="text-align: left">MK: ~150ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Dinner&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">Vegetable Clear Soup (large bowl) + 1 LK Mushroom &amp;amp; Capsicum Sabzi OR Stir-fried Mixed Vegetables + 1-2 Besan or Moong Dal Chillas (plain or minimal veggie stuffing)&lt;/td>
+ &lt;td style="text-align: left">LK: ~240ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;strong>Day 4 (e.g., Thursday)&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Early Morning (Pre-Workout)&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">Black coffee + 4-5 Almonds &amp;amp; 1-2 Walnuts&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Breakfast&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">3-Egg Scramble with 1 SK chopped chicken/turkey ham (if non-veg) or tofu/paneer cubes + 1 Whole Wheat Roti OR 1 slice Whole Wheat Toast&lt;/td>
+ &lt;td style="text-align: left">SK: ~110ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Mid-Morning Snack&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 MK Steamed Edamame (if available) OR 1 MK Sprouts&lt;/td>
+ &lt;td style="text-align: left">MK: ~150ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Lunch&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 LK Fish Curry OR 1 LK Matar Paneer (Peas &amp;amp; Paneer) + 1 LK Thoran/Poriyal (South Indian dry veg) + 1 MK Brown Rice OR 2 Rotis + Generous Salad&lt;/td>
+ &lt;td style="text-align: left">LK: ~240ml, MK: ~150ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Evening Snack&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 Apple with 1 tablespoon Peanut Butter (unsweetened)&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Dinner&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 LK Chicken Stir-fry with lots of colorful vegetables OR 1 LK Paneer &amp;amp; Bell Pepper Stir-fry + Small portion (1 SK) of Quinoa or Brown Rice (optional) + Large bowl Clear Broth&lt;/td>
+ &lt;td style="text-align: left">LK: ~240ml, SK: ~110ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;strong>Day 5 (e.g., Friday)&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Early Morning (Pre-Workout)&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 small Banana + Black Coffee&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Breakfast&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 LK Paneer Bhurji + 2 slices Whole Wheat Toast OR 2 small Uthappams (with lots of onion/tomato topping)&lt;/td>
+ &lt;td style="text-align: left">LK: ~240ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Mid-Morning Snack&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 Pear OR handful of Grapes&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Lunch&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 LK Mutton Curry (lean pieces, less oil) OR 1 LK Lobia (Black-eyed peas) Curry + 1 LK Bhindi (Okra) Sabzi + 1 MK Rice OR 2 Rotis + Generous Salad&lt;/td>
+ &lt;td style="text-align: left">LK: ~240ml, MK: ~150ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Evening Snack&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">Handful of Mixed Nuts &amp;amp; Seeds (almonds, walnuts, pumpkin seeds)&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Dinner&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">Grilled Chicken Breast (1-2 pieces) OR Large portion (1 LK) of Grilled Paneer/Tofu steaks + 1 LK Steamed or Sautéed Mixed Vegetables + Salad with lemon-herb dressing&lt;/td>
+ &lt;td style="text-align: left">LK: ~240ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;strong>Day 6 (e.g., Saturday)&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Breakfast&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">Vegetable Idli (3-4) with 1 MK Sambhar (focus on dal &amp;amp; veggies) + Minimal coconut chutney&lt;/td>
+ &lt;td style="text-align: left">MK: ~150ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Mid-Morning Snack&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 MK Watermelon or Muskmelon&lt;/td>
+ &lt;td style="text-align: left">MK: ~150ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Lunch&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;em>Mindful Meal Out/Relaxed Meal:&lt;/em> E.g., Tandoori Chicken/Fish (2-3 pieces) with Salad OR Veggie &amp;amp; Paneer Kathi Roll (whole wheat, less sauce)&lt;/td>
+ &lt;td style="text-align: left">&lt;em>Avoid creamy curries, large biryanis, naan.&lt;/em>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Evening Snack&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 MK Roasted Makhana (Fox Nuts)&lt;/td>
+ &lt;td style="text-align: left">MK: ~150ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Dinner&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">1 LK Dal Tadka (Yellow Dal) + 1 LK Gajar Matar Sabzi (Carrot &amp;amp; Peas) + 2 Whole Wheat Rotis + Side Salad&lt;/td>
+ &lt;td style="text-align: left">LK: ~240ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;strong>Day 7 (e.g., Sunday)&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Breakfast&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">Paneer Paratha (1-2, less oil, more filling) OR Aloo Paratha (1-2) with 1 SK plain low-fat yogurt (optional) or pickle.&lt;/td>
+ &lt;td style="text-align: left">SK: ~110ml. &lt;em>If Aloo Paratha, add protein like leftover dal/egg.&lt;/em>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Mid-Morning Snack&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">Your choice of 1 Fruit&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Lunch&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">Home-style Chicken Biryani (1 LK, focus on chicken, less rice) with 1 MK Raita (if using yogurt) OR Large Salad. Veg: Veg Biryani/Pulao (1 LK) with 1 MK Dal or Mixed Veg Raita.&lt;/td>
+ &lt;td style="text-align: left">LK: ~240ml, MK: ~150ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Evening Snack&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">Sweet Potato Chaat (1 MK, boiled sweet potato, chaat masala, lemon)&lt;/td>
+ &lt;td style="text-align: left">MK: ~150ml&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Dinner&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">Keep it light: Large Bowl of Mixed Vegetable &amp;amp; Lentil Soup + 1-2 slices Whole Wheat Toast with 1 SK hummus (optional)&lt;/td>
+ &lt;td style="text-align: left">SK: ~110ml&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>General Reminders for the Diet Plan:&lt;/strong>&lt;/p></description></item><item><title>Current Workout Plan</title><link>https://deepskandpal.github.io/fitness-log/workout-plan/</link><pubDate>Thu, 01 Aug 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/fitness-log/workout-plan/</guid><description>&lt;p>&lt;strong>Important Notes Before You Start:&lt;/strong>&lt;/p>
 &lt;ol>
 &lt;li>&lt;strong>Warm-up:&lt;/strong> Always perform a 5-10 minute warm-up before each workout (light cardio, dynamic stretches).&lt;/li>
 &lt;li>&lt;strong>Cool-down:&lt;/strong> Always perform a 5-10 minute cool-down after each workout (static stretching).&lt;/li>
@@ -75,4 +334,4 @@
 &lt;li>Include code snippets or further images if relevant using Markdown.&lt;/li>
 &lt;/ul>
 &lt;pre tabindex="0">&lt;code class="language-go-html" data-lang="go-html">{{/* Example code snippet */}}
-&lt;/code>&lt;/pre></description></item><item><title>Hands-On Large Language Models: Language Understanding and Generation</title><link>https://deepskandpal.github.io/bookshelf/hands-on-llm/</link><pubDate>Sun, 10 Mar 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-llm/</guid><description/></item><item><title>The Hundred-Page Language Models Book</title><link>https://deepskandpal.github.io/bookshelf/the-lm-book/</link><pubDate>Sun, 10 Mar 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/the-lm-book/</guid><description/></item><item><title>Harry Potter and the Chamber of Secrets</title><link>https://deepskandpal.github.io/bookshelf/hp-2/</link><pubDate>Thu, 22 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hp-2/</guid><description/></item><item><title>Harry Potter and the Deathly Hallows</title><link>https://deepskandpal.github.io/bookshelf/hp-7/</link><pubDate>Thu, 22 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hp-7/</guid><description/></item><item><title>Harry Potter and the Half-Blood Prince</title><link>https://deepskandpal.github.io/bookshelf/hp-6/</link><pubDate>Thu, 22 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hp-6/</guid><description/></item><item><title>Harry Potter and the Order of the Phoenix</title><link>https://deepskandpal.github.io/bookshelf/hp-5/</link><pubDate>Thu, 22 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hp-5/</guid><description/></item><item><title>Harry Potter and the Prisoner of Azkaban</title><link>https://deepskandpal.github.io/bookshelf/hp-3/</link><pubDate>Thu, 22 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hp-3/</guid><description/></item><item><title>Harry Potter and the Prisoner of Azkaban</title><link>https://deepskandpal.github.io/bookshelf/hp-4/</link><pubDate>Thu, 22 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hp-4/</guid><description/></item><item><title>Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future</title><link>https://deepskandpal.github.io/bookshelf/elon-musk/</link><pubDate>Tue, 20 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/elon-musk/</guid><description/></item><item><title>Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems, 2nd Edition</title><link>https://deepskandpal.github.io/bookshelf/hands-on-ml/</link><pubDate>Tue, 20 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-ml/</guid><description/></item><item><title>Harry Potter and the Philosopher's StoneS</title><link>https://deepskandpal.github.io/bookshelf/hp-1/</link><pubDate>Tue, 20 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hp-1/</guid><description/></item><item><title>Shoe Dog</title><link>https://deepskandpal.github.io/bookshelf/shoe-dog/</link><pubDate>Tue, 20 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/shoe-dog/</guid><description/></item><item><title>STEVE JOBS</title><link>https://deepskandpal.github.io/bookshelf/steve-jobs/</link><pubDate>Tue, 20 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/steve-jobs/</guid><description/></item><item><title>Accelerating India's Development: A State-Led Roadmap for Effective Governance</title><link>https://deepskandpal.github.io/bookshelf/accelerating-india/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/accelerating-india/</guid><description/></item><item><title>Good To Great</title><link>https://deepskandpal.github.io/bookshelf/good-to-great/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/good-to-great/</guid><description/></item><item><title>Interpretable Machine Learning</title><link>https://deepskandpal.github.io/bookshelf/interpretable-machine-learning/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/interpretable-machine-learning/</guid><description/></item><item><title>Priceless: the myth of fair value (and how to take advantage of it)</title><link>https://deepskandpal.github.io/bookshelf/priceless/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/priceless/</guid><description/></item><item><title>The Beginning of Infinity</title><link>https://deepskandpal.github.io/bookshelf/begin-infinity/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/begin-infinity/</guid><description/></item></channel></rss>
+&lt;/code>&lt;/pre></description></item><item><title>Hands-On Large Language Models: Language Understanding and Generation</title><link>https://deepskandpal.github.io/bookshelf/hands-on-llm/</link><pubDate>Sun, 10 Mar 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-llm/</guid><description/></item><item><title>The Hundred-Page Language Models Book</title><link>https://deepskandpal.github.io/bookshelf/the-lm-book/</link><pubDate>Sun, 10 Mar 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/the-lm-book/</guid><description/></item><item><title>Harry Potter and the Chamber of Secrets</title><link>https://deepskandpal.github.io/bookshelf/hp-2/</link><pubDate>Thu, 22 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hp-2/</guid><description/></item><item><title>Harry Potter and the Deathly Hallows</title><link>https://deepskandpal.github.io/bookshelf/hp-7/</link><pubDate>Thu, 22 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hp-7/</guid><description/></item><item><title>Harry Potter and the Half-Blood Prince</title><link>https://deepskandpal.github.io/bookshelf/hp-6/</link><pubDate>Thu, 22 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hp-6/</guid><description/></item><item><title>Harry Potter and the Order of the Phoenix</title><link>https://deepskandpal.github.io/bookshelf/hp-5/</link><pubDate>Thu, 22 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hp-5/</guid><description/></item><item><title>Harry Potter and the Prisoner of Azkaban</title><link>https://deepskandpal.github.io/bookshelf/hp-3/</link><pubDate>Thu, 22 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hp-3/</guid><description/></item><item><title>Harry Potter and the Prisoner of Azkaban</title><link>https://deepskandpal.github.io/bookshelf/hp-4/</link><pubDate>Thu, 22 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hp-4/</guid><description/></item><item><title>Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future</title><link>https://deepskandpal.github.io/bookshelf/elon-musk/</link><pubDate>Tue, 20 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/elon-musk/</guid><description/></item><item><title>Harry Potter and the Philosopher's StoneS</title><link>https://deepskandpal.github.io/bookshelf/hp-1/</link><pubDate>Tue, 20 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hp-1/</guid><description/></item><item><title>Shoe Dog</title><link>https://deepskandpal.github.io/bookshelf/shoe-dog/</link><pubDate>Tue, 20 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/shoe-dog/</guid><description/></item><item><title>STEVE JOBS</title><link>https://deepskandpal.github.io/bookshelf/steve-jobs/</link><pubDate>Tue, 20 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/steve-jobs/</guid><description/></item><item><title>Accelerating India's Development: A State-Led Roadmap for Effective Governance</title><link>https://deepskandpal.github.io/bookshelf/accelerating-india/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/accelerating-india/</guid><description/></item><item><title>Good To Great</title><link>https://deepskandpal.github.io/bookshelf/good-to-great/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/good-to-great/</guid><description/></item><item><title>Interpretable Machine Learning</title><link>https://deepskandpal.github.io/bookshelf/interpretable-machine-learning/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/interpretable-machine-learning/</guid><description/></item><item><title>Priceless: the myth of fair value (and how to take advantage of it)</title><link>https://deepskandpal.github.io/bookshelf/priceless/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/priceless/</guid><description/></item><item><title>The Beginning of Infinity</title><link>https://deepskandpal.github.io/bookshelf/begin-infinity/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/begin-infinity/</guid><description/></item></channel></rss>
