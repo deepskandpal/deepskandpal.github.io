@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reliable Machine Learning: Applying SRE Principles to ML in Productionl on 404EngineerNotFound</title>
+    <link>http://localhost:1313/bookshelf/reliable-ml/</link>
+    <description>Recent content in Reliable Machine Learning: Applying SRE Principles to ML in Productionl on 404EngineerNotFound</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/bookshelf/reliable-ml/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
