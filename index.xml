@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>404EngineerNotFound</title><link>https://deepskandpal.github.io/</link><description>Recent content on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 23 May 2025 13:35:05 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Chapter 1: Arrays</title><link>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-1/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-1/</guid><description>&lt;h1 id="notes-for-chapter-1">Notes for Chapter 1&lt;/h1></description></item><item><title>Chapter 1: Introduction</title><link>https://deepskandpal.github.io/bookshelf/design-ml-system/chapter-1/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/design-ml-system/chapter-1/</guid><description>&lt;h1 id="notes-for-chapter-1">Notes for Chapter 1&lt;/h1></description></item><item><title>Chapter 1: Introduction</title><link>https://deepskandpal.github.io/bookshelf/reliable-ml/chapter-1/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/reliable-ml/chapter-1/</guid><description>&lt;h1 id="chapter-1-introduction---reliable-ml-engineering-notes">Chapter 1: Introduction - Reliable ML Engineering Notes&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>404EngineerNotFound</title><link>https://deepskandpal.github.io/</link><description>Recent content on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 23 May 2025 13:35:05 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Chapter 1: Introduction</title><link>https://deepskandpal.github.io/bookshelf/design-ml-system/chapter-1/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/design-ml-system/chapter-1/</guid><description>&lt;h1 id="notes-for-chapter-1">Notes for Chapter 1&lt;/h1></description></item><item><title>Chapter 1: Introduction</title><link>https://deepskandpal.github.io/bookshelf/reliable-ml/chapter-1/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/reliable-ml/chapter-1/</guid><description>&lt;h1 id="chapter-1-introduction---reliable-ml-engineering-notes">Chapter 1: Introduction - Reliable ML Engineering Notes&lt;/h1>
 &lt;h2 id="core-concept-the-ml-loop">Core Concept: The ML Loop&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>ML is Iterative, Not Linear:&lt;/strong> ML applications are rarely &amp;ldquo;done.&amp;rdquo; They exist in a continuous cycle of development, deployment, evaluation, and improvement.&lt;/li>
@@ -18,7 +18,26 @@
 &lt;li>What is ML?&lt;/li>
 &lt;li>Why use ML?&lt;/li>
 &lt;li>Types of ML systems.&lt;/li>
-&lt;/ul></description></item><item><title>Chapter 2: End-to-End Machine Learning Project</title><link>https://deepskandpal.github.io/bookshelf/hands-on-ml/chapter-2/</link><pubDate>Thu, 22 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-ml/chapter-2/</guid><description>&lt;h1 id="notes-for-chapter-2">Notes for Chapter 2&lt;/h1>
+&lt;/ul></description></item><item><title>Chapter 5: Arrays</title><link>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-1/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-1/</guid><description>&lt;h1 id="chapter-5-overview">Chapter 5 Overview:&lt;/h1>
+&lt;p>This chapter covers the basic properties of arrays (specifically Python lists), common manipulation techniques, and classic array-based problems. It heavily emphasizes thinking about space complexity and optimizing operations.&lt;/p>
+&lt;h2 id="think-of-arrays-like-this">Think of arrays like this:&lt;/h2>
+&lt;p>Imagine a row of numbered boxes, right next to each other in memory.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Contiguous&lt;/strong>: The boxes are physically adjacent. This is crucial for performance.&lt;/li>
+&lt;li>&lt;strong>Indexed&lt;/strong>: You can instantly jump to any box if you know its number (index). This is O(1) access.&lt;/li>
+&lt;li>&lt;strong>Homogeneous (usually)&lt;/strong>: Typically, all boxes hold the same type of item (like all integers or all strings), though Python lists offer more flexibility.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="why-arrays-are-important-especially-for-interviews">Why Arrays Are Important (Especially for Interviews):&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>Efficiency&lt;/strong>: Direct access by index is super fast (O(1)).&lt;/li>
+&lt;li>&lt;strong>Memory Locality&lt;/strong>: Because elements are stored together, accessing sequential elements is often cache-friendly, leading to good practical performance.&lt;/li>
+&lt;li>&lt;strong>Building Blocks&lt;/strong>: Many other data structures (like hash maps, heaps, stacks, queues) are often &lt;em>implemented&lt;/em> using arrays underneath.&lt;/li>
+&lt;li>&lt;strong>In-Place Operations&lt;/strong>: Interviewers love problems where you modify the array directly without using significant extra memory (O(1) space). This often involves clever use of pointers or swapping elements.&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="array-boot-camp-reordering-array-entries-page-1">Array Boot Camp: Reordering Array Entries (Page 1)&lt;/h2>
+&lt;p>The boot camp problem is a fantastic introduction to &lt;strong>in-place array manipulation using multiple pointers&lt;/strong>.&lt;/p></description></item><item><title>Chapter 2: End-to-End Machine Learning Project</title><link>https://deepskandpal.github.io/bookshelf/hands-on-ml/chapter-2/</link><pubDate>Thu, 22 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-ml/chapter-2/</guid><description>&lt;h1 id="notes-for-chapter-2">Notes for Chapter 2&lt;/h1>
 &lt;p>This chapter walks through a sample project.&lt;/p>
 &lt;ul>
 &lt;li>Get the data&lt;/li>
