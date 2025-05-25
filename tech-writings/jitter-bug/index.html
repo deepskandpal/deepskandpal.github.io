@@ -1,401 +1,181 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404EngineerNotFound</title>
-    <link rel="stylesheet" href="/css/style.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-</head>
-<body>
-    
-        \
-<header>
-    <nav>
-        <div class="logo"><a href="/">404EngineerNotFound</a></div>
-        <ul class="main-nav">
-            
-            
-                
-                
-                    
-                    <li class="nav-item has-dropdown">
-                        
-                        <a href="#">
-                            Writings <i class="fas fa-caret-down fa-xs"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            
-                            
-                                <li class="dropdown-item">
-                                    <a href="/stories/">Stories</a>
-                                </li>
-                            
-                                <li class="dropdown-item">
-                                    <a href="/thoughts/">Thoughts</a>
-                                </li>
-                            
-                                <li class="dropdown-item">
-                                    <a href="/fitness-log/">Fitness Log</a>
-                                </li>
-                            
-                        </ul>
-                    </li>
-                
-            
-                
-                
-                    
-                    <li class="nav-item has-dropdown">
-                        
-                        <a href="#">
-                            Tech Lab <i class="fas fa-caret-down fa-xs"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            
-                            
-                                <li class="dropdown-item">
-                                    <a href="/papershelf/">Papershelf</a>
-                                </li>
-                            
-                                <li class="dropdown-item">
-                                    <a href="/creations/">Creations</a>
-                                </li>
-                            
-                                <li class="dropdown-item">
-                                    <a href="/dsa-log/">DSA Log</a>
-                                </li>
-                            
-                                <li class="dropdown-item">
-                                    <a href="/tech-writings/">Technical Writings</a>
-                                </li>
-                            
-                        </ul>
-                    </li>
-                
-            
-                
-                
-                    
-                    <li class="nav-item">
-                        <a href="/bookshelf/">Bookshelf</a>
-                    </li>
-                
-            
-                
-                
-                    
-                    <li class="nav-item">
-                        <a href="/about/">About</a>
-                    </li>
-                
-            
-        </ul>
-    </nav>
-</header> 
-    
-
-    <main>
-        
-    <article class="post-single page-jitter-bug">
-        <h1>The Jitter Bug - How a Little Randomness Makes Your Recommendations Smarter (and More Fun!)</h1>
-        
-        <div class="post-content">
-            <h2 id="the-tyranny-of-the-top-rank">The Tyranny of the Top Rank</h2>
-<p>Ever feel like your favorite music app is playing <em>DJ Déjà Vu</em>, stuck on an endless loop of your top-played genres or artists you already know and love? Or, if you&rsquo;re an artist, have you wondered how your fresh, amazing track can cut through the noise and find new ears? This isn&rsquo;t just a feeling; it&rsquo;s a common challenge in any system that ranks and recommends items – whether it&rsquo;s songs, movies, products, or even internal company resources.</p>
-<p>Most recommendation algorithms are designed to be highly effective at finding what they think is the absolute &ldquo;best&rdquo; for you based on your past behavior and similar users. This deterministic precision is great for relevance, but it can lead to a predictable experience. We call this the <em>tyranny of the top rank</em>. Users might get trapped in <em>filter bubbles</em>, missing out on diverse and potentially delightful new discoveries. Recommendations can become stale, and for content creators, it means items ranked just slightly lower than the top might never see the light of day.</p>
-<p>But what if there was a simple way to shake things up, to inject a bit of serendipity without completely abandoning relevance? What if a tiny, controlled &rsquo;nudge&rsquo; – a bit of strategic randomness – could unlock a richer, more diverse experience?</p>
-<p>That&rsquo;s exactly what we&rsquo;re going to explore. We&rsquo;ll look at how introducing a small amount of &ldquo;jitter&rdquo; or using &ldquo;probabilistic sampling&rdquo; on an item&rsquo;s relevance score can significantly improve the diversity of recommendations, making them more engaging and useful in the long run.</p>
-<h2 id="the-core-idea-controlled-randomness">The Core Idea: Controlled Randomness</h2>
-<p>At the heart of our approach is the idea of controlled randomness. Instead of always picking the item with the highest calculated relevance score, we slightly perturb these scores randomly before making the final selection. This manages the classic <em>exploration-exploitation trade-off</em>:</p>
-<ul>
-<li><strong>Exploitation</strong>: Picking the known best (high deterministic score).</li>
-<li><strong>Exploration</strong>: Trying out other potentially good options to discover new value and provide variety.</li>
-</ul>
-<p>Our goal is to lean heavily on exploitation (we still want relevant recommendations!) but introduce just enough exploration to make things interesting.</p>
-<h2 id="our-journey-from-internal-challenge-to-broader-solution">Our Journey: From Internal Challenge to Broader Solution</h2>
-<p>Our journey into this started with a similar challenge: how to ensure a wide range of valuable internal training resources were being utilized, rather than just the same few top-scorers. We found that even with well-defined scoring for relevance and effectiveness, a deterministic approach led to a predictable and limited selection.
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>404EngineerNotFound</title><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin=anonymous referrerpolicy=no-referrer></head><body>\<header><nav><div class=logo><a href=/>404EngineerNotFound</a></div><ul class=main-nav><li class="nav-item has-dropdown"><a href=#>Writings <i class="fas fa-caret-down fa-xs"></i></a><ul class=dropdown-menu><li class=dropdown-item><a href=/stories/>Stories</a></li><li class=dropdown-item><a href=/thoughts/>Thoughts</a></li><li class=dropdown-item><a href=/fitness-log/>Fitness Log</a></li></ul></li><li class="nav-item has-dropdown"><a href=#>Tech Lab <i class="fas fa-caret-down fa-xs"></i></a><ul class=dropdown-menu><li class=dropdown-item><a href=/papershelf/>Papershelf</a></li><li class=dropdown-item><a href=/creations/>Creations</a></li><li class=dropdown-item><a href=/dsa-log/>DSA Log</a></li><li class=dropdown-item><a href=/tech-writings/>Technical Writings</a></li></ul></li><li class=nav-item><a href=/bookshelf/>Bookshelf</a></li><li class=nav-item><a href=/about/>About</a></li></ul></nav></header><main><article class="post-single page-jitter-bug"><h1>The Jitter Bug - How a Little Randomness Makes Your Recommendations Smarter (and More Fun!)</h1><div class=post-content><h2 id=the-tyranny-of-the-top-rank>The Tyranny of the Top Rank</h2><p>Ever feel like your favorite music app is playing <em>DJ Déjà Vu</em>, stuck on an endless loop of your top-played genres or artists you already know and love? Or, if you&rsquo;re an artist, have you wondered how your fresh, amazing track can cut through the noise and find new ears? This isn&rsquo;t just a feeling; it&rsquo;s a common challenge in any system that ranks and recommends items – whether it&rsquo;s songs, movies, products, or even internal company resources.</p><p>Most recommendation algorithms are designed to be highly effective at finding what they think is the absolute &ldquo;best&rdquo; for you based on your past behavior and similar users. This deterministic precision is great for relevance, but it can lead to a predictable experience. We call this the <em>tyranny of the top rank</em>. Users might get trapped in <em>filter bubbles</em>, missing out on diverse and potentially delightful new discoveries. Recommendations can become stale, and for content creators, it means items ranked just slightly lower than the top might never see the light of day.</p><p>But what if there was a simple way to shake things up, to inject a bit of serendipity without completely abandoning relevance? What if a tiny, controlled &rsquo;nudge&rsquo; – a bit of strategic randomness – could unlock a richer, more diverse experience?</p><p>That&rsquo;s exactly what we&rsquo;re going to explore. We&rsquo;ll look at how introducing a small amount of &ldquo;jitter&rdquo; or using &ldquo;probabilistic sampling&rdquo; on an item&rsquo;s relevance score can significantly improve the diversity of recommendations, making them more engaging and useful in the long run.</p><h2 id=the-core-idea-controlled-randomness>The Core Idea: Controlled Randomness</h2><p>At the heart of our approach is the idea of controlled randomness. Instead of always picking the item with the highest calculated relevance score, we slightly perturb these scores randomly before making the final selection. This manages the classic <em>exploration-exploitation trade-off</em>:</p><ul><li><strong>Exploitation</strong>: Picking the known best (high deterministic score).</li><li><strong>Exploration</strong>: Trying out other potentially good options to discover new value and provide variety.</li></ul><p>Our goal is to lean heavily on exploitation (we still want relevant recommendations!) but introduce just enough exploration to make things interesting.</p><h2 id=our-journey-from-internal-challenge-to-broader-solution>Our Journey: From Internal Challenge to Broader Solution</h2><p>Our journey into this started with a similar challenge: how to ensure a wide range of valuable internal training resources were being utilized, rather than just the same few top-scorers. We found that even with well-defined scoring for relevance and effectiveness, a deterministic approach led to a predictable and limited selection.
 This prompted us to explore how controlled randomness could improve the diversity of assigned trainings.
-This experience highlighted a universal issue in ranked selections, leading us to generalize these techniques for broader application.</p>
-<h2 id="our-case-study-crafting-a-discovery-weekly-playlist">Our Case Study: Crafting a &ldquo;Discovery Weekly&rdquo; Playlist</h2>
-<p>Imagine we&rsquo;re building a feature like Spotify&rsquo;s &ldquo;Discover Weekly.&rdquo; We have a pool of newly released or under-the-radar songs. For a given user, our main recommendation engine has already calculated a <code>UserMatchScore</code> (0-100) for each song, indicating how well it fits their known taste profile.</p>
-<p>If we always pick the songs with the top 10 <code>UserMatchScores</code>, the playlist might be highly relevant but could lack variety, potentially just offering more of what the user already listens to. We want to introduce songs that are still a good match but might be from slightly different sub-genres or a bit less obvious.</p>
-<p>This is where our randomization techniques come in. We&rsquo;ll apply them to the <code>UserMatchScore</code>.</p>
-<h2 id="two-simple-techniques-for-introducing-diversity">Two Simple Techniques for Introducing Diversity</h2>
-<p>We explored two main methods:</p>
-<ol>
-<li>
-<p><strong>Simple Jitter (Uniform Distribution Jitter):</strong></p>
-<ul>
-<li><em>Concept:</em> We take each song&rsquo;s <code>UserMatchScore</code> and add a small, random &ldquo;nudge&rdquo; to it. This nudge can be positive-only (only boosting scores) or positive-negative (allowing scores to be randomly increased or decreased).</li>
-<li><em>How it works:</em>
-<ul>
-<li>We define a <strong>Jitter_Coefficient (JC)</strong>.</li>
-<li>For the current set of candidate songs, we find the range of their <code>UserMatchScores</code> (Max Score - Min Score).</li>
-<li>The maximum possible nudge is <code>JC * score_range</code>.</li>
-<li>For each song, a random factor (e.g., between -1 and 1 for positive-negative jitter) is multiplied by this maximum nudge to get the actual jitter amount.</li>
-<li><code>Jittered_Score = UserMatchScore + Actual_Jitter_Amount</code>.</li>
-<li>The song with the highest <code>Jittered_Score</code> is selected.</li>
-</ul>
-</li>
-<li><em>Effect:</em> This gives a chance for songs with slightly lower <code>UserMatchScores</code> to be selected if they get a &ldquo;lucky&rdquo; positive nudge while a higher-scoring song gets an &ldquo;unlucky&rdquo; negative nudge (or a smaller positive one).</li>
-</ul>
-</li>
-<li>
-<p><strong>Probabilistic Normal Sampling:</strong></p>
-<ul>
-<li><em>Concept:</em> We treat each song&rsquo;s <code>UserMatchScore</code> not as a fixed point, but as the average (mean) of a bell curve (Normal distribution) representing its potential &ldquo;appeal&rdquo; in any given instance.</li>
-<li><em>How it works:</em>
-<ul>
-<li>We define a <strong>Standard_Deviation_Coefficient (SDC)</strong>.</li>
-<li>The standard deviation (<code>std_dev</code>) for each song&rsquo;s Normal distribution is <code>SDC * score_range</code> (score range of current candidates).</li>
-<li>For each song, we draw one random sample from its specific Normal distribution: <code>Sampled_Score = random_sample_from_Normal(mean=UserMatchScore, std_dev=std_dev)</code>.</li>
-<li>The song with the highest <code>Sampled_Score</code> is selected.</li>
-</ul>
-</li>
-<li><em>Effect:</em> Songs with higher <code>UserMatchScores</code> are statistically more likely to produce the highest sample, but there&rsquo;s a &ldquo;smoother&rdquo; probability of songs with slightly lower scores winning. The chance of an upset depends on how much the bell curves of different songs overlap.</li>
-</ul>
-</li>
-</ol>
-<h2 id="simulating-the-impact">Simulating the Impact</h2>
-<p>To see these techniques in action, we ran simulations. For a chosen set of candidate songs for our &ldquo;Discovery Weekly,&rdquo; we repeatedly selected songs using different <strong>JC</strong> and <strong>SDC</strong> values and tracked:</p>
-<ul>
-<li>How often the original #1 song (by <code>UserMatchScore</code>) was still selected.</li>
-<li>How often the selection stayed within the Top-K original ranks (e.g., Top-10).</li>
-<li>How many different songs were selected over time (a measure of diversity/exploration).</li>
-<li>What proportion of the available candidate songs were &ldquo;touched&rdquo; by the selection process.</li>
-</ul>
-<p><em>(Here, you would embed your generic plots, similar to the ones we discussed, showing lines for &ldquo;Avg Prob(Select Top 1)&rdquo; decreasing and &ldquo;Avg Distinct Items Selected&rdquo; increasing as JC/SDC increases. Label axes generically, e.g., &ldquo;Randomization Coefficient (JC/SDC)&rdquo; and &ldquo;Selection Probability&rdquo; or &ldquo;Number of Distinct Items&rdquo;.)</em></p>
-<p><strong>Example Plot Caption:</strong> <em>Fig 1: As the randomization coefficient (JC or SDC) increases, the probability of selecting the deterministically top-ranked item typically decreases (blue line), while the number of unique items selected over many trials tends to increase (green line), indicating greater exploration.</em></p>
-<h2 id="key-findings-from-simulation">Key Findings from Simulation</h2>
-<p>Our simulations (even with simplified scores) consistently showed:</p>
-<ul>
-<li><strong>Increased Diversity:</strong> Both methods successfully increased the variety of items selected compared to a purely deterministic approach.</li>
-<li><strong>Controllability:</strong> The <strong>JC</strong> and <strong>SDC</strong> parameters provided effective control over the trade-off. Small values resulted in minor deviations from the top ranks, while larger values promoted more significant exploration.</li>
-<li><strong>Simple Jitter (positive_negative type):</strong> Tended to explore more broadly for a given relative coefficient, sometimes selecting items further down the deterministic rank if their &ldquo;luck factor&rdquo; was high.</li>
-<li><strong>Normal Sampling:</strong> Provided a &ldquo;smoother&rdquo; exploration, where items with scores closer to the top had a proportionally better chance of being selected during an &ldquo;upset&rdquo; than items ranked much lower. The probability of selection decreased more gradually.</li>
-<li>The &ldquo;best&rdquo; coefficient depends on the specific goals: if aggressive discovery is desired, a higher coefficient might be chosen. If maintaining very high relevance is paramount, a lower coefficient is better.</li>
-</ul>
-<h2 id="benefits--considerations">Benefits &amp; Considerations</h2>
-<p><strong>Pros</strong> of these simple randomization techniques:</p>
-<ul>
-<li><strong>Simplicity:</strong> Easy to understand and implement on top of existing ranking scores.</li>
-<li><strong>Effective Diversity Boost:</strong> Can significantly improve the variety of recommendations.</li>
-<li><strong>Improved User Experience:</strong> Can reduce recommendation fatigue and increase serendipitous discoveries.</li>
-<li><strong>Low Computational Cost:</strong> Adds minimal overhead to the selection process.</li>
-</ul>
-<p><strong>Cons/Considerations:</strong></p>
-<ul>
-<li><strong>Not Adaptive:</strong> These methods don&rsquo;t &ldquo;learn&rdquo; from user feedback (e.g., if a jitter-selected song is consistently skipped). They rely on the quality of the underlying <code>DeterministicScore</code>.</li>
-<li><strong>Offline Tuning:</strong> The <strong>JC</strong> or <strong>SDC</strong> parameter needs to be tuned, often through offline simulations like ours, to find the right balance for your specific application.</li>
-<li><strong>Potential for &ldquo;Sub-optimal&rdquo; (by one metric):</strong> By design, you will sometimes recommend items that aren&rsquo;t the absolute #1 by your primary deterministic score. This is the trade-off for diversity.</li>
-</ul>
-<h2 id="conclusion-embrace-the-controlled-chaos">Conclusion: Embrace the (Controlled) Chaos!</h2>
-<p>Always showing the &ldquo;best&rdquo; isn&rsquo;t always best for long-term user engagement or content discovery. Introducing a small, controlled amount of randomness, like the Simple Jitter or Probabilistic Normal Sampling techniques we explored, can be a surprisingly powerful and easy-to-implement strategy. It helps break out of predictability, surfaces a wider range of relevant items, and can make your recommendation system feel more dynamic and intelligent.</p>
-<p>So, next time you&rsquo;re building a ranking system, consider adding a little &ldquo;jitter bug&rdquo; – your users (and maybe even your content providers) might thank you for the delightful new discoveries!</p>
-<h1 id="tutorial-adding-diversity-to-rankings-with-jitter--normal-sampling">Tutorial: Adding Diversity to Rankings with Jitter &amp; Normal Sampling</h1>
-<p>Below is a self-contained Python tutorial demonstrating how to add controlled randomness to ranking scores using Simple Jitter and Probabilistic Normal Sampling.</p>
-<hr>
-<h2 id="1-setup-and-sample-song-data">1. Setup and Sample Song Data</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> random
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- Generate Synthetic Song Data ---</span>
-</span></span><span style="display:flex;"><span>num_songs <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>  <span style="color:#75715e"># Candidate songs for our discovery playlist</span>
-</span></span><span style="display:flex;"><span>genres <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Indie Pop&#34;</span>, <span style="color:#e6db74">&#34;Electro Funk&#34;</span>, <span style="color:#e6db74">&#34;Ambient&#34;</span>, <span style="color:#e6db74">&#34;Folk Rock&#34;</span>, <span style="color:#e6db74">&#34;Lo-fi Beats&#34;</span>, <span style="color:#e6db74">&#34;Synthwave&#34;</span>]
-</span></span><span style="display:flex;"><span>subgenres <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Indie Pop&#34;</span>: [<span style="color:#e6db74">&#34;Dream Pop&#34;</span>, <span style="color:#e6db74">&#34;Bedroom Pop&#34;</span>],
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Electro Funk&#34;</span>: [<span style="color:#e6db74">&#34;Nu-Disco&#34;</span>],
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Ambient&#34;</span>: [<span style="color:#e6db74">&#34;Drone&#34;</span>, <span style="color:#e6db74">&#34;Chillout&#34;</span>],
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Folk Rock&#34;</span>: [<span style="color:#e6db74">&#34;Indie Folk&#34;</span>],
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Lo-fi Beats&#34;</span>: [<span style="color:#e6db74">&#34;Chillhop&#34;</span>],
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Synthwave&#34;</span>: [<span style="color:#e6db74">&#34;Retrowave&#34;</span>]
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>song_data <span style="color:#f92672">=</span> []
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(num_songs):
-</span></span><span style="display:flex;"><span>    genre <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>choice(genres)
-</span></span><span style="display:flex;"><span>    base_score <span style="color:#f92672">=</span> <span style="color:#ae81ff">60</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> genre <span style="color:#f92672">in</span> [<span style="color:#e6db74">&#34;Indie Pop&#34;</span>, <span style="color:#e6db74">&#34;Lo-fi Beats&#34;</span>]:
-</span></span><span style="display:flex;"><span>        base_score <span style="color:#f92672">+=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">35</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>        base_score <span style="color:#f92672">+=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">20</span>)
-</span></span><span style="display:flex;"><span>    user_match_score <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>clip(base_score <span style="color:#f92672">+</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>normal(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">8</span>), <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">100</span>)
-</span></span><span style="display:flex;"><span>    song_data<span style="color:#f92672">.</span>append({
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;SongID&#39;</span>: <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Song_</span><span style="color:#e6db74">{</span>i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#e6db74">:</span><span style="color:#e6db74">03</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Title&#39;</span>: <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>genre<span style="color:#e6db74">}</span><span style="color:#e6db74"> Track </span><span style="color:#e6db74">{</span>i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Artist&#39;</span>: <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Artist_</span><span style="color:#e6db74">{</span>np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">20</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Genre&#39;</span>: genre,
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;UserMatchScore&#39;</span>: round(user_match_score, <span style="color:#ae81ff">2</span>)
-</span></span><span style="display:flex;"><span>    })
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>songs_df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(song_data)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Sample Candidate Songs:&#34;</span>)
-</span></span><span style="display:flex;"><span>print(songs_df<span style="color:#f92672">.</span>head())
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Top 5 Songs (Deterministic by UserMatchScore):&#34;</span>)
-</span></span><span style="display:flex;"><span>print(songs_df<span style="color:#f92672">.</span>sort_values(<span style="color:#e6db74">&#39;UserMatchScore&#39;</span>, ascending<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)<span style="color:#f92672">.</span>head())
-</span></span></code></pre></div><h2 id="2-implementing-the-selection-functions">2. Implementing the Selection Functions</h2>
-<h3 id="a-simple-jitter-function">A. Simple Jitter Function</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">apply_simple_jitter_selection</span>(df_candidates, score_column,
-</span></span><span style="display:flex;"><span>                                  jc_value, jitter_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;positive_negative&#39;</span>,
-</span></span><span style="display:flex;"><span>                                  id_column<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;SongID&#39;</span>):
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> df_candidates<span style="color:#f92672">.</span>empty:
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> len(df_candidates) <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> df_candidates[id_column]<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">0</span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    temp_df <span style="color:#f92672">=</span> df_candidates<span style="color:#f92672">.</span>copy()
-</span></span><span style="display:flex;"><span>    max_score <span style="color:#f92672">=</span> temp_df[score_column]<span style="color:#f92672">.</span>max()
-</span></span><span style="display:flex;"><span>    min_score <span style="color:#f92672">=</span> temp_df[score_column]<span style="color:#f92672">.</span>min()
-</span></span><span style="display:flex;"><span>    score_range <span style="color:#f92672">=</span> max_score <span style="color:#f92672">-</span> min_score
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> score_range <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> jc_value <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
-</span></span><span style="display:flex;"><span>        n_rows <span style="color:#f92672">=</span> len(temp_df)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> jitter_type <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;positive_negative&#39;</span>:
-</span></span><span style="display:flex;"><span>            random_factors <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>uniform(<span style="color:#f92672">-</span><span style="color:#ae81ff">1.0</span>, <span style="color:#ae81ff">1.0</span>, size<span style="color:#f92672">=</span>n_rows)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> jitter_type <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;positive_only&#39;</span>:
-</span></span><span style="display:flex;"><span>            random_factors <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>rand(n_rows)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>            random_factors <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>zeros(n_rows)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        jitter_amount <span style="color:#f92672">=</span> random_factors <span style="color:#f92672">*</span> jc_value <span style="color:#f92672">*</span> score_range
-</span></span><span style="display:flex;"><span>        temp_df[<span style="color:#e6db74">&#39;Jittered_Score&#39;</span>] <span style="color:#f92672">=</span> temp_df[score_column] <span style="color:#f92672">+</span> jitter_amount
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>        temp_df[<span style="color:#e6db74">&#39;Jittered_Score&#39;</span>] <span style="color:#f92672">=</span> temp_df[score_column]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    max_jittered_score <span style="color:#f92672">=</span> temp_df[<span style="color:#e6db74">&#39;Jittered_Score&#39;</span>]<span style="color:#f92672">.</span>max()
-</span></span><span style="display:flex;"><span>    top_songs <span style="color:#f92672">=</span> temp_df[
-</span></span><span style="display:flex;"><span>        np<span style="color:#f92672">.</span>isclose(temp_df[<span style="color:#e6db74">&#39;Jittered_Score&#39;</span>], max_jittered_score)
-</span></span><span style="display:flex;"><span>    ][id_column]<span style="color:#f92672">.</span>tolist()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> random<span style="color:#f92672">.</span>choice(top_songs) <span style="color:#66d9ef">if</span> top_songs <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">None</span>
-</span></span></code></pre></div><h3 id="b-probabilistic-normal-sampling-function">B. Probabilistic Normal Sampling Function</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">apply_normal_sampling_selection</span>(df_candidates, score_column,
-</span></span><span style="display:flex;"><span>                                    sdc_value, id_column<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;SongID&#39;</span>):
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> df_candidates<span style="color:#f92672">.</span>empty:
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> len(df_candidates) <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> df_candidates[id_column]<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">0</span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    temp_df <span style="color:#f92672">=</span> df_candidates<span style="color:#f92672">.</span>copy()
-</span></span><span style="display:flex;"><span>    max_score <span style="color:#f92672">=</span> temp_df[score_column]<span style="color:#f92672">.</span>max()
-</span></span><span style="display:flex;"><span>    min_score <span style="color:#f92672">=</span> temp_df[score_column]<span style="color:#f92672">.</span>min()
-</span></span><span style="display:flex;"><span>    score_range <span style="color:#f92672">=</span> max_score <span style="color:#f92672">-</span> min_score
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    std_dev <span style="color:#f92672">=</span> max(<span style="color:#ae81ff">0</span>, sdc_value <span style="color:#f92672">*</span> score_range) <span style="color:#66d9ef">if</span> score_range <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> std_dev <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
-</span></span><span style="display:flex;"><span>        temp_df[<span style="color:#e6db74">&#39;Sampled_Score&#39;</span>] <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>normal(
-</span></span><span style="display:flex;"><span>            loc<span style="color:#f92672">=</span>temp_df[score_column],
-</span></span><span style="display:flex;"><span>            scale<span style="color:#f92672">=</span>std_dev
-</span></span><span style="display:flex;"><span>        )
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>        temp_df[<span style="color:#e6db74">&#39;Sampled_Score&#39;</span>] <span style="color:#f92672">=</span> temp_df[score_column]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    max_sampled_score <span style="color:#f92672">=</span> temp_df[<span style="color:#e6db74">&#39;Sampled_Score&#39;</span>]<span style="color:#f92672">.</span>max()
-</span></span><span style="display:flex;"><span>    top_songs <span style="color:#f92672">=</span> temp_df[
-</span></span><span style="display:flex;"><span>        np<span style="color:#f92672">.</span>isclose(temp_df[<span style="color:#e6db74">&#39;Sampled_Score&#39;</span>], max_sampled_score)
-</span></span><span style="display:flex;"><span>    ][id_column]<span style="color:#f92672">.</span>tolist()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> random<span style="color:#f92672">.</span>choice(top_songs) <span style="color:#66d9ef">if</span> top_songs <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">None</span>
-</span></span></code></pre></div><h2 id="3-running-a-small-simulation">3. Running a Small Simulation</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>N_PLAYLISTS_TO_SIMULATE <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
-</span></span><span style="display:flex;"><span>PLAYLIST_SIZE <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>TUTORIAL_JC <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>
-</span></span><span style="display:flex;"><span>TUTORIAL_JITTER_TYPE <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;positive_negative&#39;</span>
-</span></span><span style="display:flex;"><span>TUTORIAL_SDC <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>all_jitter_selections <span style="color:#f92672">=</span> []
-</span></span><span style="display:flex;"><span>all_normal_selections <span style="color:#f92672">=</span> []
-</span></span><span style="display:flex;"><span>candidate_songs_df <span style="color:#f92672">=</span> songs_df<span style="color:#f92672">.</span>copy()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(N_PLAYLISTS_TO_SIMULATE):
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(PLAYLIST_SIZE):
-</span></span><span style="display:flex;"><span>        selected_jitter <span style="color:#f92672">=</span> apply_simple_jitter_selection(
-</span></span><span style="display:flex;"><span>            candidate_songs_df, <span style="color:#e6db74">&#39;UserMatchScore&#39;</span>, TUTORIAL_JC, TUTORIAL_JITTER_TYPE
-</span></span><span style="display:flex;"><span>        )
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> selected_jitter:
-</span></span><span style="display:flex;"><span>            all_jitter_selections<span style="color:#f92672">.</span>append(selected_jitter)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(PLAYLIST_SIZE):
-</span></span><span style="display:flex;"><span>        selected_normal <span style="color:#f92672">=</span> apply_normal_sampling_selection(
-</span></span><span style="display:flex;"><span>            candidate_songs_df, <span style="color:#e6db74">&#39;UserMatchScore&#39;</span>, TUTORIAL_SDC
-</span></span><span style="display:flex;"><span>        )
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> selected_normal:
-</span></span><span style="display:flex;"><span>            all_normal_selections<span style="color:#f92672">.</span>append(selected_normal)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>jitter_counts <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series(all_jitter_selections)<span style="color:#f92672">.</span>value_counts(normalize<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
-</span></span><span style="display:flex;"><span>normal_counts <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series(all_normal_selections)<span style="color:#f92672">.</span>value_counts(normalize<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">--- Simple Jitter Selections (Top 10) ---&#34;</span>)
-</span></span><span style="display:flex;"><span>print(pd<span style="color:#f92672">.</span>merge(
-</span></span><span style="display:flex;"><span>    jitter_counts<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">10</span>)<span style="color:#f92672">.</span>rename(<span style="color:#e6db74">&#34;Prop_Jitter&#34;</span>),
-</span></span><span style="display:flex;"><span>    songs_df, left_index<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, right_on<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;SongID&#39;</span>
-</span></span><span style="display:flex;"><span>)[[<span style="color:#e6db74">&#39;SongID&#39;</span>,<span style="color:#e6db74">&#39;Title&#39;</span>,<span style="color:#e6db74">&#39;Genre&#39;</span>,<span style="color:#e6db74">&#39;UserMatchScore&#39;</span>,<span style="color:#e6db74">&#39;Prop_Jitter&#39;</span>]])
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">--- Normal Sampling Selections (Top 10) ---&#34;</span>)
-</span></span><span style="display:flex;"><span>print(pd<span style="color:#f92672">.</span>merge(
-</span></span><span style="display:flex;"><span>    normal_counts<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">10</span>)<span style="color:#f92672">.</span>rename(<span style="color:#e6db74">&#34;Prop_Normal&#34;</span>),
-</span></span><span style="display:flex;"><span>    songs_df, left_index<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, right_on<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;SongID&#39;</span>
-</span></span><span style="display:flex;"><span>)[[<span style="color:#e6db74">&#39;SongID&#39;</span>,<span style="color:#e6db74">&#39;Title&#39;</span>,<span style="color:#e6db74">&#39;Genre&#39;</span>,<span style="color:#e6db74">&#39;UserMatchScore&#39;</span>,<span style="color:#e6db74">&#39;Prop_Normal&#39;</span>]])
-</span></span></code></pre></div><h2 id="4-visualizing-the-diversity">4. Visualizing the Diversity</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Prepare genre distributions</span>
-</span></span><span style="display:flex;"><span>df_jitter <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>merge(jitter_counts<span style="color:#f92672">.</span>rename(<span style="color:#e6db74">&#34;Prob&#34;</span>), songs_df[[<span style="color:#e6db74">&#39;SongID&#39;</span>,<span style="color:#e6db74">&#39;Genre&#39;</span>]],
-</span></span><span style="display:flex;"><span>                     left_index<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, right_on<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;SongID&#39;</span>)
-</span></span><span style="display:flex;"><span>jitter_genre_dist <span style="color:#f92672">=</span> df_jitter<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#39;Genre&#39;</span>)[<span style="color:#e6db74">&#39;Prob&#39;</span>]<span style="color:#f92672">.</span>sum()<span style="color:#f92672">.</span>sort_values(ascending<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>df_normal <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>merge(normal_counts<span style="color:#f92672">.</span>rename(<span style="color:#e6db74">&#34;Prob&#34;</span>), songs_df[[<span style="color:#e6db74">&#39;SongID&#39;</span>,<span style="color:#e6db74">&#39;Genre&#39;</span>]],
-</span></span><span style="display:flex;"><span>                     left_index<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, right_on<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;SongID&#39;</span>)
-</span></span><span style="display:flex;"><span>normal_genre_dist <span style="color:#f92672">=</span> df_normal<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#39;Genre&#39;</span>)[<span style="color:#e6db74">&#39;Prob&#39;</span>]<span style="color:#f92672">.</span>sum()<span style="color:#f92672">.</span>sort_values(ascending<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Plotting</span>
-</span></span><span style="display:flex;"><span>fig, axes <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>subplots(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">14</span>, <span style="color:#ae81ff">6</span>))
-</span></span><span style="display:flex;"><span>jitter_genre_dist<span style="color:#f92672">.</span>plot(kind<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;bar&#39;</span>, ax<span style="color:#f92672">=</span>axes[<span style="color:#ae81ff">0</span>])
-</span></span><span style="display:flex;"><span>axes[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>set_title(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Simple Jitter (JC=</span><span style="color:#e6db74">{</span>TUTORIAL_JC<span style="color:#e6db74">}</span><span style="color:#e6db74">)&#39;</span>)
-</span></span><span style="display:flex;"><span>axes[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>set_ylabel(<span style="color:#e6db74">&#39;Selection Probability&#39;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>normal_genre_dist<span style="color:#f92672">.</span>plot(kind<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;bar&#39;</span>, ax<span style="color:#f92672">=</span>axes[<span style="color:#ae81ff">1</span>])
-</span></span><span style="display:flex;"><span>axes[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>set_title(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Normal Sampling (SDC=</span><span style="color:#e6db74">{</span>TUTORIAL_SDC<span style="color:#e6db74">}</span><span style="color:#e6db74">)&#39;</span>)
-</span></span><span style="display:flex;"><span>axes[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>set_ylabel(<span style="color:#e6db74">&#39;Selection Probability&#39;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>tight_layout()
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Deterministic baseline</span>
-</span></span><span style="display:flex;"><span>deterministic <span style="color:#f92672">=</span> songs_df<span style="color:#f92672">.</span>sort_values(<span style="color:#e6db74">&#39;UserMatchScore&#39;</span>, ascending<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)<span style="color:#f92672">.</span>head(
-</span></span><span style="display:flex;"><span>    N_PLAYLISTS_TO_SIMULATE <span style="color:#f92672">*</span> PLAYLIST_SIZE
-</span></span><span style="display:flex;"><span>)
-</span></span><span style="display:flex;"><span>deterministic_dist <span style="color:#f92672">=</span> deterministic[<span style="color:#e6db74">&#39;Genre&#39;</span>]<span style="color:#f92672">.</span>value_counts(normalize<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>figure(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">6</span>))
-</span></span><span style="display:flex;"><span>deterministic_dist<span style="color:#f92672">.</span>plot(kind<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;bar&#39;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Deterministic Top Scores&#39;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;Proportion&#39;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
-</span></span></code></pre></div>
-
-            
-            
-        </div>
-    </article>
-
-    </main>
-
-    
-        <footer>
-    
-    <p>&copy; 2025 Deepanshu Kandpal</p>
-</footer> 
-    
-</body>
-</html> 
+This experience highlighted a universal issue in ranked selections, leading us to generalize these techniques for broader application.</p><h2 id=our-case-study-crafting-a-discovery-weekly-playlist>Our Case Study: Crafting a &ldquo;Discovery Weekly&rdquo; Playlist</h2><p>Imagine we&rsquo;re building a feature like Spotify&rsquo;s &ldquo;Discover Weekly.&rdquo; We have a pool of newly released or under-the-radar songs. For a given user, our main recommendation engine has already calculated a <code>UserMatchScore</code> (0-100) for each song, indicating how well it fits their known taste profile.</p><p>If we always pick the songs with the top 10 <code>UserMatchScores</code>, the playlist might be highly relevant but could lack variety, potentially just offering more of what the user already listens to. We want to introduce songs that are still a good match but might be from slightly different sub-genres or a bit less obvious.</p><p>This is where our randomization techniques come in. We&rsquo;ll apply them to the <code>UserMatchScore</code>.</p><h2 id=two-simple-techniques-for-introducing-diversity>Two Simple Techniques for Introducing Diversity</h2><p>We explored two main methods:</p><ol><li><p><strong>Simple Jitter (Uniform Distribution Jitter):</strong></p><ul><li><em>Concept:</em> We take each song&rsquo;s <code>UserMatchScore</code> and add a small, random &ldquo;nudge&rdquo; to it. This nudge can be positive-only (only boosting scores) or positive-negative (allowing scores to be randomly increased or decreased).</li><li><em>How it works:</em><ul><li>We define a <strong>Jitter_Coefficient (JC)</strong>.</li><li>For the current set of candidate songs, we find the range of their <code>UserMatchScores</code> (Max Score - Min Score).</li><li>The maximum possible nudge is <code>JC * score_range</code>.</li><li>For each song, a random factor (e.g., between -1 and 1 for positive-negative jitter) is multiplied by this maximum nudge to get the actual jitter amount.</li><li><code>Jittered_Score = UserMatchScore + Actual_Jitter_Amount</code>.</li><li>The song with the highest <code>Jittered_Score</code> is selected.</li></ul></li><li><em>Effect:</em> This gives a chance for songs with slightly lower <code>UserMatchScores</code> to be selected if they get a &ldquo;lucky&rdquo; positive nudge while a higher-scoring song gets an &ldquo;unlucky&rdquo; negative nudge (or a smaller positive one).</li></ul></li><li><p><strong>Probabilistic Normal Sampling:</strong></p><ul><li><em>Concept:</em> We treat each song&rsquo;s <code>UserMatchScore</code> not as a fixed point, but as the average (mean) of a bell curve (Normal distribution) representing its potential &ldquo;appeal&rdquo; in any given instance.</li><li><em>How it works:</em><ul><li>We define a <strong>Standard_Deviation_Coefficient (SDC)</strong>.</li><li>The standard deviation (<code>std_dev</code>) for each song&rsquo;s Normal distribution is <code>SDC * score_range</code> (score range of current candidates).</li><li>For each song, we draw one random sample from its specific Normal distribution: <code>Sampled_Score = random_sample_from_Normal(mean=UserMatchScore, std_dev=std_dev)</code>.</li><li>The song with the highest <code>Sampled_Score</code> is selected.</li></ul></li><li><em>Effect:</em> Songs with higher <code>UserMatchScores</code> are statistically more likely to produce the highest sample, but there&rsquo;s a &ldquo;smoother&rdquo; probability of songs with slightly lower scores winning. The chance of an upset depends on how much the bell curves of different songs overlap.</li></ul></li></ol><h2 id=simulating-the-impact>Simulating the Impact</h2><p>To see these techniques in action, we ran simulations. For a chosen set of candidate songs for our &ldquo;Discovery Weekly,&rdquo; we repeatedly selected songs using different <strong>JC</strong> and <strong>SDC</strong> values and tracked:</p><ul><li>How often the original #1 song (by <code>UserMatchScore</code>) was still selected.</li><li>How often the selection stayed within the Top-K original ranks (e.g., Top-10).</li><li>How many different songs were selected over time (a measure of diversity/exploration).</li><li>What proportion of the available candidate songs were &ldquo;touched&rdquo; by the selection process.</li></ul><p><em>(Here, you would embed your generic plots, similar to the ones we discussed, showing lines for &ldquo;Avg Prob(Select Top 1)&rdquo; decreasing and &ldquo;Avg Distinct Items Selected&rdquo; increasing as JC/SDC increases. Label axes generically, e.g., &ldquo;Randomization Coefficient (JC/SDC)&rdquo; and &ldquo;Selection Probability&rdquo; or &ldquo;Number of Distinct Items&rdquo;.)</em></p><p><strong>Example Plot Caption:</strong> <em>Fig 1: As the randomization coefficient (JC or SDC) increases, the probability of selecting the deterministically top-ranked item typically decreases (blue line), while the number of unique items selected over many trials tends to increase (green line), indicating greater exploration.</em></p><h2 id=key-findings-from-simulation>Key Findings from Simulation</h2><p>Our simulations (even with simplified scores) consistently showed:</p><ul><li><strong>Increased Diversity:</strong> Both methods successfully increased the variety of items selected compared to a purely deterministic approach.</li><li><strong>Controllability:</strong> The <strong>JC</strong> and <strong>SDC</strong> parameters provided effective control over the trade-off. Small values resulted in minor deviations from the top ranks, while larger values promoted more significant exploration.</li><li><strong>Simple Jitter (positive_negative type):</strong> Tended to explore more broadly for a given relative coefficient, sometimes selecting items further down the deterministic rank if their &ldquo;luck factor&rdquo; was high.</li><li><strong>Normal Sampling:</strong> Provided a &ldquo;smoother&rdquo; exploration, where items with scores closer to the top had a proportionally better chance of being selected during an &ldquo;upset&rdquo; than items ranked much lower. The probability of selection decreased more gradually.</li><li>The &ldquo;best&rdquo; coefficient depends on the specific goals: if aggressive discovery is desired, a higher coefficient might be chosen. If maintaining very high relevance is paramount, a lower coefficient is better.</li></ul><h2 id=benefits--considerations>Benefits & Considerations</h2><p><strong>Pros</strong> of these simple randomization techniques:</p><ul><li><strong>Simplicity:</strong> Easy to understand and implement on top of existing ranking scores.</li><li><strong>Effective Diversity Boost:</strong> Can significantly improve the variety of recommendations.</li><li><strong>Improved User Experience:</strong> Can reduce recommendation fatigue and increase serendipitous discoveries.</li><li><strong>Low Computational Cost:</strong> Adds minimal overhead to the selection process.</li></ul><p><strong>Cons/Considerations:</strong></p><ul><li><strong>Not Adaptive:</strong> These methods don&rsquo;t &ldquo;learn&rdquo; from user feedback (e.g., if a jitter-selected song is consistently skipped). They rely on the quality of the underlying <code>DeterministicScore</code>.</li><li><strong>Offline Tuning:</strong> The <strong>JC</strong> or <strong>SDC</strong> parameter needs to be tuned, often through offline simulations like ours, to find the right balance for your specific application.</li><li><strong>Potential for &ldquo;Sub-optimal&rdquo; (by one metric):</strong> By design, you will sometimes recommend items that aren&rsquo;t the absolute #1 by your primary deterministic score. This is the trade-off for diversity.</li></ul><h2 id=conclusion-embrace-the-controlled-chaos>Conclusion: Embrace the (Controlled) Chaos!</h2><p>Always showing the &ldquo;best&rdquo; isn&rsquo;t always best for long-term user engagement or content discovery. Introducing a small, controlled amount of randomness, like the Simple Jitter or Probabilistic Normal Sampling techniques we explored, can be a surprisingly powerful and easy-to-implement strategy. It helps break out of predictability, surfaces a wider range of relevant items, and can make your recommendation system feel more dynamic and intelligent.</p><p>So, next time you&rsquo;re building a ranking system, consider adding a little &ldquo;jitter bug&rdquo; – your users (and maybe even your content providers) might thank you for the delightful new discoveries!</p><h1 id=tutorial-adding-diversity-to-rankings-with-jitter--normal-sampling>Tutorial: Adding Diversity to Rankings with Jitter & Normal Sampling</h1><p>Below is a self-contained Python tutorial demonstrating how to add controlled randomness to ranking scores using Simple Jitter and Probabilistic Normal Sampling.</p><hr><h2 id=1-setup-and-sample-song-data>1. Setup and Sample Song Data</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> pandas <span style=color:#66d9ef>as</span> pd
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> numpy <span style=color:#66d9ef>as</span> np
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> random
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> matplotlib.pyplot <span style=color:#66d9ef>as</span> plt
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># --- Generate Synthetic Song Data ---</span>
+</span></span><span style=display:flex><span>num_songs <span style=color:#f92672>=</span> <span style=color:#ae81ff>100</span>  <span style=color:#75715e># Candidate songs for our discovery playlist</span>
+</span></span><span style=display:flex><span>genres <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;Indie Pop&#34;</span>, <span style=color:#e6db74>&#34;Electro Funk&#34;</span>, <span style=color:#e6db74>&#34;Ambient&#34;</span>, <span style=color:#e6db74>&#34;Folk Rock&#34;</span>, <span style=color:#e6db74>&#34;Lo-fi Beats&#34;</span>, <span style=color:#e6db74>&#34;Synthwave&#34;</span>]
+</span></span><span style=display:flex><span>subgenres <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;Indie Pop&#34;</span>: [<span style=color:#e6db74>&#34;Dream Pop&#34;</span>, <span style=color:#e6db74>&#34;Bedroom Pop&#34;</span>],
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;Electro Funk&#34;</span>: [<span style=color:#e6db74>&#34;Nu-Disco&#34;</span>],
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;Ambient&#34;</span>: [<span style=color:#e6db74>&#34;Drone&#34;</span>, <span style=color:#e6db74>&#34;Chillout&#34;</span>],
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;Folk Rock&#34;</span>: [<span style=color:#e6db74>&#34;Indie Folk&#34;</span>],
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;Lo-fi Beats&#34;</span>: [<span style=color:#e6db74>&#34;Chillhop&#34;</span>],
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;Synthwave&#34;</span>: [<span style=color:#e6db74>&#34;Retrowave&#34;</span>]
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>song_data <span style=color:#f92672>=</span> []
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(num_songs):
+</span></span><span style=display:flex><span>    genre <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>random<span style=color:#f92672>.</span>choice(genres)
+</span></span><span style=display:flex><span>    base_score <span style=color:#f92672>=</span> <span style=color:#ae81ff>60</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> genre <span style=color:#f92672>in</span> [<span style=color:#e6db74>&#34;Indie Pop&#34;</span>, <span style=color:#e6db74>&#34;Lo-fi Beats&#34;</span>]:
+</span></span><span style=display:flex><span>        base_score <span style=color:#f92672>+=</span> np<span style=color:#f92672>.</span>random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>20</span>, <span style=color:#ae81ff>35</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>else</span>:
+</span></span><span style=display:flex><span>        base_score <span style=color:#f92672>+=</span> np<span style=color:#f92672>.</span>random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>20</span>)
+</span></span><span style=display:flex><span>    user_match_score <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>clip(base_score <span style=color:#f92672>+</span> np<span style=color:#f92672>.</span>random<span style=color:#f92672>.</span>normal(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>8</span>), <span style=color:#ae81ff>40</span>, <span style=color:#ae81ff>100</span>)
+</span></span><span style=display:flex><span>    song_data<span style=color:#f92672>.</span>append({
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#39;SongID&#39;</span>: <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Song_</span><span style=color:#e6db74>{</span>i<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span><span style=color:#e6db74>:</span><span style=color:#e6db74>03</span><span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#39;Title&#39;</span>: <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>{</span>genre<span style=color:#e6db74>}</span><span style=color:#e6db74> Track </span><span style=color:#e6db74>{</span>i<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span><span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#39;Artist&#39;</span>: <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Artist_</span><span style=color:#e6db74>{</span>np<span style=color:#f92672>.</span>random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>20</span>)<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#39;Genre&#39;</span>: genre,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#39;UserMatchScore&#39;</span>: round(user_match_score, <span style=color:#ae81ff>2</span>)
+</span></span><span style=display:flex><span>    })
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>songs_df <span style=color:#f92672>=</span> pd<span style=color:#f92672>.</span>DataFrame(song_data)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>print(<span style=color:#e6db74>&#34;Sample Candidate Songs:&#34;</span>)
+</span></span><span style=display:flex><span>print(songs_df<span style=color:#f92672>.</span>head())
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>print(<span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>Top 5 Songs (Deterministic by UserMatchScore):&#34;</span>)
+</span></span><span style=display:flex><span>print(songs_df<span style=color:#f92672>.</span>sort_values(<span style=color:#e6db74>&#39;UserMatchScore&#39;</span>, ascending<span style=color:#f92672>=</span><span style=color:#66d9ef>False</span>)<span style=color:#f92672>.</span>head())
+</span></span></code></pre></div><h2 id=2-implementing-the-selection-functions>2. Implementing the Selection Functions</h2><h3 id=a-simple-jitter-function>A. Simple Jitter Function</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>apply_simple_jitter_selection</span>(df_candidates, score_column,
+</span></span><span style=display:flex><span>                                  jc_value, jitter_type<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;positive_negative&#39;</span>,
+</span></span><span style=display:flex><span>                                  id_column<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;SongID&#39;</span>):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> df_candidates<span style=color:#f92672>.</span>empty:
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>None</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> len(df_candidates) <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>:
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> df_candidates[id_column]<span style=color:#f92672>.</span>iloc[<span style=color:#ae81ff>0</span>]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    temp_df <span style=color:#f92672>=</span> df_candidates<span style=color:#f92672>.</span>copy()
+</span></span><span style=display:flex><span>    max_score <span style=color:#f92672>=</span> temp_df[score_column]<span style=color:#f92672>.</span>max()
+</span></span><span style=display:flex><span>    min_score <span style=color:#f92672>=</span> temp_df[score_column]<span style=color:#f92672>.</span>min()
+</span></span><span style=display:flex><span>    score_range <span style=color:#f92672>=</span> max_score <span style=color:#f92672>-</span> min_score
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> score_range <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>and</span> jc_value <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span>:
+</span></span><span style=display:flex><span>        n_rows <span style=color:#f92672>=</span> len(temp_df)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> jitter_type <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;positive_negative&#39;</span>:
+</span></span><span style=display:flex><span>            random_factors <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>random<span style=color:#f92672>.</span>uniform(<span style=color:#f92672>-</span><span style=color:#ae81ff>1.0</span>, <span style=color:#ae81ff>1.0</span>, size<span style=color:#f92672>=</span>n_rows)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>elif</span> jitter_type <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;positive_only&#39;</span>:
+</span></span><span style=display:flex><span>            random_factors <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>random<span style=color:#f92672>.</span>rand(n_rows)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>else</span>:
+</span></span><span style=display:flex><span>            random_factors <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>zeros(n_rows)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        jitter_amount <span style=color:#f92672>=</span> random_factors <span style=color:#f92672>*</span> jc_value <span style=color:#f92672>*</span> score_range
+</span></span><span style=display:flex><span>        temp_df[<span style=color:#e6db74>&#39;Jittered_Score&#39;</span>] <span style=color:#f92672>=</span> temp_df[score_column] <span style=color:#f92672>+</span> jitter_amount
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>else</span>:
+</span></span><span style=display:flex><span>        temp_df[<span style=color:#e6db74>&#39;Jittered_Score&#39;</span>] <span style=color:#f92672>=</span> temp_df[score_column]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    max_jittered_score <span style=color:#f92672>=</span> temp_df[<span style=color:#e6db74>&#39;Jittered_Score&#39;</span>]<span style=color:#f92672>.</span>max()
+</span></span><span style=display:flex><span>    top_songs <span style=color:#f92672>=</span> temp_df[
+</span></span><span style=display:flex><span>        np<span style=color:#f92672>.</span>isclose(temp_df[<span style=color:#e6db74>&#39;Jittered_Score&#39;</span>], max_jittered_score)
+</span></span><span style=display:flex><span>    ][id_column]<span style=color:#f92672>.</span>tolist()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> random<span style=color:#f92672>.</span>choice(top_songs) <span style=color:#66d9ef>if</span> top_songs <span style=color:#66d9ef>else</span> <span style=color:#66d9ef>None</span>
+</span></span></code></pre></div><h3 id=b-probabilistic-normal-sampling-function>B. Probabilistic Normal Sampling Function</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>apply_normal_sampling_selection</span>(df_candidates, score_column,
+</span></span><span style=display:flex><span>                                    sdc_value, id_column<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;SongID&#39;</span>):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> df_candidates<span style=color:#f92672>.</span>empty:
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>None</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> len(df_candidates) <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>:
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> df_candidates[id_column]<span style=color:#f92672>.</span>iloc[<span style=color:#ae81ff>0</span>]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    temp_df <span style=color:#f92672>=</span> df_candidates<span style=color:#f92672>.</span>copy()
+</span></span><span style=display:flex><span>    max_score <span style=color:#f92672>=</span> temp_df[score_column]<span style=color:#f92672>.</span>max()
+</span></span><span style=display:flex><span>    min_score <span style=color:#f92672>=</span> temp_df[score_column]<span style=color:#f92672>.</span>min()
+</span></span><span style=display:flex><span>    score_range <span style=color:#f92672>=</span> max_score <span style=color:#f92672>-</span> min_score
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    std_dev <span style=color:#f92672>=</span> max(<span style=color:#ae81ff>0</span>, sdc_value <span style=color:#f92672>*</span> score_range) <span style=color:#66d9ef>if</span> score_range <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span> <span style=color:#66d9ef>else</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> std_dev <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span>:
+</span></span><span style=display:flex><span>        temp_df[<span style=color:#e6db74>&#39;Sampled_Score&#39;</span>] <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>random<span style=color:#f92672>.</span>normal(
+</span></span><span style=display:flex><span>            loc<span style=color:#f92672>=</span>temp_df[score_column],
+</span></span><span style=display:flex><span>            scale<span style=color:#f92672>=</span>std_dev
+</span></span><span style=display:flex><span>        )
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>else</span>:
+</span></span><span style=display:flex><span>        temp_df[<span style=color:#e6db74>&#39;Sampled_Score&#39;</span>] <span style=color:#f92672>=</span> temp_df[score_column]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    max_sampled_score <span style=color:#f92672>=</span> temp_df[<span style=color:#e6db74>&#39;Sampled_Score&#39;</span>]<span style=color:#f92672>.</span>max()
+</span></span><span style=display:flex><span>    top_songs <span style=color:#f92672>=</span> temp_df[
+</span></span><span style=display:flex><span>        np<span style=color:#f92672>.</span>isclose(temp_df[<span style=color:#e6db74>&#39;Sampled_Score&#39;</span>], max_sampled_score)
+</span></span><span style=display:flex><span>    ][id_column]<span style=color:#f92672>.</span>tolist()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> random<span style=color:#f92672>.</span>choice(top_songs) <span style=color:#66d9ef>if</span> top_songs <span style=color:#66d9ef>else</span> <span style=color:#66d9ef>None</span>
+</span></span></code></pre></div><h2 id=3-running-a-small-simulation>3. Running a Small Simulation</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>
+</span></span><span style=display:flex><span>N_PLAYLISTS_TO_SIMULATE <span style=color:#f92672>=</span> <span style=color:#ae81ff>100</span>
+</span></span><span style=display:flex><span>PLAYLIST_SIZE <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>TUTORIAL_JC <span style=color:#f92672>=</span> <span style=color:#ae81ff>0.7</span>
+</span></span><span style=display:flex><span>TUTORIAL_JITTER_TYPE <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;positive_negative&#39;</span>
+</span></span><span style=display:flex><span>TUTORIAL_SDC <span style=color:#f92672>=</span> <span style=color:#ae81ff>0.3</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>all_jitter_selections <span style=color:#f92672>=</span> []
+</span></span><span style=display:flex><span>all_normal_selections <span style=color:#f92672>=</span> []
+</span></span><span style=display:flex><span>candidate_songs_df <span style=color:#f92672>=</span> songs_df<span style=color:#f92672>.</span>copy()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(N_PLAYLISTS_TO_SIMULATE):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(PLAYLIST_SIZE):
+</span></span><span style=display:flex><span>        selected_jitter <span style=color:#f92672>=</span> apply_simple_jitter_selection(
+</span></span><span style=display:flex><span>            candidate_songs_df, <span style=color:#e6db74>&#39;UserMatchScore&#39;</span>, TUTORIAL_JC, TUTORIAL_JITTER_TYPE
+</span></span><span style=display:flex><span>        )
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> selected_jitter:
+</span></span><span style=display:flex><span>            all_jitter_selections<span style=color:#f92672>.</span>append(selected_jitter)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(PLAYLIST_SIZE):
+</span></span><span style=display:flex><span>        selected_normal <span style=color:#f92672>=</span> apply_normal_sampling_selection(
+</span></span><span style=display:flex><span>            candidate_songs_df, <span style=color:#e6db74>&#39;UserMatchScore&#39;</span>, TUTORIAL_SDC
+</span></span><span style=display:flex><span>        )
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> selected_normal:
+</span></span><span style=display:flex><span>            all_normal_selections<span style=color:#f92672>.</span>append(selected_normal)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>jitter_counts <span style=color:#f92672>=</span> pd<span style=color:#f92672>.</span>Series(all_jitter_selections)<span style=color:#f92672>.</span>value_counts(normalize<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>)
+</span></span><span style=display:flex><span>normal_counts <span style=color:#f92672>=</span> pd<span style=color:#f92672>.</span>Series(all_normal_selections)<span style=color:#f92672>.</span>value_counts(normalize<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>print(<span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>--- Simple Jitter Selections (Top 10) ---&#34;</span>)
+</span></span><span style=display:flex><span>print(pd<span style=color:#f92672>.</span>merge(
+</span></span><span style=display:flex><span>    jitter_counts<span style=color:#f92672>.</span>head(<span style=color:#ae81ff>10</span>)<span style=color:#f92672>.</span>rename(<span style=color:#e6db74>&#34;Prop_Jitter&#34;</span>),
+</span></span><span style=display:flex><span>    songs_df, left_index<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>, right_on<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;SongID&#39;</span>
+</span></span><span style=display:flex><span>)[[<span style=color:#e6db74>&#39;SongID&#39;</span>,<span style=color:#e6db74>&#39;Title&#39;</span>,<span style=color:#e6db74>&#39;Genre&#39;</span>,<span style=color:#e6db74>&#39;UserMatchScore&#39;</span>,<span style=color:#e6db74>&#39;Prop_Jitter&#39;</span>]])
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>print(<span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>--- Normal Sampling Selections (Top 10) ---&#34;</span>)
+</span></span><span style=display:flex><span>print(pd<span style=color:#f92672>.</span>merge(
+</span></span><span style=display:flex><span>    normal_counts<span style=color:#f92672>.</span>head(<span style=color:#ae81ff>10</span>)<span style=color:#f92672>.</span>rename(<span style=color:#e6db74>&#34;Prop_Normal&#34;</span>),
+</span></span><span style=display:flex><span>    songs_df, left_index<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>, right_on<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;SongID&#39;</span>
+</span></span><span style=display:flex><span>)[[<span style=color:#e6db74>&#39;SongID&#39;</span>,<span style=color:#e6db74>&#39;Title&#39;</span>,<span style=color:#e6db74>&#39;Genre&#39;</span>,<span style=color:#e6db74>&#39;UserMatchScore&#39;</span>,<span style=color:#e6db74>&#39;Prop_Normal&#39;</span>]])
+</span></span></code></pre></div><h2 id=4-visualizing-the-diversity>4. Visualizing the Diversity</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#75715e># Prepare genre distributions</span>
+</span></span><span style=display:flex><span>df_jitter <span style=color:#f92672>=</span> pd<span style=color:#f92672>.</span>merge(jitter_counts<span style=color:#f92672>.</span>rename(<span style=color:#e6db74>&#34;Prob&#34;</span>), songs_df[[<span style=color:#e6db74>&#39;SongID&#39;</span>,<span style=color:#e6db74>&#39;Genre&#39;</span>]],
+</span></span><span style=display:flex><span>                     left_index<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>, right_on<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;SongID&#39;</span>)
+</span></span><span style=display:flex><span>jitter_genre_dist <span style=color:#f92672>=</span> df_jitter<span style=color:#f92672>.</span>groupby(<span style=color:#e6db74>&#39;Genre&#39;</span>)[<span style=color:#e6db74>&#39;Prob&#39;</span>]<span style=color:#f92672>.</span>sum()<span style=color:#f92672>.</span>sort_values(ascending<span style=color:#f92672>=</span><span style=color:#66d9ef>False</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>df_normal <span style=color:#f92672>=</span> pd<span style=color:#f92672>.</span>merge(normal_counts<span style=color:#f92672>.</span>rename(<span style=color:#e6db74>&#34;Prob&#34;</span>), songs_df[[<span style=color:#e6db74>&#39;SongID&#39;</span>,<span style=color:#e6db74>&#39;Genre&#39;</span>]],
+</span></span><span style=display:flex><span>                     left_index<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>, right_on<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;SongID&#39;</span>)
+</span></span><span style=display:flex><span>normal_genre_dist <span style=color:#f92672>=</span> df_normal<span style=color:#f92672>.</span>groupby(<span style=color:#e6db74>&#39;Genre&#39;</span>)[<span style=color:#e6db74>&#39;Prob&#39;</span>]<span style=color:#f92672>.</span>sum()<span style=color:#f92672>.</span>sort_values(ascending<span style=color:#f92672>=</span><span style=color:#66d9ef>False</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Plotting</span>
+</span></span><span style=display:flex><span>fig, axes <span style=color:#f92672>=</span> plt<span style=color:#f92672>.</span>subplots(<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>2</span>, figsize<span style=color:#f92672>=</span>(<span style=color:#ae81ff>14</span>, <span style=color:#ae81ff>6</span>))
+</span></span><span style=display:flex><span>jitter_genre_dist<span style=color:#f92672>.</span>plot(kind<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;bar&#39;</span>, ax<span style=color:#f92672>=</span>axes[<span style=color:#ae81ff>0</span>])
+</span></span><span style=display:flex><span>axes[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>set_title(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;Simple Jitter (JC=</span><span style=color:#e6db74>{</span>TUTORIAL_JC<span style=color:#e6db74>}</span><span style=color:#e6db74>)&#39;</span>)
+</span></span><span style=display:flex><span>axes[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>set_ylabel(<span style=color:#e6db74>&#39;Selection Probability&#39;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>normal_genre_dist<span style=color:#f92672>.</span>plot(kind<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;bar&#39;</span>, ax<span style=color:#f92672>=</span>axes[<span style=color:#ae81ff>1</span>])
+</span></span><span style=display:flex><span>axes[<span style=color:#ae81ff>1</span>]<span style=color:#f92672>.</span>set_title(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;Normal Sampling (SDC=</span><span style=color:#e6db74>{</span>TUTORIAL_SDC<span style=color:#e6db74>}</span><span style=color:#e6db74>)&#39;</span>)
+</span></span><span style=display:flex><span>axes[<span style=color:#ae81ff>1</span>]<span style=color:#f92672>.</span>set_ylabel(<span style=color:#e6db74>&#39;Selection Probability&#39;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>plt<span style=color:#f92672>.</span>tight_layout()
+</span></span><span style=display:flex><span>plt<span style=color:#f92672>.</span>show()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Deterministic baseline</span>
+</span></span><span style=display:flex><span>deterministic <span style=color:#f92672>=</span> songs_df<span style=color:#f92672>.</span>sort_values(<span style=color:#e6db74>&#39;UserMatchScore&#39;</span>, ascending<span style=color:#f92672>=</span><span style=color:#66d9ef>False</span>)<span style=color:#f92672>.</span>head(
+</span></span><span style=display:flex><span>    N_PLAYLISTS_TO_SIMULATE <span style=color:#f92672>*</span> PLAYLIST_SIZE
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>deterministic_dist <span style=color:#f92672>=</span> deterministic[<span style=color:#e6db74>&#39;Genre&#39;</span>]<span style=color:#f92672>.</span>value_counts(normalize<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>plt<span style=color:#f92672>.</span>figure(figsize<span style=color:#f92672>=</span>(<span style=color:#ae81ff>7</span>, <span style=color:#ae81ff>6</span>))
+</span></span><span style=display:flex><span>deterministic_dist<span style=color:#f92672>.</span>plot(kind<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;bar&#39;</span>)
+</span></span><span style=display:flex><span>plt<span style=color:#f92672>.</span>title(<span style=color:#e6db74>&#39;Deterministic Top Scores&#39;</span>)
+</span></span><span style=display:flex><span>plt<span style=color:#f92672>.</span>ylabel(<span style=color:#e6db74>&#39;Proportion&#39;</span>)
+</span></span><span style=display:flex><span>plt<span style=color:#f92672>.</span>show()
+</span></span></code></pre></div></div></article></main><footer><p>&copy; 2025 Deepanshu Kandpal</p></footer></body></html>
