@@ -12,7 +12,10 @@
 &lt;/ul>
 &lt;h2 id="the-ml-lifecycle-stages-the-pit-stops-in-the-loop">The ML Lifecycle Stages (The &amp;ldquo;Pit Stops&amp;rdquo; in the Loop)&lt;/h2>
 &lt;p>&lt;strong>(See Figure 1-1 for visual representation)&lt;/strong>
-&lt;img src="https://deepskandpal.github.io/bookshelf/reliable-ml/image.png" alt="image">&lt;/p></description></item><item><title>Chapter 1: Overview of Machine Learning Systems</title><link>https://deepskandpal.github.io/bookshelf/design-ml-system/chapter-1/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/design-ml-system/chapter-1/</guid><description>&lt;p>&lt;a href="https://aistudio.google.com/prompts/19Kbu6lIbeuASE0ER7Hc3puDMRZYY6_Z4">Prompt&lt;/a>&lt;/p>
+&lt;figure>&lt;img src="https://deepskandpal.github.io/bookshelf/reliable-ml/image.png"
+ alt="image" width="750">
+&lt;/figure>
+&lt;/p></description></item><item><title>Chapter 1: Overview of Machine Learning Systems</title><link>https://deepskandpal.github.io/bookshelf/design-ml-system/chapter-1/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/design-ml-system/chapter-1/</guid><description>&lt;p>&lt;a href="https://aistudio.google.com/prompts/19Kbu6lIbeuASE0ER7Hc3puDMRZYY6_Z4">Prompt&lt;/a>&lt;/p>
 &lt;p>The chapter opens with a great example: Google Translate&amp;rsquo;s multilingual neural machine translation system back in 2016. This was a landmark – deep learning making a massive, tangible impact at scale. It showed the world the power of modern ML.&lt;/p>
 &lt;p>Since then, as the book says, ML has &amp;ldquo;found its way into almost every aspect of our lives.&amp;rdquo; This is true. At FAANG, we see this daily – from the recommendations you get, to how your photos are enhanced, to how we optimize our data centers.&lt;/p></description></item><item><title>Chapter 1: The Machine Learning Landscape</title><link>https://deepskandpal.github.io/bookshelf/hands-on-ml/chapter-1/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-ml/chapter-1/</guid><description>&lt;h1 id="notes-for-chapter-1">Notes for Chapter 1&lt;/h1>
 &lt;p>This chapter introduces the basics of Machine Learning.&lt;/p>

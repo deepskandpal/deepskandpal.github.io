@@ -12,4 +12,7 @@
 &lt;/ul>
 &lt;h2 id="the-ml-lifecycle-stages-the-pit-stops-in-the-loop">The ML Lifecycle Stages (The &amp;ldquo;Pit Stops&amp;rdquo; in the Loop)&lt;/h2>
 &lt;p>&lt;strong>(See Figure 1-1 for visual representation)&lt;/strong>
-&lt;img src="https://deepskandpal.github.io/bookshelf/reliable-ml/image.png" alt="image">&lt;/p></description></item></channel></rss>
+&lt;figure>&lt;img src="https://deepskandpal.github.io/bookshelf/reliable-ml/image.png"
+ alt="image" width="750">
+&lt;/figure>
+&lt;/p></description></item></channel></rss>
