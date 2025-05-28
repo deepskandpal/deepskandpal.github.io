@@ -840,28 +840,26 @@ footer p {
 
 /* Basic Table Styling */
 .post-content table {
-  width: 100%; /* Make table take full width */
-  border-collapse: collapse; /* Collapse borders into a single line */
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  font-size: 0.9em; /* Slightly smaller font for tables */
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    font-size: 0.9rem; /* Smaller font for tables */
 }
 
 .post-content th,
 .post-content td {
-  border: 1px solid #ddd; /* Light grey border */
-  padding: 8px 12px; /* Add some padding */
-  text-align: left; /* Align text to the left */
-  vertical-align: top; /* Align content to the top */
+    border: 2px solid #aaa; /* Darker and thicker border */
+    padding: 8px;
+    text-align: left;
 }
 
 .post-content th {
-  background-color: #f2f2f2; /* Light grey background for headers */
-  font-weight: bold;
+    background-color: #f2f2f2; /* Light grey background for headers */
+    font-weight: bold;
 }
 
 .post-content tr:nth-child(even) {
-  /* background-color: #f9f9f9; */ /* Optional: subtle striping */
+    /* background-color: #f9f9f9; */ /* Optional: subtle striping */
 }
 
 /* Ensure table respects container width */
