@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maths on 404EngineerNotFound</title>
+    <link>http://localhost:1313/categories/maths/</link>
+    <description>Recent content in Maths on 404EngineerNotFound</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 May 2025 21:45:19 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/maths/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linear Done Right</title>
+      <link>http://localhost:1313/bookshelf/linear-done-right/</link>
+      <pubDate>Thu, 29 May 2025 21:45:19 +0530</pubDate>
+      <guid>http://localhost:1313/bookshelf/linear-done-right/</guid>
+      <description>&lt;h1 id=&#34;notes--summary-for-the-book&#34;&gt;Notes / Summary for the Book&lt;/h1&gt;&#xA;&lt;p&gt;(Your general notes or summary about the book go here.&#xA;For chapter-specific notes, create separate .md files within this book&amp;rsquo;s folder, e.g., chapter-1.md, introduction.md etc.&#xA;These will be automatically listed on the book&amp;rsquo;s page.)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
