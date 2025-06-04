@@ -19,7 +19,7 @@
 &lt;h2 id="array-boot-camp-reordering-array-entries-page-1">Array Boot Camp: Reordering Array Entries (Page 1)&lt;/h2>
 &lt;p>The boot camp problem is a fantastic introduction to &lt;strong>in-place array manipulation using multiple pointers&lt;/strong>.&lt;/p></description></item><item><title>Chapter 15: Recursion</title><link>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-15/</link><pubDate>Fri, 23 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-15/</guid><description>&lt;h1 id="recursion">Recursion&lt;/h1>
 &lt;p>&lt;strong>Core Idea of Recursion&lt;/strong>: At its simplest, recursion means a function calls itself to solve a smaller version of the same problem.&lt;/p>
-&lt;p>&lt;a href="https://aistudio.google.com/prompts/1iT6e8TzouWLkMJqnlyvEmF3SBLGpkJJr">Prompt Link&lt;/a>(my private discussion for this chapter using ai studio and this chapters main system prompt)&lt;/p>
+&lt;p>&lt;a href="https://aistudio.google.com/prompts/1iT6e8TzouWLkMJqnlyvEmF3SBLGpkJJr">Prompt Link&lt;/a>(my private discussion for this chapter using ai studio and this chapters main system prompt along with the pdf of this chapter)&lt;/p>
 &lt;p>Two Key Ingredients :&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Base Cases&lt;/strong>: These are the simplest instances of the problem that the function can solve directly, without further recursion.
