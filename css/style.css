@@ -49,9 +49,9 @@ nav ul li a:hover {
 }
 
 main {
-    max-width: 800px;
+    max-width: 100%; /* Allow main to span wider */
     margin: 2rem auto;
-    padding: 0 2rem;
+    padding: 0; /* Remove horizontal padding, rely on wrapper */
 }
 
 section {
@@ -898,4 +898,123 @@ footer p {
 .book-single .chapter-notes ul li a:hover {
     text-decoration: underline;
     color: var(--hover-color);
+}
+
+/*--------------------------------------------------------------
+# Article Navigation Sidebar
+--------------------------------------------------------------*/
+
+/* Default wrapper: centered, for single-column pages like homepage, bookshelf, etc. */
+.single-content-wrapper {
+    max-width: 850px; /* A good width for readability and mixed content */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
+}
+
+/* Modifier for sidebar pages: overrides defaults to create a wide, two-column layout */
+.single-content-wrapper:has(.article-sidebar) {
+    max-width: 1100px; /* Wider to accommodate sidebar */
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.post-single,
+.paper-single,
+.book-single,
+.dsa-single {
+    flex: 1; /* Restored, allows content to take available space */
+    max-width: 75ch;
+    /* margin-left: auto; Removed, flex handles alignment */
+    /* margin-right: auto; Removed, flex handles alignment */
+}
+
+.article-sidebar {
+    flex-basis: 30%; /* Restored */
+    max-width: 300px; /* Restored */
+    position: sticky; /* Changed back from fixed */
+    /* left: 0; Removed */
+    top: 2rem;
+    background-color: #fdfdfd;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    /* z-index: 1000; Removed */
+}
+
+.article-sidebar nav {
+    display: flex; /* Changed from block */
+    flex-direction: column; /* Ensures vertical stacking of h4 and ul */
+    padding: 0;
+}
+
+.article-sidebar h4 {
+    margin-top: 0;
+    margin-bottom: 0.75rem; /* Adjusted margin */
+    font-size: 1.05rem; /* Slightly adjusted font size */
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.article-sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Ensure flex layout */
+    flex-direction: column; /* Stack li items vertically */
+}
+
+.article-sidebar nav ul li {
+    margin-bottom: 0rem; /* Remove bottom margin, will use padding on links */
+}
+
+.article-sidebar nav ul li a {
+    text-decoration: none;
+    color: #555; /* Slightly lighter color for links */
+    display: block; /* Make the whole area clickable */
+    padding: 0.4rem 0.5rem; /* Adjusted padding for links */
+    border-radius: 3px; /* Slight rounding for hover/active states */
+    word-break: break-word; /* Ensure long words wrap */
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.article-sidebar nav ul li a:hover {
+    color: #007bff; /* Highlight color on hover */
+    background-color: #e9ecef; /* Light background on hover */
+}
+
+.article-sidebar nav ul li a.active { /* Placeholder for future active link styling */
+    color: #0056b3;
+    font-weight: bold;
+    background-color: #dde8f5;
+}
+
+/* Nested list styling for ToC */
+.article-sidebar nav ul ul {
+    padding-left: 0.75rem; /* Indent nested lists */
+    margin-top: 0.1rem; /* Space above nested list */
+    border-left: 2px solid #e0e0e0; /* Add a subtle left border for visual hierarchy */
+    margin-left: 0.25rem; /* Align border with parent padding */
+}
+
+.article-sidebar nav ul ul li {
+    margin-bottom: 0rem; /* Consistent spacing with parent */
+}
+
+.article-sidebar nav ul ul li a {
+    padding-left: 0.75rem; /* Ensure nested links have their own padding distinct from the list indent */
+    font-size: 0.85rem; /* Slightly smaller font for nested items */
+}
+
+/* Center <main> element on pages that don't use the sidebar layout */
+main:not(:has(.single-content-wrapper)) {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
 }
