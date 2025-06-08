@@ -169,6 +169,28 @@ These will be automatically listed on the book&rsquo;s page.)</p>
     <p>&copy; 2025 Deepanshu Kandpal</p>
 </footer> 
     
+    <a id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
     <script src="/js/search.js"></script>
+    <script>
+        
+        var mybutton = document.getElementById("scrollTopBtn");
+
+        
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.classList.add("show");
+            } else {
+                mybutton.classList.remove("show");
+            }
+        }
+
+        
+        mybutton.onclick = function() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        }
+    </script>
 </body>
 </html> 
