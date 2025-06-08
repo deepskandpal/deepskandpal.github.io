@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=50527&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404EngineerNotFound</title>
     <link rel="stylesheet" href="/css/style.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.31/dist/flexsearch.bundle.js"></script>
     
 </head>
 <body>
@@ -93,7 +94,14 @@
                 
             
         </ul>
+        <div class="search-container">
+            <input type="search" id="search-input" placeholder="Search...">
+            <i class="fa fa-search"></i>
+        </div>
     </nav>
+    <div id="search-results-container">
+        <ul id="search-results"></ul>
+    </div>
 </header> 
     
 
@@ -161,5 +169,6 @@ These will be automatically listed on the book&rsquo;s page.)</p>
     <p>&copy; 2025 Deepanshu Kandpal</p>
 </footer> 
     
+    <script src="/js/search.js"></script>
 </body>
 </html> 
