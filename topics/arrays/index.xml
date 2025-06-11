@@ -5,7 +5,56 @@
 &lt;p>Convert the array [1, 2, 9] into the integer 129.
 Add 1: 129 + 1 = 130.
 Convert 130 back into an array [1, 3, 0].
-Limitation: This fails if the integer D is larger than the maximum value the language’s built-in integer type can hold (this isn’t an issue for Python’s runtime integers, but the problem setup often simulates fixed-precision constraints or asks you to avoid this conversion). It also doesn’t modify the array in-place directly.&lt;/p></description></item><item><title>Two Sum</title><link>https://deepskandpal.github.io/dsa-log/two-sum/</link><pubDate>Wed, 01 May 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/two-sum/</guid><description>&lt;h2 id="problem-description-optional-summary">Problem Description (Optional Summary)&lt;/h2>
+Limitation: This fails if the integer D is larger than the maximum value the language’s built-in integer type can hold (this isn’t an issue for Python’s runtime integers, but the problem setup often simulates fixed-precision constraints or asks you to avoid this conversion). It also doesn’t modify the array in-place directly.&lt;/p></description></item><item><title>Dutch National Flag</title><link>https://deepskandpal.github.io/dsa-log/dutch-national-flag/</link><pubDate>Wed, 14 May 2025 20:04:51 +0530</pubDate><guid>https://deepskandpal.github.io/dsa-log/dutch-national-flag/</guid><description>&lt;h2 id="problem-description">Problem Description&lt;/h2>
+&lt;p>Given an array A and an index pivot_idx, rearrange A such that all elements less than &lt;code>A[pivot_idx]&lt;/code> (the pivot value) come first, followed by all elements equal to the pivot, and finally all elements greater than the pivot. This must be done in-place.&lt;/p>
+&lt;h2 id="solution-approach">Solution Approach&lt;/h2>
+&lt;pre tabindex="0">&lt;code>Let 
+A = [0, 1, 2, 0, 2, 1, 1]
+pivot_idx = 1
+pivot_value = A[pivot_idx] = 1
+We maintain three pointers (our “fingers”):
+
+smaller: end of the “LESS THAN pivot” zone.
+
+Anything to its left is &amp;lt; pivot_value.
+
+Starts at 0.
+
+equal: the current “inspector” pointer.
+
+Points to the element under examination.
+
+Starts at 0.
+
+larger: start of the “GREATER THAN pivot” zone (from the right end).
+
+Anything at or to its right is &amp;gt; pivot_value.
+
+Starts at len(A) (one past the end).
+
+
+A[0...smaller-1] = LESS zone (empty)
+A[smaller...equal-1] = EQUAL zone (empty)
+A[equal...larger-1] = UNCLASSIFIED (the whole array)
+A[larger...end] = GREATER zone (empty)
+
+We loop while equal &amp;lt; larger:
+
+while equal &amp;lt; larger:
+ if A[equal] &amp;lt; pivot_value:
+ swap(A[smaller], A[equal])
+ smaller += 1
+ equal += 1
+
+ elif A[equal] == pivot_value:
+ # Already in the EQUAL zone
+ equal += 1
+
+ else: # A[equal] &amp;gt; pivot_value
+ larger -= 1
+ swap(A[equal], A[larger])
+ # do not increment `equal`!
+&lt;/code>&lt;/pre>&lt;p>Step-by-Step Walkthrough&lt;/p></description></item><item><title>Two Sum</title><link>https://deepskandpal.github.io/dsa-log/two-sum/</link><pubDate>Wed, 01 May 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/two-sum/</guid><description>&lt;h2 id="problem-description-optional-summary">Problem Description (Optional Summary)&lt;/h2>
 &lt;p>Given an array of integers &lt;code>nums&lt;/code> and an integer &lt;code>target&lt;/code>, return indices of the two numbers such that they add up to &lt;code>target&lt;/code>.&lt;/p>
 &lt;h2 id="solution-approach">Solution Approach&lt;/h2>
 &lt;p>Use a hash map (dictionary in Python) to store numbers encountered so far and their indices. For each number, check if &lt;code>target - current_number&lt;/code> exists in the hash map. If it does, we found the pair. Otherwise, add the current number and its index to the map.&lt;/p></description></item></channel></rss>

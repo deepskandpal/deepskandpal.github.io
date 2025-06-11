@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Three Pointers on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/three-pointers/</link><description>Recent content in Three Pointers on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 14 May 2025 20:04:51 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/three-pointers/index.xml" rel="self" type="application/rss+xml"/><item><title>Dutch National Flag</title><link>https://deepskandpal.github.io/dsa-log/dutch-national-flag/</link><pubDate>Wed, 14 May 2025 20:04:51 +0530</pubDate><guid>https://deepskandpal.github.io/dsa-log/dutch-national-flag/</guid><description>&lt;h2 id="problem-description">Problem Description&lt;/h2>
+&lt;p>Given an array A and an index pivot_idx, rearrange A such that all elements less than &lt;code>A[pivot_idx]&lt;/code> (the pivot value) come first, followed by all elements equal to the pivot, and finally all elements greater than the pivot. This must be done in-place.&lt;/p>
+&lt;h2 id="solution-approach">Solution Approach&lt;/h2>
+&lt;pre tabindex="0">&lt;code>Let 
+A = [0, 1, 2, 0, 2, 1, 1]
+pivot_idx = 1
+pivot_value = A[pivot_idx] = 1
+We maintain three pointers (our “fingers”):
+
+smaller: end of the “LESS THAN pivot” zone.
+
+Anything to its left is &amp;lt; pivot_value.
+
+Starts at 0.
+
+equal: the current “inspector” pointer.
+
+Points to the element under examination.
+
+Starts at 0.
+
+larger: start of the “GREATER THAN pivot” zone (from the right end).
+
+Anything at or to its right is &amp;gt; pivot_value.
+
+Starts at len(A) (one past the end).
+
+
+A[0...smaller-1] = LESS zone (empty)
+A[smaller...equal-1] = EQUAL zone (empty)
+A[equal...larger-1] = UNCLASSIFIED (the whole array)
+A[larger...end] = GREATER zone (empty)
+
+We loop while equal &amp;lt; larger:
+
+while equal &amp;lt; larger:
+ if A[equal] &amp;lt; pivot_value:
+ swap(A[smaller], A[equal])
+ smaller += 1
+ equal += 1
+
+ elif A[equal] == pivot_value:
+ # Already in the EQUAL zone
+ equal += 1
+
+ else: # A[equal] &amp;gt; pivot_value
+ larger -= 1
+ swap(A[equal], A[larger])
+ # do not increment `equal`!
+&lt;/code>&lt;/pre>&lt;p>Step-by-Step Walkthrough&lt;/p></description></item></channel></rss>
