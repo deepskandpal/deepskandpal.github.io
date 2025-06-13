@@ -31,4 +31,10 @@
 &lt;li>You might need a much &lt;strong>deeper DNN&lt;/strong> (10+ layers, hundreds of neurons per layer, hundreds of thousands or millions of connections).&lt;/li>
 &lt;li>Training such a deep DNN is &lt;strong>not a walk in the park&lt;/strong>.&lt;/li>
 &lt;/ul>
-&lt;p>The chapter immediately highlights several common problems you could run into:&lt;/p></description></item><item><title>Chapter 15: Processing Sequences Using RNNs and CNNs</title><link>https://deepskandpal.github.io/bookshelf/hands-on-ml/chapter-15/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-ml/chapter-15/</guid><description/></item></channel></rss>
+&lt;p>The chapter immediately highlights several common problems you could run into:&lt;/p></description></item><item><title>Chapter 15: Processing Sequences Using RNNs and CNNs</title><link>https://deepskandpal.github.io/bookshelf/hands-on-ml/chapter-15/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-ml/chapter-15/</guid><description>&lt;h2 id="the-world-of-sequences">The World of Sequences&lt;/h2>
+&lt;p>The chapter opens with a vivid example: an outfielder catching a ball. This involves:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Anticipating the future:&lt;/strong> Predicting the ball&amp;rsquo;s trajectory.&lt;/li>
+&lt;li>&lt;strong>Adapting to new information:&lt;/strong> Tracking the ball and adjusting movements.&lt;/li>
+&lt;/ul>
+&lt;p>This ability to process information over time and predict what comes next is something humans do constantly (finishing a friend&amp;rsquo;s sentence, smelling coffee brewing). This chapter introduces &lt;strong>Recurrent Neural Networks (RNNs)&lt;/strong> as a class of neural networks designed for precisely this kind of task.&lt;/p></description></item></channel></rss>
