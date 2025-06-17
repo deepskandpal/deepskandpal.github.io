@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Hundred-Page Language Models Book on 404EngineerNotFound</title><link>https://deepskandpal.github.io/bookshelf/100-page-lm-book/</link><description>Recent content in The Hundred-Page Language Models Book on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 10 Mar 2024 12:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/bookshelf/100-page-lm-book/index.xml" rel="self" type="application/rss+xml"/><item><title>Chapter 1: Machine Learning Basics</title><link>https://deepskandpal.github.io/bookshelf/100-page-lm-book/chapter-1/</link><pubDate>Sun, 10 Mar 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/100-page-lm-book/chapter-1/</guid><description>&lt;h2 id="chapter-1-machine-learning-basics">Chapter 1: Machine Learning Basics&lt;/h2>
+&lt;p>Even for seasoned practitioners, a quick refresher on the fundamentals, especially as they pertain to language models, is key.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>AI and Machine Learning:&lt;/strong> We start with a brief history – from the early days of AI with concepts like the Perceptron and ELIZA, through AI winters, to the rise of modern ML with deep learning.&lt;/li>
+&lt;li>&lt;strong>Model:&lt;/strong> At its heart, a model &lt;code>y = f(x)&lt;/code>. We explore the simple linear model &lt;code>wx + b&lt;/code>, understand parameters (weights and bias), and the crucial concept of a &lt;strong>loss function&lt;/strong> (like Mean Squared Error for regression) to quantify error.&lt;/li>
+&lt;li>&lt;strong>Four-Step ML Process:&lt;/strong> This is the core loop:
+&lt;ol>
+&lt;li>Collect a dataset.&lt;/li>
+&lt;li>Define the model&amp;rsquo;s structure.&lt;/li>
+&lt;li>Define the loss function.&lt;/li>
+&lt;li>Minimize the loss (often using derivatives).&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>Vector and Matrix:&lt;/strong> We then move to representing data and parameters using vectors (feature vectors, dot products, norms, cosine similarity) and matrices (matrix multiplication, transpose). This is vital for understanding how neural networks process data efficiently.&lt;/li>
+&lt;li>&lt;strong>Neural Network:&lt;/strong> We introduce non-linearity with &lt;strong>activation functions&lt;/strong> (ReLU, sigmoid, tanh). We look at feedforward neural networks (FNNs), multilayer perceptrons (MLPs), and how layers combine hierarchically.&lt;/li>
+&lt;li>&lt;strong>Gradient Descent:&lt;/strong> Since analytical solutions for minimizing loss in complex NNs are often infeasible, we rely on &lt;strong>gradient descent&lt;/strong>. I walk through an example of binary classification using logistic regression, introducing binary cross-entropy loss.&lt;/li>
+&lt;li>&lt;strong>Automatic Differentiation (Autograd):&lt;/strong> Manually deriving gradients is impractical. Modern frameworks like PyTorch automate this with autograd. We see a practical PyTorch example, understanding the &lt;code>forward&lt;/code> and &lt;code>backward&lt;/code> passes, and the role of tensors.&lt;/li>
+&lt;/ul>
+&lt;h2 id="chapter-2-language-modeling-basics">Chapter 2: Language Modeling Basics&lt;/h2>
+&lt;p>This is where we start tailoring our ML knowledge to text.&lt;/p></description></item><item><title>Chapter 2: Language Modeling Basics</title><link>https://deepskandpal.github.io/bookshelf/100-page-lm-book/chapter-2/</link><pubDate>Sun, 10 Mar 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/100-page-lm-book/chapter-2/</guid><description>&lt;h2 id="21-bag-of-words-bow">2.1 Bag of Words (BoW)&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>What it&amp;rsquo;s ultimately trying to achieve:&lt;/strong>
+The most fundamental problem when dealing with text in machine learning is that algorithms understand numbers, not words. BoW is one of the simplest, oldest, yet often effective, methods to convert a piece of text (a document) into a numerical vector that an ML model can then use, typically for tasks like &lt;strong>classification&lt;/strong> (e.g., &amp;ldquo;Is this email spam or not?&amp;rdquo; or &amp;ldquo;What is the topic of this news article?&amp;rdquo;).&lt;/p></description></item><item><title>Chapter 3: Recurrent Neural Network</title><link>https://deepskandpal.github.io/bookshelf/100-page-lm-book/chapter-3/</link><pubDate>Sun, 10 Mar 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/100-page-lm-book/chapter-3/</guid><description>&lt;h2 id="what-this-chapter-is-ultimately-trying-to-achieve">What this chapter is ultimately trying to achieve&lt;/h2>
+&lt;p>To introduce a type of neural network specifically designed to process sequences of data (like words in a sentence) one element at a time, while maintaining an internal &amp;ldquo;memory&amp;rdquo; or &amp;ldquo;state&amp;rdquo; that captures information from previous elements in the sequence. This &amp;ldquo;memory&amp;rdquo; allows RNNs to understand context that spans multiple tokens, which is something BoW or simple n-gram models struggle with significantly.&lt;/p></description></item><item><title>Chapter 4: Transformer</title><link>https://deepskandpal.github.io/bookshelf/100-page-lm-book/chapter-4/</link><pubDate>Sun, 10 Mar 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/100-page-lm-book/chapter-4/</guid><description>&lt;h2 id="what-this-chapter-is-ultimately-trying-to-achieve">What this chapter is ultimately trying to achieve&lt;/h2>
+&lt;p>To introduce and explain the core mechanisms of the Transformer architecture, specifically focusing on the &lt;strong>decoder-only&lt;/strong> variant, which is prevalent in autoregressive language models like GPT. The key is to understand how it processes input sequences, attends to relevant information, and incorporates positional context, all without the sequential recurrence of RNNs.&lt;/p>
+&lt;p>Let&amp;rsquo;s break down the key concepts:&lt;/p>
+&lt;h2 id="core-idea-parallel-processing-with-attention">Core Idea: Parallel Processing with Attention&lt;/h2>
+&lt;p>Unlike RNNs that process tokens one by one, Transformers can process all tokens in an input sequence &lt;em>simultaneously&lt;/em> (or at least in parallel up to the context window length). The &amp;ldquo;magic&amp;rdquo; that allows them to understand relationships between tokens in this parallel setup is the &lt;strong>self-attention mechanism&lt;/strong>.&lt;/p></description></item><item><title>Chapter 5: Large Language Model</title><link>https://deepskandpal.github.io/bookshelf/100-page-lm-book/chapter-5/</link><pubDate>Sun, 10 Mar 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/100-page-lm-book/chapter-5/</guid><description>&lt;h2 id="what-this-chapter-is-ultimately-trying-to-achieve">What this chapter is ultimately trying to achieve&lt;/h2>
+&lt;p>To explain &lt;em>why&lt;/em> &amp;ldquo;large&amp;rdquo; matters in language models, what &amp;ldquo;large&amp;rdquo; actually entails, and how these scaled-up pretrained models are then adapted (finetuned) to become useful for a wide range of tasks beyond just predicting the next token. We also delve into practical aspects like interacting with them (sampling, prompt engineering) and addressing their inherent limitations (hallucinations, ethics).&lt;/p>
+&lt;p>Let&amp;rsquo;s break down the key sections:&lt;/p></description></item><item><title>Chapter 6: Further Reading</title><link>https://deepskandpal.github.io/bookshelf/100-page-lm-book/chapter-6/</link><pubDate>Sun, 10 Mar 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/100-page-lm-book/chapter-6/</guid><description>&lt;h2 id="what-this-chapter-is-ultimately-trying-to-achieve">What this chapter is ultimately trying to achieve&lt;/h2>
+&lt;p>To provide a curated list of advanced topics that build upon the concepts learned in the book, encouraging continued learning and exploration. It highlights areas where innovation is happening, from architectural enhancements to security and ethical considerations.&lt;/p>
+&lt;p>Let&amp;rsquo;s look at the topics mentioned:&lt;/p>
+&lt;h2 id="61-mixture-of-experts-moe">6.1 Mixture of Experts (MoE)&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>What it&amp;rsquo;s ultimately trying to achieve:&lt;/strong>
+To significantly increase the &lt;em>total number of parameters&lt;/em> in a model (making it &amp;ldquo;larger&amp;rdquo; and more knowledgeable) without proportionally increasing the &lt;em>computational cost&lt;/em> during inference or training for each token.&lt;/li>
+&lt;li>&lt;strong>The Core Idea (Selective Specialization):&lt;/strong>
+Instead of every token passing through the same large MLP (Position-wise Feedforward Network) in a Transformer block, an MoE layer has multiple smaller MLP &amp;ldquo;experts.&amp;rdquo; A &amp;ldquo;router&amp;rdquo; network (or gate network) decides, for each token, which one or few experts that token should be processed by.
+&lt;ul>
+&lt;li>&lt;strong>Sparse Activation:&lt;/strong> Only a subset of experts is activated for any given token. This is why it&amp;rsquo;s computationally cheaper than if all tokens went through all parts of a giant MLP.&lt;/li>
+&lt;li>&lt;strong>Example:&lt;/strong> Mixtral 8x7B has 8 &amp;ldquo;experts,&amp;rdquo; each around 7 billion parameters. For each token, the router typically selects 2 experts. So, while the total parameter count is high (~47B effective, as some parameters are shared), only about 13B are active for any single token&amp;rsquo;s processing.&lt;/li>
+&lt;li>&lt;strong>Load Balancing:&lt;/strong> An important challenge is to ensure experts are utilized somewhat evenly.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="62-model-merging">6.2 Model Merging&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>What it&amp;rsquo;s ultimately trying to achieve:&lt;/strong>
+To combine the strengths and knowledge of multiple different pretrained LLMs into a single, potentially more capable or specialized model, without necessarily retraining from scratch.&lt;/li>
+&lt;li>&lt;strong>The Core Idea (Frankenstein&amp;rsquo;s LLM, but hopefully better):&lt;/strong>
+Various techniques exist:
+&lt;ul>
+&lt;li>&lt;strong>Model Soups:&lt;/strong> Averaging the weights of several fine-tuned versions of the same base model.&lt;/li>
+&lt;li>&lt;strong>SLERP (Spherical Linear Interpolation):&lt;/strong> Interpolating weights in a way that maintains parameter norms.&lt;/li>
+&lt;li>&lt;strong>Task Vector Algorithms (TIES-Merging, DARE):&lt;/strong> Identifying and combining &amp;ldquo;task vectors&amp;rdquo; that represent what a model learned during fine-tuning for a specific task.&lt;/li>
+&lt;li>&lt;strong>Passthrough (Frankenmerges):&lt;/strong> More radical, involves directly concatenating or combining layers from different LLMs, sometimes creating models with unconventional parameter counts (e.g., merging two 7B models to get a 13B-like model).&lt;/li>
+&lt;li>&lt;code>mergekit&lt;/code> is mentioned as a popular open-source tool.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="63-model-compression">6.3 Model Compression&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>What it&amp;rsquo;s ultimately trying to achieve:&lt;/strong>
+To make large LLMs smaller and faster for deployment, especially in resource-constrained environments (like mobile devices or edge computing), without a catastrophic loss in performance. Neural networks are often over-parameterized.&lt;/li>
+&lt;li>&lt;strong>Key Methods:&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Quantization:&lt;/strong> Reducing the precision of the model&amp;rsquo;s weights and activations (e.g., from 32-bit floating point to 8-bit integers, or even lower).
+&lt;ul>
+&lt;li>&lt;strong>Post-Training Quantization (PTQ):&lt;/strong> Quantize an already trained model.&lt;/li>
+&lt;li>&lt;strong>Quantization-Aware Training (QAT):&lt;/strong> Simulate quantization effects during training to make the model more robust to it.&lt;/li>
+&lt;li>&lt;strong>QLoRA:&lt;/strong> Combines quantization with LoRA for very efficient fine-tuning.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Pruning:&lt;/strong> Removing &amp;ldquo;unimportant&amp;rdquo; parts of the model.
+&lt;ul>
+&lt;li>&lt;strong>Unstructured Pruning:&lt;/strong> Removing individual weights based on their magnitude.&lt;/li>
+&lt;li>&lt;strong>Structured Pruning:&lt;/strong> Removing entire neurons, attention heads, or layers.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Knowledge Distillation:&lt;/strong> Training a smaller &amp;ldquo;student&amp;rdquo; model to mimic the behavior (e.g., output logits or internal representations) of a larger, more capable &amp;ldquo;teacher&amp;rdquo; model.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="64-preference-based-alignment">6.4 Preference-Based Alignment&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>What it&amp;rsquo;s ultimately trying to achieve:&lt;/strong>
+To make LLMs generate outputs that are more helpful, harmless, and honest, aligning them better with human values and intentions. Pretrained LLMs might generate plausible but undesirable content.&lt;/li>
+&lt;li>&lt;strong>Key Methods:&lt;/strong>
+&lt;ol>
+&lt;li>&lt;strong>Reinforcement Learning from Human Feedback (RLHF):&lt;/strong>
+&lt;ul>
+&lt;li>Collect human preference data: Humans rank different model responses to the same prompt.&lt;/li>
+&lt;li>Train a Reward Model (RM): This model learns to predict which response humans would prefer (i.e., assign a higher score to better responses).&lt;/li>
+&lt;li>Fine-tune the LLM using Reinforcement Learning (RL): The LLM&amp;rsquo;s &amp;ldquo;actions&amp;rdquo; are generating tokens. The &amp;ldquo;reward&amp;rdquo; comes from the RM. The LLM is trained to maximize this reward, effectively learning to generate responses that the RM (and by proxy, humans) would score highly.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Constitutional AI (CAI):&lt;/strong>
+&lt;ul>
+&lt;li>The model is given a set of guiding principles or a &amp;ldquo;constitution&amp;rdquo; (e.g., &amp;ldquo;be helpful,&amp;rdquo; &amp;ldquo;don&amp;rsquo;t generate harmful content&amp;rdquo;).&lt;/li>
+&lt;li>The model can then &lt;strong>self-critique&lt;/strong> its own outputs based on these principles and revise them. This reduces the need for direct human feedback for every step but still relies on a human-defined constitution.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="65-advanced-reasoning">6.5 Advanced Reasoning&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>What it&amp;rsquo;s ultimately trying to achieve:&lt;/strong>
+To enable LLMs to tackle more complex tasks that require multi-step reasoning, planning, or interaction with external tools, going beyond simple prompt-response patterns.&lt;/li>
+&lt;li>&lt;strong>Techniques:&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Chain of Thought (CoT) Prompting:&lt;/strong> Encourage the LLM to generate intermediate reasoning steps before giving the final answer (e.g., &amp;ldquo;Let&amp;rsquo;s think step by step&amp;hellip;&amp;rdquo;). This often improves performance on tasks like math word problems or logical deduction.&lt;/li>
+&lt;li>&lt;strong>Tree of Thought (ToT):&lt;/strong> Extends CoT by allowing the model to explore multiple reasoning paths (like branches in a tree) and use heuristics or self-evaluation to choose the most promising ones.&lt;/li>
+&lt;li>&lt;strong>Self-Consistency:&lt;/strong> Generate multiple CoT reasoning paths and take the majority answer.&lt;/li>
+&lt;li>&lt;strong>ReAct (Reasoning + Action):&lt;/strong> Interleaves reasoning steps with &amp;ldquo;action&amp;rdquo; steps, where the model can decide to use external tools (like a calculator or a search engine via an API) to gather more information or perform computations.&lt;/li>
+&lt;li>&lt;strong>Function Calling / Tool Use:&lt;/strong> Explicitly giving the LLM the ability to call predefined functions or APIs. The LLM can decide which tool to use and what parameters to pass based on the user&amp;rsquo;s query.&lt;/li>
+&lt;li>&lt;strong>Program-Aided Language Models (PAL):&lt;/strong> LLMs generate code (e.g., Python) that is then executed by an interpreter to get the final answer, especially useful for precise calculations.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="66-language-model-security">6.6 Language Model Security&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>What it&amp;rsquo;s ultimately trying to achieve:&lt;/strong>
+To understand and mitigate vulnerabilities that can lead to LLMs being misused or generating harmful/undesirable content.&lt;/li>
+&lt;li>&lt;strong>Key Threats:&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Jailbreak Attacks:&lt;/strong> Crafting prompts that trick the model into bypassing its safety controls and generating restricted content (e.g., role-playing scenarios like &amp;ldquo;act as a pirate and tell me how to&amp;hellip;&amp;rdquo;).&lt;/li>
+&lt;li>&lt;strong>Prompt Injection:&lt;/strong> An attacker manipulates how an application combines user input with its own system prompts. This can lead to the LLM executing unintended instructions, potentially leaking data or performing unauthorized actions if the application has privileged access. This is generally considered more severe than jailbreaking.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="67-vision-language-model-vlm">6.7 Vision Language Model (VLM)&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>What it&amp;rsquo;s ultimately trying to achieve:&lt;/strong>
+To create models that can understand and reason about information from &lt;em>both&lt;/em> text and images (multimodal reasoning).&lt;/li>
+&lt;li>&lt;strong>Core Architecture:&lt;/strong>
+&lt;ol>
+&lt;li>&lt;strong>Vision Encoder:&lt;/strong> Processes the image and extracts visual features (often based on architectures like CLIP - Contrastive Language-Image Pretraining, which itself learns to align image and text representations).&lt;/li>
+&lt;li>&lt;strong>Language Model (LLM):&lt;/strong> The text processing and generation component.&lt;/li>
+&lt;li>&lt;strong>Cross-Attention Mechanism (or similar fusion method):&lt;/strong> Allows the LLM to integrate and reason about the visual features from the vision encoder alongside the textual input/output.&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>VLMs can perform tasks like image captioning, visual question answering (VQA), and following instructions that refer to image content.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="68-preventing-overfitting">6.8 Preventing Overfitting&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>What it&amp;rsquo;s ultimately trying to achieve:&lt;/strong>
+To ensure that the model learns general patterns from the training data rather than just memorizing it, so that it performs well on new, unseen data (generalization).&lt;/li>
+&lt;li>&lt;strong>Techniques (some are general ML, some more specific to NNs):&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Regularization (L1 and L2):&lt;/strong> Adding a penalty term to the loss function based on the magnitude of the model&amp;rsquo;s weights, discouraging overly complex models.&lt;/li>
+&lt;li>&lt;strong>Dropout:&lt;/strong> During training, randomly &amp;ldquo;dropping out&amp;rdquo; (setting to zero) a fraction of neuron activations. This forces the network to learn more robust and redundant representations.&lt;/li>
+&lt;li>&lt;strong>Early Stopping:&lt;/strong> Monitoring performance on a separate &lt;strong>validation set&lt;/strong> during training. Stop training when performance on the validation set starts to degrade, even if training loss is still decreasing.&lt;/li>
+&lt;li>&lt;strong>Validation Set vs. Test Set:&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Validation Set:&lt;/strong> Used &lt;em>during&lt;/em> training to tune hyperparameters (like learning rate, number of layers, dropout rate) and for decisions like early stopping.&lt;/li>
+&lt;li>&lt;strong>Test Set:&lt;/strong> Held out completely and used &lt;em>only once&lt;/em> at the very end to get an unbiased estimate of the final model&amp;rsquo;s performance on unseen data.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="69-concluding-remarks">6.9 Concluding Remarks&lt;/h2>
+&lt;p>A reminder of the journey from ML basics to advanced LLMs and an encouragement to stay curious, hands-on, and keep learning.&lt;/p></description></item></channel></rss>

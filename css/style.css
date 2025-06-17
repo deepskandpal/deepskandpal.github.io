@@ -1096,7 +1096,7 @@ main:not(:has(.single-content-wrapper)) {
 #scrollTopBtn {
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 300px;
     z-index: 99;
     background-color: #fff; /* White background */
     color: #333; /* Dark icon */

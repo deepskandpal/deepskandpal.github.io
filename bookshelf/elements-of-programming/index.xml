@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Elements of Programming interviews in python on 404EngineerNotFound</title><link>https://deepskandpal.github.io/bookshelf/elements-of-programming/</link><description>Recent content in Elements of Programming interviews in python on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 23 Feb 2024 10:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/bookshelf/elements-of-programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Chapter 5: Arrays</title><link>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-1/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-1/</guid><description>&lt;h1 id="chapter-5-overview">Chapter 5 Overview:&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Elements of Programming interviews in python on 404EngineerNotFound</title><link>https://deepskandpal.github.io/bookshelf/elements-of-programming/</link><description>Recent content in Elements of Programming interviews in python on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 03 Mar 2024 10:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/bookshelf/elements-of-programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Chapter 5: Arrays</title><link>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-1/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-1/</guid><description>&lt;h1 id="chapter-5-overview">Chapter 5 Overview:&lt;/h1>
 &lt;p>This chapter covers the basic properties of arrays (specifically Python lists), common manipulation techniques, and classic array-based problems. It heavily emphasizes thinking about space complexity and optimizing operations.&lt;/p>
 &lt;h2 id="think-of-arrays-like-this">Think of arrays like this:&lt;/h2>
 &lt;p>Imagine a row of numbered boxes, right next to each other in memory.&lt;/p>
@@ -17,7 +17,46 @@
 &lt;/ol>
 &lt;hr>
 &lt;h2 id="array-boot-camp-reordering-array-entries-page-1">Array Boot Camp: Reordering Array Entries (Page 1)&lt;/h2>
-&lt;p>The boot camp problem is a fantastic introduction to &lt;strong>in-place array manipulation using multiple pointers&lt;/strong>.&lt;/p></description></item><item><title>Chapter 15: Recursion</title><link>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-15/</link><pubDate>Fri, 23 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-15/</guid><description>&lt;h1 id="recursion">Recursion&lt;/h1>
+&lt;p>The boot camp problem is a fantastic introduction to &lt;strong>in-place array manipulation using multiple pointers&lt;/strong>.&lt;/p></description></item><item><title>Chapter 6: Strings</title><link>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-6/</link><pubDate>Fri, 01 Mar 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-6/</guid><description>&lt;h1 id="chapter-6-overview-strings">Chapter 6 Overview: Strings&lt;/h1>
+&lt;p>This chapter focuses on string manipulation, a fundamental skill in programming and a common topic in interviews. Problems often involve parsing, searching, and transforming string data.&lt;/p>
+&lt;h2 id="key-string-concepts-in-python">Key String Concepts in Python:&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Immutability&lt;/strong>: Python strings are immutable. This means that any method that appears to modify a string (like &lt;code>replace()&lt;/code> or &lt;code>upper()&lt;/code>) actually returns a &lt;em>new&lt;/em> string. This has performance implications; building a string piece-by-piece in a loop using &lt;code>+&lt;/code> concatenation is often inefficient (O(n^2)) because it creates a new string at each step. Using a list of characters and &lt;code>''.join()&lt;/code> at the end is the preferred, efficient (O(n)) approach.&lt;/li>
+&lt;li>&lt;strong>Encoding&lt;/strong>: Understand that strings are sequences of Unicode characters. &lt;code>ord()&lt;/code> gets the integer representation of a character, and &lt;code>chr()&lt;/code> does the reverse.&lt;/li>
+&lt;li>&lt;strong>Slicing&lt;/strong>: Python&amp;rsquo;s string slicing &lt;code>s[start:stop:step]&lt;/code> is powerful and efficient for extracting substrings.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="section-61-interconvert-strings-and-integers">Section 6.1: Interconvert Strings and Integers&lt;/h2>
+&lt;p>&lt;strong>The Problem&lt;/strong>: Implement functions to convert a string to an integer (&lt;code>string_to_int&lt;/code>) and an integer to a string (&lt;code>int_to_string&lt;/code>), without using built-in functions like &lt;code>int()&lt;/code> or &lt;code>str()&lt;/code>. Handle negative numbers.&lt;/p></description></item><item><title>Chapter 9: Binary Trees</title><link>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-9/</link><pubDate>Sat, 02 Mar 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-9/</guid><description>&lt;h1 id="chapter-9-overview-binary-trees">Chapter 9 Overview: Binary Trees&lt;/h1>
+&lt;p>Binary trees are fundamental hierarchical data structures. Each node has at most two children, referred to as the left child and the right child. They are essential for representing data with a branching structure, such as file systems, expression evaluation, and search trees.&lt;/p>
+&lt;h2 id="key-binary-tree-concepts">Key Binary Tree Concepts:&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Node&lt;/strong>: The basic unit of a tree, containing data and pointers to its children.&lt;/li>
+&lt;li>&lt;strong>Root&lt;/strong>: The topmost node in a tree.&lt;/li>
+&lt;li>&lt;strong>Leaf&lt;/strong>: A node with no children.&lt;/li>
+&lt;li>&lt;strong>Depth&lt;/strong>: The length of the path from the root to a node. The root&amp;rsquo;s depth is 0.&lt;/li>
+&lt;li>&lt;strong>Height&lt;/strong>: The length of the longest path from a node to a leaf. The height of a leaf is 0. The height of a tree is the height of its root.&lt;/li>
+&lt;li>&lt;strong>Full Binary Tree&lt;/strong>: A tree where every node has either 0 or 2 children.&lt;/li>
+&lt;li>&lt;strong>Complete Binary Tree&lt;/strong>: A tree where all levels are completely filled except possibly the last, and the last level has all keys as left as possible.&lt;/li>
+&lt;li>&lt;strong>Perfect Binary Tree&lt;/strong>: A tree where all interior nodes have two children and all leaves are at the same level.&lt;/li>
+&lt;/ul>
+&lt;h3 id="tree-traversal">Tree Traversal:&lt;/h3>
+&lt;p>The three primary ways to visit all nodes in a tree are:&lt;/p></description></item><item><title>Chapter 12: Hash Tables</title><link>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-12/</link><pubDate>Sun, 03 Mar 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-12/</guid><description>&lt;h1 id="chapter-12-overview-hash-tables">Chapter 12 Overview: Hash Tables&lt;/h1>
+&lt;p>Hash tables (or hash maps) are one of the most useful and versatile data structures in computer science. They provide a mechanism to store key-value pairs and allow for extremely fast average-case lookups, insertions, and deletions. In Python, the &lt;code>dict&lt;/code> and &lt;code>set&lt;/code> types are implemented using hash tables.&lt;/p>
+&lt;h2 id="key-hash-table-concepts">Key Hash Table Concepts:&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Hash Function&lt;/strong>: A function that maps a key to an integer, which is then used as an index (or &amp;ldquo;hash code&amp;rdquo;) in an underlying array (often called buckets or slots). A good hash function should distribute keys uniformly across the array to minimize collisions.&lt;/li>
+&lt;li>&lt;strong>Key Properties&lt;/strong>: Keys must be &amp;ldquo;hashable,&amp;rdquo; which generally means they must be immutable. An object is hashable if it has a hash value that never changes during its lifetime.&lt;/li>
+&lt;li>&lt;strong>Buckets/Slots&lt;/strong>: The underlying array that stores the data. The hash code determines which bucket a key-value pair belongs to.&lt;/li>
+&lt;li>&lt;strong>Collision&lt;/strong>: When two different keys map to the same bucket index. This is inevitable unless the hash table is very large and the hash function is perfect.&lt;/li>
+&lt;li>&lt;strong>Collision Resolution&lt;/strong>: The strategy for handling collisions.
+&lt;ol>
+&lt;li>&lt;strong>Separate Chaining (or Chaining)&lt;/strong>: Each bucket is a pointer to a linked list (or another data structure) that holds all the key-value pairs that hashed to that index. This is a very common method.&lt;/li>
+&lt;li>&lt;strong>Open Addressing&lt;/strong>: If a collision occurs, the algorithm probes for the next empty slot in the array according to a fixed sequence. Examples include Linear Probing (checking the next slot, then the next, etc.), Quadratic Probing, and Double Hashing.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Performance&lt;/strong>:&lt;/p></description></item><item><title>Chapter 15: Recursion</title><link>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-15/</link><pubDate>Fri, 23 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/elements-of-programming/chapter-15/</guid><description>&lt;h1 id="recursion">Recursion&lt;/h1>
 &lt;p>&lt;strong>Core Idea of Recursion&lt;/strong>: At its simplest, recursion means a function calls itself to solve a smaller version of the same problem.&lt;/p>
 &lt;p>&lt;a href="https://aistudio.google.com/prompts/1iT6e8TzouWLkMJqnlyvEmF3SBLGpkJJr">Prompt Link&lt;/a>(my private discussion for this chapter using ai studio and this chapters main system prompt along with the pdf of this chapter)&lt;/p>
 &lt;p>Two Key Ingredients :&lt;/p>
