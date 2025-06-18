@@ -54,7 +54,7 @@ while equal &amp;lt; larger:
  larger -= 1
  swap(A[equal], A[larger])
  # do not increment `equal`!
-&lt;/code>&lt;/pre>&lt;p>Step-by-Step Walkthrough&lt;/p></description></item><item><title>Two Sum</title><link>https://deepskandpal.github.io/dsa-log/two-sum/</link><pubDate>Wed, 01 May 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/two-sum/</guid><description>&lt;h2 id="problem-description-optional-summary">Problem Description (Optional Summary)&lt;/h2>
+&lt;/code>&lt;/pre>&lt;p>Step-by-Step Walkthrough&lt;/p></description></item><item><title>Greatest common division</title><link>https://deepskandpal.github.io/dsa-log/gcd/</link><pubDate>Wed, 14 May 2025 20:04:51 +0530</pubDate><guid>https://deepskandpal.github.io/dsa-log/gcd/</guid><description/></item><item><title>Two Sum</title><link>https://deepskandpal.github.io/dsa-log/two-sum/</link><pubDate>Wed, 01 May 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/two-sum/</guid><description>&lt;h2 id="problem-description-optional-summary">Problem Description (Optional Summary)&lt;/h2>
 &lt;p>Given an array of integers &lt;code>nums&lt;/code> and an integer &lt;code>target&lt;/code>, return indices of the two numbers such that they add up to &lt;code>target&lt;/code>.&lt;/p>
 &lt;h2 id="solution-approach">Solution Approach&lt;/h2>
 &lt;p>Use a hash map (dictionary in Python) to store numbers encountered so far and their indices. For each number, check if &lt;code>target - current_number&lt;/code> exists in the hash map. If it does, we found the pair. Otherwise, add the current number and its index to the map.&lt;/p></description></item></channel></rss>

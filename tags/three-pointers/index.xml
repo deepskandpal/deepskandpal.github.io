@@ -47,4 +47,4 @@ while equal &amp;lt; larger:
  larger -= 1
  swap(A[equal], A[larger])
  # do not increment `equal`!
-&lt;/code>&lt;/pre>&lt;p>Step-by-Step Walkthrough&lt;/p></description></item></channel></rss>
+&lt;/code>&lt;/pre>&lt;p>Step-by-Step Walkthrough&lt;/p></description></item><item><title>Greatest common division</title><link>https://deepskandpal.github.io/dsa-log/gcd/</link><pubDate>Wed, 14 May 2025 20:04:51 +0530</pubDate><guid>https://deepskandpal.github.io/dsa-log/gcd/</guid><description/></item></channel></rss>
