@@ -54,7 +54,25 @@ while equal &amp;lt; larger:
  larger -= 1
  swap(A[equal], A[larger])
  # do not increment `equal`!
-&lt;/code>&lt;/pre>&lt;p>Step-by-Step Walkthrough&lt;/p></description></item><item><title>Greatest common division</title><link>https://deepskandpal.github.io/dsa-log/gcd/</link><pubDate>Wed, 14 May 2025 20:04:51 +0530</pubDate><guid>https://deepskandpal.github.io/dsa-log/gcd/</guid><description/></item><item><title>Two Sum</title><link>https://deepskandpal.github.io/dsa-log/two-sum/</link><pubDate>Wed, 01 May 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/two-sum/</guid><description>&lt;h2 id="problem-description-optional-summary">Problem Description (Optional Summary)&lt;/h2>
+&lt;/code>&lt;/pre>&lt;p>Step-by-Step Walkthrough&lt;/p></description></item><item><title>Greatest common division</title><link>https://deepskandpal.github.io/dsa-log/gcd/</link><pubDate>Wed, 14 May 2025 20:04:51 +0530</pubDate><guid>https://deepskandpal.github.io/dsa-log/gcd/</guid><description/></item><item><title>Count And Say</title><link>https://deepskandpal.github.io/dsa-log/count-and-say/</link><pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/count-and-say/</guid><description>&lt;h2 id="problem-description">Problem Description&lt;/h2>
+&lt;p>&lt;a href="https://colab.research.google.com/drive/1udH4eyb9bToLC_ZPPaK-n3T-jPdbAANw#scrollTo=pD7bP8UR5oiP">rough nb&lt;/a>&lt;/p>
+&lt;p>The count-and-say sequence is a sequence of digit strings defined by the recursive formula:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>countAndSay(1) = &amp;quot;1&amp;quot;&lt;/code>&lt;/li>
+&lt;li>&lt;code>countAndSay(n)&lt;/code> is the way you would &amp;ldquo;say&amp;rdquo; the digit string from &lt;code>countAndSay(n-1)&lt;/code>, which is then converted into a new digit string.&lt;/li>
+&lt;/ul>
+&lt;p>To determine how you &amp;ldquo;say&amp;rdquo; a digit string, split it into the minimal number of substrings such that each substring contains exactly one unique digit. Then for each substring, say the number of digits, then say the digit. Finally, concatenate every said digit.&lt;/p></description></item><item><title>Letter Combinations Of A Phone Number</title><link>https://deepskandpal.github.io/dsa-log/letter-combinations-of-a-phone-number/</link><pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/letter-combinations-of-a-phone-number/</guid><description>&lt;h2 id="problem-description">Problem Description&lt;/h2>
+&lt;p>&lt;a href="https://colab.research.google.com/drive/1udH4eyb9bToLC_ZPPaK-n3T-jPdbAANw#scrollTo=pD7bP8UR5oiP">rough nb&lt;/a>&lt;/p>
+&lt;p>Given a string containing digits from &lt;code>2-9&lt;/code> inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.&lt;/p>
+&lt;p>A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.&lt;/p>
+&lt;p>&lt;strong>Example 1:&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>Input: digits = &amp;#34;23&amp;#34;
+Output: [&amp;#34;ad&amp;#34;,&amp;#34;ae&amp;#34;,&amp;#34;af&amp;#34;,&amp;#34;bd&amp;#34;,&amp;#34;be&amp;#34;,&amp;#34;bf&amp;#34;,&amp;#34;cd&amp;#34;,&amp;#34;ce&amp;#34;,&amp;#34;cf&amp;#34;]
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Example 2:&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>Input: digits = &amp;#34;&amp;#34;
+Output: []
+&lt;/code>&lt;/pre>&lt;h2 id="solution-approach">Solution Approach&lt;/h2>
+&lt;p>This problem is a classic example of a backtracking or recursion problem. We need to explore all possible combinations of letters for the given digits.&lt;/p></description></item><item><title>Two Sum</title><link>https://deepskandpal.github.io/dsa-log/two-sum/</link><pubDate>Wed, 01 May 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/two-sum/</guid><description>&lt;h2 id="problem-description-optional-summary">Problem Description (Optional Summary)&lt;/h2>
 &lt;p>Given an array of integers &lt;code>nums&lt;/code> and an integer &lt;code>target&lt;/code>, return indices of the two numbers such that they add up to &lt;code>target&lt;/code>.&lt;/p>
 &lt;h2 id="solution-approach">Solution Approach&lt;/h2>
 &lt;p>Use a hash map (dictionary in Python) to store numbers encountered so far and their indices. For each number, check if &lt;code>target - current_number&lt;/code> exists in the hash map. If it does, we found the pair. Otherwise, add the current number and its index to the map.&lt;/p></description></item></channel></rss>
