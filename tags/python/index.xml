@@ -16,7 +16,15 @@ Output: [&amp;#34;ad&amp;#34;,&amp;#34;ae&amp;#34;,&amp;#34;af&amp;#34;,&amp;#34
 &lt;pre tabindex="0">&lt;code>Input: digits = &amp;#34;&amp;#34;
 Output: []
 &lt;/code>&lt;/pre>&lt;h2 id="solution-approach">Solution Approach&lt;/h2>
-&lt;p>This problem is a classic example of a backtracking or recursion problem. We need to explore all possible combinations of letters for the given digits.&lt;/p></description></item><item><title>Two Sum</title><link>https://deepskandpal.github.io/dsa-log/two-sum/</link><pubDate>Wed, 01 May 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/two-sum/</guid><description>&lt;h2 id="problem-description-optional-summary">Problem Description (Optional Summary)&lt;/h2>
+&lt;p>This problem is a classic example of a backtracking or recursion problem. We need to explore all possible combinations of letters for the given digits.&lt;/p></description></item><item><title>Zigzag Conversion</title><link>https://deepskandpal.github.io/dsa-log/zigzag-conversion/</link><pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/zigzag-conversion/</guid><description>&lt;h2 id="problem-description">Problem Description&lt;/h2>
+&lt;p>The string &lt;code>PAYPALISHIRING&lt;/code> is written in a zigzag pattern on a given number of rows like this:&lt;/p>
+&lt;pre tabindex="0">&lt;code>P A H N
+A P L S I I G
+Y I R
+&lt;/code>&lt;/pre>&lt;p>And then read line by line: &lt;code>&amp;quot;PAHNAPLSIIGYIR&amp;quot;&lt;/code>.&lt;/p>
+&lt;p>Write the code that will take a string and make this conversion given a number of rows.&lt;/p>
+&lt;h2 id="solution-approach">Solution Approach&lt;/h2>
+&lt;p>The problem asks us to reconstruct a string that is formed by reading a zigzag pattern row by row. We can solve this by simulating the placement of each character into its corresponding row.&lt;/p></description></item><item><title>Two Sum</title><link>https://deepskandpal.github.io/dsa-log/two-sum/</link><pubDate>Wed, 01 May 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/two-sum/</guid><description>&lt;h2 id="problem-description-optional-summary">Problem Description (Optional Summary)&lt;/h2>
 &lt;p>Given an array of integers &lt;code>nums&lt;/code> and an integer &lt;code>target&lt;/code>, return indices of the two numbers such that they add up to &lt;code>target&lt;/code>.&lt;/p>
 &lt;h2 id="solution-approach">Solution Approach&lt;/h2>
 &lt;p>Use a hash map (dictionary in Python) to store numbers encountered so far and their indices. For each number, check if &lt;code>target - current_number&lt;/code> exists in the hash map. If it does, we found the pair. Otherwise, add the current number and its index to the map.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Simulation on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/simulation/</link><description>Recent content in Simulation on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 29 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/simulation/index.xml" rel="self" type="application/rss+xml"/><item><title>Zigzag Conversion</title><link>https://deepskandpal.github.io/dsa-log/zigzag-conversion/</link><pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/zigzag-conversion/</guid><description>&lt;h2 id="problem-description">Problem Description&lt;/h2>
+&lt;p>The string &lt;code>PAYPALISHIRING&lt;/code> is written in a zigzag pattern on a given number of rows like this:&lt;/p>
+&lt;pre tabindex="0">&lt;code>P A H N
+A P L S I I G
+Y I R
+&lt;/code>&lt;/pre>&lt;p>And then read line by line: &lt;code>&amp;quot;PAHNAPLSIIGYIR&amp;quot;&lt;/code>.&lt;/p>
+&lt;p>Write the code that will take a string and make this conversion given a number of rows.&lt;/p>
+&lt;h2 id="solution-approach">Solution Approach&lt;/h2>
+&lt;p>The problem asks us to reconstruct a string that is formed by reading a zigzag pattern row by row. We can solve this by simulating the placement of each character into its corresponding row.&lt;/p></description></item></channel></rss>
