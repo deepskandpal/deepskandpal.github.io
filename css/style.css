@@ -1123,3 +1123,26 @@ main:not(:has(.single-content-wrapper)) {
     background-color: #f0f0f0; /* Light beige hover */
     border-color: #ccc;
 }
+
+/* Mermaid Diagram Styles */
+.mermaid {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.mermaid svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Make sure Mermaid diagrams in book content have proper spacing */
+.book-content .mermaid,
+.post-content .mermaid {
+    margin: 2rem auto;
+    max-width: 100%;
+}
