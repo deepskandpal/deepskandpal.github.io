@@ -32,6 +32,13 @@ document.addEventListener('DOMContentLoaded', function () {
             return response.json();
         })
         .then(data => {
+            // Check if we're in development mode (empty array)
+            if (Array.isArray(data) && data.length === 0) {
+                searchInput.placeholder = "Search disabled in development";
+                searchInput.disabled = true;
+                return;
+            }
+            
             initFlexSearch(data);
             searchInput.placeholder = "Search...";
             searchInput.disabled = false;
