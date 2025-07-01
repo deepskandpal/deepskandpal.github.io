@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Maths on 404EngineerNotFound</title><link>https://deepskandpal.github.io/categories/maths/</link><description>Recent content in Maths on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 27 Apr 2025 19:30:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/categories/maths/index.xml" rel="self" type="application/rss+xml"/><item><title>The Matrix Calculus You Need For Deep Learning</title><link>https://deepskandpal.github.io/papershelf/maths/</link><pubDate>Sun, 27 Apr 2025 19:30:00 +0000</pubDate><guid>https://deepskandpal.github.io/papershelf/maths/</guid><description>&lt;h1 id="the-big-picture-goal">&lt;strong>The Big Picture Goal:&lt;/strong>&lt;/h1>
+&lt;p>We want our machine learning models to make good predictions. To do this, we define a &lt;strong>loss function&lt;/strong> (or cost function) that measures how &amp;ldquo;bad&amp;rdquo; our model&amp;rsquo;s predictions are compared to the true values.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Training = Minimizing Loss:&lt;/strong> Training a model means finding the model parameters (like weights &lt;code>w&lt;/code> and biases &lt;code>b&lt;/code>) that make this loss function as small as possible.&lt;/li>
+&lt;li>&lt;strong>Calculus as a Tool for Minimization:&lt;/strong> Derivatives (and their extensions like gradients) tell us the &lt;strong>rate of change&lt;/strong> or the &lt;strong>slope&lt;/strong> of a function.
+&lt;ul>
+&lt;li>If we know the slope of our loss function with respect to our model parameters, we know which &amp;ldquo;direction&amp;rdquo; to tweak those parameters to &lt;em>decrease&lt;/em> the loss. This is the essence of &lt;strong>Gradient Descent&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>So, all this calculus is ultimately about finding an efficient way to &amp;ldquo;walk downhill&amp;rdquo; on our loss function surface to find the parameter values that give the lowest error.&lt;/p></description></item></channel></rss>
