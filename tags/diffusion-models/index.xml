@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Diffusion Models on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/diffusion-models/</link><description>Recent content in Diffusion Models on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 26 Jan 2025 16:45:00 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/diffusion-models/index.xml" rel="self" type="application/rss+xml"/><item><title>GenAI Core Architectures: Transformers, LLMs &amp; Generative Models</title><link>https://deepskandpal.github.io/tech-writings/genai-architectures/</link><pubDate>Sun, 26 Jan 2025 16:45:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai-architectures/</guid><description>&lt;h1 id="genai-core-architectures-tree">GenAI Core Architectures Tree&lt;/h1>
+&lt;p>The fundamental architectures that power modern generative AI systems. From attention mechanisms to large language models and diffusion processes.&lt;/p>
+&lt;h2 id="core-architectures-knowledge-tree">Core Architectures Knowledge Tree&lt;/h2>
+&lt;h3 id="complete-architecture-overview">Complete Architecture Overview&lt;/h3>
+&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 60, &amp;#39;rankSpacing&amp;#39;: 100}}}%%
+graph LR
+ ROOT[🏗️ GenAI Core Architectures]
+ 
+ %% Main Architecture Families
+ ROOT --&amp;gt; TRANSFORMERS[🔄 Transformers]
+ ROOT --&amp;gt; LLM[🤖 Large Language Models]
+ ROOT --&amp;gt; DIFFUSION[🎨 Diffusion Models]
+ ROOT --&amp;gt; OTHER_GEN[🎭 Other Generative Models]
+ 
+ %% Key Capabilities
+ TRANSFORMERS --&amp;gt; T1[Attention Mechanisms]
+ TRANSFORMERS --&amp;gt; T2[Architecture Variants]
+ TRANSFORMERS --&amp;gt; T3[Core Components]
+ 
+ LLM --&amp;gt; L1[Model Families]
+ LLM --&amp;gt; L2[Scaling Laws]
+ LLM --&amp;gt; L3[Training Paradigms]
+ 
+ DIFFUSION --&amp;gt; D1[Theoretical Foundation]
+ DIFFUSION --&amp;gt; D2[Model Variants]
+ DIFFUSION --&amp;gt; D3[Conditioning]
+ 
+ OTHER_GEN --&amp;gt; O1[GANs]
+ OTHER_GEN --&amp;gt; O2[VAEs]
+ OTHER_GEN --&amp;gt; O3[Flow Models]
+
+ %% Styling
+ style ROOT fill:#e1d5e7,stroke:#9673a6,stroke-width:4px
+ style TRANSFORMERS fill:#d5e8d4,stroke:#82b366,stroke-width:3px
+ style LLM fill:#dae8fc,stroke:#6c8ebf,stroke-width:3px
+ style DIFFUSION fill:#f8cecc,stroke:#b85450,stroke-width:3px
+ style OTHER_GEN fill:#fff2cc,stroke:#d6b656,stroke-width:3px
+&lt;/code>&lt;/pre>&lt;h3 id="transformers-attention--architecture-design">Transformers: Attention &amp;amp; Architecture Design&lt;/h3>
+&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 60, &amp;#39;rankSpacing&amp;#39;: 80}}}%%
+graph LR
+ subgraph ATT[👁️ Attention Mechanisms]
+ ATT1[Self-Attention&amp;lt;br/&amp;gt;Q-K-V, Scaled Dot-Product] --&amp;gt; ATT2[Multi-Head Attention&amp;lt;br/&amp;gt;Parallel Heads, Different Subspaces]
+ ATT2 --&amp;gt; ATT3[Cross-Attention&amp;lt;br/&amp;gt;Encoder-Decoder, Conditioning]
+ ATT3 --&amp;gt; ATT4[Sparse Attention&amp;lt;br/&amp;gt;Local, Sliding Window]
+ ATT4 --&amp;gt; ATT5[Flash Attention&amp;lt;br/&amp;gt;Memory-Efficient, IO-Aware]
+ end
+ 
+ subgraph ARCH[🏛️ Architecture Variants]
+ ARCH1[Encoder-Decoder&amp;lt;br/&amp;gt;Seq2Seq, Translation] --&amp;gt; ARCH2[Encoder-Only&amp;lt;br/&amp;gt;BERT, Understanding]
+ ARCH2 --&amp;gt; ARCH3[Decoder-Only&amp;lt;br/&amp;gt;GPT, Generation]
+ ARCH3 --&amp;gt; ARCH4[Hybrid&amp;lt;br/&amp;gt;Task-Specific Design]
+ end
+ 
+ subgraph COMP[⚙️ Core Components]
+ COMP1[Position Embeddings&amp;lt;br/&amp;gt;Absolute, Relative, RoPE] --&amp;gt; COMP2[Layer Normalization&amp;lt;br/&amp;gt;Pre-norm, Post-norm]
+ COMP2 --&amp;gt; COMP3[Feed-Forward Networks&amp;lt;br/&amp;gt;MLP, Gated Linear Units]
+ COMP3 --&amp;gt; COMP4[Residual Connections&amp;lt;br/&amp;gt;Skip Connections, Gradient Flow]
+ end
+
+ style ATT fill:#e8f5e8,stroke:#4caf50,stroke-width:2px
+ style ARCH fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
+ style COMP fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+&lt;/code>&lt;/pre>&lt;h3 id="large-language-models-families--scaling">Large Language Models: Families &amp;amp; Scaling&lt;/h3>
+&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 50, &amp;#39;rankSpacing&amp;#39;: 70}}}%%
+graph TD
+ subgraph FAMILIES[👨‍👩‍👧‍👦 Model Families]
+ GPT[GPT Family&amp;lt;br/&amp;gt;Decoder-Only] --&amp;gt; GPT_EVO[GPT-1 → GPT-2 → GPT-3 → GPT-4&amp;lt;br/&amp;gt;117M → 1.5B → 175B → Multimodal]
+ BERT[BERT Family&amp;lt;br/&amp;gt;Encoder-Only] --&amp;gt; BERT_EVO[BERT → RoBERTa → ALBERT&amp;lt;br/&amp;gt;Bidirectional Understanding]
+ T5[T5 Family&amp;lt;br/&amp;gt;Encoder-Decoder] --&amp;gt; T5_EVO[Text-to-Text Transfer&amp;lt;br/&amp;gt;Unified Framework]
+ MODERN[Modern LLMs] --&amp;gt; MOD_EVO[LLaMA, Claude, Gemini&amp;lt;br/&amp;gt;Efficient, Aligned, Multimodal]
+ end
+ 
+ subgraph SCALING[📏 Scaling Dimensions]
+ PARAM[Parameter Scaling&amp;lt;br/&amp;gt;Emergent Abilities] --- DATA[Data Scaling&amp;lt;br/&amp;gt;Quality vs Quantity]
+ DATA --- COMPUTE[Compute Scaling&amp;lt;br/&amp;gt;Training FLOPs]
+ COMPUTE --- LAWS[Scaling Laws&amp;lt;br/&amp;gt;Power Relationships]
+ end
+ 
+ subgraph TRAINING[🎯 Training Evolution]
+ PRE[Pre-training&amp;lt;br/&amp;gt;Language Modeling] --&amp;gt; INST[Instruction Tuning&amp;lt;br/&amp;gt;Task Following]
+ INST --&amp;gt; RLHF[RLHF&amp;lt;br/&amp;gt;Human Feedback]
+ RLHF --&amp;gt; ALIGN[AI Alignment&amp;lt;br/&amp;gt;Constitutional AI]
+ end
+
+ FAMILIES --&amp;gt; SCALING
+ SCALING --&amp;gt; TRAINING
+
+ style FAMILIES fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
+ style SCALING fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px
+ style TRAINING fill:#e8f5e8,stroke:#4caf50,stroke-width:2px
+&lt;/code>&lt;/pre>&lt;h3 id="diffusion-models-theory--variants">Diffusion Models: Theory &amp;amp; Variants&lt;/h3>
+&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 60, &amp;#39;rankSpacing&amp;#39;: 80}}}%%
+graph LR
+ subgraph THEORY[🧮 Theoretical Foundation]
+ direction TB
+ FORWARD[Forward Process&amp;lt;br/&amp;gt;Noise Addition, Markov Chain] --&amp;gt; REVERSE[Reverse Process&amp;lt;br/&amp;gt;Denoising, Learned Distribution]
+ REVERSE --&amp;gt; SCORE[Score-Based Models&amp;lt;br/&amp;gt;Score Functions, Langevin Dynamics]
+ SCORE --&amp;gt; SDE[Stochastic Differential Equations&amp;lt;br/&amp;gt;Continuous Process, ODE Sampling]
+ end
+ 
+ subgraph VARIANTS[🔄 Model Variants]
+ direction TB
+ DDPM[DDPM&amp;lt;br/&amp;gt;Probabilistic Models] --&amp;gt; DDIM[DDIM&amp;lt;br/&amp;gt;Deterministic Sampling]
+ DDIM --&amp;gt; STABLE[Stable Diffusion&amp;lt;br/&amp;gt;Latent Space Training]
+ STABLE --&amp;gt; CONSISTENCY[Consistency Models&amp;lt;br/&amp;gt;Single-Step Generation]
+ end
+ 
+ subgraph CONDITIONING[🎛️ Conditioning Methods]
+ direction TB
+ TEXT[Text Conditioning&amp;lt;br/&amp;gt;CLIP Embeddings] --&amp;gt; IMAGE[Image Conditioning&amp;lt;br/&amp;gt;Inpainting, Image2Image]
+ IMAGE --&amp;gt; CLASS[Class Conditioning&amp;lt;br/&amp;gt;Classifier Guidance]
+ CLASS --&amp;gt; CONTROL[ControlNet&amp;lt;br/&amp;gt;Spatial Control, Structure]
+ end
+
+ THEORY --&amp;gt; VARIANTS
+ VARIANTS --&amp;gt; CONDITIONING
+
+ style THEORY fill:#ffebee,stroke:#f44336,stroke-width:2px
+ style VARIANTS fill:#e8f5e8,stroke:#4caf50,stroke-width:2px
+ style CONDITIONING fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
+&lt;/code>&lt;/pre>&lt;h3 id="other-generative-models-comparison">Other Generative Models: Comparison&lt;/h3>
+&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 80, &amp;#39;rankSpacing&amp;#39;: 100}}}%%
+graph LR
+ subgraph GANS[🎭 Generative Adversarial Networks]
+ GAN_THEORY[Game Theory&amp;lt;br/&amp;gt;Minimax Objective] --&amp;gt; GAN_VARIANTS[Variants&amp;lt;br/&amp;gt;DCGAN, StyleGAN]
+ GAN_VARIANTS --&amp;gt; GAN_ISSUES[Training Issues&amp;lt;br/&amp;gt;Mode Collapse, Instability]
+ end
+ 
+ subgraph VAES[🔄 Variational Autoencoders]
+ VAE_THEORY[Variational Inference&amp;lt;br/&amp;gt;ELBO Objective] --&amp;gt; VAE_ARCH[Encoder-Decoder&amp;lt;br/&amp;gt;Latent Space]
+ VAE_ARCH --&amp;gt; VAE_VARIANTS[Variants&amp;lt;br/&amp;gt;Beta-VAE, VQ-VAE]
+ end
+ 
+ subgraph FLOWS[🌊 Flow-Based Models]
+ NORMALIZING[Normalizing Flows&amp;lt;br/&amp;gt;Invertible Transformations] --&amp;gt; COUPLING[Coupling Layers&amp;lt;br/&amp;gt;Real NVP]
+ COUPLING --&amp;gt; AUTO_FLOWS[Autoregressive Flows&amp;lt;br/&amp;gt;Neural Spline Flows]
+ end
+
+ style GANS fill:#fff8e1,stroke:#ffc107,stroke-width:2px
+ style VAES fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px
+ style FLOWS fill:#e0f2f1,stroke:#009688,stroke-width:2px
+&lt;/code>&lt;/pre>&lt;h2 id="architecture-comparison--selection">Architecture Comparison &amp;amp; Selection&lt;/h2>
+&lt;h3 id="-when-to-use-each-architecture">🎯 &lt;strong>When to Use Each Architecture&lt;/strong>&lt;/h3>
+&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 80, &amp;#39;rankSpacing&amp;#39;: 100}}}%%
+graph LR
+ subgraph TEXT[📝 Text Tasks]
+ direction TB
+ TEXT_GEN[Text Generation&amp;lt;br/&amp;gt;💡 GPT, LLaMA&amp;lt;br/&amp;gt;🎯 Autoregressive Transformers]
+ TEXT_UNDERSTAND[Text Understanding&amp;lt;br/&amp;gt;💡 BERT, RoBERTa&amp;lt;br/&amp;gt;🎯 Encoder-Only Models]
+ TEXT_BOTH[Generation + Understanding&amp;lt;br/&amp;gt;💡 T5, UL2&amp;lt;br/&amp;gt;🎯 Encoder-Decoder]
+ end
+ 
+ subgraph IMAGE[🖼️ Image Tasks]
+ direction TB
+ IMAGE_GEN[Image Generation&amp;lt;br/&amp;gt;💡 Stable Diffusion, DALL-E&amp;lt;br/&amp;gt;🎯 Diffusion Models]
+ IMAGE_EDIT[Image Editing&amp;lt;br/&amp;gt;💡 ControlNet, InstructPix2Pix&amp;lt;br/&amp;gt;🎯 Conditional Diffusion]
+ IMAGE_CLASS[Image Classification&amp;lt;br/&amp;gt;💡 Vision Transformer&amp;lt;br/&amp;gt;🎯 Encoder Architectures]
+ end
+ 
+ subgraph MULTI[🌐 Multimodal Tasks]
+ direction TB
+ VL_GEN[Vision-Language Generation&amp;lt;br/&amp;gt;💡 GPT-4V, Flamingo&amp;lt;br/&amp;gt;🎯 Multimodal Transformers]
+ VL_UNDERSTAND[Vision-Language Understanding&amp;lt;br/&amp;gt;💡 CLIP, ALIGN&amp;lt;br/&amp;gt;🎯 Contrastive Learning]
+ end
+ 
+ subgraph AUDIO[🎵 Audio Tasks]
+ direction TB
+ AUDIO_GEN[Audio Generation&amp;lt;br/&amp;gt;💡 WaveNet, MusicLM&amp;lt;br/&amp;gt;🎯 Autoregressive/Diffusion]
+ SPEECH[Speech Processing&amp;lt;br/&amp;gt;💡 Wav2Vec, Whisper&amp;lt;br/&amp;gt;🎯 Transformer Encoders]
+ end
+
+ style TEXT fill:#d5e8d4,stroke:#82b366,stroke-width:2px
+ style IMAGE fill:#dae8fc,stroke:#6c8ebf,stroke-width:2px
+ style MULTI fill:#f8cecc,stroke:#b85450,stroke-width:2px
+ style AUDIO fill:#fff2cc,stroke:#d6b656,stroke-width:2px
+&lt;/code>&lt;/pre>&lt;h2 id="key-architectural-innovations">Key Architectural Innovations&lt;/h2>
+&lt;h3 id="-transformer-breakthroughs">🔄 &lt;strong>Transformer Breakthroughs&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Self-Attention&lt;/strong>: Parallel processing of sequences, long-range dependencies&lt;/li>
+&lt;li>&lt;strong>Multi-Head Attention&lt;/strong>: Multiple representation subspaces, diverse attention patterns&lt;/li>
+&lt;li>&lt;strong>Position Embeddings&lt;/strong>: RoPE enables better extrapolation to longer sequences&lt;/li>
+&lt;li>&lt;strong>Layer Normalization&lt;/strong>: Pre-norm vs post-norm affects training stability&lt;/li>
+&lt;/ul>
+&lt;h3 id="-llm-scaling-insights">🤖 &lt;strong>LLM Scaling Insights&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Emergent Abilities&lt;/strong>: Capabilities that appear at scale (reasoning, few-shot learning)&lt;/li>
+&lt;li>&lt;strong>Scaling Laws&lt;/strong>: Predictable relationships between model size, data, and performance&lt;/li>
+&lt;li>&lt;strong>Context Length&lt;/strong>: Longer context enables better understanding and generation&lt;/li>
+&lt;li>&lt;strong>Instruction Following&lt;/strong>: Fine-tuning for human-aligned behavior&lt;/li>
+&lt;/ul>
+&lt;h3 id="-diffusion-model-advantages">🎨 &lt;strong>Diffusion Model Advantages&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Training Stability&lt;/strong>: More stable than GANs, less mode collapse&lt;/li>
+&lt;li>&lt;strong>Sample Quality&lt;/strong>: High-quality, diverse samples&lt;/li>
+&lt;li>&lt;strong>Controllability&lt;/strong>: Easy to condition on various inputs&lt;/li>
+&lt;li>&lt;strong>Mathematical Foundation&lt;/strong>: Strong theoretical backing with SDE framework&lt;/li>
+&lt;/ul>
+&lt;h2 id="implementation-considerations">Implementation Considerations&lt;/h2>
+&lt;h3 id="-computational-requirements">⚡ &lt;strong>Computational Requirements&lt;/strong>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Architecture&lt;/th>
+ &lt;th>Training Cost&lt;/th>
+ &lt;th>Inference Cost&lt;/th>
+ &lt;th>Memory Usage&lt;/th>
+ &lt;th>Parallelization&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Transformers&lt;/strong>&lt;/td>
+ &lt;td>High&lt;/td>
+ &lt;td>Medium&lt;/td>
+ &lt;td>High&lt;/td>
+ &lt;td>Excellent&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Diffusion&lt;/strong>&lt;/td>
+ &lt;td>Medium&lt;/td>
+ &lt;td>High&lt;/td>
+ &lt;td>Medium&lt;/td>
+ &lt;td>Good&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>GANs&lt;/strong>&lt;/td>
+ &lt;td>Medium&lt;/td>
+ &lt;td>Low&lt;/td>
+ &lt;td>Medium&lt;/td>
+ &lt;td>Good&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>VAEs&lt;/strong>&lt;/td>
+ &lt;td>Low&lt;/td>
+ &lt;td>Low&lt;/td>
+ &lt;td>Low&lt;/td>
+ &lt;td>Excellent&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="-performance-trade-offs">🎯 &lt;strong>Performance Trade-offs&lt;/strong>&lt;/h3>
+&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 70, &amp;#39;rankSpacing&amp;#39;: 90}}}%%
+graph LR
+ subgraph QUALITY[🎨 Sample Quality]
+ direction TB
+ Q_HIGH[High Quality&amp;lt;br/&amp;gt;💡 Diffusion Models&amp;lt;br/&amp;gt;💡 Large Transformers]
+ Q_MEDIUM[Medium Quality&amp;lt;br/&amp;gt;💡 GANs&amp;lt;br/&amp;gt;💡 Medium Transformers]
+ end
+ 
+ subgraph SPEED[⚡ Generation Speed]
+ direction TB
+ S_FAST[Fast Generation&amp;lt;br/&amp;gt;💡 GANs&amp;lt;br/&amp;gt;💡 Single-step Models]
+ S_SLOW[Slow Generation&amp;lt;br/&amp;gt;💡 Diffusion Multi-step&amp;lt;br/&amp;gt;💡 Autoregressive LLMs]
+ end
+ 
+ subgraph CONTROL[🎛️ Controllability]
+ direction TB
+ C_HIGH[High Control&amp;lt;br/&amp;gt;💡 Conditional Diffusion&amp;lt;br/&amp;gt;💡 Instruction-tuned LLMs]
+ C_LOW[Limited Control&amp;lt;br/&amp;gt;💡 Unconditional GANs&amp;lt;br/&amp;gt;💡 Base LLMs]
+ end
+ 
+ subgraph DIVERSITY[🌈 Sample Diversity]
+ direction TB
+ D_HIGH[High Diversity&amp;lt;br/&amp;gt;💡 Diffusion Models&amp;lt;br/&amp;gt;💡 Temperature Sampling]
+ D_LOW[Mode Collapse Risk&amp;lt;br/&amp;gt;💡 GANs&amp;lt;br/&amp;gt;💡 Greedy Decoding]
+ end
+
+ style QUALITY fill:#d5e8d4,stroke:#82b366,stroke-width:2px
+ style SPEED fill:#dae8fc,stroke:#6c8ebf,stroke-width:2px
+ style CONTROL fill:#f8cecc,stroke:#b85450,stroke-width:2px
+ style DIVERSITY fill:#fff2cc,stroke:#d6b656,stroke-width:2px
+&lt;/code>&lt;/pre>&lt;h2 id="essential-resources-by-architecture">Essential Resources by Architecture&lt;/h2>
+&lt;h3 id="-transformers">🔄 &lt;strong>Transformers&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need&lt;/a>&lt;/strong> - Original Transformer paper ⭐&lt;/li>
+&lt;li>&lt;strong>&lt;a href="http://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer&lt;/a>&lt;/strong> - Visual explanations ⭐&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://transformer-circuits.pub/">Transformer Circuits&lt;/a>&lt;/strong> - Mechanistic interpretability&lt;/li>
+&lt;/ul>
+&lt;h3 id="-large-language-models">🤖 &lt;strong>Large Language Models&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>&lt;a href="http://localhost:1313/bookshelf/100-page-lm-book/">The Hundred-Page Language Models Book&lt;/a>&lt;/strong> - Comprehensive overview ⭐&lt;/li>
+&lt;li>&lt;strong>&lt;a href="http://localhost:1313/bookshelf/hands-on-large-language-models/">Hands-On Large Language Models&lt;/a>&lt;/strong> - Practical implementation ⭐&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/2005.14165">GPT-3 Paper&lt;/a>&lt;/strong> - Scaling language models&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/2203.02155">InstructGPT Paper&lt;/a>&lt;/strong> - Training language models to follow instructions&lt;/li>
+&lt;/ul>
+&lt;h3 id="-diffusion-models">🎨 &lt;strong>Diffusion Models&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/2006.11239">Denoising Diffusion Probabilistic Models&lt;/a>&lt;/strong> - Original DDPM ⭐&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/2208.11970">Understanding Diffusion Models&lt;/a>&lt;/strong> - Comprehensive tutorial ⭐&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/2112.10752">Stable Diffusion Paper&lt;/a>&lt;/strong> - Latent diffusion models&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/2010.02502">DDIM Paper&lt;/a>&lt;/strong> - Deterministic sampling&lt;/li>
+&lt;/ul>
+&lt;h3 id="-other-generative-models">🎭 &lt;strong>Other Generative Models&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/1701.00160">GAN Tutorial&lt;/a>&lt;/strong> - Ian Goodfellow&amp;rsquo;s tutorial&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/1906.02691">VAE Tutorial&lt;/a>&lt;/strong> - Introduction to variational autoencoders&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/1908.09257">Normalizing Flows&lt;/a>&lt;/strong> - Flow-based generative modeling&lt;/li>
+&lt;/ul>
+&lt;h2 id="current-research-frontiers">Current Research Frontiers&lt;/h2>
+&lt;h3 id="-active-research-areas">🔬 &lt;strong>Active Research Areas&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Efficient Transformers&lt;/strong>: Reducing quadratic complexity of attention&lt;/li>
+&lt;li>&lt;strong>Multimodal Integration&lt;/strong>: Seamless text, image, audio understanding&lt;/li>
+&lt;li>&lt;strong>Retrieval Augmentation&lt;/strong>: Combining parametric and non-parametric knowledge&lt;/li>
+&lt;li>&lt;strong>Constitutional AI&lt;/strong>: Training models to be helpful, harmless, and honest&lt;/li>
+&lt;li>&lt;strong>Model Compression&lt;/strong>: Distillation, pruning, quantization for deployment&lt;/li>
+&lt;/ul>
+&lt;h3 id="-emerging-architectures">🚀 &lt;strong>Emerging Architectures&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Mamba/State Space Models&lt;/strong>: Linear complexity sequence modeling&lt;/li>
+&lt;li>&lt;strong>RetNet&lt;/strong>: Alternative to Transformers with better efficiency&lt;/li>
+&lt;li>&lt;strong>Mixture of Experts&lt;/strong>: Scaling parameters without proportional compute&lt;/li>
+&lt;li>&lt;strong>Multi-Token Prediction&lt;/strong>: Predicting multiple tokens simultaneously&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;strong>Next Steps&lt;/strong>: With core architectures understood, explore &lt;a href="https://deepskandpal.github.io/tech-writings/genai-training/">Training &amp;amp; Optimization&lt;/a> to learn how these models are actually trained at scale, or dive into &lt;a href="https://deepskandpal.github.io/tech-writings/genai-applications/">Applications&lt;/a> to see them in action.&lt;/p></description></item></channel></rss>

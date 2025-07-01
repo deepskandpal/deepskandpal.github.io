@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Machine Learning on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/machine-learning/</link><description>Recent content in Machine Learning on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 26 Jan 2025 16:00:00 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml"/><item><title>The Complete GenAI Knowledge Tree: Comprehensive Domain Map</title><link>https://deepskandpal.github.io/tech-writings/genai-study-roadmap/</link><pubDate>Sun, 26 Jan 2025 16:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai-study-roadmap/</guid><description>&lt;h1 id="the-complete-genai-knowledge-tree">The Complete GenAI Knowledge Tree&lt;/h1>
+&lt;p>A comprehensive representation of the Generative AI domain, organized as an interconnected knowledge tree. Each node represents a key concept with natural relationships to related topics. Navigate through any path that interests you - from mathematical foundations to cutting-edge research.&lt;/p>
+&lt;h2 id="genai-knowledge-domains">GenAI Knowledge Domains&lt;/h2>
+&lt;p>Navigate through the GenAI ecosystem by exploring focused knowledge domains. Each domain contains specialized concepts and detailed trees.&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 60, &amp;#39;rankSpacing&amp;#39;: 80}}}%%
+graph LR
+ ROOT[🤖 Generative AI Universe] --&amp;gt; FOUNDATIONS[📚 Foundations&amp;lt;br/&amp;gt;Mathematics, ML, Deep Learning]
+ ROOT --&amp;gt; ARCHITECTURES[🏗️ Core Architectures&amp;lt;br/&amp;gt;Transformers, LLMs, Diffusion Models]
+ ROOT --&amp;gt; TRAINING[🚀 Training &amp;amp; Optimization&amp;lt;br/&amp;gt;Pre-training, Fine-tuning, Distributed Training]
+ ROOT --&amp;gt; APPLICATIONS[🔄 Applications &amp;amp; Systems&amp;lt;br/&amp;gt;NLP, Vision, Multimodal, Agents, RAG]
+ ROOT --&amp;gt; INFRASTRUCTURE[⚙️ Infrastructure &amp;amp; Implementation&amp;lt;br/&amp;gt;Hardware, Frameworks, Model Serving]
+ ROOT --&amp;gt; ADVANCED[🔬 Advanced Topics &amp;amp; Research&amp;lt;br/&amp;gt;Safety, Evaluation, Cutting-Edge Research]
+ 
+ %% Add links to detailed trees
+ FOUNDATIONS --&amp;gt; FOUND_LINK[📖 Explore Foundations Tree]
+ ARCHITECTURES --&amp;gt; ARCH_LINK[📖 Explore Architectures Tree]
+ TRAINING --&amp;gt; TRAIN_LINK[📖 Explore Training Tree]
+ APPLICATIONS --&amp;gt; APP_LINK[📖 Explore Applications Tree]
+ INFRASTRUCTURE --&amp;gt; INFRA_LINK[📖 Explore Infrastructure Tree]
+ ADVANCED --&amp;gt; ADV_LINK[📖 Explore Advanced Topics Tree]
+
+ %% Styling
+ style ROOT fill:#e1d5e7,stroke:#9673a6,stroke-width:4px
+ style FOUNDATIONS fill:#d5e8d4,stroke:#82b366,stroke-width:3px
+ style ARCHITECTURES fill:#dae8fc,stroke:#6c8ebf,stroke-width:3px
+ style TRAINING fill:#f8cecc,stroke:#b85450,stroke-width:3px
+ style APPLICATIONS fill:#fff2cc,stroke:#d6b656,stroke-width:3px
+ style INFRASTRUCTURE fill:#e1d5e7,stroke:#9673a6,stroke-width:3px
+ style ADVANCED fill:#d5e8d4,stroke:#82b366,stroke-width:3px
+ 
+ style FOUND_LINK fill:#f9f9f9,stroke:#666,stroke-width:2px
+ style ARCH_LINK fill:#f9f9f9,stroke:#666,stroke-width:2px
+ style TRAIN_LINK fill:#f9f9f9,stroke:#666,stroke-width:2px
+ style APP_LINK fill:#f9f9f9,stroke:#666,stroke-width:2px
+ style INFRA_LINK fill:#f9f9f9,stroke:#666,stroke-width:2px
+ style ADV_LINK fill:#f9f9f9,stroke:#666,stroke-width:2px
+&lt;/code>&lt;/pre>&lt;h2 id="domain-overview">Domain Overview&lt;/h2>
+&lt;h3 id="-foundations">📚 &lt;strong>&lt;a href="https://deepskandpal.github.io/tech-writings/genai-foundations/">Foundations&lt;/a>&lt;/strong>&lt;/h3>
+&lt;p>&lt;strong>Essential Prerequisites&lt;/strong>: Mathematical foundations, machine learning principles, and deep learning fundamentals that underpin all generative AI systems.&lt;/p></description></item><item><title>GenAI Latest Notes: Advanced Training Techniques and Research Frontiers</title><link>https://deepskandpal.github.io/tech-writings/gen-ai-latest-notes/</link><pubDate>Sun, 26 Jan 2025 15:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/gen-ai-latest-notes/</guid><description>&lt;p>This article analyzes cutting-edge techniques and frameworks used in large language model training, with a focus on practical implementation challenges and emerging research directions.&lt;/p>
+&lt;h2 id="part-1-core-training-frameworks">Part 1: Core Training Frameworks&lt;/h2>
+&lt;h3 id="coom-training-framework-architecture">COOM: Training Framework Architecture&lt;/h3>
+&lt;p>The training framework represents the complete infrastructure needed for pre-training large language models from scratch. The primary challenge addressed is &lt;strong>CUDA Out Of Memory&lt;/strong> errors, which drives most optimization techniques.&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 100, &amp;#39;rankSpacing&amp;#39;: 140}}}%%
+graph TD
+ A[Training Framework] --&amp;gt; B[Megatron-LM]
+ A --&amp;gt; C[Triton Kernels]
+ A --&amp;gt; D[Memory Management]
+ A --&amp;gt; E[Data Pipeline]
+ 
+ B --&amp;gt; B1[Model Parallelism]
+ B --&amp;gt; B2[Tensor Parallelism] 
+ B --&amp;gt; B3[Pipeline Parallelism]
+ 
+ C --&amp;gt; C1[Custom GPU Kernels]
+ C --&amp;gt; C2[Attention Optimization]
+ C --&amp;gt; C3[Vector Operations]
+ 
+ D --&amp;gt; D1[Gradient Checkpointing]
+ D --&amp;gt; D2[Mixed Precision]
+ D --&amp;gt; D3[Activation Offloading]
+ 
+ E --&amp;gt; E1[Sequence Packing]
+ E --&amp;gt; E2[Data Checkpointing]
+ E --&amp;gt; E3[Streaming Loaders]
+
+ style A fill:#e1d5e7,stroke:#9673a6,stroke-width:3px
+ style B fill:#d5e8d4,stroke:#82b366,stroke-width:2px
+ style C fill:#f8cecc,stroke:#b85450,stroke-width:2px
+ style D fill:#dae8fc,stroke:#6c8ebf,stroke-width:2px
+ style E fill:#fff2cc,stroke:#d6b656,stroke-width:2px
+&lt;/code>&lt;/pre>&lt;h3 id="key-technologies">Key Technologies&lt;/h3>
+&lt;p>&lt;strong>Megatron-LM&lt;/strong> (&lt;a href="https://github.com/NVIDIA/Megatron-LM">NVIDIA Research&lt;/a>)&lt;/p></description></item></channel></rss>

@@ -16,7 +16,15 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;p>So, all this calculus is ultimately about finding an efficient way to &amp;ldquo;walk downhill&amp;rdquo; on our loss function surface to find the parameter values that give the lowest error.&lt;/p></description></item><item><title>Attention Is All You Need</title><link>https://deepskandpal.github.io/papershelf/attention-all-u-need/</link><pubDate>Sat, 27 Apr 2024 19:30:00 +0000</pubDate><guid>https://deepskandpal.github.io/papershelf/attention-all-u-need/</guid><description>&lt;h2 id="paper">&lt;strong>Paper: &amp;ldquo;Attention Is All You Need&amp;rdquo;&lt;/strong>&lt;/h2>
+&lt;p>So, all this calculus is ultimately about finding an efficient way to &amp;ldquo;walk downhill&amp;rdquo; on our loss function surface to find the parameter values that give the lowest error.&lt;/p></description></item><item><title>Generative AI System Design Interview (Full Colour Edition)</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/</guid><description>&lt;h1 id="notes--summary-for-the-book">Notes / Summary for the Book&lt;/h1>
+&lt;p>&lt;strong>Generative AI System Design Interview (Full Colour Edition)&lt;/strong> by Alex Xu, Ali Aminian, Hao Sheng&lt;/p>
+&lt;p>This book provides an insider&amp;rsquo;s perspective on what interviewers are truly looking for in GenAI system design interviews and why. It includes:&lt;/p>
+&lt;ul>
+&lt;li>A 7-step framework to help tackle GenAI system design interview questions&lt;/li>
+&lt;li>10 real-world GenAI system design questions with in-depth solutions&lt;/li>
+&lt;li>280+ diagrams to demystify complex GenAI systems&lt;/li>
+&lt;/ul>
+&lt;p>The book is particularly helpful for:&lt;/p></description></item><item><title>Attention Is All You Need</title><link>https://deepskandpal.github.io/papershelf/attention-all-u-need/</link><pubDate>Sat, 27 Apr 2024 19:30:00 +0000</pubDate><guid>https://deepskandpal.github.io/papershelf/attention-all-u-need/</guid><description>&lt;h2 id="paper">&lt;strong>Paper: &amp;ldquo;Attention Is All You Need&amp;rdquo;&lt;/strong>&lt;/h2>
 &lt;p>&lt;strong>Title Itself:&lt;/strong> The title is a bold claim. It signals a departure from the dominant RNN/LSTM and CNN paradigms for sequence modeling at the time. It suggests that the attention mechanism, previously often an auxiliary component, could be the &lt;em>core&lt;/em> and &lt;em>sufficient&lt;/em> mechanism.&lt;/p>
 &lt;h2 id="abstract">&lt;strong>Abstract:&lt;/strong>&lt;/h2>
 &lt;ul>

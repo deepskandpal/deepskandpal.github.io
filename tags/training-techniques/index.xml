@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Training Techniques on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/training-techniques/</link><description>Recent content in Training Techniques on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 26 Jan 2025 15:00:00 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/training-techniques/index.xml" rel="self" type="application/rss+xml"/><item><title>GenAI Latest Notes: Advanced Training Techniques and Research Frontiers</title><link>https://deepskandpal.github.io/tech-writings/gen-ai-latest-notes/</link><pubDate>Sun, 26 Jan 2025 15:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/gen-ai-latest-notes/</guid><description>&lt;p>This article analyzes cutting-edge techniques and frameworks used in large language model training, with a focus on practical implementation challenges and emerging research directions.&lt;/p>
+&lt;h2 id="part-1-core-training-frameworks">Part 1: Core Training Frameworks&lt;/h2>
+&lt;h3 id="coom-training-framework-architecture">COOM: Training Framework Architecture&lt;/h3>
+&lt;p>The training framework represents the complete infrastructure needed for pre-training large language models from scratch. The primary challenge addressed is &lt;strong>CUDA Out Of Memory&lt;/strong> errors, which drives most optimization techniques.&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 100, &amp;#39;rankSpacing&amp;#39;: 140}}}%%
+graph TD
+ A[Training Framework] --&amp;gt; B[Megatron-LM]
+ A --&amp;gt; C[Triton Kernels]
+ A --&amp;gt; D[Memory Management]
+ A --&amp;gt; E[Data Pipeline]
+ 
+ B --&amp;gt; B1[Model Parallelism]
+ B --&amp;gt; B2[Tensor Parallelism] 
+ B --&amp;gt; B3[Pipeline Parallelism]
+ 
+ C --&amp;gt; C1[Custom GPU Kernels]
+ C --&amp;gt; C2[Attention Optimization]
+ C --&amp;gt; C3[Vector Operations]
+ 
+ D --&amp;gt; D1[Gradient Checkpointing]
+ D --&amp;gt; D2[Mixed Precision]
+ D --&amp;gt; D3[Activation Offloading]
+ 
+ E --&amp;gt; E1[Sequence Packing]
+ E --&amp;gt; E2[Data Checkpointing]
+ E --&amp;gt; E3[Streaming Loaders]
+
+ style A fill:#e1d5e7,stroke:#9673a6,stroke-width:3px
+ style B fill:#d5e8d4,stroke:#82b366,stroke-width:2px
+ style C fill:#f8cecc,stroke:#b85450,stroke-width:2px
+ style D fill:#dae8fc,stroke:#6c8ebf,stroke-width:2px
+ style E fill:#fff2cc,stroke:#d6b656,stroke-width:2px
+&lt;/code>&lt;/pre>&lt;h3 id="key-technologies">Key Technologies&lt;/h3>
+&lt;p>&lt;strong>Megatron-LM&lt;/strong> (&lt;a href="https://github.com/NVIDIA/Megatron-LM">NVIDIA Research&lt;/a>)&lt;/p></description></item></channel></rss>

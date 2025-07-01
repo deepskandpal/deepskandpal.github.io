@@ -1,0 +1,219 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>404EngineerNotFound</title><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin=anonymous referrerpolicy=no-referrer><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.31/dist/flexsearch.bundle.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js></script></head><body>\<header><nav><div class=logo><a href=/>404EngineerNotFound</a></div><ul class=main-nav><li class="nav-item has-dropdown"><a href=#>Writings <i class="fas fa-caret-down fa-xs"></i></a><ul class=dropdown-menu><li class=dropdown-item><a href=/stories/>Stories</a></li><li class=dropdown-item><a href=/thoughts/>Thoughts</a></li><li class=dropdown-item><a href=/fitness-log/>Fitness Log</a></li></ul></li><li class="nav-item has-dropdown"><a href=#>Tech Lab <i class="fas fa-caret-down fa-xs"></i></a><ul class=dropdown-menu><li class=dropdown-item><a href=/papershelf/>Papershelf</a></li><li class=dropdown-item><a href=/creations/>Creations</a></li><li class=dropdown-item><a href=/dsa-log/>DSA Log</a></li><li class=dropdown-item><a href=/tech-writings/>Technical Writings</a></li></ul></li><li class=nav-item><a href=/bookshelf/>Bookshelf</a></li><li class=nav-item><a href=/about/>About</a></li></ul><div class=search-container><input type=search id=search-input placeholder=Search...>
+<i class="fa fa-search"></i></div></nav><div id=search-results-container><ul id=search-results></ul></div></header><main><div class=single-content-wrapper><aside class=article-sidebar><nav><h4>On this page</h4><nav id=TableOfContents><ul><li><a href=#genai-foundations-tree>GenAI Foundations Tree</a><ul><li><a href=#foundations-knowledge-tree>Foundations Knowledge Tree</a><ul><li><a href=#complete-foundation-overview>Complete Foundation Overview</a></li><li><a href=#mathematics-core-areas-with-key-concepts>Mathematics: Core Areas with Key Concepts</a></li><li><a href=#mathematics-optimization--calculus>Mathematics: Optimization & Calculus</a></li><li><a href=#machine-learning-learning-paradigms>Machine Learning: Learning Paradigms</a></li><li><a href=#machine-learning-theory--evaluation>Machine Learning: Theory & Evaluation</a></li><li><a href=#deep-learning-neural-networks--training>Deep Learning: Neural Networks & Training</a></li><li><a href=#deep-learning-functions--regularization>Deep Learning: Functions & Regularization</a></li><li><a href=#deep-learning-advanced-architectures>Deep Learning: Advanced Architectures</a></li></ul></li><li><a href=#learning-path-recommendations>Learning Path Recommendations</a><ul><li><a href=#-quick-start-path-for-those-with-some-ml-background>🚀 <strong>Quick Start Path</strong> (For those with some ML background)</a></li><li><a href=#-comprehensive-path-from-ground-up>📚 <strong>Comprehensive Path</strong> (From ground up)</a></li><li><a href=#-research-oriented-path-for-advanced-learners>🔬 <strong>Research-Oriented Path</strong> (For advanced learners)</a></li></ul></li><li><a href=#key-concepts-to-master>Key Concepts to Master</a><ul><li><a href=#mathematical-prerequisites>Mathematical Prerequisites</a></li><li><a href=#machine-learning-fundamentals>Machine Learning Fundamentals</a></li><li><a href=#deep-learning-essentials>Deep Learning Essentials</a></li></ul></li><li><a href=#essential-resources-by-topic>Essential Resources by Topic</a><ul><li><a href=#-mathematics>📐 <strong>Mathematics</strong></a></li><li><a href=#-machine-learning>🧠 <strong>Machine Learning</strong></a></li><li><a href=#-deep-learning>🔗 <strong>Deep Learning</strong></a></li></ul></li><li><a href=#common-pitfalls--tips>Common Pitfalls & Tips</a><ul><li><a href=#-mathematical-foundation-gaps>⚠️ <strong>Mathematical Foundation Gaps</strong></a></li><li><a href=#-learning-strategy>🎯 <strong>Learning Strategy</strong></a></li></ul></li><li><a href=#connection-to-advanced-topics>Connection to Advanced Topics</a></li></ul></li></ul></nav></nav></aside><article class="post-single page-genai-foundations"><h1>GenAI Foundations: Mathematical & Deep Learning Prerequisites</h1><span class=reading-time><em>6 min read</em></span><div class=post-content><h1 id=genai-foundations-tree>GenAI Foundations Tree</h1><p>Essential mathematical and computational foundations that underpin all generative AI systems. Master these concepts to build a solid foundation for advanced GenAI topics.</p><h2 id=foundations-knowledge-tree>Foundations Knowledge Tree</h2><h3 id=complete-foundation-overview>Complete Foundation Overview</h3><pre tabindex=0><code class=language-mermaid data-lang=mermaid>%%{init: {&#39;flowchart&#39;: {&#39;nodeSpacing&#39;: 50, &#39;rankSpacing&#39;: 80}}}%%
+graph LR
+    ROOT[📚 GenAI Foundations]
+    
+    %% Mathematics Branch - Vertical
+    ROOT --&gt; MATH[📐 Mathematics]
+    MATH --&gt; MATH1[📊 Linear Algebra]
+    MATH --&gt; MATH2[🎲 Probability &amp; Statistics]
+    MATH --&gt; MATH3[📡 Information Theory]
+    MATH --&gt; MATH4[⚡ Optimization]
+    MATH --&gt; MATH5[📈 Calculus]
+    
+    %% Machine Learning Branch - Horizontal
+    ROOT --&gt; ML[🧠 Machine Learning]
+    ML --&gt; ML1[📋 Supervised]
+    ML --&gt; ML2[🔍 Unsupervised] 
+    ML --&gt; ML3[🎮 Reinforcement]
+    ML --&gt; ML4[📚 Theory]
+    ML --&gt; ML5[🔄 Evaluation]
+    
+    %% Deep Learning Branch - Mixed
+    ROOT --&gt; DL[🔗 Deep Learning]
+    DL --&gt; DL1[🧠 Neural Networks]
+    DL --&gt; DL2[🔄 Training]
+    DL --&gt; DL3[⚡ Activations]
+    DL --&gt; DL4[🛡️ Regularization]
+    DL --&gt; DL5[🖼️ CNNs]
+    DL --&gt; DL6[🔗 RNNs]
+    DL --&gt; DL7[💫 Embeddings]
+
+    %% Styling
+    style ROOT fill:#e1d5e7,stroke:#9673a6,stroke-width:4px
+    style MATH fill:#d5e8d4,stroke:#82b366,stroke-width:3px
+    style ML fill:#dae8fc,stroke:#6c8ebf,stroke-width:3px
+    style DL fill:#f8cecc,stroke:#b85450,stroke-width:3px
+</code></pre><h3 id=mathematics-core-areas-with-key-concepts>Mathematics: Core Areas with Key Concepts</h3><pre tabindex=0><code class=language-mermaid data-lang=mermaid>%%{init: {&#39;flowchart&#39;: {&#39;nodeSpacing&#39;: 40, &#39;rankSpacing&#39;: 60}}}%%
+graph LR
+    subgraph LA[📊 Linear Algebra]
+        M1A[Matrix Operations] --&gt; M1B[Eigenvalues &amp; Eigenvectors]
+        M1B --&gt; M1C[Vector Spaces]
+        M1C --&gt; M1D[Linear Transformations]
+        M1D --&gt; M1E[Decompositions: SVD, QR, LU]
+    end
+    
+    subgraph PROB[🎲 Probability &amp; Statistics]
+        M2A[Distributions] --&gt; M2B[Bayes Theorem]
+        M2B --&gt; M2C[Statistical Inference]
+        M2C --&gt; M2D[Random Variables]
+        M2D --&gt; M2E[Multivariate Statistics]
+    end
+    
+    LA --&gt; PROB
+    
+    subgraph INFO[📡 Information Theory]
+        M3A[Entropy &amp; Information] --&gt; M3B[KL Divergence]
+        M3B --&gt; M3C[Mutual Information]
+        M3C --&gt; M3D[Channel Capacity]
+    end
+    
+    PROB --&gt; INFO
+
+    style LA fill:#e8f5e8,stroke:#4caf50,stroke-width:2px
+    style PROB fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
+    style INFO fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+</code></pre><h3 id=mathematics-optimization--calculus>Mathematics: Optimization & Calculus</h3><pre tabindex=0><code class=language-mermaid data-lang=mermaid>%%{init: {&#39;flowchart&#39;: {&#39;nodeSpacing&#39;: 40, &#39;rankSpacing&#39;: 60}}}%%
+graph TD
+    OPT[⚡ Optimization Theory]
+    CALC[📈 Calculus &amp; Analysis]
+    
+    OPT --&gt; M4A[Convex Optimization&lt;br/&gt;Global Optima]
+    OPT --&gt; M4B[Gradient Descent&lt;br/&gt;Line Search]
+    OPT --&gt; M4C[Constrained Optimization&lt;br/&gt;Lagrange Multipliers]
+    OPT --&gt; M4D[Stochastic Optimization&lt;br/&gt;SGD, Mini-batch]
+    
+    CALC --&gt; M5A[Multivariable Calculus&lt;br/&gt;Chain Rule, Jacobians]
+    CALC --&gt; M5B[Vector Calculus&lt;br/&gt;Gradients, Divergence]
+    CALC --&gt; M5C[Functional Analysis&lt;br/&gt;Function Spaces]
+    CALC --&gt; M5D[Differential Equations&lt;br/&gt;ODEs, PDEs]
+
+    style OPT fill:#fce4ec,stroke:#e91e63,stroke-width:3px
+    style CALC fill:#f3e5f5,stroke:#9c27b0,stroke-width:3px
+</code></pre><h3 id=machine-learning-learning-paradigms>Machine Learning: Learning Paradigms</h3><pre tabindex=0><code class=language-mermaid data-lang=mermaid>%%{init: {&#39;flowchart&#39;: {&#39;nodeSpacing&#39;: 40, &#39;rankSpacing&#39;: 70}}}%%
+graph LR
+    subgraph SUP[📋 Supervised Learning]
+        ML1A[Classification]
+        ML1B[Regression] 
+        
+        ML1A --&gt; ML1A1[Binary Classification]
+        ML1A --&gt; ML1A2[Multi-class Classification]
+        ML1A --&gt; ML1A3[Imbalanced Learning]
+        
+        ML1B --&gt; ML1B1[Linear Regression]
+        ML1B --&gt; ML1B2[Regularized Regression]
+        ML1B --&gt; ML1B3[Non-linear Regression]
+    end
+    
+    subgraph UNSUP[🔍 Unsupervised Learning]
+        ML2A[Clustering]
+        ML2B[Dimensionality Reduction]
+        
+        ML2A --&gt; ML2A1[Partitioning Methods]
+        ML2A --&gt; ML2A2[Hierarchical Methods]
+        ML2A --&gt; ML2A3[Density-based Methods]
+        
+        ML2B --&gt; ML2B1[Linear Methods: PCA, LDA]
+        ML2B --&gt; ML2B2[Non-linear: t-SNE, UMAP]
+        ML2B --&gt; ML2B3[Manifold Learning]
+    end
+    
+    SUP --&gt; UNSUP
+
+    style SUP fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
+    style UNSUP fill:#e8f5e8,stroke:#4caf50,stroke-width:2px
+</code></pre><h3 id=machine-learning-theory--evaluation>Machine Learning: Theory & Evaluation</h3><pre tabindex=0><code class=language-mermaid data-lang=mermaid>%%{init: {&#39;flowchart&#39;: {&#39;nodeSpacing&#39;: 50, &#39;rankSpacing&#39;: 60}}}%%
+graph TD
+    subgraph RL[🎮 Reinforcement Learning]
+        ML3A[Policy Optimization&lt;br/&gt;Policy Gradient, Actor-Critic]
+        ML3B[Value Functions&lt;br/&gt;Q-Learning, TD-Learning]
+        ML3C[Exploration vs Exploitation&lt;br/&gt;Epsilon-Greedy, UCB]
+    end
+    
+    subgraph THEORY[📚 Statistical Learning Theory]
+        ML4A[PAC Learning&lt;br/&gt;Sample Complexity]
+        ML4B[VC Dimension&lt;br/&gt;Shattering, Growth Function]
+        ML4C[Generalization Bounds&lt;br/&gt;Rademacher Complexity]
+        ML4D[Bias-Variance Tradeoff&lt;br/&gt;Model Complexity]
+    end
+    
+    subgraph EVAL[🔄 Model Selection &amp; Evaluation]
+        ML5A[Cross-Validation&lt;br/&gt;K-Fold, Stratified]
+        ML5B[Performance Metrics&lt;br/&gt;Accuracy, F1, AUC-ROC]
+        ML5C[Hyperparameter Tuning&lt;br/&gt;Grid Search, Bayesian Opt]
+    end
+
+    RL --&gt; THEORY
+    THEORY --&gt; EVAL
+
+    style RL fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    style THEORY fill:#fce4ec,stroke:#e91e63,stroke-width:2px
+    style EVAL fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px
+</code></pre><h3 id=deep-learning-neural-networks--training>Deep Learning: Neural Networks & Training</h3><pre tabindex=0><code class=language-mermaid data-lang=mermaid>%%{init: {&#39;flowchart&#39;: {&#39;nodeSpacing&#39;: 40, &#39;rankSpacing&#39;: 60}}}%%
+graph LR
+    subgraph NN[🧠 Neural Networks &amp; Training]
+        DL1A[Perceptrons&lt;br/&gt;Single Layer] --&gt; DL1B[Multi-Layer Perceptrons&lt;br/&gt;Hidden Layers]
+        DL1B --&gt; DL1C[Universal Approximation&lt;br/&gt;Function Approximation]
+        DL1C --&gt; DL1D[Network Architectures&lt;br/&gt;Feedforward, Skip Connections]
+    end
+    
+    subgraph TRAIN[🔄 Training Process]
+        DL2A[Chain Rule&lt;br/&gt;Gradient Computation] --&gt; DL2B[Automatic Differentiation&lt;br/&gt;Computational Graphs]
+        DL2B --&gt; DL2C[Gradient Flow&lt;br/&gt;Vanishing/Exploding Gradients]
+        DL2C --&gt; DL2D[Implementation&lt;br/&gt;Memory Management]
+    end
+    
+    subgraph OPT[📈 Optimization Algorithms]
+        DL5A[SGD Variants&lt;br/&gt;Momentum, Nesterov] --&gt; DL5B[Adaptive Methods&lt;br/&gt;Adam, AdamW, RMSprop]
+        DL5B --&gt; DL5C[Learning Rate Scheduling&lt;br/&gt;Step Decay, Cosine]
+        DL5C --&gt; DL5D[Second-Order Methods&lt;br/&gt;Newton, L-BFGS]
+    end
+    
+    NN --&gt; TRAIN
+    TRAIN --&gt; OPT
+
+    style NN fill:#ffebee,stroke:#f44336,stroke-width:2px
+    style TRAIN fill:#e8f5e8,stroke:#4caf50,stroke-width:2px
+    style OPT fill:#fce4ec,stroke:#e91e63,stroke-width:2px
+</code></pre><h3 id=deep-learning-functions--regularization>Deep Learning: Functions & Regularization</h3><pre tabindex=0><code class=language-mermaid data-lang=mermaid>%%{init: {&#39;flowchart&#39;: {&#39;nodeSpacing&#39;: 80, &#39;rankSpacing&#39;: 120}}}%%
+graph LR
+    subgraph ACT[⚡ Activation Functions]
+        direction TB
+        DL3A[Classical&lt;br/&gt;Sigmoid, Tanh] --&gt; DL3B[ReLU Family&lt;br/&gt;ReLU, Leaky ReLU]
+        DL3B --&gt; DL3C[Modern&lt;br/&gt;GELU, Mish]
+        DL3C --&gt; DL3D[Gating&lt;br/&gt;GLU, Swish Gate]
+    end
+    
+    subgraph REG[🛡️ Regularization Techniques]
+        direction TB
+        DL4A[Dropout&lt;br/&gt;Random Neuron Dropping] --&gt; DL4B[Batch Normalization&lt;br/&gt;Layer Normalization]
+        DL4B --&gt; DL4C[Weight Decay&lt;br/&gt;L1, L2 Regularization]
+        DL4C --&gt; DL4D[Early Stopping&lt;br/&gt;Validation Monitoring]
+        DL4D --&gt; DL4E[Data Augmentation&lt;br/&gt;Synthetic Data]
+    end
+    
+    ACT ~~~ REG
+
+    style ACT fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
+    style REG fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+</code></pre><h3 id=deep-learning-advanced-architectures>Deep Learning: Advanced Architectures</h3><pre tabindex=0><code class=language-mermaid data-lang=mermaid>%%{init: {&#39;flowchart&#39;: {&#39;nodeSpacing&#39;: 40, &#39;rankSpacing&#39;: 60}}}%%
+graph LR
+    subgraph CNN[🖼️ Convolutional Networks]
+        DL6A[Convolution Operation&lt;br/&gt;Filters, Feature Maps] --&gt; DL6B[Pooling Layers&lt;br/&gt;Max, Average Pooling]
+        DL6B --&gt; DL6C[CNN Architectures&lt;br/&gt;LeNet, AlexNet, ResNet]
+        DL6C --&gt; DL6D[Advanced Techniques&lt;br/&gt;Dilated, Separable Conv]
+    end
+    
+    subgraph RNN[🔗 Recurrent Networks]
+        DL7A[Vanilla RNN&lt;br/&gt;Hidden State] --&gt; DL7B[LSTM Networks&lt;br/&gt;Gates &amp; Cell State]
+        DL7B --&gt; DL7C[GRU Networks&lt;br/&gt;Simplified Architecture]
+        DL7C --&gt; DL7D[Sequence Modeling&lt;br/&gt;Many-to-Many, Seq2Seq]
+    end
+    
+    subgraph EMB[💫 Embeddings]
+        DL8A[Word Embeddings&lt;br/&gt;Word2Vec, GloVe] --&gt; DL8B[Contextual Embeddings&lt;br/&gt;ELMo, BERT]
+        DL8B --&gt; DL8C[Positional Embeddings&lt;br/&gt;Absolute, Relative]
+        DL8C --&gt; DL8D[Embedding Techniques&lt;br/&gt;Negative Sampling]
+    end
+    
+    CNN --&gt; RNN
+    RNN --&gt; EMB
+
+    style CNN fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px
+    style RNN fill:#e0f2f1,stroke:#009688,stroke-width:2px
+    style EMB fill:#fff8e1,stroke:#ffc107,stroke-width:2px
+</code></pre><h2 id=learning-path-recommendations>Learning Path Recommendations</h2><h3 id=-quick-start-path-for-those-with-some-ml-background>🚀 <strong>Quick Start Path</strong> (For those with some ML background)</h3><pre tabindex=0><code>Neural Networks → Backpropagation → Optimization → Embeddings → Advanced Topics
+</code></pre><h3 id=-comprehensive-path-from-ground-up>📚 <strong>Comprehensive Path</strong> (From ground up)</h3><pre tabindex=0><code>Linear Algebra → Probability → Optimization → Supervised Learning → Deep Learning → Specialization
+</code></pre><h3 id=-research-oriented-path-for-advanced-learners>🔬 <strong>Research-Oriented Path</strong> (For advanced learners)</h3><pre tabindex=0><code>Statistical Learning Theory → Information Theory → Advanced Optimization → Modern Architectures
+</code></pre><h2 id=key-concepts-to-master>Key Concepts to Master</h2><h3 id=mathematical-prerequisites>Mathematical Prerequisites</h3><ul><li><strong>Linear Algebra</strong>: Matrix operations, eigendecomposition, SVD</li><li><strong>Probability</strong>: Distributions, Bayes&rsquo; theorem, statistical inference</li><li><strong>Optimization</strong>: Convex optimization, gradient descent, constrained optimization</li><li><strong>Information Theory</strong>: Entropy, KL divergence, mutual information</li></ul><h3 id=machine-learning-fundamentals>Machine Learning Fundamentals</h3><ul><li><strong>Supervised Learning</strong>: Classification, regression, model evaluation</li><li><strong>Unsupervised Learning</strong>: Clustering, dimensionality reduction</li><li><strong>Learning Theory</strong>: Bias-variance tradeoff, generalization bounds</li><li><strong>Model Selection</strong>: Cross-validation, hyperparameter tuning</li></ul><h3 id=deep-learning-essentials>Deep Learning Essentials</h3><ul><li><strong>Neural Networks</strong>: MLPs, universal approximation theorem</li><li><strong>Training</strong>: Backpropagation, optimization algorithms</li><li><strong>Regularization</strong>: Dropout, batch normalization, weight decay</li><li><strong>Architectures</strong>: CNNs for vision, RNNs for sequences</li></ul><h2 id=essential-resources-by-topic>Essential Resources by Topic</h2><h3 id=-mathematics>📐 <strong>Mathematics</strong></h3><ul><li><strong><a href=http://localhost:1313/bookshelf/linear-done-right/>Linear Algebra Done Right</a></strong> - Fundamental concepts ⭐</li><li><strong><a href=http://localhost:1313/bookshelf/statistical-rethinking/>Statistical Rethinking</a></strong> - Modern Bayesian approach ⭐</li><li><strong>Elements of Information Theory</strong> - Cover & Thomas</li></ul><h3 id=-machine-learning>🧠 <strong>Machine Learning</strong></h3><ul><li><strong><a href=http://localhost:1313/bookshelf/elements/>The Elements of Statistical Learning</a></strong> - Comprehensive reference ⭐</li><li><strong><a href=http://localhost:1313/bookshelf/hands-on-ml/>Hands-On Machine Learning</a></strong> - Practical implementation ⭐</li><li><strong>Pattern Recognition and Machine Learning</strong> - Bishop</li></ul><h3 id=-deep-learning>🔗 <strong>Deep Learning</strong></h3><ul><li><strong>Deep Learning</strong> - Ian Goodfellow, Yoshua Bengio, Aaron Courville</li><li><strong>Neural Networks and Deep Learning</strong> - Michael Nielsen (online)</li><li><strong>Deep Learning Specialization</strong> - Andrew Ng (Coursera)</li></ul><h2 id=common-pitfalls--tips>Common Pitfalls & Tips</h2><h3 id=-mathematical-foundation-gaps>⚠️ <strong>Mathematical Foundation Gaps</strong></h3><ul><li><strong>Linear Algebra</strong>: Don&rsquo;t skip eigenvalues - critical for PCA, attention</li><li><strong>Probability</strong>: Master conditional probability - essential for Bayesian methods</li><li><strong>Optimization</strong>: Understand convexity - affects convergence guarantees</li></ul><h3 id=-learning-strategy>🎯 <strong>Learning Strategy</strong></h3><ul><li><strong>Theory + Practice</strong>: Balance mathematical understanding with implementation</li><li><strong>Build Intuition</strong>: Visualize concepts before diving into equations</li><li><strong>Progressive Complexity</strong>: Master simple cases before advanced variants</li></ul><h2 id=connection-to-advanced-topics>Connection to Advanced Topics</h2><p>These foundations directly enable understanding of:</p><ul><li><strong>Transformer Architecture</strong>: Attention mechanisms use linear algebra heavily</li><li><strong>Diffusion Models</strong>: Built on probability theory and stochastic processes</li><li><strong>Training Optimization</strong>: Advanced optimizers extend basic gradient descent</li><li><strong>Generative Models</strong>: VAEs use variational inference, GANs use game theory</li></ul><hr><p><strong>Next Steps</strong>: Once comfortable with these foundations, explore <a href=/tech-writings/genai-architectures/>Core Architectures</a> to see how these mathematical concepts power modern generative AI systems.</p></div></article></div></main><footer><p>&copy; 2025 Deepanshu Kandpal</p></footer><a id=scrollTopBtn title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
+<script src=/js/search.js></script><script>var mybutton=document.getElementById("scrollTopBtn");window.onscroll=function(){scrollFunction()};function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?mybutton.classList.add("show"):mybutton.classList.remove("show")}mybutton.onclick=function(){document.body.scrollTop=0,document.documentElement.scrollTop=0}</script><script>document.addEventListener("DOMContentLoaded",function(){const e=document.querySelectorAll("code.language-mermaid");e.forEach(function(e,t){const n=document.createElement("div");n.className="mermaid",n.textContent=e.textContent,n.id="mermaid-"+t,e.parentNode.parentNode.replaceChild(n,e.parentNode)}),mermaid.initialize({startOnLoad:!0,theme:"default",themeVariables:{primaryColor:"#4a90e2",primaryTextColor:"#333",primaryBorderColor:"#4a90e2",lineColor:"#333"}}),mermaid.init()})</script></body></html>
