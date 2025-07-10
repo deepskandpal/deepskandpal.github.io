@@ -26,7 +26,13 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> max_new_tokens&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">50&lt;/span>,
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> do_sample&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">False&lt;/span>,
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>With our tools at the ready, let&amp;rsquo;s start with a high-level view and peel back the layers one by one.&lt;/p></description></item><item><title>Chapter 8: Retrieval Augmented Generation</title><link>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/chapter-8/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/chapter-8/</guid><description>&lt;h2 id="prerequisites-for-understanding-rag">Prerequisites for Understanding RAG&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>With our tools at the ready, let&amp;rsquo;s start with a high-level view and peel back the layers one by one.&lt;/p></description></item><item><title>Chapter 4: Text Classification</title><link>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/chapter-4/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/chapter-4/</guid><description>&lt;p>As the book opens, it states a simple goal: &lt;strong>classification is about assigning a label or class to some input text.&lt;/strong> This is a cornerstone of NLP. Think about it:&lt;/p>
+&lt;ul>
+&lt;li>Is this email spam or not? (Spam detection)&lt;/li>
+&lt;li>Is this customer review positive, negative, or neutral? (Sentiment analysis)&lt;/li>
+&lt;li>Is this news article about sports, politics, or technology? (Topic classification)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Figure 4-1&lt;/strong> gives us the high-level picture: text goes in, the model does its thing, and a category comes out.&lt;/p></description></item><item><title>Chapter 8: Retrieval Augmented Generation</title><link>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/chapter-8/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/chapter-8/</guid><description>&lt;h2 id="prerequisites-for-understanding-rag">Prerequisites for Understanding RAG&lt;/h2>
 &lt;ol>
 &lt;li>
 &lt;p>Large Language Models (LLMs) as Generative Engines (from Chapter 1):&lt;/p>
