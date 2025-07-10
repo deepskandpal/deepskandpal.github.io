@@ -211,98 +211,53 @@ graph LR
 &lt;/code>&lt;/pre>&lt;h3 id="advanced-training-paradigms">Advanced Training Paradigms&lt;/h3>
 &lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 50, &amp;#39;rankSpacing&amp;#39;: 80}}}%%
 graph LR
- TRAINING_PARADIGMS[&amp;#34;🎯 Advanced Training&amp;#34;]
+ ADV_TRAINING[&amp;#34;🔥 Advanced Training Paradigms&amp;#34;]
  
- TRAINING_PARADIGMS --&amp;gt; META_LEARNING[&amp;#34;🔄 Meta-Learning&amp;#34;]
- TRAINING_PARADIGMS --&amp;gt; FEW_SHOT[&amp;#34;🎯 Few-Shot Learning&amp;#34;]
- TRAINING_PARADIGMS --&amp;gt; CONTINUAL[&amp;#34;📚 Continual Learning&amp;#34;]
- TRAINING_PARADIGMS --&amp;gt; MULTI_TASK[&amp;#34;🌐 Multi-Task Learning&amp;#34;]
+ ADV_TRAINING --&amp;gt; SELF_PLAY[&amp;#34;🎲 Self-Play&amp;#34;]
+ ADV_TRAINING --&amp;gt; CURRICULUM[&amp;#34;📚 Curriculum Learning&amp;#34;]
+ ADV_TRAINING --&amp;gt; META[&amp;#34;🧠 Meta-Learning&amp;#34;]
+ ADV_TRAINING --&amp;gt; CONTINUAL[&amp;#34;🔄 Continual Learning&amp;#34;]
  
- META_LEARNING --&amp;gt; MAML[&amp;#34;MAML&amp;#34;]
- META_LEARNING --&amp;gt; GRADIENT_BASED[&amp;#34;Gradient-Based&amp;#34;]
- META_LEARNING --&amp;gt; MEMORY_BASED[&amp;#34;Memory-Based&amp;#34;]
+ SELF_PLAY --&amp;gt; ALPHAGO[&amp;#34;AlphaGo&amp;#34;]
+ SELF_PLAY --&amp;gt; GENERATIVE_ADVERSARIAL[&amp;#34;Generative Adversarial Training&amp;#34;]
  
- FEW_SHOT --&amp;gt; IN_CONTEXT[&amp;#34;In-Context Learning&amp;#34;]
- FEW_SHOT --&amp;gt; PROMPT_TUNING[&amp;#34;Prompt Tuning&amp;#34;]
- FEW_SHOT --&amp;gt; ADAPTER_METHODS[&amp;#34;Adapter Methods&amp;#34;]
+ CURRICULUM --&amp;gt; TASK_SEQUENCING[&amp;#34;Task Sequencing&amp;#34;]
+ CURRICULUM --&amp;gt; DATA_SCHEDULING[&amp;#34;Data Scheduling&amp;#34;]
+ 
+ META --&amp;gt; MAML[&amp;#34;MAML&amp;#34;]
+ META --&amp;gt; REPTILE[&amp;#34;Reptile&amp;#34;]
  
  CONTINUAL --&amp;gt; ELASTIC_WEIGHT[&amp;#34;Elastic Weight Consolidation&amp;#34;]
- CONTINUAL --&amp;gt; PROGRESSIVE_NETWORKS[&amp;#34;Progressive Networks&amp;#34;]
- CONTINUAL --&amp;gt; REHEARSAL_METHODS[&amp;#34;Rehearsal Methods&amp;#34;]
+ CONTINUAL --&amp;gt; REPLAY_BUFFERS[&amp;#34;Experience Replay&amp;#34;]
  
- MULTI_TASK --&amp;gt; SHARED_REPRESENTATIONS[&amp;#34;Shared Representations&amp;#34;]
- MULTI_TASK --&amp;gt; TASK_ROUTING[&amp;#34;Task Routing&amp;#34;]
- MULTI_TASK --&amp;gt; MIXTURE_OF_EXPERTS[&amp;#34;Mixture of Experts&amp;#34;]
- 
- style TRAINING_PARADIGMS fill:#e1f5fe,stroke:#01579b,stroke-width:3px
- style META_LEARNING fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
- style FEW_SHOT fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
- style CONTINUAL fill:#fff3e0,stroke:#e65100,stroke-width:2px
- style MULTI_TASK fill:#fce4ec,stroke:#880e4f,stroke-width:2px
+ style ADV_TRAINING fill:#e1f5fe,stroke:#01579b,stroke-width:3px
+ style SELF_PLAY fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+ style CURRICULUM fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
+ style META fill:#fff3e0,stroke:#e65100,stroke-width:2px
+ style CONTINUAL fill:#fce4ec,stroke:#880e4f,stroke-width:2px
 &lt;/code>&lt;/pre>&lt;h2 id="research-frontiers">Research Frontiers&lt;/h2>
-&lt;h3 id="emerging-research-areas">Emerging Research Areas&lt;/h3>
-&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 50, &amp;#39;rankSpacing&amp;#39;: 80}}}%%
-graph LR
- FRONTIERS[&amp;#34;🔍 Research Frontiers&amp;#34;]
- 
- FRONTIERS --&amp;gt; REASONING[&amp;#34;🧠 Advanced Reasoning&amp;#34;]
- FRONTIERS --&amp;gt; EMBODIED[&amp;#34;🤖 Embodied AI&amp;#34;]
- FRONTIERS --&amp;gt; QUANTUM[&amp;#34;⚛️ Quantum-AI&amp;#34;]
- FRONTIERS --&amp;gt; BIOLOGICAL[&amp;#34;🧬 Bio-Inspired AI&amp;#34;]
- 
- REASONING --&amp;gt; CHAIN_OF_THOUGHT[&amp;#34;Chain-of-Thought&amp;#34;]
- REASONING --&amp;gt; TREE_OF_THOUGHTS[&amp;#34;Tree of Thoughts&amp;#34;]
- REASONING --&amp;gt; MATHEMATICAL_REASONING[&amp;#34;Mathematical Reasoning&amp;#34;]
- 
- EMBODIED --&amp;gt; ROBOTICS_AI[&amp;#34;Robotics + AI&amp;#34;]
- EMBODIED --&amp;gt; WORLD_MODELS[&amp;#34;World Models&amp;#34;]
- EMBODIED --&amp;gt; SIMULATION[&amp;#34;Simulation Learning&amp;#34;]
- 
- QUANTUM --&amp;gt; QUANTUM_ML[&amp;#34;Quantum ML&amp;#34;]
- QUANTUM --&amp;gt; QUANTUM_ADVANTAGE[&amp;#34;Quantum Advantage&amp;#34;]
- QUANTUM --&amp;gt; HYBRID_CLASSICAL[&amp;#34;Hybrid Classical-Quantum&amp;#34;]
- 
- BIOLOGICAL --&amp;gt; NEUROMORPHIC[&amp;#34;Neuromorphic Computing&amp;#34;]
- BIOLOGICAL --&amp;gt; BRAIN_INSPIRED[&amp;#34;Brain-Inspired Architectures&amp;#34;]
- BIOLOGICAL --&amp;gt; EVOLUTIONARY[&amp;#34;Evolutionary Algorithms&amp;#34;]
- 
- style FRONTIERS fill:#e1f5fe,stroke:#01579b,stroke-width:3px
- style REASONING fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
- style EMBODIED fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
- style QUANTUM fill:#fff3e0,stroke:#e65100,stroke-width:2px
- style BIOLOGICAL fill:#fce4ec,stroke:#880e4f,stroke-width:2px
-&lt;/code>&lt;/pre>&lt;h3 id="cross-disciplinary-research">Cross-Disciplinary Research&lt;/h3>
-&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 50, &amp;#39;rankSpacing&amp;#39;: 80}}}%%
-graph LR
- CROSS_DISCIPLINARY[&amp;#34;🌐 Cross-Disciplinary&amp;#34;]
- 
- CROSS_DISCIPLINARY --&amp;gt; COGNITIVE_SCIENCE[&amp;#34;🧠 Cognitive Science&amp;#34;]
- CROSS_DISCIPLINARY --&amp;gt; NEUROSCIENCE[&amp;#34;🔬 Neuroscience&amp;#34;]
- CROSS_DISCIPLINARY --&amp;gt; LINGUISTICS[&amp;#34;📝 Linguistics&amp;#34;]
- CROSS_DISCIPLINARY --&amp;gt; PHILOSOPHY[&amp;#34;🤔 Philosophy&amp;#34;]
- 
- COGNITIVE_SCIENCE --&amp;gt; HUMAN_COGNITION[&amp;#34;Human Cognition&amp;#34;]
- COGNITIVE_SCIENCE --&amp;gt; COGNITIVE_ARCHITECTURES[&amp;#34;Cognitive Architectures&amp;#34;]
- COGNITIVE_SCIENCE --&amp;gt; MENTAL_MODELS[&amp;#34;Mental Models&amp;#34;]
- 
- NEUROSCIENCE --&amp;gt; BRAIN_NETWORKS[&amp;#34;Brain Networks&amp;#34;]
- NEUROSCIENCE --&amp;gt; NEURAL_CODING[&amp;#34;Neural Coding&amp;#34;]
- NEUROSCIENCE --&amp;gt; PLASTICITY[&amp;#34;Neural Plasticity&amp;#34;]
- 
- LINGUISTICS --&amp;gt; LANGUAGE_EVOLUTION[&amp;#34;Language Evolution&amp;#34;]
- LINGUISTICS --&amp;gt; SYNTAX_SEMANTICS[&amp;#34;Syntax &amp;amp; Semantics&amp;#34;]
- LINGUISTICS --&amp;gt; PRAGMATICS[&amp;#34;Pragmatics&amp;#34;]
- 
- PHILOSOPHY --&amp;gt; CONSCIOUSNESS[&amp;#34;Machine Consciousness&amp;#34;]
- PHILOSOPHY --&amp;gt; ETHICS_THEORY[&amp;#34;Ethics Theory&amp;#34;]
- PHILOSOPHY --&amp;gt; EPISTEMOLOGY[&amp;#34;Epistemology&amp;#34;]
- 
- style CROSS_DISCIPLINARY fill:#e1f5fe,stroke:#01579b,stroke-width:3px
- style COGNITIVE_SCIENCE fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
- style NEUROSCIENCE fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
- style LINGUISTICS fill:#fff3e0,stroke:#e65100,stroke-width:2px
- style PHILOSOPHY fill:#fce4ec,stroke:#880e4f,stroke-width:2px
-&lt;/code>&lt;/pre>&lt;h2 id="production-systems-at-scale">Production Systems at Scale&lt;/h2>
+&lt;h3 id="-active-research-areas">🔬 &lt;strong>Active Research Areas&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Efficient Transformers&lt;/strong>: Reducing quadratic complexity of attention&lt;/li>
+&lt;li>&lt;strong>Multimodal Integration&lt;/strong>: Seamless text, image, audio understanding&lt;/li>
+&lt;li>&lt;strong>Retrieval Augmentation&lt;/strong>: Combining parametric and non-parametric knowledge&lt;/li>
+&lt;li>&lt;strong>Constitutional AI&lt;/strong>: Training models to be helpful, harmless, and honest&lt;/li>
+&lt;li>&lt;strong>Model Compression&lt;/strong>: Distillation, pruning, quantization for deployment&lt;/li>
+&lt;/ul>
+&lt;h3 id="-emerging-architectures">🚀 &lt;strong>Emerging Architectures&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Mamba/State Space Models&lt;/strong>: Linear complexity sequence modeling&lt;/li>
+&lt;li>&lt;strong>RetNet&lt;/strong>: Alternative to Transformers with better efficiency&lt;/li>
+&lt;li>&lt;strong>Mixture of Experts&lt;/strong>: Scaling parameters without proportional compute&lt;/li>
+&lt;/ul>
+&lt;h3 id="-agentic-systems">🤖 &lt;strong>Agentic Systems&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Multi-Agent Systems&lt;/strong>: Collaborative and adversarial agent scenarios&lt;/li>
+&lt;li>&lt;strong>Hierarchical Agents&lt;/strong>: Decomposing complex tasks into sub-tasks&lt;/li>
+&lt;li>&lt;strong>Self-Improving Agents&lt;/strong>: Agents that can learn and adapt from experience&lt;/li>
+&lt;li>&lt;strong>Note&lt;/strong>: For a foundational overview, see the &lt;a href="https://deepskandpal.github.io/tech-writings/genai/genai-applications/#-agentic-ai--autonomous-systems">Agentic AI &amp;amp; Autonomous Systems&lt;/a> hub.&lt;/li>
+&lt;/ul>
+&lt;h2 id="production-systems-at-scale">Production Systems at Scale&lt;/h2>
 &lt;h3 id="enterprise-scale-deployment">Enterprise-Scale Deployment&lt;/h3>
 &lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 50, &amp;#39;rankSpacing&amp;#39;: 80}}}%%
 graph LR
