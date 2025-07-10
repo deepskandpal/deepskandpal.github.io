@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hardware on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/hardware/</link><description>Recent content in Hardware on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 19 Dec 2024 11:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/hardware/index.xml" rel="self" type="application/rss+xml"/><item><title>GenAI Infrastructure &amp; Implementation</title><link>https://deepskandpal.github.io/tech-writings/genai-infrastructure/</link><pubDate>Thu, 19 Dec 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai-infrastructure/</guid><description>&lt;h1 id="genai-infrastructure--implementation-knowledge-tree">GenAI Infrastructure &amp;amp; Implementation Knowledge Tree&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hardware on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/hardware/</link><description>Recent content in Hardware on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 19 Dec 2024 11:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/hardware/index.xml" rel="self" type="application/rss+xml"/><item><title>GenAI Infrastructure &amp; Implementation</title><link>https://deepskandpal.github.io/tech-writings/genai/genai-infrastructure/</link><pubDate>Thu, 19 Dec 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai/genai-infrastructure/</guid><description>&lt;h1 id="genai-infrastructure--implementation-knowledge-tree">GenAI Infrastructure &amp;amp; Implementation Knowledge Tree&lt;/h1>
 &lt;p>This knowledge tree covers the technical infrastructure, hardware, frameworks, and implementation details required to build, train, and deploy GenAI systems at scale.&lt;/p>
 &lt;h2 id="complete-infrastructure--implementation-overview">Complete Infrastructure &amp;amp; Implementation Overview&lt;/h2>
 &lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 60, &amp;#39;rankSpacing&amp;#39;: 100}}}%%
@@ -10,6 +10,7 @@ graph LR
  INFRA --&amp;gt; SERVING[&amp;#34;🚀 Model Serving&amp;#34;]
  INFRA --&amp;gt; DATA[&amp;#34;💾 Data Infrastructure&amp;#34;]
  INFRA --&amp;gt; PERFORMANCE[&amp;#34;⚡ Performance &amp;amp; Optimization&amp;#34;]
+ INFRA --&amp;gt; MEMORY_SYS[&amp;#34;🧠 AI Agent Memory Systems&amp;#34;]
  INFRA --&amp;gt; DEVOPS[&amp;#34;🔧 Development &amp;amp; DevOps&amp;#34;]
  
  style INFRA fill:#e1f5fe,stroke:#01579b,stroke-width:3px
@@ -18,6 +19,7 @@ graph LR
  style SERVING fill:#fff3e0,stroke:#e65100,stroke-width:2px
  style DATA fill:#fce4ec,stroke:#880e4f,stroke-width:2px
  style PERFORMANCE fill:#f1f8e9,stroke:#33691e,stroke-width:2px
+ style MEMORY_SYS fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
  style DEVOPS fill:#e3f2fd,stroke:#0d47a1,stroke-width:2px
 &lt;/code>&lt;/pre>&lt;h2 id="hardware--computing-infrastructure">Hardware &amp;amp; Computing Infrastructure&lt;/h2>
 &lt;h3 id="gpu-computing--acceleration">GPU Computing &amp;amp; Acceleration&lt;/h3>
@@ -164,10 +166,17 @@ graph LR
  GENAI_LIBS --&amp;gt; LANG[&amp;#34;🦜 LangChain&amp;#34;]
  GENAI_LIBS --&amp;gt; DIFFUSION[&amp;#34;🎨 Diffusion&amp;#34;]
  GENAI_LIBS --&amp;gt; INFERENCE[&amp;#34;⚡ Inference&amp;#34;]
+ GENAI_LIBS --&amp;gt; OPTIMIZATION[&amp;#34;🦥 Optimization&amp;#34;]
  
  HF --&amp;gt; TRANSFORMERS[&amp;#34;Transformers&amp;#34;]
  HF --&amp;gt; DATASETS[&amp;#34;Datasets&amp;#34;]
  HF --&amp;gt; ACCELERATE[&amp;#34;Accelerate&amp;#34;]
+ 
+ OPTIMIZATION --&amp;gt; UNSLOTH[&amp;#34;Unsloth&amp;#34;]
+ OPTIMIZATION --&amp;gt; DEEPSPEED[&amp;#34;DeepSpeed&amp;#34;]
+ OPTIMIZATION --&amp;gt; FAIRSCALE[&amp;#34;FairScale&amp;#34;]
+ OPTIMIZATION --&amp;gt; MEGATRON[&amp;#34;Megatron-LM&amp;#34;]
+ OPTIMIZATION --&amp;gt; FLAGAI[&amp;#34;FlagAI&amp;#34;]
  HF --&amp;gt; PEFT[&amp;#34;PEFT&amp;#34;]
  
  LANG --&amp;gt; LANGCHAIN[&amp;#34;LangChain&amp;#34;]

@@ -2,9 +2,31 @@
 &lt;p>Let&amp;rsquo;s begin with the first part of this process.&lt;/p>
 &lt;hr>
 &lt;h2 id="section-1-llm-tokenization">Section 1: LLM Tokenization&lt;/h2>
-&lt;p>The way most of us interact with LLMs, like chatbots, we see text coming out, seemingly word by word. This output, and more importantly, the input the model receives, is processed in chunks called &lt;strong>tokens&lt;/strong>.&lt;/p></description></item><item><title>Chapter 3: Looking Inside Large Language Models</title><link>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/chapter-3/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/chapter-3/</guid><description>&lt;p>Let&amp;rsquo;s begin our deep dive into &lt;strong>Chapter 3: Looking Inside Large Language Models&lt;/strong>. We&amp;rsquo;ll proceed cover to cover, just as you asked.&lt;/p>
-&lt;p>Now, we address the main event: what happens &lt;em>after&lt;/em> tokenization? How does a model like the Transformer take those initial embeddings and generate coherent, often brilliant, text? That&amp;rsquo;s our mission for today.&lt;/p>
-&lt;p>As the book mentions, we&amp;rsquo;ll start by loading our model, just to have it ready. This is the same &lt;code>microsoft/Phi-3-mini-4k-instruct&lt;/code> model we&amp;rsquo;ve seen before. It&amp;rsquo;s a powerful yet manageable model that&amp;rsquo;s perfect for our hands-on exploration.&lt;/p></description></item><item><title>Chapter 8: Retrieval Augmented Generation</title><link>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/chapter-8/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/chapter-8/</guid><description>&lt;h2 id="prerequisites-for-understanding-rag">Prerequisites for Understanding RAG&lt;/h2>
+&lt;p>The way most of us interact with LLMs, like chatbots, we see text coming out, seemingly word by word. This output, and more importantly, the input the model receives, is processed in chunks called &lt;strong>tokens&lt;/strong>.&lt;/p></description></item><item><title>Chapter 3: Looking Inside Large Language Models</title><link>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/chapter-3/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/chapter-3/</guid><description>&lt;p>Now, we address the main event: what happens &lt;em>after&lt;/em> tokenization? How does a model like the Transformer take those initial embeddings and generate coherent, often brilliant, text? That&amp;rsquo;s our mission for today.&lt;/p>
+&lt;p>As the book mentions, we&amp;rsquo;ll start by loading our model, just to have it ready. This is the same &lt;code>microsoft/Phi-3-mini-4k-instruct&lt;/code> model we&amp;rsquo;ve seen before. It&amp;rsquo;s a powerful yet manageable model that&amp;rsquo;s perfect for our hands-on exploration.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> torch
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> transformers &lt;span style="color:#f92672">import&lt;/span> AutoModelForCausalLM, AutoTokenizer, pipeline
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Load model and tokenizer&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tokenizer &lt;span style="color:#f92672">=&lt;/span> AutoTokenizer&lt;span style="color:#f92672">.&lt;/span>from_pretrained(&lt;span style="color:#e6db74">&amp;#34;microsoft/Phi-3-mini-4k-instruct&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>model &lt;span style="color:#f92672">=&lt;/span> AutoModelForCausalLM&lt;span style="color:#f92672">.&lt;/span>from_pretrained(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#e6db74">&amp;#34;microsoft/Phi-3-mini-4k-instruct&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> device_map&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;cuda&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> torch_dtype&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;auto&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> trust_remote_code&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">True&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Create a pipeline&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>generator &lt;span style="color:#f92672">=&lt;/span> pipeline(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#e6db74">&amp;#34;text-generation&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> model&lt;span style="color:#f92672">=&lt;/span>model,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> tokenizer&lt;span style="color:#f92672">=&lt;/span>tokenizer,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> return_full_text&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">False&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> max_new_tokens&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">50&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> do_sample&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">False&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>With our tools at the ready, let&amp;rsquo;s start with a high-level view and peel back the layers one by one.&lt;/p></description></item><item><title>Chapter 8: Retrieval Augmented Generation</title><link>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/chapter-8/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/chapter-8/</guid><description>&lt;h2 id="prerequisites-for-understanding-rag">Prerequisites for Understanding RAG&lt;/h2>
 &lt;ol>
 &lt;li>
 &lt;p>Large Language Models (LLMs) as Generative Engines (from Chapter 1):&lt;/p>

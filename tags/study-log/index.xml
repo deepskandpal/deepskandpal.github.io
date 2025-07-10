@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Study Log on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/study-log/</link><description>Recent content in Study Log on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 27 Jan 2025 10:00:00 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/study-log/index.xml" rel="self" type="application/rss+xml"/><item><title>My GenAI Study Log &amp; Progress Tracker</title><link>https://deepskandpal.github.io/tech-writings/genai/genai-study-log/</link><pubDate>Mon, 27 Jan 2025 10:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai/genai-study-log/</guid><description>&lt;h1 id="genai-study-log--progress-tracker">GenAI Study Log &amp;amp; Progress Tracker&lt;/h1>
+
+
+
+
+
+
+
+&lt;div class="progress-chart">
+&lt;center>
+&lt;h3>Overall Progress&lt;/h3>
+Completed: 0 | Learning: 1 | To Do: 52
+&lt;/center>
+
+&lt;pre>&lt;code class="language-mermaid">%%{init: {'pie': {'textPosition': 0.75}, 'themeVariables': {'pieOuterStrokeWidth': '2px'}}}%%
+pie showData
+ title Overall GenAI Study Progress
+ "⚪️ To Do" : 52
+ "🟡 Learning" : 1
+ 
+&lt;/code>&lt;/pre>
+&lt;/div>
+ 
+&lt;p>This document serves as a centralized dashboard to track my learning progress through the GenAI knowledge trees. The goal is not just to learn, but to validate understanding by producing a tangible &amp;ldquo;Proof of Study&amp;rdquo; for each completed topic.&lt;/p></description></item></channel></rss>

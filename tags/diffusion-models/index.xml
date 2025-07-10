@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Diffusion Models on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/diffusion-models/</link><description>Recent content in Diffusion Models on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 26 Jan 2025 16:45:00 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/diffusion-models/index.xml" rel="self" type="application/rss+xml"/><item><title>GenAI Core Architectures: Transformers, LLMs &amp; Generative Models</title><link>https://deepskandpal.github.io/tech-writings/genai-architectures/</link><pubDate>Sun, 26 Jan 2025 16:45:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai-architectures/</guid><description>&lt;h1 id="genai-core-architectures-tree">GenAI Core Architectures Tree&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Diffusion Models on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/diffusion-models/</link><description>Recent content in Diffusion Models on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 26 Jan 2025 16:45:00 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/diffusion-models/index.xml" rel="self" type="application/rss+xml"/><item><title>GenAI Core Architectures: Transformers, LLMs &amp; Generative Models</title><link>https://deepskandpal.github.io/tech-writings/genai/genai-architectures/</link><pubDate>Sun, 26 Jan 2025 16:45:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai/genai-architectures/</guid><description>&lt;h1 id="genai-core-architectures-tree">GenAI Core Architectures Tree&lt;/h1>
 &lt;p>The fundamental architectures that power modern generative AI systems. From attention mechanisms to large language models and diffusion processes.&lt;/p>
 &lt;h2 id="core-architectures-knowledge-tree">Core Architectures Knowledge Tree&lt;/h2>
 &lt;h3 id="complete-architecture-overview">Complete Architecture Overview&lt;/h3>
@@ -67,7 +67,7 @@ graph TD
  GPT[GPT Family&amp;lt;br/&amp;gt;Decoder-Only] --&amp;gt; GPT_EVO[GPT-1 → GPT-2 → GPT-3 → GPT-4&amp;lt;br/&amp;gt;117M → 1.5B → 175B → Multimodal]
  BERT[BERT Family&amp;lt;br/&amp;gt;Encoder-Only] --&amp;gt; BERT_EVO[BERT → RoBERTa → ALBERT&amp;lt;br/&amp;gt;Bidirectional Understanding]
  T5[T5 Family&amp;lt;br/&amp;gt;Encoder-Decoder] --&amp;gt; T5_EVO[Text-to-Text Transfer&amp;lt;br/&amp;gt;Unified Framework]
- MODERN[Modern LLMs] --&amp;gt; MOD_EVO[LLaMA, Claude, Gemini&amp;lt;br/&amp;gt;Efficient, Aligned, Multimodal]
+ MODERN[Modern LLMs] --&amp;gt; MOD_EVO[LLaMA, Claude, Gemini&amp;lt;br/&amp;gt;Aquila2, DeepSeek-R1, Efficient, Aligned, Multimodal]
  end
  
  subgraph SCALING[📏 Scaling Dimensions]
@@ -282,6 +282,8 @@ graph LR
 &lt;li>&lt;strong>&lt;a href="http://localhost:1313/bookshelf/hands-on-large-language-models/">Hands-On Large Language Models&lt;/a>&lt;/strong> - Practical implementation ⭐&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/2005.14165">GPT-3 Paper&lt;/a>&lt;/strong> - Scaling language models&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/2203.02155">InstructGPT Paper&lt;/a>&lt;/strong> - Training language models to follow instructions&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://github.com/FlagAI-Open">FlagAI-Open&lt;/a>&lt;/strong> - BAAI&amp;rsquo;s comprehensive toolkit with Aquila2 and Aquila-MoE models&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://docs.unsloth.ai/basics/deepseek-r1-0528-how-to-run-locally">DeepSeek-R1-0528 Guide&lt;/a>&lt;/strong> - Reasoning model deployment with Unsloth ⭐&lt;/li>
 &lt;/ul>
 &lt;h3 id="-diffusion-models">🎨 &lt;strong>Diffusion Models&lt;/strong>&lt;/h3>
 &lt;ul>
@@ -296,21 +298,6 @@ graph LR
 &lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/1906.02691">VAE Tutorial&lt;/a>&lt;/strong> - Introduction to variational autoencoders&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/1908.09257">Normalizing Flows&lt;/a>&lt;/strong> - Flow-based generative modeling&lt;/li>
 &lt;/ul>
-&lt;h2 id="current-research-frontiers">Current Research Frontiers&lt;/h2>
-&lt;h3 id="-active-research-areas">🔬 &lt;strong>Active Research Areas&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Efficient Transformers&lt;/strong>: Reducing quadratic complexity of attention&lt;/li>
-&lt;li>&lt;strong>Multimodal Integration&lt;/strong>: Seamless text, image, audio understanding&lt;/li>
-&lt;li>&lt;strong>Retrieval Augmentation&lt;/strong>: Combining parametric and non-parametric knowledge&lt;/li>
-&lt;li>&lt;strong>Constitutional AI&lt;/strong>: Training models to be helpful, harmless, and honest&lt;/li>
-&lt;li>&lt;strong>Model Compression&lt;/strong>: Distillation, pruning, quantization for deployment&lt;/li>
-&lt;/ul>
-&lt;h3 id="-emerging-architectures">🚀 &lt;strong>Emerging Architectures&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Mamba/State Space Models&lt;/strong>: Linear complexity sequence modeling&lt;/li>
-&lt;li>&lt;strong>RetNet&lt;/strong>: Alternative to Transformers with better efficiency&lt;/li>
-&lt;li>&lt;strong>Mixture of Experts&lt;/strong>: Scaling parameters without proportional compute&lt;/li>
-&lt;li>&lt;strong>Multi-Token Prediction&lt;/strong>: Predicting multiple tokens simultaneously&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>&lt;strong>Next Steps&lt;/strong>: With core architectures understood, explore &lt;a href="https://deepskandpal.github.io/tech-writings/genai-training/">Training &amp;amp; Optimization&lt;/a> to learn how these models are actually trained at scale, or dive into &lt;a href="https://deepskandpal.github.io/tech-writings/genai-applications/">Applications&lt;/a> to see them in action.&lt;/p></description></item></channel></rss>
+&lt;h2 id="reasoning-models--advanced-capabilities">Reasoning Models &amp;amp; Advanced Capabilities&lt;/h2>
+&lt;h3 id="-reasoning-focused-architectures">🧠 &lt;strong>Reasoning-Focused Architectures&lt;/strong>&lt;/h3>
+&lt;p>Modern LLMs are evolving to incorporate explicit reasoning capabilities through specialized training and architectural modifications.&lt;/p></description></item></channel></rss>

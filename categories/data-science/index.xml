@@ -7,4 +7,24 @@ For chapter-specific notes, create separate .md files within this book&amp;rsquo
 These will be automatically listed on the book&amp;rsquo;s page.)&lt;/p></description></item><item><title>Marketing Analytics</title><link>https://deepskandpal.github.io/bookshelf/marketing-analytics/</link><pubDate>Mon, 26 May 2025 21:41:54 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/marketing-analytics/</guid><description>&lt;h1 id="notes--summary-for-the-book">Notes / Summary for the Book&lt;/h1>
 &lt;p>(Your general notes or summary about the book go here.
 For chapter-specific notes, create separate .md files within this book&amp;rsquo;s folder, e.g., chapter-1.md, introduction.md etc.
-These will be automatically listed on the book&amp;rsquo;s page.)&lt;/p></description></item><item><title>Practical Statistics for Data Scientists: 50+ Essential Concepts Using R and Python</title><link>https://deepskandpal.github.io/bookshelf/practical-statistics-for-ds/</link><pubDate>Thu, 22 May 2025 11:19:32 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/practical-statistics-for-ds/</guid><description/></item><item><title>201 Ds Interview</title><link>https://deepskandpal.github.io/bookshelf/201-ds-interview/</link><pubDate>Tue, 20 May 2025 11:19:32 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/201-ds-interview/</guid><description/></item></channel></rss>
+These will be automatically listed on the book&amp;rsquo;s page.)&lt;/p></description></item><item><title>Practical Statistics for Data Scientists: 50+ Essential Concepts Using R and Python</title><link>https://deepskandpal.github.io/bookshelf/practical-statistics-for-ds/</link><pubDate>Thu, 22 May 2025 11:19:32 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/practical-statistics-for-ds/</guid><description/></item><item><title>201 Ds Interview</title><link>https://deepskandpal.github.io/bookshelf/201-ds-interview/</link><pubDate>Tue, 20 May 2025 11:19:32 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/201-ds-interview/</guid><description/></item><item><title>Experimentation for Engineers: From A/B Testing to Bayesian Optimization</title><link>https://deepskandpal.github.io/bookshelf/experimentation-for-engineers/</link><pubDate>Mon, 27 Jan 2025 10:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/experimentation-for-engineers/</guid><description>&lt;h1 id="a-practical-guide-to-experimental-methods-in-engineering">A Practical Guide to Experimental Methods in Engineering&lt;/h1>
+&lt;p>&lt;strong>A comprehensive toolbox of techniques for evaluating new features and fine-tuning systems.&lt;/strong> This book provides practical guidance on designing, running, and analyzing experiments that help engineers make data-driven decisions in competitive industries.&lt;/p>
+&lt;h2 id="what-youll-learn">What You&amp;rsquo;ll Learn&lt;/h2>
+&lt;p>The book covers essential experimental techniques for modern engineering:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>A/B Testing&lt;/strong>: Design, run, and analyze controlled experiments effectively&lt;/li>
+&lt;li>&lt;strong>Multi-Armed Bandits&lt;/strong>: Increase experimentation rate and minimize regret&lt;/li>
+&lt;li>&lt;strong>Bayesian Optimization&lt;/strong>: Tune multiple parameters efficiently using probabilistic methods&lt;/li>
+&lt;li>&lt;strong>Feedback Loop Management&lt;/strong>: Break cycles caused by periodic ML model retraining&lt;/li>
+&lt;li>&lt;strong>Business Metrics&lt;/strong>: Clearly define and measure success criteria for decision-making&lt;/li>
+&lt;li>&lt;strong>Pitfall Avoidance&lt;/strong>: Identify and avoid common experimental design mistakes&lt;/li>
+&lt;/ul>
+&lt;h2 id="key-features">Key Features&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Practical Focus&lt;/strong>: Real-world examples from competitive industries&lt;/li>
+&lt;li>&lt;strong>Cost Minimization&lt;/strong>: Techniques to reduce experimental costs while maximizing insights&lt;/li>
+&lt;li>&lt;strong>Python Implementation&lt;/strong>: Code examples using Python and NumPy&lt;/li>
+&lt;li>&lt;strong>Business Impact&lt;/strong>: Methods to quickly identify approaches that deliver the best results&lt;/li>
+&lt;/ul>
+&lt;h2 id="target-audience">Target Audience&lt;/h2>
+&lt;p>Perfect for ML engineers and software engineers looking to extract maximum value from their systems through systematic experimentation. The book bridges the gap between academic experimental design and practical engineering applications.&lt;/p></description></item></channel></rss>

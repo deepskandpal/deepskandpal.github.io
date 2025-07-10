@@ -3,7 +3,30 @@
 &lt;h1 id="for-learning-dsa">For learning DSA&lt;/h1>
 &lt;p>&lt;code>you are an expert DSA expert who specializes in teaching how to track coding problems you have written books and specializes in coaching those students who run away from DSA. Your ability to boil down even complex problems and concepts into very simple intuitive first principals based explanation makes you the best in the trade . You are starting a new course based on the book elements of programming interview in python. You will cover each chapters core topics and also cover each section and the core problems in that chapter. &lt;/code>&lt;/p></description></item><item><title>Multi Processing , Multi Threading, AsyncIO: A Guide to Python Concurrency for Data Scientists</title><link>https://deepskandpal.github.io/tech-writings/concurrency-ds/</link><pubDate>Fri, 25 Apr 2025 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/tech-writings/concurrency-ds/</guid><description>&lt;p>&lt;strong>The problem : Help! My Python SDXL Script Isn&amp;rsquo;t Faster with Asyncio/Threading/Multiprocessing. Why?&lt;/strong>&lt;/p>
 &lt;p>You&amp;rsquo;ve built a cool script, maybe generating image variations with SDXL (&lt;a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0">Stable Diffusion XL model&lt;/a>) like one of our engineers. It works, but it&amp;rsquo;s slow. You think, &amp;ldquo;I know! Parallelism!&amp;rdquo; You try asyncio, then multithreading, maybe even multiprocessing. But&amp;hellip; nothing speeds up significantly, or you just hit weird errors, especially in your Jupyter Notebook. Sounds familiar?&lt;/p>
-&lt;p>This is a common hurdle when data science tasks meet heavier computation. Let&amp;rsquo;s demystify Python&amp;rsquo;s asyncio, multithreading, and multiprocessing, touching on the underlying Operating System (OS) ideas and Python&amp;rsquo;s infamous GIL.&lt;/p></description></item><item><title>GenAI Training &amp; Optimization: From Pre-training to Production</title><link>https://deepskandpal.github.io/tech-writings/genai-training/</link><pubDate>Sun, 26 Jan 2025 17:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai-training/</guid><description>&lt;h1 id="genai-training--optimization-tree">GenAI Training &amp;amp; Optimization Tree&lt;/h1>
+&lt;p>This is a common hurdle when data science tasks meet heavier computation. Let&amp;rsquo;s demystify Python&amp;rsquo;s asyncio, multithreading, and multiprocessing, touching on the underlying Operating System (OS) ideas and Python&amp;rsquo;s infamous GIL.&lt;/p></description></item><item><title>My GenAI Study Log &amp; Progress Tracker</title><link>https://deepskandpal.github.io/tech-writings/genai/genai-study-log/</link><pubDate>Mon, 27 Jan 2025 10:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai/genai-study-log/</guid><description>&lt;h1 id="genai-study-log--progress-tracker">GenAI Study Log &amp;amp; Progress Tracker&lt;/h1>
+
+
+
+
+
+
+
+&lt;div class="progress-chart">
+&lt;center>
+&lt;h3>Overall Progress&lt;/h3>
+Completed: 0 | Learning: 1 | To Do: 52
+&lt;/center>
+
+&lt;pre>&lt;code class="language-mermaid">%%{init: {'pie': {'textPosition': 0.75}, 'themeVariables': {'pieOuterStrokeWidth': '2px'}}}%%
+pie showData
+ title Overall GenAI Study Progress
+ "⚪️ To Do" : 52
+ "🟡 Learning" : 1
+ 
+&lt;/code>&lt;/pre>
+&lt;/div>
+ 
+&lt;p>This document serves as a centralized dashboard to track my learning progress through the GenAI knowledge trees. The goal is not just to learn, but to validate understanding by producing a tangible &amp;ldquo;Proof of Study&amp;rdquo; for each completed topic.&lt;/p></description></item><item><title>GenAI Training &amp; Optimization: From Pre-training to Production</title><link>https://deepskandpal.github.io/tech-writings/genai/genai-training/</link><pubDate>Sun, 26 Jan 2025 17:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai/genai-training/</guid><description>&lt;h1 id="genai-training--optimization-tree">GenAI Training &amp;amp; Optimization Tree&lt;/h1>
 &lt;p>Advanced techniques for training large-scale generative models efficiently and effectively. From foundational pre-training strategies to cutting-edge alignment methods and distributed training optimizations.&lt;/p>
 &lt;h2 id="training--optimization-knowledge-tree">Training &amp;amp; Optimization Knowledge Tree&lt;/h2>
 &lt;h3 id="complete-training-overview">Complete Training Overview&lt;/h3>
@@ -81,7 +104,8 @@ graph LR
  subgraph PEFT[⚡ Parameter-Efficient Methods]
  PEFT1[LoRA&amp;lt;br/&amp;gt;Low-Rank Adaptation] --&amp;gt; PEFT2[AdaLoRA&amp;lt;br/&amp;gt;Adaptive Rank Selection]
  PEFT2 --&amp;gt; PEFT3[QLoRA&amp;lt;br/&amp;gt;Quantized LoRA]
- PEFT3 --&amp;gt; PEFT4[Prefix/Prompt Tuning&amp;lt;br/&amp;gt;Lightweight Adaptation]
+ PEFT3 --&amp;gt; PEFT4[Unsloth&amp;lt;br/&amp;gt;2x Faster, 70% Less VRAM]
+ PEFT4 --&amp;gt; PEFT5[Prefix/Prompt Tuning&amp;lt;br/&amp;gt;Lightweight Adaptation]
  end
  
  subgraph ADVANCED[🔧 Advanced Techniques]
@@ -101,7 +125,8 @@ graph TD
  subgraph RLHF_PIPELINE[🤝 RLHF Pipeline]
  STEP1[SFT Model&amp;lt;br/&amp;gt;Supervised Fine-tuning] --&amp;gt; STEP2[Reward Model Training&amp;lt;br/&amp;gt;Human Preference Data]
  STEP2 --&amp;gt; STEP3[PPO Training&amp;lt;br/&amp;gt;Policy Optimization]
- STEP3 --&amp;gt; STEP4[Iterative Refinement&amp;lt;br/&amp;gt;Human Feedback Loop]
+ STEP3 --&amp;gt; STEP4[DPO/GRPO Training&amp;lt;br/&amp;gt;Unsloth Optimized]
+ STEP4 --&amp;gt; STEP5[Iterative Refinement&amp;lt;br/&amp;gt;Human Feedback Loop]
  end
  
  subgraph CONSTITUTIONAL[📜 Constitutional AI]
@@ -150,196 +175,9 @@ graph LR
  style DISTRIBUTED fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
  style MEMORY fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px
  style MONITORING fill:#e8f5e8,stroke:#4caf50,stroke-width:2px
-&lt;/code>&lt;/pre>&lt;h2 id="training-strategy-selection">Training Strategy Selection&lt;/h2>
-&lt;h3 id="-training-approach-by-model-size--resources">🎯 &lt;strong>Training Approach by Model Size &amp;amp; Resources&lt;/strong>&lt;/h3>
-&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 80, &amp;#39;rankSpacing&amp;#39;: 100}}}%%
-graph LR
- subgraph SMALL[🔬 Small Models &amp;lt; 1B]
- SMALL1[Single GPU Training&amp;lt;br/&amp;gt;Full Fine-tuning] --&amp;gt; SMALL2[Standard Optimizers&amp;lt;br/&amp;gt;Adam, AdamW]
- SMALL2 --&amp;gt; SMALL3[Regular Checkpointing&amp;lt;br/&amp;gt;Local Storage]
- end
- 
- subgraph MEDIUM[⚙️ Medium Models 1B-10B]
- MED1[Multi-GPU Training&amp;lt;br/&amp;gt;Data Parallelism] --&amp;gt; MED2[Parameter-Efficient Methods&amp;lt;br/&amp;gt;LoRA, Adapters]
- MED2 --&amp;gt; MED3[Mixed Precision&amp;lt;br/&amp;gt;Memory Optimization]
- end
- 
- subgraph LARGE[🏗️ Large Models 10B+]
- LARGE1[Distributed Training&amp;lt;br/&amp;gt;Model + Data Parallelism] --&amp;gt; LARGE2[ZeRO Optimizer&amp;lt;br/&amp;gt;Parameter Sharding]
- LARGE2 --&amp;gt; LARGE3[Gradient Checkpointing&amp;lt;br/&amp;gt;Memory-Compute Trade-off]
- end
-
- style SMALL fill:#d5e8d4,stroke:#82b366,stroke-width:2px
- style MEDIUM fill:#dae8fc,stroke:#6c8ebf,stroke-width:2px
- style LARGE fill:#f8cecc,stroke:#b85450,stroke-width:2px
-&lt;/code>&lt;/pre>&lt;h2 id="key-training-innovations">Key Training Innovations&lt;/h2>
-&lt;h3 id="-breakthrough-techniques">🚀 &lt;strong>Breakthrough Techniques&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Scaling Laws&lt;/strong>: Predictable relationships between model size, data, and compute&lt;/li>
-&lt;li>&lt;strong>Chinchilla Scaling&lt;/strong>: Optimal compute allocation between parameters and training tokens&lt;/li>
-&lt;li>&lt;strong>Parameter-Efficient Fine-tuning&lt;/strong>: LoRA achieves 99% of full fine-tuning performance with &amp;lt;1% parameters&lt;/li>
-&lt;li>&lt;strong>RLHF&lt;/strong>: Enables human-aligned behavior without massive supervised datasets&lt;/li>
-&lt;/ul>
-&lt;h3 id="-efficiency-breakthroughs">⚡ &lt;strong>Efficiency Breakthroughs&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>ZeRO&lt;/strong>: Enables training trillion-parameter models by sharding optimizer states&lt;/li>
-&lt;li>&lt;strong>Flash Attention&lt;/strong>: 2-4x speedup in attention computation with exact results&lt;/li>
-&lt;li>&lt;strong>Gradient Checkpointing&lt;/strong>: Trade computation for memory to train larger models&lt;/li>
-&lt;li>&lt;strong>Mixed Precision&lt;/strong>: 1.5-2x speedup with minimal accuracy loss&lt;/li>
-&lt;/ul>
-&lt;h3 id="-alignment-innovations">🎯 &lt;strong>Alignment Innovations&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Constitutional AI&lt;/strong>: Self-supervised alignment using AI-generated critiques&lt;/li>
-&lt;li>&lt;strong>PPO for Language Models&lt;/strong>: Stable policy optimization for human preference learning&lt;/li>
-&lt;li>&lt;strong>Iterative RLHF&lt;/strong>: Continuous improvement through human feedback loops&lt;/li>
-&lt;/ul>
-&lt;h2 id="implementation-considerations">Implementation Considerations&lt;/h2>
-&lt;h3 id="-cost-optimization-strategies">💰 &lt;strong>Cost Optimization Strategies&lt;/strong>&lt;/h3>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>Training Phase&lt;/th>
- &lt;th>Compute Cost&lt;/th>
- &lt;th>Memory Requirements&lt;/th>
- &lt;th>Optimization Strategy&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>&lt;strong>Pre-training&lt;/strong>&lt;/td>
- &lt;td>Very High&lt;/td>
- &lt;td>Very High&lt;/td>
- &lt;td>Distributed training, ZeRO&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;strong>Fine-tuning&lt;/strong>&lt;/td>
- &lt;td>Medium&lt;/td>
- &lt;td>Medium&lt;/td>
- &lt;td>LoRA, mixed precision&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;strong>RLHF&lt;/strong>&lt;/td>
- &lt;td>High&lt;/td>
- &lt;td>High&lt;/td>
- &lt;td>PPO optimization, checkpointing&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;strong>Inference&lt;/strong>&lt;/td>
- &lt;td>Low&lt;/td>
- &lt;td>Medium&lt;/td>
- &lt;td>Model quantization, caching&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;h3 id="-technical-implementation">🔧 &lt;strong>Technical Implementation&lt;/strong>&lt;/h3>
-&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 60, &amp;#39;rankSpacing&amp;#39;: 80}}}%%
-graph TD
- subgraph FRAMEWORKS[🛠️ Training Frameworks]
- PYTORCH[PyTorch&amp;lt;br/&amp;gt;Flexible Research] --&amp;gt; LIGHTNING[PyTorch Lightning&amp;lt;br/&amp;gt;Structured Training]
- TRANSFORMERS[HuggingFace Transformers&amp;lt;br/&amp;gt;Pre-built Models] --&amp;gt; DEEPSPEED[DeepSpeed&amp;lt;br/&amp;gt;Distributed Training]
- MEGATRON[Megatron-LM&amp;lt;br/&amp;gt;Large Model Training] --&amp;gt; JAX[JAX/Flax&amp;lt;br/&amp;gt;Functional Programming]
- end
- 
- FRAMEWORKS --&amp;gt; HARDWARE
- 
- subgraph HARDWARE[⚡ Hardware Acceleration]
- GPU[GPU Clusters&amp;lt;br/&amp;gt;NVIDIA A100, H100] --&amp;gt; TPU[TPU Pods&amp;lt;br/&amp;gt;Google Cloud TPU]
- INFINIBAND[InfiniBand&amp;lt;br/&amp;gt;High-Speed Networking] --&amp;gt; NVLINK[NVLink&amp;lt;br/&amp;gt;GPU Interconnect]
- end
- 
- HARDWARE --&amp;gt; ORCHESTRATION
- 
- subgraph ORCHESTRATION[🎭 Training Orchestration]
- SLURM[SLURM&amp;lt;br/&amp;gt;Job Scheduling] --&amp;gt; KUBERNETES[Kubernetes&amp;lt;br/&amp;gt;Container Orchestration]
- WANDB[Weights &amp;amp; Biases&amp;lt;br/&amp;gt;Experiment Tracking] --&amp;gt; MLFLOW[MLflow&amp;lt;br/&amp;gt;ML Lifecycle Management]
- end
-
- style FRAMEWORKS fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
- style HARDWARE fill:#fff3e0,stroke:#ff9800,stroke-width:2px
- style ORCHESTRATION fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px
-&lt;/code>&lt;/pre>&lt;h2 id="training-best-practices">Training Best Practices&lt;/h2>
-&lt;h3 id="-pre-training-checklist">📋 &lt;strong>Pre-training Checklist&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Data Quality&lt;/strong>: Clean, diverse, high-quality training data&lt;/li>
-&lt;li>&lt;strong>Tokenization&lt;/strong>: Appropriate vocabulary size and subword strategy&lt;/li>
-&lt;li>&lt;strong>Learning Rate&lt;/strong>: Proper warmup and decay schedules&lt;/li>
-&lt;li>&lt;strong>Batch Size&lt;/strong>: Large enough for stable gradients, small enough for memory&lt;/li>
-&lt;li>&lt;strong>Monitoring&lt;/strong>: Track loss curves, gradient norms, and validation metrics&lt;/li>
-&lt;/ul>
-&lt;h3 id="-fine-tuning-guidelines">🎯 &lt;strong>Fine-tuning Guidelines&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Learning Rate&lt;/strong>: 10-100x smaller than pre-training rates&lt;/li>
-&lt;li>&lt;strong>Epochs&lt;/strong>: Few epochs to avoid overfitting (1-5 typically)&lt;/li>
-&lt;li>&lt;strong>Data Mix&lt;/strong>: Balance between task data and original pre-training data&lt;/li>
-&lt;li>&lt;strong>Evaluation&lt;/strong>: Regular validation on held-out test sets&lt;/li>
-&lt;li>&lt;strong>Early Stopping&lt;/strong>: Prevent overfitting with patience-based stopping&lt;/li>
-&lt;/ul>
-&lt;h3 id="-rlhf-best-practices">🤝 &lt;strong>RLHF Best Practices&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Reward Model Quality&lt;/strong>: High-quality human preference data&lt;/li>
-&lt;li>&lt;strong>PPO Stability&lt;/strong>: Careful hyperparameter tuning for stable training&lt;/li>
-&lt;li>&lt;strong>KL Divergence&lt;/strong>: Control drift from original model with KL penalty&lt;/li>
-&lt;li>&lt;strong>Safety Evaluation&lt;/strong>: Regular red-team testing throughout training&lt;/li>
-&lt;/ul>
-&lt;h2 id="common-pitfalls--solutions">Common Pitfalls &amp;amp; Solutions&lt;/h2>
-&lt;h3 id="-training-issues">⚠️ &lt;strong>Training Issues&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Loss Exploding&lt;/strong>: Use gradient clipping, lower learning rate&lt;/li>
-&lt;li>&lt;strong>Loss Plateauing&lt;/strong>: Adjust learning rate schedule, check data quality&lt;/li>
-&lt;li>&lt;strong>OOM Errors&lt;/strong>: Enable gradient checkpointing, reduce batch size&lt;/li>
-&lt;li>&lt;strong>Slow Convergence&lt;/strong>: Increase batch size, optimize data loading&lt;/li>
-&lt;/ul>
-&lt;h3 id="-optimization-solutions">🔧 &lt;strong>Optimization Solutions&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Memory Bottlenecks&lt;/strong>: ZeRO optimizer, CPU offloading&lt;/li>
-&lt;li>&lt;strong>Communication Overhead&lt;/strong>: Optimize network topology, use compression&lt;/li>
-&lt;li>&lt;strong>Load Balancing&lt;/strong>: Dynamic batching, sequence packing&lt;/li>
-&lt;li>&lt;strong>Checkpointing&lt;/strong>: Asynchronous saves, distributed checkpoints&lt;/li>
-&lt;/ul>
-&lt;h2 id="essential-resources-by-topic">Essential Resources by Topic&lt;/h2>
-&lt;h3 id="-training-fundamentals">🚀 &lt;strong>Training Fundamentals&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/2001.08361">Scaling Laws Paper&lt;/a>&lt;/strong> - Training compute-optimal models ⭐&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/2203.15556">Chinchilla Paper&lt;/a>&lt;/strong> - Optimal parameter vs data scaling ⭐&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/1910.10683">T5 Paper&lt;/a>&lt;/strong> - Text-to-text transfer transformer&lt;/li>
-&lt;/ul>
-&lt;h3 id="-efficiency--optimization">⚡ &lt;strong>Efficiency &amp;amp; Optimization&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/2106.09685">LoRA Paper&lt;/a>&lt;/strong> - Low-rank adaptation ⭐&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/1910.02054">ZeRO Paper&lt;/a>&lt;/strong> - Memory-efficient training ⭐&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/2205.14135">Flash Attention&lt;/a>&lt;/strong> - Memory-efficient attention&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/1604.06174">Gradient Checkpointing&lt;/a>&lt;/strong> - Memory-computation trade-off&lt;/li>
-&lt;/ul>
-&lt;h3 id="-alignment--rlhf">🤝 &lt;strong>Alignment &amp;amp; RLHF&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/2203.02155">InstructGPT Paper&lt;/a>&lt;/strong> - Training language models to follow instructions ⭐&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/2212.08073">Constitutional AI&lt;/a>&lt;/strong> - Training a helpful and harmless assistant ⭐&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/1707.06347">PPO Paper&lt;/a>&lt;/strong> - Proximal policy optimization&lt;/li>
-&lt;/ul>
-&lt;h3 id="-implementation-guides">🛠️ &lt;strong>Implementation Guides&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>&lt;a href="https://www.deepspeed.ai/">DeepSpeed Documentation&lt;/a>&lt;/strong> - Distributed training framework&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://huggingface.co/docs/transformers/training">HuggingFace Training Guide&lt;/a>&lt;/strong> - Practical training tutorials&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://pytorch-lightning.readthedocs.io/">PyTorch Lightning&lt;/a>&lt;/strong> - Structured training framework&lt;/li>
-&lt;/ul>
-&lt;h2 id="current-research-frontiers">Current Research Frontiers&lt;/h2>
-&lt;h3 id="-active-research-areas">🔬 &lt;strong>Active Research Areas&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Compute-Optimal Training&lt;/strong>: Beyond Chinchilla scaling laws&lt;/li>
-&lt;li>&lt;strong>Data-Efficient Training&lt;/strong>: Learning from limited high-quality data&lt;/li>
-&lt;li>&lt;strong>Multimodal Training&lt;/strong>: Joint training across text, vision, and audio&lt;/li>
-&lt;li>&lt;strong>Online Learning&lt;/strong>: Continuous learning from user interactions&lt;/li>
-&lt;li>&lt;strong>Federated Learning&lt;/strong>: Distributed training with privacy preservation&lt;/li>
-&lt;/ul>
-&lt;h3 id="-emerging-techniques">🚀 &lt;strong>Emerging Techniques&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>MoE Training&lt;/strong>: Mixture of experts for efficient scaling&lt;/li>
-&lt;li>&lt;strong>Retrieval-Augmented Training&lt;/strong>: Training with external knowledge&lt;/li>
-&lt;li>&lt;strong>Self-Supervised Alignment&lt;/strong>: Alignment without human labels&lt;/li>
-&lt;li>&lt;strong>Dynamic Architectures&lt;/strong>: Adaptive model structures during training&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>&lt;strong>Next Steps&lt;/strong>: With training strategies mastered, explore &lt;a href="https://deepskandpal.github.io/tech-writings/genai-applications/">Applications &amp;amp; Systems&lt;/a> to see how these trained models power real-world applications, or dive into &lt;a href="https://deepskandpal.github.io/tech-writings/genai-infrastructure/">Infrastructure&lt;/a> for deployment considerations.&lt;/p></description></item><item><title>GenAI Core Architectures: Transformers, LLMs &amp; Generative Models</title><link>https://deepskandpal.github.io/tech-writings/genai-architectures/</link><pubDate>Sun, 26 Jan 2025 16:45:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai-architectures/</guid><description>&lt;h1 id="genai-core-architectures-tree">GenAI Core Architectures Tree&lt;/h1>
+&lt;/code>&lt;/pre>&lt;h2 id="unsloth-high-performance-fine-tuning">Unsloth: High-Performance Fine-tuning&lt;/h2>
+&lt;h3 id="-unsloth-optimization-library">🦥 &lt;strong>Unsloth Optimization Library&lt;/strong>&lt;/h3>
+&lt;p>&lt;strong>Unsloth&lt;/strong> is a high-performance fine-tuning library that provides 2x faster training with 70% less VRAM usage. It&amp;rsquo;s particularly valuable for parameter-efficient fine-tuning and reinforcement learning.&lt;/p></description></item><item><title>GenAI Core Architectures: Transformers, LLMs &amp; Generative Models</title><link>https://deepskandpal.github.io/tech-writings/genai/genai-architectures/</link><pubDate>Sun, 26 Jan 2025 16:45:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai/genai-architectures/</guid><description>&lt;h1 id="genai-core-architectures-tree">GenAI Core Architectures Tree&lt;/h1>
 &lt;p>The fundamental architectures that power modern generative AI systems. From attention mechanisms to large language models and diffusion processes.&lt;/p>
 &lt;h2 id="core-architectures-knowledge-tree">Core Architectures Knowledge Tree&lt;/h2>
 &lt;h3 id="complete-architecture-overview">Complete Architecture Overview&lt;/h3>
@@ -408,7 +246,7 @@ graph TD
  GPT[GPT Family&amp;lt;br/&amp;gt;Decoder-Only] --&amp;gt; GPT_EVO[GPT-1 → GPT-2 → GPT-3 → GPT-4&amp;lt;br/&amp;gt;117M → 1.5B → 175B → Multimodal]
  BERT[BERT Family&amp;lt;br/&amp;gt;Encoder-Only] --&amp;gt; BERT_EVO[BERT → RoBERTa → ALBERT&amp;lt;br/&amp;gt;Bidirectional Understanding]
  T5[T5 Family&amp;lt;br/&amp;gt;Encoder-Decoder] --&amp;gt; T5_EVO[Text-to-Text Transfer&amp;lt;br/&amp;gt;Unified Framework]
- MODERN[Modern LLMs] --&amp;gt; MOD_EVO[LLaMA, Claude, Gemini&amp;lt;br/&amp;gt;Efficient, Aligned, Multimodal]
+ MODERN[Modern LLMs] --&amp;gt; MOD_EVO[LLaMA, Claude, Gemini&amp;lt;br/&amp;gt;Aquila2, DeepSeek-R1, Efficient, Aligned, Multimodal]
  end
  
  subgraph SCALING[📏 Scaling Dimensions]
@@ -623,6 +461,8 @@ graph LR
 &lt;li>&lt;strong>&lt;a href="http://localhost:1313/bookshelf/hands-on-large-language-models/">Hands-On Large Language Models&lt;/a>&lt;/strong> - Practical implementation ⭐&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/2005.14165">GPT-3 Paper&lt;/a>&lt;/strong> - Scaling language models&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/2203.02155">InstructGPT Paper&lt;/a>&lt;/strong> - Training language models to follow instructions&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://github.com/FlagAI-Open">FlagAI-Open&lt;/a>&lt;/strong> - BAAI&amp;rsquo;s comprehensive toolkit with Aquila2 and Aquila-MoE models&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://docs.unsloth.ai/basics/deepseek-r1-0528-how-to-run-locally">DeepSeek-R1-0528 Guide&lt;/a>&lt;/strong> - Reasoning model deployment with Unsloth ⭐&lt;/li>
 &lt;/ul>
 &lt;h3 id="-diffusion-models">🎨 &lt;strong>Diffusion Models&lt;/strong>&lt;/h3>
 &lt;ul>
@@ -637,24 +477,9 @@ graph LR
 &lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/1906.02691">VAE Tutorial&lt;/a>&lt;/strong> - Introduction to variational autoencoders&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://arxiv.org/abs/1908.09257">Normalizing Flows&lt;/a>&lt;/strong> - Flow-based generative modeling&lt;/li>
 &lt;/ul>
-&lt;h2 id="current-research-frontiers">Current Research Frontiers&lt;/h2>
-&lt;h3 id="-active-research-areas">🔬 &lt;strong>Active Research Areas&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Efficient Transformers&lt;/strong>: Reducing quadratic complexity of attention&lt;/li>
-&lt;li>&lt;strong>Multimodal Integration&lt;/strong>: Seamless text, image, audio understanding&lt;/li>
-&lt;li>&lt;strong>Retrieval Augmentation&lt;/strong>: Combining parametric and non-parametric knowledge&lt;/li>
-&lt;li>&lt;strong>Constitutional AI&lt;/strong>: Training models to be helpful, harmless, and honest&lt;/li>
-&lt;li>&lt;strong>Model Compression&lt;/strong>: Distillation, pruning, quantization for deployment&lt;/li>
-&lt;/ul>
-&lt;h3 id="-emerging-architectures">🚀 &lt;strong>Emerging Architectures&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Mamba/State Space Models&lt;/strong>: Linear complexity sequence modeling&lt;/li>
-&lt;li>&lt;strong>RetNet&lt;/strong>: Alternative to Transformers with better efficiency&lt;/li>
-&lt;li>&lt;strong>Mixture of Experts&lt;/strong>: Scaling parameters without proportional compute&lt;/li>
-&lt;li>&lt;strong>Multi-Token Prediction&lt;/strong>: Predicting multiple tokens simultaneously&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>&lt;strong>Next Steps&lt;/strong>: With core architectures understood, explore &lt;a href="https://deepskandpal.github.io/tech-writings/genai-training/">Training &amp;amp; Optimization&lt;/a> to learn how these models are actually trained at scale, or dive into &lt;a href="https://deepskandpal.github.io/tech-writings/genai-applications/">Applications&lt;/a> to see them in action.&lt;/p></description></item><item><title>GenAI Foundations: Mathematical &amp; Deep Learning Prerequisites</title><link>https://deepskandpal.github.io/tech-writings/genai-foundations/</link><pubDate>Sun, 26 Jan 2025 16:30:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai-foundations/</guid><description>&lt;h1 id="genai-foundations-tree">GenAI Foundations Tree&lt;/h1>
+&lt;h2 id="reasoning-models--advanced-capabilities">Reasoning Models &amp;amp; Advanced Capabilities&lt;/h2>
+&lt;h3 id="-reasoning-focused-architectures">🧠 &lt;strong>Reasoning-Focused Architectures&lt;/strong>&lt;/h3>
+&lt;p>Modern LLMs are evolving to incorporate explicit reasoning capabilities through specialized training and architectural modifications.&lt;/p></description></item><item><title>GenAI Foundations: Mathematical &amp; Deep Learning Prerequisites</title><link>https://deepskandpal.github.io/tech-writings/genai/genai-foundations/</link><pubDate>Sun, 26 Jan 2025 16:30:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai/genai-foundations/</guid><description>&lt;h1 id="genai-foundations-tree">GenAI Foundations Tree&lt;/h1>
 &lt;p>Essential mathematical and computational foundations that underpin all generative AI systems. Master these concepts to build a solid foundation for advanced GenAI topics.&lt;/p>
 &lt;h2 id="foundations-knowledge-tree">Foundations Knowledge Tree&lt;/h2>
 &lt;h3 id="complete-foundation-overview">Complete Foundation Overview&lt;/h3>
@@ -940,45 +765,7 @@ graph LR
 &lt;li>&lt;strong>Progressive Complexity&lt;/strong>: Master simple cases before advanced variants&lt;/li>
 &lt;/ul>
 &lt;h2 id="connection-to-advanced-topics">Connection to Advanced Topics&lt;/h2>
-&lt;p>These foundations directly enable understanding of:&lt;/p></description></item><item><title>The Complete GenAI Knowledge Tree: Comprehensive Domain Map</title><link>https://deepskandpal.github.io/tech-writings/genai-study-roadmap/</link><pubDate>Sun, 26 Jan 2025 16:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai-study-roadmap/</guid><description>&lt;h1 id="the-complete-genai-knowledge-tree">The Complete GenAI Knowledge Tree&lt;/h1>
-&lt;p>A comprehensive representation of the Generative AI domain, organized as an interconnected knowledge tree. Each node represents a key concept with natural relationships to related topics. Navigate through any path that interests you - from mathematical foundations to cutting-edge research.&lt;/p>
-&lt;h2 id="genai-knowledge-domains">GenAI Knowledge Domains&lt;/h2>
-&lt;p>Navigate through the GenAI ecosystem by exploring focused knowledge domains. Each domain contains specialized concepts and detailed trees.&lt;/p>
-&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 60, &amp;#39;rankSpacing&amp;#39;: 80}}}%%
-graph LR
- ROOT[🤖 Generative AI Universe] --&amp;gt; FOUNDATIONS[📚 Foundations&amp;lt;br/&amp;gt;Mathematics, ML, Deep Learning]
- ROOT --&amp;gt; ARCHITECTURES[🏗️ Core Architectures&amp;lt;br/&amp;gt;Transformers, LLMs, Diffusion Models]
- ROOT --&amp;gt; TRAINING[🚀 Training &amp;amp; Optimization&amp;lt;br/&amp;gt;Pre-training, Fine-tuning, Distributed Training]
- ROOT --&amp;gt; APPLICATIONS[🔄 Applications &amp;amp; Systems&amp;lt;br/&amp;gt;NLP, Vision, Multimodal, Agents, RAG]
- ROOT --&amp;gt; INFRASTRUCTURE[⚙️ Infrastructure &amp;amp; Implementation&amp;lt;br/&amp;gt;Hardware, Frameworks, Model Serving]
- ROOT --&amp;gt; ADVANCED[🔬 Advanced Topics &amp;amp; Research&amp;lt;br/&amp;gt;Safety, Evaluation, Cutting-Edge Research]
- 
- %% Add links to detailed trees
- FOUNDATIONS --&amp;gt; FOUND_LINK[📖 Explore Foundations Tree]
- ARCHITECTURES --&amp;gt; ARCH_LINK[📖 Explore Architectures Tree]
- TRAINING --&amp;gt; TRAIN_LINK[📖 Explore Training Tree]
- APPLICATIONS --&amp;gt; APP_LINK[📖 Explore Applications Tree]
- INFRASTRUCTURE --&amp;gt; INFRA_LINK[📖 Explore Infrastructure Tree]
- ADVANCED --&amp;gt; ADV_LINK[📖 Explore Advanced Topics Tree]
-
- %% Styling
- style ROOT fill:#e1d5e7,stroke:#9673a6,stroke-width:4px
- style FOUNDATIONS fill:#d5e8d4,stroke:#82b366,stroke-width:3px
- style ARCHITECTURES fill:#dae8fc,stroke:#6c8ebf,stroke-width:3px
- style TRAINING fill:#f8cecc,stroke:#b85450,stroke-width:3px
- style APPLICATIONS fill:#fff2cc,stroke:#d6b656,stroke-width:3px
- style INFRASTRUCTURE fill:#e1d5e7,stroke:#9673a6,stroke-width:3px
- style ADVANCED fill:#d5e8d4,stroke:#82b366,stroke-width:3px
- 
- style FOUND_LINK fill:#f9f9f9,stroke:#666,stroke-width:2px
- style ARCH_LINK fill:#f9f9f9,stroke:#666,stroke-width:2px
- style TRAIN_LINK fill:#f9f9f9,stroke:#666,stroke-width:2px
- style APP_LINK fill:#f9f9f9,stroke:#666,stroke-width:2px
- style INFRA_LINK fill:#f9f9f9,stroke:#666,stroke-width:2px
- style ADV_LINK fill:#f9f9f9,stroke:#666,stroke-width:2px
-&lt;/code>&lt;/pre>&lt;h2 id="domain-overview">Domain Overview&lt;/h2>
-&lt;h3 id="-foundations">📚 &lt;strong>&lt;a href="https://deepskandpal.github.io/tech-writings/genai-foundations/">Foundations&lt;/a>&lt;/strong>&lt;/h3>
-&lt;p>&lt;strong>Essential Prerequisites&lt;/strong>: Mathematical foundations, machine learning principles, and deep learning fundamentals that underpin all generative AI systems.&lt;/p></description></item><item><title>GenAI Latest Notes: Advanced Training Techniques and Research Frontiers</title><link>https://deepskandpal.github.io/tech-writings/gen-ai-latest-notes/</link><pubDate>Sun, 26 Jan 2025 15:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/gen-ai-latest-notes/</guid><description>&lt;p>This article analyzes cutting-edge techniques and frameworks used in large language model training, with a focus on practical implementation challenges and emerging research directions.&lt;/p>
+&lt;p>These foundations directly enable understanding of:&lt;/p></description></item><item><title>GenAI Latest Notes: Advanced Training Techniques and Research Frontiers</title><link>https://deepskandpal.github.io/tech-writings/genai/gen-ai-latest-notes/</link><pubDate>Sun, 26 Jan 2025 15:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai/gen-ai-latest-notes/</guid><description>&lt;p>This article analyzes cutting-edge techniques and frameworks used in large language model training, with a focus on practical implementation challenges and emerging research directions.&lt;/p>
 &lt;h2 id="part-1-core-training-frameworks">Part 1: Core Training Frameworks&lt;/h2>
 &lt;h3 id="coom-training-framework-architecture">COOM: Training Framework Architecture&lt;/h3>
 &lt;p>The training framework represents the complete infrastructure needed for pre-training large language models from scratch. The primary challenge addressed is &lt;strong>CUDA Out Of Memory&lt;/strong> errors, which drives most optimization techniques.&lt;/p>
@@ -1011,7 +798,12 @@ graph TD
  style D fill:#dae8fc,stroke:#6c8ebf,stroke-width:2px
  style E fill:#fff2cc,stroke:#d6b656,stroke-width:2px
 &lt;/code>&lt;/pre>&lt;h3 id="key-technologies">Key Technologies&lt;/h3>
-&lt;p>&lt;strong>Megatron-LM&lt;/strong> (&lt;a href="https://github.com/NVIDIA/Megatron-LM">NVIDIA Research&lt;/a>)&lt;/p></description></item><item><title>GenAI Advanced Topics &amp; Research</title><link>https://deepskandpal.github.io/tech-writings/genai-advanced/</link><pubDate>Thu, 19 Dec 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai-advanced/</guid><description>&lt;h1 id="genai-advanced-topics--research-knowledge-tree">GenAI Advanced Topics &amp;amp; Research Knowledge Tree&lt;/h1>
+&lt;p>&lt;strong>Megatron-LM&lt;/strong> (&lt;a href="https://github.com/NVIDIA/Megatron-LM">NVIDIA Research&lt;/a>)&lt;/p></description></item><item><title>The GenAI Study Roadmap</title><link>https://deepskandpal.github.io/tech-writings/genai/genai-study-roadmap/</link><pubDate>Sun, 26 Jan 2025 14:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai/genai-study-roadmap/</guid><description>&lt;h1 id="the-genai-study-roadmap-a-knowledge-tree">The GenAI Study Roadmap: A Knowledge Tree&lt;/h1>
+&lt;p>This document provides a structured roadmap for navigating the vast and rapidly evolving field of Generative AI. It is organized into distinct knowledge trees, each representing a core domain, from foundational principles to advanced research topics.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>Track Your Progress&lt;/strong>: Use the &lt;a href="https://deepskandpal.github.io/tech-writings/genai/genai-study-log/">&lt;strong>GenAI Study Log&lt;/strong>&lt;/a> to monitor your learning journey through this roadmap.&lt;/p>&lt;/blockquote>
+&lt;h2 id="genai-knowledge-domains">GenAI Knowledge Domains&lt;/h2>
+&lt;p>Navigate through the GenAI ecosystem by exploring focused knowledge domains. Each domain contains specialized concepts and detailed trees.&lt;/p></description></item><item><title>GenAI Advanced Topics &amp; Research</title><link>https://deepskandpal.github.io/tech-writings/genai/genai-advanced/</link><pubDate>Thu, 19 Dec 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai/genai-advanced/</guid><description>&lt;h1 id="genai-advanced-topics--research-knowledge-tree">GenAI Advanced Topics &amp;amp; Research Knowledge Tree&lt;/h1>
 &lt;p>This knowledge tree covers cutting-edge research, advanced techniques, AI safety considerations, evaluation methodologies, and future directions in Generative AI.&lt;/p>
 &lt;h2 id="complete-advanced-topics--research-overview">Complete Advanced Topics &amp;amp; Research Overview&lt;/h2>
 &lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 60, &amp;#39;rankSpacing&amp;#39;: 100}}}%%
@@ -1552,13 +1344,13 @@ graph LR
 &lt;/ol>
 &lt;h2 id="related-knowledge-trees">Related Knowledge Trees&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="./genai-foundations">GenAI Foundations&lt;/a> - Mathematical and ML prerequisites&lt;/li>
-&lt;li>&lt;a href="./genai-architectures">GenAI Architectures&lt;/a> - Core model architectures&lt;/li>
-&lt;li>&lt;a href="./genai-training">GenAI Training&lt;/a> - Training methodologies and techniques&lt;/li>
-&lt;li>&lt;a href="./genai-applications">GenAI Applications &amp;amp; Systems&lt;/a> - Practical applications and system design&lt;/li>
-&lt;li>&lt;a href="./genai-infrastructure">GenAI Infrastructure&lt;/a> - Infrastructure and implementation&lt;/li>
+&lt;li>&lt;a href="https://deepskandpal.github.io/tech-writings/genai/genai-foundations">GenAI Foundations&lt;/a> - Mathematical and ML prerequisites&lt;/li>
+&lt;li>&lt;a href="https://deepskandpal.github.io/tech-writings/genai/genai-architectures">GenAI Architectures&lt;/a> - Core model architectures&lt;/li>
+&lt;li>&lt;a href="https://deepskandpal.github.io/tech-writings/genai/genai-training">GenAI Training&lt;/a> - Training methodologies and techniques&lt;/li>
+&lt;li>&lt;a href="https://deepskandpal.github.io/tech-writings/genai/genai-applications">GenAI Applications &amp;amp; Systems&lt;/a> - Practical applications and system design&lt;/li>
+&lt;li>&lt;a href="https://deepskandpal.github.io/tech-writings/genai/genai-infrastructure">GenAI Infrastructure&lt;/a> - Infrastructure and implementation&lt;/li>
 &lt;/ul>
-&lt;p>This comprehensive knowledge tree represents the cutting edge of GenAI research, covering both technical advances and broader implications for society. It serves as a roadmap for researchers, practitioners, and policymakers working on the future of artificial intelligence.&lt;/p></description></item><item><title>GenAI Infrastructure &amp; Implementation</title><link>https://deepskandpal.github.io/tech-writings/genai-infrastructure/</link><pubDate>Thu, 19 Dec 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai-infrastructure/</guid><description>&lt;h1 id="genai-infrastructure--implementation-knowledge-tree">GenAI Infrastructure &amp;amp; Implementation Knowledge Tree&lt;/h1>
+&lt;p>This comprehensive knowledge tree represents the cutting edge of GenAI research, covering both technical advances and broader implications for society. It serves as a roadmap for researchers, practitioners, and policymakers working on the future of artificial intelligence.&lt;/p></description></item><item><title>GenAI Infrastructure &amp; Implementation</title><link>https://deepskandpal.github.io/tech-writings/genai/genai-infrastructure/</link><pubDate>Thu, 19 Dec 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai/genai-infrastructure/</guid><description>&lt;h1 id="genai-infrastructure--implementation-knowledge-tree">GenAI Infrastructure &amp;amp; Implementation Knowledge Tree&lt;/h1>
 &lt;p>This knowledge tree covers the technical infrastructure, hardware, frameworks, and implementation details required to build, train, and deploy GenAI systems at scale.&lt;/p>
 &lt;h2 id="complete-infrastructure--implementation-overview">Complete Infrastructure &amp;amp; Implementation Overview&lt;/h2>
 &lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 60, &amp;#39;rankSpacing&amp;#39;: 100}}}%%
@@ -1570,6 +1362,7 @@ graph LR
  INFRA --&amp;gt; SERVING[&amp;#34;🚀 Model Serving&amp;#34;]
  INFRA --&amp;gt; DATA[&amp;#34;💾 Data Infrastructure&amp;#34;]
  INFRA --&amp;gt; PERFORMANCE[&amp;#34;⚡ Performance &amp;amp; Optimization&amp;#34;]
+ INFRA --&amp;gt; MEMORY_SYS[&amp;#34;🧠 AI Agent Memory Systems&amp;#34;]
  INFRA --&amp;gt; DEVOPS[&amp;#34;🔧 Development &amp;amp; DevOps&amp;#34;]
  
  style INFRA fill:#e1f5fe,stroke:#01579b,stroke-width:3px
@@ -1578,6 +1371,7 @@ graph LR
  style SERVING fill:#fff3e0,stroke:#e65100,stroke-width:2px
  style DATA fill:#fce4ec,stroke:#880e4f,stroke-width:2px
  style PERFORMANCE fill:#f1f8e9,stroke:#33691e,stroke-width:2px
+ style MEMORY_SYS fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
  style DEVOPS fill:#e3f2fd,stroke:#0d47a1,stroke-width:2px
 &lt;/code>&lt;/pre>&lt;h2 id="hardware--computing-infrastructure">Hardware &amp;amp; Computing Infrastructure&lt;/h2>
 &lt;h3 id="gpu-computing--acceleration">GPU Computing &amp;amp; Acceleration&lt;/h3>
@@ -1724,10 +1518,17 @@ graph LR
  GENAI_LIBS --&amp;gt; LANG[&amp;#34;🦜 LangChain&amp;#34;]
  GENAI_LIBS --&amp;gt; DIFFUSION[&amp;#34;🎨 Diffusion&amp;#34;]
  GENAI_LIBS --&amp;gt; INFERENCE[&amp;#34;⚡ Inference&amp;#34;]
+ GENAI_LIBS --&amp;gt; OPTIMIZATION[&amp;#34;🦥 Optimization&amp;#34;]
  
  HF --&amp;gt; TRANSFORMERS[&amp;#34;Transformers&amp;#34;]
  HF --&amp;gt; DATASETS[&amp;#34;Datasets&amp;#34;]
  HF --&amp;gt; ACCELERATE[&amp;#34;Accelerate&amp;#34;]
+ 
+ OPTIMIZATION --&amp;gt; UNSLOTH[&amp;#34;Unsloth&amp;#34;]
+ OPTIMIZATION --&amp;gt; DEEPSPEED[&amp;#34;DeepSpeed&amp;#34;]
+ OPTIMIZATION --&amp;gt; FAIRSCALE[&amp;#34;FairScale&amp;#34;]
+ OPTIMIZATION --&amp;gt; MEGATRON[&amp;#34;Megatron-LM&amp;#34;]
+ OPTIMIZATION --&amp;gt; FLAGAI[&amp;#34;FlagAI&amp;#34;]
  HF --&amp;gt; PEFT[&amp;#34;PEFT&amp;#34;]
  
  LANG --&amp;gt; LANGCHAIN[&amp;#34;LangChain&amp;#34;]
@@ -1818,7 +1619,7 @@ graph LR
  style API fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
  style EDGE fill:#fff3e0,stroke:#e65100,stroke-width:2px
  style BATCH fill:#fce4ec,stroke:#880e4f,stroke-width:2px
-&lt;/code>&lt;/pre>&lt;p>&lt;strong>Note&lt;/strong>: While primarily designed for inference, &lt;strong>NVIDIA Triton&lt;/strong> also supports training workflows including:&lt;/p></description></item><item><title>GenAI Applications &amp; Systems</title><link>https://deepskandpal.github.io/tech-writings/genai-applications/</link><pubDate>Thu, 19 Dec 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai-applications/</guid><description>&lt;h1 id="genai-applications--systems-knowledge-tree">GenAI Applications &amp;amp; Systems Knowledge Tree&lt;/h1>
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Note&lt;/strong>: While primarily designed for inference, &lt;strong>NVIDIA Triton&lt;/strong> also supports training workflows including:&lt;/p></description></item><item><title>GenAI Applications &amp; Systems</title><link>https://deepskandpal.github.io/tech-writings/genai/genai-applications/</link><pubDate>Thu, 19 Dec 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai/genai-applications/</guid><description>&lt;h1 id="genai-applications--systems-knowledge-tree">GenAI Applications &amp;amp; Systems Knowledge Tree&lt;/h1>
 &lt;p>This knowledge tree covers the practical applications and system design aspects of Generative AI, from real-world use cases to production deployment strategies.&lt;/p>
 &lt;h2 id="complete-applications--systems-overview">Complete Applications &amp;amp; Systems Overview&lt;/h2>
 &lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 60, &amp;#39;rankSpacing&amp;#39;: 100}}}%%
@@ -2279,8 +2080,8 @@ graph TD
 &lt;/ul>
 &lt;h2 id="related-knowledge-trees">Related Knowledge Trees&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="./genai-foundations">GenAI Foundations&lt;/a> - Mathematical and ML prerequisites&lt;/li>
-&lt;li>&lt;a href="./genai-architectures">GenAI Architectures&lt;/a> - Core model architectures&lt;/li>
-&lt;li>&lt;a href="./genai-training">GenAI Training&lt;/a> - Training methodologies and techniques&lt;/li>
+&lt;li>&lt;a href="https://deepskandpal.github.io/tech-writings/genai/genai-foundations">GenAI Foundations&lt;/a> - Mathematical and ML prerequisites&lt;/li>
+&lt;li>&lt;a href="https://deepskandpal.github.io/tech-writings/genai/genai-architectures">GenAI Architectures&lt;/a> - Core model architectures&lt;/li>
+&lt;li>&lt;a href="https://deepskandpal.github.io/tech-writings/genai/genai-training">GenAI Training&lt;/a> - Training methodologies and techniques&lt;/li>
 &lt;/ul>
 &lt;p>This comprehensive knowledge tree provides a structured approach to understanding GenAI applications and systems from practical implementation to production deployment and governance considerations.&lt;/p></description></item></channel></rss>

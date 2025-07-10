@@ -74,31 +74,12 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;p>Here is the diagram for the Two-Tower Model, which is central to this discussion.&lt;/p></description></item><item><title>Chapter 2: Data Pipeline Design</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-2/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-2/</guid><description>&lt;h1 id="chapter-2-notes-data-pipeline-design">Chapter 2 Notes: Data Pipeline Design&lt;/h1>
-&lt;h2 id="overview">Overview&lt;/h2>
-&lt;p>This chapter focuses on designing robust data pipelines for ML systems. It covers data ingestion, processing, storage, and the various considerations for handling large-scale data in production ML systems.&lt;/p>
-&lt;h2 id="key-concepts">Key Concepts&lt;/h2>
+&lt;p>Here is the diagram for the Two-Tower Model, which is central to this discussion.&lt;/p></description></item><item><title>Chapter 2: Common Recommendation System Components.</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-2/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-2/</guid><description>&lt;p>This chapter is the heart of the book and arguably the most important for many ML system design interviews, as recommendation systems are a classic and recurring design question. We&amp;rsquo;ll break down the three key stages: &lt;strong>Candidate Generation&lt;/strong>, &lt;strong>Ranking&lt;/strong>, and &lt;strong>Re-ranking&lt;/strong>.&lt;/p>
+&lt;h2 id="candidate-generation---finding-the-haystack-needles">Candidate Generation - Finding the Haystack Needles&lt;/h2>
+&lt;p>This is the first and arguably most critical stage of a large-scale recommender.&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Data Ingestion&lt;/strong>: Batch vs streaming data ingestion patterns&lt;/li>
-&lt;li>&lt;strong>Data Processing&lt;/strong>: ETL/ELT pipelines for ML workloads&lt;/li>
-&lt;li>&lt;strong>Data Storage&lt;/strong>: Choosing appropriate storage solutions for different data types&lt;/li>
-&lt;li>&lt;strong>Data Quality&lt;/strong>: Ensuring data quality and handling data drift&lt;/li>
-&lt;/ul>
-&lt;h2 id="main-topics-covered">Main Topics Covered&lt;/h2>
-&lt;ol>
-&lt;li>Data collection strategies&lt;/li>
-&lt;li>Real-time vs batch processing&lt;/li>
-&lt;li>Data storage architectures&lt;/li>
-&lt;li>Data validation and monitoring&lt;/li>
-&lt;li>Handling data at scale&lt;/li>
-&lt;/ol>
-&lt;h2 id="common-interview-questions">Common Interview Questions&lt;/h2>
-&lt;ul>
-&lt;li>How would you design a data pipeline for a recommendation system?&lt;/li>
-&lt;li>How do you handle data quality issues in production?&lt;/li>
-&lt;li>What are the trade-offs between batch and streaming processing?&lt;/li>
-&lt;/ul>
-&lt;p>(Your detailed notes for Chapter 2 go here&amp;hellip;)&lt;/p></description></item><item><title>Chapter 3: Model Training and Deployment</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-3/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-3/</guid><description>&lt;h1 id="chapter-3-notes-model-training-and-deployment">Chapter 3 Notes: Model Training and Deployment&lt;/h1>
+&lt;li>
+&lt;p>&lt;strong>Book&amp;rsquo;s Core Idea (Timeless):&lt;/strong> You cannot possibly score and rank every single item in your corpus (e.g., all 500 million videos on YouTube) for every user in real time. The goal of candidate generation (also called retrieval or sourcing) is to narrow down this massive set to a few hundred or a few thousand &amp;ldquo;pretty good&amp;rdquo; candidates, quickly and cheaply. The book presents the two classic approaches:&lt;/p></description></item><item><title>Chapter 3: Model Training and Deployment</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-3/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-3/</guid><description>&lt;h1 id="chapter-3-notes-model-training-and-deployment">Chapter 3 Notes: Model Training and Deployment&lt;/h1>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>This chapter covers the design considerations for training ML models at scale and deploying them to production environments. It includes discussions on training infrastructure, model versioning, A/B testing, and deployment strategies.&lt;/p>
 &lt;h2 id="key-concepts">Key Concepts&lt;/h2>

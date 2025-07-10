@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Applications on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/applications/</link><description>Recent content in Applications on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 19 Dec 2024 10:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/applications/index.xml" rel="self" type="application/rss+xml"/><item><title>GenAI Applications &amp; Systems</title><link>https://deepskandpal.github.io/tech-writings/genai-applications/</link><pubDate>Thu, 19 Dec 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai-applications/</guid><description>&lt;h1 id="genai-applications--systems-knowledge-tree">GenAI Applications &amp;amp; Systems Knowledge Tree&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Applications on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/applications/</link><description>Recent content in Applications on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 19 Dec 2024 10:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/applications/index.xml" rel="self" type="application/rss+xml"/><item><title>GenAI Applications &amp; Systems</title><link>https://deepskandpal.github.io/tech-writings/genai/genai-applications/</link><pubDate>Thu, 19 Dec 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai/genai-applications/</guid><description>&lt;h1 id="genai-applications--systems-knowledge-tree">GenAI Applications &amp;amp; Systems Knowledge Tree&lt;/h1>
 &lt;p>This knowledge tree covers the practical applications and system design aspects of Generative AI, from real-world use cases to production deployment strategies.&lt;/p>
 &lt;h2 id="complete-applications--systems-overview">Complete Applications &amp;amp; Systems Overview&lt;/h2>
 &lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">%%{init: {&amp;#39;flowchart&amp;#39;: {&amp;#39;nodeSpacing&amp;#39;: 60, &amp;#39;rankSpacing&amp;#39;: 100}}}%%
@@ -459,8 +459,8 @@ graph TD
 &lt;/ul>
 &lt;h2 id="related-knowledge-trees">Related Knowledge Trees&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="./genai-foundations">GenAI Foundations&lt;/a> - Mathematical and ML prerequisites&lt;/li>
-&lt;li>&lt;a href="./genai-architectures">GenAI Architectures&lt;/a> - Core model architectures&lt;/li>
-&lt;li>&lt;a href="./genai-training">GenAI Training&lt;/a> - Training methodologies and techniques&lt;/li>
+&lt;li>&lt;a href="https://deepskandpal.github.io/tech-writings/genai/genai-foundations">GenAI Foundations&lt;/a> - Mathematical and ML prerequisites&lt;/li>
+&lt;li>&lt;a href="https://deepskandpal.github.io/tech-writings/genai/genai-architectures">GenAI Architectures&lt;/a> - Core model architectures&lt;/li>
+&lt;li>&lt;a href="https://deepskandpal.github.io/tech-writings/genai/genai-training">GenAI Training&lt;/a> - Training methodologies and techniques&lt;/li>
 &lt;/ul>
 &lt;p>This comprehensive knowledge tree provides a structured approach to understanding GenAI applications and systems from practical implementation to production deployment and governance considerations.&lt;/p></description></item></channel></rss>
