@@ -553,7 +553,24 @@ graph LR
 &lt;li>&lt;strong>Progressive Complexity&lt;/strong>: Master simple cases before advanced variants&lt;/li>
 &lt;/ul>
 &lt;h2 id="connection-to-advanced-topics">Connection to Advanced Topics&lt;/h2>
-&lt;p>These foundations directly enable understanding of:&lt;/p></description></item><item><title>GenAI Latest Notes: Advanced Training Techniques and Research Frontiers</title><link>https://deepskandpal.github.io/tech-writings/genai/gen-ai-latest-notes/</link><pubDate>Sun, 26 Jan 2025 15:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai/gen-ai-latest-notes/</guid><description>&lt;p>This article analyzes cutting-edge techniques and frameworks used in large language model training, with a focus on practical implementation challenges and emerging research directions.&lt;/p>
+&lt;p>These foundations directly enable understanding of:&lt;/p></description></item><item><title>GenAI : Training and Optimizations 101</title><link>https://deepskandpal.github.io/tech-writings/genai/gen-ai-fundamentals/</link><pubDate>Sun, 26 Jan 2025 15:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai/gen-ai-fundamentals/</guid><description>&lt;h1 id="complete-fine-tuning-guide---all-concepts-explained">Complete Fine-Tuning Guide - All Concepts Explained&lt;/h1>
+&lt;h2 id="table-of-contents">Table of Contents&lt;/h2>
+&lt;ol>
+&lt;li>&lt;a href="#context-size-and-sequence-length">Context Size and Sequence Length&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#truncation-explained">Truncation Explained&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#memory-optimization-fundamentals">Memory Optimization Fundamentals&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#parameter-efficient-fine-tuning-peft">Parameter Efficient Fine-Tuning (PEFT)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#lora-low-rank-adaptation">LoRA (Low-Rank Adaptation)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#qlora-quantized-lora">QLoRA (Quantized LoRA)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#quantization-deep-dive">Quantization Deep Dive&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#knowledge-distillation">Knowledge Distillation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#unsloth-optimizations">Unsloth Optimizations&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#training-approaches-comparison">Training Approaches Comparison&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="context-size-and-sequence-length">Context Size and Sequence Length&lt;/h2>
+&lt;h3 id="what-is-context-size">What is Context Size?&lt;/h3>
+&lt;p>&lt;strong>Context size&lt;/strong> refers to the maximum number of tokens (words, subwords, or characters) that a language model can process simultaneously. Think of it as the model&amp;rsquo;s &amp;ldquo;memory span&amp;rdquo; - how much text it can &amp;ldquo;see&amp;rdquo; and consider when generating a response.&lt;/p></description></item><item><title>GenAI Latest Notes: Advanced Training Techniques and Research Frontiers</title><link>https://deepskandpal.github.io/tech-writings/genai/gen-ai-latest-notes/</link><pubDate>Sun, 26 Jan 2025 15:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/genai/gen-ai-latest-notes/</guid><description>&lt;p>This article analyzes cutting-edge techniques and frameworks used in large language model training, with a focus on practical implementation challenges and emerging research directions.&lt;/p>
 &lt;h2 id="part-1-core-training-frameworks">Part 1: Core Training Frameworks&lt;/h2>
 &lt;h3 id="coom-training-framework-architecture">COOM: Training Framework Architecture&lt;/h3>
 &lt;p>The training framework represents the complete infrastructure needed for pre-training large language models from scratch. The primary challenge addressed is &lt;strong>CUDA Out Of Memory&lt;/strong> errors, which drives most optimization techniques.&lt;/p>
