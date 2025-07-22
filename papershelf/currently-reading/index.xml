@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Currently Reading on 404EngineerNotFound</title><link>https://deepskandpal.github.io/papershelf/currently-reading/</link><description>Recent content in Currently Reading on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 22 Jul 2025 13:45:00 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/papershelf/currently-reading/index.xml" rel="self" type="application/rss+xml"/><item><title>DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning</title><link>https://deepskandpal.github.io/papershelf/currently-reading/deepseek-r1/</link><pubDate>Tue, 22 Jul 2025 13:45:00 +0530</pubDate><guid>https://deepskandpal.github.io/papershelf/currently-reading/deepseek-r1/</guid><description/></item><item><title>Harnessing the Universal Geometry of Embeddings</title><link>https://deepskandpal.github.io/papershelf/currently-reading/vec2vec-embedding-translation/</link><pubDate>Tue, 22 Jul 2025 13:42:28 +0530</pubDate><guid>https://deepskandpal.github.io/papershelf/currently-reading/vec2vec-embedding-translation/</guid><description/></item><item><title>Kimi-K2 Technical Report</title><link>https://deepskandpal.github.io/papershelf/currently-reading/kimi-k2-tech-report/</link><pubDate>Tue, 22 Jul 2025 13:40:27 +0530</pubDate><guid>https://deepskandpal.github.io/papershelf/currently-reading/kimi-k2-tech-report/</guid><description/></item><item><title>Infinite Retrieval: Attention Enhanced LLMs in Long-Context Processing</title><link>https://deepskandpal.github.io/papershelf/currently-reading/infinit-retrevial-attention/</link><pubDate>Sat, 27 Apr 2024 19:30:00 +0000</pubDate><guid>https://deepskandpal.github.io/papershelf/currently-reading/infinit-retrevial-attention/</guid><description>&lt;h2 id="paper">&lt;strong>Paper: &amp;ldquo;Infinite Retrieval: Attention Enhanced LLMs in Long-Context Processing&amp;rdquo;&lt;/strong>&lt;/h2>
+&lt;p>&lt;strong>Link:&lt;/strong> &lt;a href="https://arxiv.org/abs/2502.12962">https://arxiv.org/abs/2502.12962&lt;/a>&lt;br>
+&lt;strong>Date:&lt;/strong> Based on arXiv pattern, likely February 2025 (very recent)
+&lt;strong>Domain:&lt;/strong> Retrieval-Augmented Generation (RAG) and Long-Context Processing&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>🚧 Currently Reading&lt;/strong> - This paper appears to focus on enhancing LLMs&amp;rsquo; long-context processing capabilities through improved attention and retrieval mechanisms.&lt;/p>&lt;/blockquote>
+&lt;h2 id="why-this-paper-matters">&lt;strong>Why This Paper Matters&lt;/strong>&lt;/h2>
+&lt;p>Long-context processing remains one of the key challenges in modern LLMs. This work likely addresses:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Context window limitations&lt;/strong> in current models&lt;/li>
+&lt;li>&lt;strong>Attention efficiency&lt;/strong> for very long sequences&lt;/li>
+&lt;li>&lt;strong>RAG enhancement&lt;/strong> through better retrieval mechanisms&lt;/li>
+&lt;li>&lt;strong>Information retention&lt;/strong> over extended contexts&lt;/li>
+&lt;/ul>
+&lt;h2 id="reading-progress">&lt;strong>Reading Progress&lt;/strong>&lt;/h2>
+&lt;h3 id="paper-access--initial-review">&lt;strong>Paper Access &amp;amp; Initial Review&lt;/strong>&lt;/h3>
+&lt;p>&lt;em>Status: 📖 In Progress&lt;/em>&lt;/p></description></item></channel></rss>
