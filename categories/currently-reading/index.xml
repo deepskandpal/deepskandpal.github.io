@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Currently Reading on 404EngineerNotFound</title><link>https://deepskandpal.github.io/categories/currently-reading/</link><description>Recent content in Currently Reading on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 01 Sep 2024 12:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/categories/currently-reading/index.xml" rel="self" type="application/rss+xml"/><item><title>Build a Large Language Model (From Scratch)</title><link>https://deepskandpal.github.io/bookshelf/build-llm-from-scratch/</link><pubDate>Sun, 01 Sep 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/build-llm-from-scratch/</guid><description>&lt;p>&lt;strong>A comprehensive guide to creating your own Large Language Model from the ground up, comparable to GPT-2.&lt;/strong>&lt;/p>
+&lt;p>Sebastian Raschka, a leading expert in machine learning and AI, takes you through the complete process of building a Large Language Model from scratch. This isn&amp;rsquo;t just about fine-tuning existing models - you&amp;rsquo;ll learn to construct the entire architecture, training pipeline, and implementation details.&lt;/p>
+&lt;h2 id="what-youll-learn">What You&amp;rsquo;ll Learn&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Plan and code an LLM comparable to GPT-2&lt;/strong> - Build a complete language model architecture&lt;/li>
+&lt;li>&lt;strong>Load pretrained weights&lt;/strong> - Understand how to work with existing model parameters&lt;/li>
+&lt;li>&lt;strong>Construct a complete training pipeline&lt;/strong> - From data preprocessing to model optimization&lt;/li>
+&lt;li>&lt;strong>Fine-tune your LLM for text classification&lt;/strong> - Adapt your model for specific tasks&lt;/li>
+&lt;li>&lt;strong>Develop LLMs that follow human instructions&lt;/strong> - Create models that can understand and respond to user commands&lt;/li>
+&lt;/ul>
+&lt;h2 id="key-features">Key Features&lt;/h2>
+&lt;h3 id="practical-implementation">Practical Implementation&lt;/h3>
+&lt;ul>
+&lt;li>Step-by-step code examples in Python&lt;/li>
+&lt;li>Clear diagrams and explanations for each component&lt;/li>
+&lt;li>Runs on modern laptops with optional GPU acceleration&lt;/li>
+&lt;/ul>
+&lt;h3 id="complete-coverage">Complete Coverage&lt;/h3>
+&lt;ul>
+&lt;li>Initial design and architecture decisions&lt;/li>
+&lt;li>Pretraining on general text corpora&lt;/li>
+&lt;li>Fine-tuning for specific applications&lt;/li>
+&lt;li>Performance optimization techniques&lt;/li>
+&lt;/ul>
+&lt;h3 id="real-world-applications">Real-World Applications&lt;/h3>
+&lt;p>The techniques you&amp;rsquo;ll learn enable building chatbots capable of:&lt;/p></description></item></channel></rss>
