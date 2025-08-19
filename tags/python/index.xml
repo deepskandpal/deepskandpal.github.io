@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/python/</link><description>Recent content in Python on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 29 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Restore Ip Addresses</title><link>https://deepskandpal.github.io/dsa-log/restore-ip-addresses/</link><pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/restore-ip-addresses/</guid><description>&lt;h2 id="problem-description">Problem Description&lt;/h2>
 &lt;p>Given a string &lt;code>s&lt;/code> containing only digits, return all possible valid IP addresses that can be formed by inserting three dots into &lt;code>s&lt;/code>.&lt;/p>
 &lt;p>A valid IP address consists of exactly four integers separated by single dots. Each integer is between 0 and 255 (inclusive) and cannot have leading zeros (e.g., &amp;ldquo;01&amp;rdquo; is invalid, but &amp;ldquo;0&amp;rdquo; is valid).&lt;/p>
-&lt;p>For example, given &lt;code>s = &amp;quot;25525511135&amp;quot;&lt;/code>, the valid IP addresses are &lt;code>[&amp;quot;255.255.11.135&amp;quot;]&lt;/code>.&lt;/p></description></item><item><title>Count And Say</title><link>https://deepskandpal.github.io/dsa-log/count-and-say/</link><pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/count-and-say/</guid><description>&lt;h2 id="problem-description">Problem Description&lt;/h2>
+&lt;p>For example, given &lt;code>s = &amp;quot;25525511135&amp;quot;&lt;/code>, the valid IP addresses are &lt;code>[&amp;quot;255.255.11.135&amp;quot;]&lt;/code>.&lt;/p></description></item><item><title>LangChef - End-to-End LLM Workflow Platform</title><link>https://deepskandpal.github.io/creations/langchef/</link><pubDate>Sun, 15 Dec 2024 22:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/creations/langchef/</guid><description>&lt;h2 id="langchef-end-to-end-llm-workflow-platform">LangChef: End-to-End LLM Workflow Platform&lt;/h2>
+&lt;p>&lt;strong>A comprehensive platform for prompt engineering, dataset management, and LLM experimentation that streamlines the entire lifecycle of LLM applications.&lt;/strong>&lt;/p>
+&lt;h3 id="-what-is-langchef">🎯 What is LangChef?&lt;/h3>
+&lt;p>LangChef is a production-ready platform designed for teams who need to iterate fast and maintain quality in their AI workflows. It addresses the complete LLM development lifecycle from initial prompt engineering to production evaluation and monitoring.&lt;/p>
+&lt;h3 id="-key-features">🚀 Key Features&lt;/h3>
+&lt;p>&lt;strong>Prompt Management&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Create, version, and organize prompts with full lifecycle tracking&lt;/li>
+&lt;li>A/B test prompt variations with statistical significance&lt;/li>
+&lt;li>Template management and reusable prompt components&lt;/li>
+&lt;li>Performance tracking across different prompt versions&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Dataset Management&lt;/strong>&lt;/p></description></item><item><title>Count And Say</title><link>https://deepskandpal.github.io/dsa-log/count-and-say/</link><pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/count-and-say/</guid><description>&lt;h2 id="problem-description">Problem Description&lt;/h2>
 &lt;p>&lt;a href="https://colab.research.google.com/drive/1udH4eyb9bToLC_ZPPaK-n3T-jPdbAANw#scrollTo=pD7bP8UR5oiP">rough nb&lt;/a>&lt;/p>
 &lt;p>The count-and-say sequence is a sequence of digit strings defined by the recursive formula:&lt;/p>
 &lt;ul>
