@@ -1,30 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strings on 404EngineerNotFound</title><link>https://deepskandpal.github.io/topics/strings/</link><description>Recent content in Strings on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 29 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/topics/strings/index.xml" rel="self" type="application/rss+xml"/><item><title>Restore Ip Addresses</title><link>https://deepskandpal.github.io/dsa-log/restore-ip-addresses/</link><pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/restore-ip-addresses/</guid><description>&lt;h2 id="problem-description">Problem Description&lt;/h2>
-&lt;p>Given a string &lt;code>s&lt;/code> containing only digits, return all possible valid IP addresses that can be formed by inserting three dots into &lt;code>s&lt;/code>.&lt;/p>
-&lt;p>A valid IP address consists of exactly four integers separated by single dots. Each integer is between 0 and 255 (inclusive) and cannot have leading zeros (e.g., &amp;ldquo;01&amp;rdquo; is invalid, but &amp;ldquo;0&amp;rdquo; is valid).&lt;/p>
-&lt;p>For example, given &lt;code>s = &amp;quot;25525511135&amp;quot;&lt;/code>, the valid IP addresses are &lt;code>[&amp;quot;255.255.11.135&amp;quot;]&lt;/code>.&lt;/p></description></item><item><title>Count And Say</title><link>https://deepskandpal.github.io/dsa-log/count-and-say/</link><pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/count-and-say/</guid><description>&lt;h2 id="problem-description">Problem Description&lt;/h2>
-&lt;p>&lt;a href="https://colab.research.google.com/drive/1udH4eyb9bToLC_ZPPaK-n3T-jPdbAANw#scrollTo=pD7bP8UR5oiP">rough nb&lt;/a>&lt;/p>
-&lt;p>The count-and-say sequence is a sequence of digit strings defined by the recursive formula:&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>countAndSay(1) = &amp;quot;1&amp;quot;&lt;/code>&lt;/li>
-&lt;li>&lt;code>countAndSay(n)&lt;/code> is the way you would &amp;ldquo;say&amp;rdquo; the digit string from &lt;code>countAndSay(n-1)&lt;/code>, which is then converted into a new digit string.&lt;/li>
-&lt;/ul>
-&lt;p>To determine how you &amp;ldquo;say&amp;rdquo; a digit string, split it into the minimal number of substrings such that each substring contains exactly one unique digit. Then for each substring, say the number of digits, then say the digit. Finally, concatenate every said digit.&lt;/p></description></item><item><title>Letter Combinations Of A Phone Number</title><link>https://deepskandpal.github.io/dsa-log/letter-combinations-of-a-phone-number/</link><pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/letter-combinations-of-a-phone-number/</guid><description>&lt;h2 id="problem-description">Problem Description&lt;/h2>
-&lt;p>&lt;a href="https://colab.research.google.com/drive/1udH4eyb9bToLC_ZPPaK-n3T-jPdbAANw#scrollTo=pD7bP8UR5oiP">rough nb&lt;/a>&lt;/p>
-&lt;p>Given a string containing digits from &lt;code>2-9&lt;/code> inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.&lt;/p>
-&lt;p>A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.&lt;/p>
-&lt;p>&lt;strong>Example 1:&lt;/strong>&lt;/p>
-&lt;pre tabindex="0">&lt;code>Input: digits = &amp;#34;23&amp;#34;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strings on 404EngineerNotFound</title><link>https://deepskandpal.github.io/topics/strings/</link><description>Recent content in Strings on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 29 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/topics/strings/index.xml" rel="self" type="application/rss+xml"/><item><title>Restore Ip Addresses</title><link>https://deepskandpal.github.io/dsa-log/restore-ip-addresses/</link><pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/restore-ip-addresses/</guid><description>&lt;h2 id="problem-description"&gt;Problem Description&lt;/h2&gt;
+&lt;p&gt;Given a string &lt;code&gt;s&lt;/code&gt; containing only digits, return all possible valid IP addresses that can be formed by inserting three dots into &lt;code&gt;s&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A valid IP address consists of exactly four integers separated by single dots. Each integer is between 0 and 255 (inclusive) and cannot have leading zeros (e.g., &amp;ldquo;01&amp;rdquo; is invalid, but &amp;ldquo;0&amp;rdquo; is valid).&lt;/p&gt;
+&lt;p&gt;For example, given &lt;code&gt;s = &amp;quot;25525511135&amp;quot;&lt;/code&gt;, the valid IP addresses are &lt;code&gt;[&amp;quot;255.255.11.135&amp;quot;]&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Count And Say</title><link>https://deepskandpal.github.io/dsa-log/count-and-say/</link><pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/count-and-say/</guid><description>&lt;h2 id="problem-description"&gt;Problem Description&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://colab.research.google.com/drive/1udH4eyb9bToLC_ZPPaK-n3T-jPdbAANw#scrollTo=pD7bP8UR5oiP"&gt;rough nb&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The count-and-say sequence is a sequence of digit strings defined by the recursive formula:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;countAndSay(1) = &amp;quot;1&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;countAndSay(n)&lt;/code&gt; is the way you would &amp;ldquo;say&amp;rdquo; the digit string from &lt;code&gt;countAndSay(n-1)&lt;/code&gt;, which is then converted into a new digit string.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To determine how you &amp;ldquo;say&amp;rdquo; a digit string, split it into the minimal number of substrings such that each substring contains exactly one unique digit. Then for each substring, say the number of digits, then say the digit. Finally, concatenate every said digit.&lt;/p&gt;</description></item><item><title>Letter Combinations Of A Phone Number</title><link>https://deepskandpal.github.io/dsa-log/letter-combinations-of-a-phone-number/</link><pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/letter-combinations-of-a-phone-number/</guid><description>&lt;h2 id="problem-description"&gt;Problem Description&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://colab.research.google.com/drive/1udH4eyb9bToLC_ZPPaK-n3T-jPdbAANw#scrollTo=pD7bP8UR5oiP"&gt;rough nb&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Given a string containing digits from &lt;code&gt;2-9&lt;/code&gt; inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.&lt;/p&gt;
+&lt;p&gt;A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Input: digits = &amp;#34;23&amp;#34;
 Output: [&amp;#34;ad&amp;#34;,&amp;#34;ae&amp;#34;,&amp;#34;af&amp;#34;,&amp;#34;bd&amp;#34;,&amp;#34;be&amp;#34;,&amp;#34;bf&amp;#34;,&amp;#34;cd&amp;#34;,&amp;#34;ce&amp;#34;,&amp;#34;cf&amp;#34;]
-&lt;/code>&lt;/pre>&lt;p>&lt;strong>Example 2:&lt;/strong>&lt;/p>
-&lt;pre tabindex="0">&lt;code>Input: digits = &amp;#34;&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Input: digits = &amp;#34;&amp;#34;
 Output: []
-&lt;/code>&lt;/pre>&lt;h2 id="solution-approach">Solution Approach&lt;/h2>
-&lt;p>This problem is a classic example of a backtracking or recursion problem. We need to explore all possible combinations of letters for the given digits.&lt;/p></description></item><item><title>Zigzag Conversion</title><link>https://deepskandpal.github.io/dsa-log/zigzag-conversion/</link><pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/zigzag-conversion/</guid><description>&lt;h2 id="problem-description">Problem Description&lt;/h2>
-&lt;p>The string &lt;code>PAYPALISHIRING&lt;/code> is written in a zigzag pattern on a given number of rows like this:&lt;/p>
-&lt;pre tabindex="0">&lt;code>P A H N
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="solution-approach"&gt;Solution Approach&lt;/h2&gt;
+&lt;p&gt;This problem is a classic example of a backtracking or recursion problem. We need to explore all possible combinations of letters for the given digits.&lt;/p&gt;</description></item><item><title>Zigzag Conversion</title><link>https://deepskandpal.github.io/dsa-log/zigzag-conversion/</link><pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/zigzag-conversion/</guid><description>&lt;h2 id="problem-description"&gt;Problem Description&lt;/h2&gt;
+&lt;p&gt;The string &lt;code&gt;PAYPALISHIRING&lt;/code&gt; is written in a zigzag pattern on a given number of rows like this:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;P A H N
 A P L S I I G
 Y I R
-&lt;/code>&lt;/pre>&lt;p>And then read line by line: &lt;code>&amp;quot;PAHNAPLSIIGYIR&amp;quot;&lt;/code>.&lt;/p>
-&lt;p>Write the code that will take a string and make this conversion given a number of rows.&lt;/p>
-&lt;h2 id="solution-approach">Solution Approach&lt;/h2>
-&lt;p>The problem asks us to reconstruct a string that is formed by reading a zigzag pattern row by row. We can solve this by simulating the placement of each character into its corresponding row.&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And then read line by line: &lt;code&gt;&amp;quot;PAHNAPLSIIGYIR&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Write the code that will take a string and make this conversion given a number of rows.&lt;/p&gt;
+&lt;h2 id="solution-approach"&gt;Solution Approach&lt;/h2&gt;
+&lt;p&gt;The problem asks us to reconstruct a string that is formed by reading a zigzag pattern row by row. We can solve this by simulating the placement of each character into its corresponding row.&lt;/p&gt;</description></item></channel></rss>

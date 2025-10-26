@@ -1,36 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Creations on 404EngineerNotFound</title><link>https://deepskandpal.github.io/creations/</link><description>Recent content in Creations on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 15 Dec 2024 22:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/creations/index.xml" rel="self" type="application/rss+xml"/><item><title>LangChef - End-to-End LLM Workflow Platform</title><link>https://deepskandpal.github.io/creations/langchef/</link><pubDate>Sun, 15 Dec 2024 22:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/creations/langchef/</guid><description>&lt;h2 id="langchef-end-to-end-llm-workflow-platform">LangChef: End-to-End LLM Workflow Platform&lt;/h2>
-&lt;p>&lt;strong>A comprehensive platform for prompt engineering, dataset management, and LLM experimentation that streamlines the entire lifecycle of LLM applications.&lt;/strong>&lt;/p>
-&lt;h3 id="-what-is-langchef">🎯 What is LangChef?&lt;/h3>
-&lt;p>LangChef is a production-ready platform designed for teams who need to iterate fast and maintain quality in their AI workflows. It addresses the complete LLM development lifecycle from initial prompt engineering to production evaluation and monitoring.&lt;/p>
-&lt;h3 id="-key-features">🚀 Key Features&lt;/h3>
-&lt;p>&lt;strong>Prompt Management&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Create, version, and organize prompts with full lifecycle tracking&lt;/li>
-&lt;li>A/B test prompt variations with statistical significance&lt;/li>
-&lt;li>Template management and reusable prompt components&lt;/li>
-&lt;li>Performance tracking across different prompt versions&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Dataset Management&lt;/strong>&lt;/p></description></item><item><title>OpenPage - AI-Enhanced Writing App for macOS</title><link>https://deepskandpal.github.io/creations/openpage/</link><pubDate>Sun, 15 Dec 2024 10:30:00 +0000</pubDate><guid>https://deepskandpal.github.io/creations/openpage/</guid><description>&lt;h2 id="openpage-ia-writer--ai-for-macos">OpenPage: iA Writer + AI for macOS&lt;/h2>
-&lt;p>&lt;strong>A distraction-free, AI-enhanced writing environment that combines iA Writer&amp;rsquo;s legendary simplicity with intelligent writing assistance.&lt;/strong>&lt;/p>
-&lt;h3 id="-what-is-openpage">🎯 What is OpenPage?&lt;/h3>
-&lt;p>OpenPage is a native macOS writing application that seamlessly integrates AI capabilities while maintaining the elegant simplicity that Mac users expect. It demonstrates advanced Swift development skills, multi-provider AI integration, and deep understanding of macOS design principles.&lt;/p>
-&lt;h3 id="-key-features">🚀 Key Features&lt;/h3>
-&lt;p>&lt;strong>Native macOS Integration&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>SwiftUI + AppKit hybrid for optimal text editing performance&lt;/li>
-&lt;li>macOS Keychain integration for secure API key storage&lt;/li>
-&lt;li>Full sandboxed architecture with HIG compliance&lt;/li>
-&lt;li>Privacy-first design with local processing when possible&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Multi-Provider AI Support&lt;/strong>&lt;/p></description></item><item><title>Animal GPT</title><link>https://deepskandpal.github.io/creations/animal-gpt/</link><pubDate>Wed, 20 Mar 2024 14:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/creations/animal-gpt/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
-&lt;p>This is a brief summary of the example project, highlighting its main purpose or key feature. It&amp;rsquo;s used on the card display.&lt;/p>
-&lt;h2 id="details">Details&lt;/h2>
-&lt;p>Here you can write a full description of the project.&lt;/p>
-&lt;ul>
-&lt;li>Explain the goals.&lt;/li>
-&lt;li>Describe the technologies used.&lt;/li>
-&lt;li>Discuss challenges faced and solutions implemented.&lt;/li>
-&lt;li>Include code snippets or further images if relevant using Markdown.&lt;/li>
-&lt;/ul>
-&lt;pre tabindex="0">&lt;code class="language-go-html" data-lang="go-html">{{/* Example code snippet */}}
-&lt;/code>&lt;/pre></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Creations on 404EngineerNotFound</title><link>https://deepskandpal.github.io/creations/</link><description>Recent content in Creations on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 15 Dec 2024 22:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/creations/index.xml" rel="self" type="application/rss+xml"/><item><title>LangChef - End-to-End LLM Workflow Platform</title><link>https://deepskandpal.github.io/creations/langchef/</link><pubDate>Sun, 15 Dec 2024 22:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/creations/langchef/</guid><description>&lt;h2 id="langchef-end-to-end-llm-workflow-platform"&gt;LangChef: End-to-End LLM Workflow Platform&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;A comprehensive platform for prompt engineering, dataset management, and LLM experimentation that streamlines the entire lifecycle of LLM applications.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id="-what-is-langchef"&gt;🎯 What is LangChef?&lt;/h3&gt;
+&lt;p&gt;LangChef is a production-ready platform designed for teams who need to iterate fast and maintain quality in their AI workflows. It addresses the complete LLM development lifecycle from initial prompt engineering to production evaluation and monitoring.&lt;/p&gt;
+&lt;h3 id="-key-features"&gt;🚀 Key Features&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Prompt Management&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create, version, and organize prompts with full lifecycle tracking&lt;/li&gt;
+&lt;li&gt;A/B test prompt variations with statistical significance&lt;/li&gt;
+&lt;li&gt;Template management and reusable prompt components&lt;/li&gt;
+&lt;li&gt;Performance tracking across different prompt versions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Dataset Management&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>OpenPage - AI-Enhanced Writing App for macOS</title><link>https://deepskandpal.github.io/creations/openpage/</link><pubDate>Sun, 15 Dec 2024 10:30:00 +0000</pubDate><guid>https://deepskandpal.github.io/creations/openpage/</guid><description>&lt;h2 id="openpage-ia-writer--ai-for-macos"&gt;OpenPage: iA Writer + AI for macOS&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;A distraction-free, AI-enhanced writing environment that combines iA Writer&amp;rsquo;s legendary simplicity with intelligent writing assistance.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id="-what-is-openpage"&gt;🎯 What is OpenPage?&lt;/h3&gt;
+&lt;p&gt;OpenPage is a native macOS writing application that seamlessly integrates AI capabilities while maintaining the elegant simplicity that Mac users expect. It demonstrates advanced Swift development skills, multi-provider AI integration, and deep understanding of macOS design principles.&lt;/p&gt;
+&lt;h3 id="-key-features"&gt;🚀 Key Features&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Native macOS Integration&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SwiftUI + AppKit hybrid for optimal text editing performance&lt;/li&gt;
+&lt;li&gt;macOS Keychain integration for secure API key storage&lt;/li&gt;
+&lt;li&gt;Full sandboxed architecture with HIG compliance&lt;/li&gt;
+&lt;li&gt;Privacy-first design with local processing when possible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Multi-Provider AI Support&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Animal GPT</title><link>https://deepskandpal.github.io/creations/animal-gpt/</link><pubDate>Wed, 20 Mar 2024 14:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/creations/animal-gpt/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This is a brief summary of the example project, highlighting its main purpose or key feature. It&amp;rsquo;s used on the card display.&lt;/p&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;p&gt;Here you can write a full description of the project.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Explain the goals.&lt;/li&gt;
+&lt;li&gt;Describe the technologies used.&lt;/li&gt;
+&lt;li&gt;Discuss challenges faced and solutions implemented.&lt;/li&gt;
+&lt;li&gt;Include code snippets or further images if relevant using Markdown.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-go-html" data-lang="go-html"&gt;{{/* Example code snippet */}}
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

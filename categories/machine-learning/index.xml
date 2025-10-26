@@ -1,63 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Machine Learning on 404EngineerNotFound</title><link>https://deepskandpal.github.io/categories/machine-learning/</link><description>Recent content in Machine Learning on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 22 May 2025 11:19:32 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/categories/machine-learning/index.xml" rel="self" type="application/rss+xml"/><item><title>Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications</title><link>https://deepskandpal.github.io/bookshelf/design-ml-system/</link><pubDate>Thu, 22 May 2025 11:19:32 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/design-ml-system/</guid><description/></item><item><title>Artificial Intelligence: A Modern Approach</title><link>https://deepskandpal.github.io/bookshelf/ai-modern-approach-russell-norvig/</link><pubDate>Sun, 26 Jan 2025 18:25:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ai-modern-approach-russell-norvig/</guid><description>&lt;h1 id="the-comprehensive-foundation-of-artificial-intelligence">The Comprehensive Foundation of Artificial Intelligence&lt;/h1>
-&lt;p>&lt;strong>The most widely used AI textbook that provides the broad conceptual foundation for understanding how GenAI fits into the larger landscape of artificial intelligence.&lt;/strong> This book contextualizes all the specialized GenAI techniques within the broader AI paradigm.&lt;/p>
-&lt;h2 id="why-this-book-provides-essential-context">Why This Book Provides Essential Context&lt;/h2>
-&lt;p>While specialized books cover specific aspects of GenAI, this text provides the overarching framework that makes everything else make sense:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Problem Solving and Search&lt;/strong>: Foundation for understanding how AI agents reason and plan&lt;/li>
-&lt;li>&lt;strong>Knowledge Representation&lt;/strong>: How AI systems represent and manipulate information&lt;/li>
-&lt;li>&lt;strong>Reasoning Under Uncertainty&lt;/strong>: Probabilistic approaches that underlie AI safety and alignment&lt;/li>
-&lt;li>&lt;strong>Machine Learning Integration&lt;/strong>: How GenAI fits into the broader ML landscape&lt;/li>
-&lt;li>&lt;strong>AI Safety and Ethics&lt;/strong>: Early treatment of alignment problems and ethical considerations&lt;/li>
-&lt;/ul>
-&lt;h2 id="connection-to-your-genai-knowledge-tree">Connection to Your GenAI Knowledge Tree&lt;/h2>
-&lt;p>This book provides the conceptual bridges between different areas of your GenAI materials:&lt;/p></description></item><item><title>Reinforcement Learning: An Introduction</title><link>https://deepskandpal.github.io/bookshelf/reinforcement-learning-sutton-barto/</link><pubDate>Sun, 26 Jan 2025 18:15:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/reinforcement-learning-sutton-barto/</guid><description>&lt;h1 id="the-foundation-of-ai-alignment-and-rlhf">The Foundation of AI Alignment and RLHF&lt;/h1>
-&lt;p>&lt;strong>The authoritative text on reinforcement learning that provides the theoretical foundation for modern AI alignment techniques.&lt;/strong> This book is essential for understanding RLHF, Constitutional AI, and human preference learning in GenAI systems.&lt;/p>
-&lt;h2 id="why-this-book-is-critical-for-modern-genai">Why This Book is Critical for Modern GenAI&lt;/h2>
-&lt;p>RLHF (Reinforcement Learning from Human Feedback) is the key breakthrough that enables models like ChatGPT and Claude to behave helpfully and safely. This book provides the theoretical foundation:&lt;/p></description></item><item><title>Deep Learning</title><link>https://deepskandpal.github.io/bookshelf/deep-learning-goodfellow/</link><pubDate>Sun, 26 Jan 2025 18:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/deep-learning-goodfellow/</guid><description>&lt;h1 id="the-foundational-text-for-deep-learning">The Foundational Text for Deep Learning&lt;/h1>
-&lt;p>&lt;strong>The definitive reference for deep learning theory and practice.&lt;/strong> Written by three of the field&amp;rsquo;s most prominent researchers, this book provides the mathematical foundations and conceptual framework that underlies all modern generative AI systems.&lt;/p>
-&lt;h2 id="why-this-book-is-essential-for-genai">Why This Book is Essential for GenAI&lt;/h2>
-&lt;p>This text covers all the fundamental concepts referenced throughout your GenAI knowledge tree:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Mathematical Foundations&lt;/strong>: Linear algebra, probability theory, information theory&lt;/li>
-&lt;li>&lt;strong>Neural Network Architectures&lt;/strong>: From MLPs to the building blocks of transformers&lt;/li>
-&lt;li>&lt;strong>Optimization Theory&lt;/strong>: The mathematical principles behind training large models&lt;/li>
-&lt;li>&lt;strong>Regularization&lt;/strong>: Techniques that prevent overfitting in large-scale training&lt;/li>
-&lt;li>&lt;strong>Representation Learning&lt;/strong>: How models learn meaningful representations&lt;/li>
-&lt;/ul>
-&lt;h2 id="connection-to-genai-concepts">Connection to GenAI Concepts&lt;/h2>
-&lt;p>Every major concept in your GenAI materials traces back to principles established in this book:&lt;/p></description></item><item><title>Generative AI System Design Interview (Full Colour Edition)</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/</guid><description>&lt;h1 id="notes--summary-for-the-book">Notes / Summary for the Book&lt;/h1>
-&lt;p>&lt;strong>Generative AI System Design Interview (Full Colour Edition)&lt;/strong> by Alex Xu, Ali Aminian, Hao Sheng&lt;/p>
-&lt;p>This book provides an insider&amp;rsquo;s perspective on what interviewers are truly looking for in GenAI system design interviews and why. It includes:&lt;/p>
-&lt;ul>
-&lt;li>A 7-step framework to help tackle GenAI system design interview questions&lt;/li>
-&lt;li>10 real-world GenAI system design questions with in-depth solutions&lt;/li>
-&lt;li>280+ diagrams to demystify complex GenAI systems&lt;/li>
-&lt;/ul>
-&lt;p>The book is particularly helpful for:&lt;/p></description></item><item><title>Build a Large Language Model (From Scratch)</title><link>https://deepskandpal.github.io/bookshelf/build-llm-from-scratch/</link><pubDate>Sun, 01 Sep 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/build-llm-from-scratch/</guid><description>&lt;p>&lt;strong>A comprehensive guide to creating your own Large Language Model from the ground up, comparable to GPT-2.&lt;/strong>&lt;/p>
-&lt;p>Sebastian Raschka, a leading expert in machine learning and AI, takes you through the complete process of building a Large Language Model from scratch. This isn&amp;rsquo;t just about fine-tuning existing models - you&amp;rsquo;ll learn to construct the entire architecture, training pipeline, and implementation details.&lt;/p>
-&lt;h2 id="what-youll-learn">What You&amp;rsquo;ll Learn&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Plan and code an LLM comparable to GPT-2&lt;/strong> - Build a complete language model architecture&lt;/li>
-&lt;li>&lt;strong>Load pretrained weights&lt;/strong> - Understand how to work with existing model parameters&lt;/li>
-&lt;li>&lt;strong>Construct a complete training pipeline&lt;/strong> - From data preprocessing to model optimization&lt;/li>
-&lt;li>&lt;strong>Fine-tune your LLM for text classification&lt;/strong> - Adapt your model for specific tasks&lt;/li>
-&lt;li>&lt;strong>Develop LLMs that follow human instructions&lt;/strong> - Create models that can understand and respond to user commands&lt;/li>
-&lt;/ul>
-&lt;h2 id="key-features">Key Features&lt;/h2>
-&lt;h3 id="practical-implementation">Practical Implementation&lt;/h3>
-&lt;ul>
-&lt;li>Step-by-step code examples in Python&lt;/li>
-&lt;li>Clear diagrams and explanations for each component&lt;/li>
-&lt;li>Runs on modern laptops with optional GPU acceleration&lt;/li>
-&lt;/ul>
-&lt;h3 id="complete-coverage">Complete Coverage&lt;/h3>
-&lt;ul>
-&lt;li>Initial design and architecture decisions&lt;/li>
-&lt;li>Pretraining on general text corpora&lt;/li>
-&lt;li>Fine-tuning for specific applications&lt;/li>
-&lt;li>Performance optimization techniques&lt;/li>
-&lt;/ul>
-&lt;h3 id="real-world-applications">Real-World Applications&lt;/h3>
-&lt;p>The techniques you&amp;rsquo;ll learn enable building chatbots capable of:&lt;/p></description></item><item><title>Hands-On Large Language Models: Language Understanding and Generation</title><link>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/</link><pubDate>Sun, 10 Mar 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/</guid><description>&lt;p>&amp;ndash;&lt;/p></description></item><item><title>The Hundred-Page Language Models Book</title><link>https://deepskandpal.github.io/bookshelf/100-page-lm-book/</link><pubDate>Sun, 10 Mar 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/100-page-lm-book/</guid><description/></item><item><title>Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems, 2nd Edition</title><link>https://deepskandpal.github.io/bookshelf/hands-on-ml/</link><pubDate>Tue, 20 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-ml/</guid><description>&lt;h1 id="this-book-is-a-comprehensive-guide-to-machine-learning">This book is a comprehensive guide to machine learning.&lt;/h1>
-&lt;p>System Prompt&lt;/p>
-&lt;p>&lt;code>You are a self taught machine learning specialist at a major ivy league college who takes machine learning machine learning 101 elective for stem undergraduate student. Your core competency is in physics in which you have done a PHD from the same college but you are a curious researcher who loves to dabble into different domains of science and engineering. You have a passion for teaching and the students love you because you have the ability to teach hard abstract concepts in the domains of applied sciences mathematics statistics and more recently machine learning into easy to follow intuitive grounded in the philosophy of &amp;quot;what this concept is ultimately trying to achieve &amp;quot; which is very different from usual approaches of how these concepts are taught which have heavy reliance on definition and equations ( you bring realism to them as well which is ultimately your goal) you have written a GOAT book hands on machine learning which students love for its comprehensive depth and breadth and your course is derived from that book&lt;/code>&lt;/p></description></item><item><title>Interpretable Machine Learning</title><link>https://deepskandpal.github.io/bookshelf/interpretable-machine-learning/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/interpretable-machine-learning/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Machine Learning on 404EngineerNotFound</title><link>https://deepskandpal.github.io/categories/machine-learning/</link><description>Recent content in Machine Learning on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 22 May 2025 11:19:32 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/categories/machine-learning/index.xml" rel="self" type="application/rss+xml"/><item><title>Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications</title><link>https://deepskandpal.github.io/bookshelf/design-ml-system/</link><pubDate>Thu, 22 May 2025 11:19:32 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/design-ml-system/</guid><description/></item><item><title>Artificial Intelligence: A Modern Approach</title><link>https://deepskandpal.github.io/bookshelf/ai-modern-approach-russell-norvig/</link><pubDate>Sun, 26 Jan 2025 18:25:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ai-modern-approach-russell-norvig/</guid><description>&lt;h1 id="the-comprehensive-foundation-of-artificial-intelligence"&gt;The Comprehensive Foundation of Artificial Intelligence&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;The most widely used AI textbook that provides the broad conceptual foundation for understanding how GenAI fits into the larger landscape of artificial intelligence.&lt;/strong&gt; This book contextualizes all the specialized GenAI techniques within the broader AI paradigm.&lt;/p&gt;
+&lt;h2 id="why-this-book-provides-essential-context"&gt;Why This Book Provides Essential Context&lt;/h2&gt;
+&lt;p&gt;While specialized books cover specific aspects of GenAI, this text provides the overarching framework that makes everything else make sense:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Problem Solving and Search&lt;/strong&gt;: Foundation for understanding how AI agents reason and plan&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Knowledge Representation&lt;/strong&gt;: How AI systems represent and manipulate information&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reasoning Under Uncertainty&lt;/strong&gt;: Probabilistic approaches that underlie AI safety and alignment&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Machine Learning Integration&lt;/strong&gt;: How GenAI fits into the broader ML landscape&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI Safety and Ethics&lt;/strong&gt;: Early treatment of alignment problems and ethical considerations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="connection-to-your-genai-knowledge-tree"&gt;Connection to Your GenAI Knowledge Tree&lt;/h2&gt;
+&lt;p&gt;This book provides the conceptual bridges between different areas of your GenAI materials:&lt;/p&gt;</description></item><item><title>Reinforcement Learning: An Introduction</title><link>https://deepskandpal.github.io/bookshelf/reinforcement-learning-sutton-barto/</link><pubDate>Sun, 26 Jan 2025 18:15:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/reinforcement-learning-sutton-barto/</guid><description>&lt;h1 id="the-foundation-of-ai-alignment-and-rlhf"&gt;The Foundation of AI Alignment and RLHF&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;The authoritative text on reinforcement learning that provides the theoretical foundation for modern AI alignment techniques.&lt;/strong&gt; This book is essential for understanding RLHF, Constitutional AI, and human preference learning in GenAI systems.&lt;/p&gt;
+&lt;h2 id="why-this-book-is-critical-for-modern-genai"&gt;Why This Book is Critical for Modern GenAI&lt;/h2&gt;
+&lt;p&gt;RLHF (Reinforcement Learning from Human Feedback) is the key breakthrough that enables models like ChatGPT and Claude to behave helpfully and safely. This book provides the theoretical foundation:&lt;/p&gt;</description></item><item><title>Deep Learning</title><link>https://deepskandpal.github.io/bookshelf/deep-learning-goodfellow/</link><pubDate>Sun, 26 Jan 2025 18:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/deep-learning-goodfellow/</guid><description>&lt;h1 id="the-foundational-text-for-deep-learning"&gt;The Foundational Text for Deep Learning&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;The definitive reference for deep learning theory and practice.&lt;/strong&gt; Written by three of the field&amp;rsquo;s most prominent researchers, this book provides the mathematical foundations and conceptual framework that underlies all modern generative AI systems.&lt;/p&gt;
+&lt;h2 id="why-this-book-is-essential-for-genai"&gt;Why This Book is Essential for GenAI&lt;/h2&gt;
+&lt;p&gt;This text covers all the fundamental concepts referenced throughout your GenAI knowledge tree:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mathematical Foundations&lt;/strong&gt;: Linear algebra, probability theory, information theory&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Neural Network Architectures&lt;/strong&gt;: From MLPs to the building blocks of transformers&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Optimization Theory&lt;/strong&gt;: The mathematical principles behind training large models&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Regularization&lt;/strong&gt;: Techniques that prevent overfitting in large-scale training&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Representation Learning&lt;/strong&gt;: How models learn meaningful representations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="connection-to-genai-concepts"&gt;Connection to GenAI Concepts&lt;/h2&gt;
+&lt;p&gt;Every major concept in your GenAI materials traces back to principles established in this book:&lt;/p&gt;</description></item><item><title>Generative AI System Design Interview (Full Colour Edition)</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/</guid><description>&lt;h1 id="notes--summary-for-the-book"&gt;Notes / Summary for the Book&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Generative AI System Design Interview (Full Colour Edition)&lt;/strong&gt; by Alex Xu, Ali Aminian, Hao Sheng&lt;/p&gt;
+&lt;p&gt;This book provides an insider&amp;rsquo;s perspective on what interviewers are truly looking for in GenAI system design interviews and why. It includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A 7-step framework to help tackle GenAI system design interview questions&lt;/li&gt;
+&lt;li&gt;10 real-world GenAI system design questions with in-depth solutions&lt;/li&gt;
+&lt;li&gt;280+ diagrams to demystify complex GenAI systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The book is particularly helpful for:&lt;/p&gt;</description></item><item><title>Build a Large Language Model (From Scratch)</title><link>https://deepskandpal.github.io/bookshelf/build-llm-from-scratch/</link><pubDate>Sun, 01 Sep 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/build-llm-from-scratch/</guid><description>&lt;p&gt;&lt;strong&gt;A comprehensive guide to creating your own Large Language Model from the ground up, comparable to GPT-2.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Sebastian Raschka, a leading expert in machine learning and AI, takes you through the complete process of building a Large Language Model from scratch. This isn&amp;rsquo;t just about fine-tuning existing models - you&amp;rsquo;ll learn to construct the entire architecture, training pipeline, and implementation details.&lt;/p&gt;
+&lt;h2 id="what-youll-learn"&gt;What You&amp;rsquo;ll Learn&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Plan and code an LLM comparable to GPT-2&lt;/strong&gt; - Build a complete language model architecture&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Load pretrained weights&lt;/strong&gt; - Understand how to work with existing model parameters&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Construct a complete training pipeline&lt;/strong&gt; - From data preprocessing to model optimization&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fine-tune your LLM for text classification&lt;/strong&gt; - Adapt your model for specific tasks&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Develop LLMs that follow human instructions&lt;/strong&gt; - Create models that can understand and respond to user commands&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="key-features"&gt;Key Features&lt;/h2&gt;
+&lt;h3 id="practical-implementation"&gt;Practical Implementation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Step-by-step code examples in Python&lt;/li&gt;
+&lt;li&gt;Clear diagrams and explanations for each component&lt;/li&gt;
+&lt;li&gt;Runs on modern laptops with optional GPU acceleration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="complete-coverage"&gt;Complete Coverage&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial design and architecture decisions&lt;/li&gt;
+&lt;li&gt;Pretraining on general text corpora&lt;/li&gt;
+&lt;li&gt;Fine-tuning for specific applications&lt;/li&gt;
+&lt;li&gt;Performance optimization techniques&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="real-world-applications"&gt;Real-World Applications&lt;/h3&gt;
+&lt;p&gt;The techniques you&amp;rsquo;ll learn enable building chatbots capable of:&lt;/p&gt;</description></item><item><title>Hands-On Large Language Models: Language Understanding and Generation</title><link>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/</link><pubDate>Sun, 10 Mar 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-large-language-models/</guid><description>&lt;p&gt;&amp;ndash;&lt;/p&gt;</description></item><item><title>The Hundred-Page Language Models Book</title><link>https://deepskandpal.github.io/bookshelf/100-page-lm-book/</link><pubDate>Sun, 10 Mar 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/100-page-lm-book/</guid><description/></item><item><title>Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems, 2nd Edition</title><link>https://deepskandpal.github.io/bookshelf/hands-on-ml/</link><pubDate>Tue, 20 Feb 2024 11:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/hands-on-ml/</guid><description>&lt;h1 id="this-book-is-a-comprehensive-guide-to-machine-learning"&gt;This book is a comprehensive guide to machine learning.&lt;/h1&gt;
+&lt;p&gt;System Prompt&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;You are a self taught machine learning specialist at a major ivy league college who takes machine learning machine learning 101 elective for stem undergraduate student. Your core competency is in physics in which you have done a PHD from the same college but you are a curious researcher who loves to dabble into different domains of science and engineering. You have a passion for teaching and the students love you because you have the ability to teach hard abstract concepts in the domains of applied sciences mathematics statistics and more recently machine learning into easy to follow intuitive grounded in the philosophy of &amp;quot;what this concept is ultimately trying to achieve &amp;quot; which is very different from usual approaches of how these concepts are taught which have heavy reliance on definition and equations ( you bring realism to them as well which is ultimately your goal) you have written a GOAT book hands on machine learning which students love for its comprehensive depth and breadth and your course is derived from that book&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Interpretable Machine Learning</title><link>https://deepskandpal.github.io/bookshelf/interpretable-machine-learning/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/interpretable-machine-learning/</guid><description/></item></channel></rss>

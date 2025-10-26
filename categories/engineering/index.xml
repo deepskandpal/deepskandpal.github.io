@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Engineering on 404EngineerNotFound</title><link>https://deepskandpal.github.io/categories/engineering/</link><description>Recent content in Engineering on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 27 May 2025 11:18:35 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/categories/engineering/index.xml" rel="self" type="application/rss+xml"/><item><title>Design Data Intensive</title><link>https://deepskandpal.github.io/bookshelf/design-data-intensive/</link><pubDate>Tue, 27 May 2025 11:18:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/design-data-intensive/</guid><description>&lt;h1 id="notes--summary-for-the-book">Notes / Summary for the Book&lt;/h1>
-&lt;p>(Your general notes or summary about the book go here.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Engineering on 404EngineerNotFound</title><link>https://deepskandpal.github.io/categories/engineering/</link><description>Recent content in Engineering on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 27 May 2025 11:18:35 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/categories/engineering/index.xml" rel="self" type="application/rss+xml"/><item><title>Design Data Intensive</title><link>https://deepskandpal.github.io/bookshelf/design-data-intensive/</link><pubDate>Tue, 27 May 2025 11:18:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/design-data-intensive/</guid><description>&lt;h1 id="notes--summary-for-the-book"&gt;Notes / Summary for the Book&lt;/h1&gt;
+&lt;p&gt;(Your general notes or summary about the book go here.
 For chapter-specific notes, create separate .md files within this book&amp;rsquo;s folder, e.g., chapter-1.md, introduction.md etc.
-These will be automatically listed on the book&amp;rsquo;s page.)&lt;/p></description></item><item><title>The Jitter Bug - How a Little Randomness Makes Your Recommendations Smarter (and More Fun!)</title><link>https://deepskandpal.github.io/tech-writings/jitter-bug/</link><pubDate>Sun, 25 May 2025 19:02:40 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/jitter-bug/</guid><description>&lt;h2 id="the-tyranny-of-the-top-rank">The Tyranny of the Top Rank&lt;/h2>
-&lt;p>Ever feel like your favorite music app is playing &lt;em>DJ Déjà Vu&lt;/em>, stuck on an endless loop of your top-played genres or artists you already know and love? Or, if you&amp;rsquo;re an artist, have you wondered how your fresh, amazing track can cut through the noise and find new ears? This isn&amp;rsquo;t just a feeling; it&amp;rsquo;s a common challenge in any system that ranks and recommends items – whether it&amp;rsquo;s songs, movies, products, or even internal company resources.&lt;/p></description></item><item><title>Reliable Machine Learning: Applying SRE Principles to ML in Productionl</title><link>https://deepskandpal.github.io/bookshelf/reliable-ml/</link><pubDate>Tue, 20 May 2025 13:49:22 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/reliable-ml/</guid><description>&lt;h1 id="main-notes-for-hands-on-ml">Main Notes for Hands-On ML&lt;/h1>
-&lt;p>This book is a comprehensive guide to machine learning.&lt;/p></description></item><item><title>Machine Learning Design Interview</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/</guid><description>&lt;h1 id="notes--summary-for-the-book">Notes / Summary for the Book&lt;/h1>
-&lt;p>&lt;strong>Machine Learning Design Interview: Machine Learning System Design Interview&lt;/strong> by Khang Pham&lt;/p>
-&lt;p>This book provides end-to-end design of the most popular Machine Learning systems at big tech companies. It covers the most common Machine Learning Design interview questions at big tech companies including Facebook, Apple, Amazon, Google, Uber, and LinkedIn.&lt;/p>
-&lt;p>The book is particularly helpful for:&lt;/p>
-&lt;ul>
-&lt;li>Data scientists, software engineers, or data engineers who have a background in Machine Learning but have never worked on Machine Learning at scale&lt;/li>
-&lt;li>Professionals preparing for ML system design interviews at major tech companies&lt;/li>
-&lt;/ul>
-&lt;h2 id="key-topics-covered">Key Topics Covered:&lt;/h2>
-&lt;ul>
-&lt;li>ML System Design fundamentals&lt;/li>
-&lt;li>Scalable ML architecture patterns&lt;/li>
-&lt;li>Real-world ML system examples from big tech companies&lt;/li>
-&lt;li>Interview preparation strategies and common questions&lt;/li>
-&lt;/ul>
-&lt;p>(For chapter-specific notes, create separate .md files within this book&amp;rsquo;s folder, e.g., chapter-1.md, chapter-2.md etc.&lt;br>
-These will be automatically listed on the book&amp;rsquo;s page.)&lt;/p></description></item></channel></rss>
+These will be automatically listed on the book&amp;rsquo;s page.)&lt;/p&gt;</description></item><item><title>The Jitter Bug - How a Little Randomness Makes Your Recommendations Smarter (and More Fun!)</title><link>https://deepskandpal.github.io/tech-writings/jitter-bug/</link><pubDate>Sun, 25 May 2025 19:02:40 +0530</pubDate><guid>https://deepskandpal.github.io/tech-writings/jitter-bug/</guid><description>&lt;h2 id="the-tyranny-of-the-top-rank"&gt;The Tyranny of the Top Rank&lt;/h2&gt;
+&lt;p&gt;Ever feel like your favorite music app is playing &lt;em&gt;DJ Déjà Vu&lt;/em&gt;, stuck on an endless loop of your top-played genres or artists you already know and love? Or, if you&amp;rsquo;re an artist, have you wondered how your fresh, amazing track can cut through the noise and find new ears? This isn&amp;rsquo;t just a feeling; it&amp;rsquo;s a common challenge in any system that ranks and recommends items – whether it&amp;rsquo;s songs, movies, products, or even internal company resources.&lt;/p&gt;</description></item><item><title>Reliable Machine Learning: Applying SRE Principles to ML in Productionl</title><link>https://deepskandpal.github.io/bookshelf/reliable-ml/</link><pubDate>Tue, 20 May 2025 13:49:22 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/reliable-ml/</guid><description>&lt;h1 id="main-notes-for-hands-on-ml"&gt;Main Notes for Hands-On ML&lt;/h1&gt;
+&lt;p&gt;This book is a comprehensive guide to machine learning.&lt;/p&gt;</description></item><item><title>Machine Learning Design Interview</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/</guid><description>&lt;h1 id="notes--summary-for-the-book"&gt;Notes / Summary for the Book&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Machine Learning Design Interview: Machine Learning System Design Interview&lt;/strong&gt; by Khang Pham&lt;/p&gt;
+&lt;p&gt;This book provides end-to-end design of the most popular Machine Learning systems at big tech companies. It covers the most common Machine Learning Design interview questions at big tech companies including Facebook, Apple, Amazon, Google, Uber, and LinkedIn.&lt;/p&gt;
+&lt;p&gt;The book is particularly helpful for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data scientists, software engineers, or data engineers who have a background in Machine Learning but have never worked on Machine Learning at scale&lt;/li&gt;
+&lt;li&gt;Professionals preparing for ML system design interviews at major tech companies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="key-topics-covered"&gt;Key Topics Covered:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ML System Design fundamentals&lt;/li&gt;
+&lt;li&gt;Scalable ML architecture patterns&lt;/li&gt;
+&lt;li&gt;Real-world ML system examples from big tech companies&lt;/li&gt;
+&lt;li&gt;Interview preparation strategies and common questions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(For chapter-specific notes, create separate .md files within this book&amp;rsquo;s folder, e.g., chapter-1.md, chapter-2.md etc.&lt;br&gt;
+These will be automatically listed on the book&amp;rsquo;s page.)&lt;/p&gt;</description></item></channel></rss>

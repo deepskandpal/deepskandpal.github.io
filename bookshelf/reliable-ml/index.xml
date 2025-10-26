@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reliable Machine Learning: Applying SRE Principles to ML in Productionl on 404EngineerNotFound</title><link>https://deepskandpal.github.io/bookshelf/reliable-ml/</link><description>Recent content in Reliable Machine Learning: Applying SRE Principles to ML in Productionl on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 21 Feb 2024 10:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/bookshelf/reliable-ml/index.xml" rel="self" type="application/rss+xml"/><item><title>Chapter 1: Introduction</title><link>https://deepskandpal.github.io/bookshelf/reliable-ml/chapter-1/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/reliable-ml/chapter-1/</guid><description>&lt;h1 id="chapter-1-introduction---reliable-ml-engineering-notes">Chapter 1: Introduction - Reliable ML Engineering Notes&lt;/h1>
-&lt;h2 id="core-concept-the-ml-loop">Core Concept: The ML Loop&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>ML is Iterative, Not Linear:&lt;/strong> ML applications are rarely &amp;ldquo;done.&amp;rdquo; They exist in a continuous cycle of development, deployment, evaluation, and improvement.&lt;/li>
-&lt;li>&lt;strong>Why a Loop?&lt;/strong>
-&lt;ul>
-&lt;li>&lt;strong>If a model underperforms:&lt;/strong> Teams (DS, Business, MLE) collaborate to improve it (features, data, architecture).&lt;/li>
-&lt;li>&lt;strong>If a model performs well:&lt;/strong> Organizations want more sophistication and broader application, leading to further development.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>The first model is just a starting point.&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;h2 id="the-ml-lifecycle-stages-the-pit-stops-in-the-loop">The ML Lifecycle Stages (The &amp;ldquo;Pit Stops&amp;rdquo; in the Loop)&lt;/h2>
-&lt;p>&lt;strong>(See Figure 1-1 for visual representation)&lt;/strong>
-&lt;figure>&lt;img src="https://deepskandpal.github.io/bookshelf/reliable-ml/image.png"
- alt="image" width="750">
-&lt;/figure>
-&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reliable Machine Learning: Applying SRE Principles to ML in Productionl on 404EngineerNotFound</title><link>https://deepskandpal.github.io/bookshelf/reliable-ml/</link><description>Recent content in Reliable Machine Learning: Applying SRE Principles to ML in Productionl on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 21 Feb 2024 10:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/bookshelf/reliable-ml/index.xml" rel="self" type="application/rss+xml"/><item><title>Chapter 1: Introduction</title><link>https://deepskandpal.github.io/bookshelf/reliable-ml/chapter-1/</link><pubDate>Wed, 21 Feb 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/reliable-ml/chapter-1/</guid><description>&lt;h1 id="chapter-1-introduction---reliable-ml-engineering-notes"&gt;Chapter 1: Introduction - Reliable ML Engineering Notes&lt;/h1&gt;
+&lt;h2 id="core-concept-the-ml-loop"&gt;Core Concept: The ML Loop&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ML is Iterative, Not Linear:&lt;/strong&gt; ML applications are rarely &amp;ldquo;done.&amp;rdquo; They exist in a continuous cycle of development, deployment, evaluation, and improvement.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Why a Loop?&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;If a model underperforms:&lt;/strong&gt; Teams (DS, Business, MLE) collaborate to improve it (features, data, architecture).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;If a model performs well:&lt;/strong&gt; Organizations want more sophistication and broader application, leading to further development.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The first model is just a starting point.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="the-ml-lifecycle-stages-the-pit-stops-in-the-loop"&gt;The ML Lifecycle Stages (The &amp;ldquo;Pit Stops&amp;rdquo; in the Loop)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;(See Figure 1-1 for visual representation)&lt;/strong&gt;
+&lt;figure&gt;&lt;img src="https://deepskandpal.github.io/bookshelf/reliable-ml/image.png"
+ alt="image" width="750"&gt;
+&lt;/figure&gt;
+&lt;/p&gt;</description></item></channel></rss>

@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dsa-Concepts on 404EngineerNotFound</title><link>https://deepskandpal.github.io/dsa-concepts/</link><description>Recent content in Dsa-Concepts on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 15 May 2025 20:30:18 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/dsa-concepts/index.xml" rel="self" type="application/rss+xml"/><item><title>Strings</title><link>https://deepskandpal.github.io/dsa-concepts/strings/</link><pubDate>Thu, 15 May 2025 20:30:18 +0530</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/strings/</guid><description>&lt;p>Absolutely! That 6-step process you&amp;rsquo;ve outlined is GOLD. It&amp;rsquo;s precisely how you build deep, intuitive understanding, especially for recursive problems which can feel like black magic otherwise. You&amp;rsquo;re essentially becoming the debugger and the CPU, tracing the logic yourself.&lt;/p>
-&lt;p>For Chapter 6 (Strings) in EPI Python, here are a few &amp;ldquo;keystone&amp;rdquo; problems that lend themselves exceptionally well to your 6-step deep dive method. These problems either involve recursion (like your Towers of Hanoi example) or intricate iterative logic where hand-simulation is invaluable.&lt;/p></description></item><item><title>Trees</title><link>https://deepskandpal.github.io/dsa-concepts/trees/</link><pubDate>Thu, 15 May 2025 20:30:18 +0530</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/trees/</guid><description/></item><item><title>Recursion and Backtracking</title><link>https://deepskandpal.github.io/dsa-concepts/recursion-and-backtracking/</link><pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/recursion-and-backtracking/</guid><description>&lt;h1 id="recursion-and-backtracking">Recursion and Backtracking&lt;/h1>
-&lt;p>This document covers the fundamental concepts of recursion and backtracking in the context of Data Structures and Algorithms (DSA).&lt;/p>
-&lt;h2 id="recursion">Recursion&lt;/h2>
-&lt;p>Recursion is a method of solving a computational problem where the solution depends on solutions to smaller instances of the same problem.&lt;/p>
-&lt;h3 id="key-concepts">Key Concepts&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Base Case:&lt;/strong> The condition under which the recursion stops.&lt;/li>
-&lt;li>&lt;strong>Recursive Step:&lt;/strong> The part of the function that calls itself.&lt;/li>
-&lt;/ul>
-&lt;h3 id="example-factorial">Example: Factorial&lt;/h3>
-&lt;pre tabindex="0">&lt;code>function factorial(n) {
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dsa-Concepts on 404EngineerNotFound</title><link>https://deepskandpal.github.io/dsa-concepts/</link><description>Recent content in Dsa-Concepts on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 15 May 2025 20:30:18 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/dsa-concepts/index.xml" rel="self" type="application/rss+xml"/><item><title>Strings</title><link>https://deepskandpal.github.io/dsa-concepts/strings/</link><pubDate>Thu, 15 May 2025 20:30:18 +0530</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/strings/</guid><description>&lt;p&gt;Absolutely! That 6-step process you&amp;rsquo;ve outlined is GOLD. It&amp;rsquo;s precisely how you build deep, intuitive understanding, especially for recursive problems which can feel like black magic otherwise. You&amp;rsquo;re essentially becoming the debugger and the CPU, tracing the logic yourself.&lt;/p&gt;
+&lt;p&gt;For Chapter 6 (Strings) in EPI Python, here are a few &amp;ldquo;keystone&amp;rdquo; problems that lend themselves exceptionally well to your 6-step deep dive method. These problems either involve recursion (like your Towers of Hanoi example) or intricate iterative logic where hand-simulation is invaluable.&lt;/p&gt;</description></item><item><title>Trees</title><link>https://deepskandpal.github.io/dsa-concepts/trees/</link><pubDate>Thu, 15 May 2025 20:30:18 +0530</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/trees/</guid><description/></item><item><title>Recursion and Backtracking</title><link>https://deepskandpal.github.io/dsa-concepts/recursion-and-backtracking/</link><pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/recursion-and-backtracking/</guid><description>&lt;h1 id="recursion-and-backtracking"&gt;Recursion and Backtracking&lt;/h1&gt;
+&lt;p&gt;This document covers the fundamental concepts of recursion and backtracking in the context of Data Structures and Algorithms (DSA).&lt;/p&gt;
+&lt;h2 id="recursion"&gt;Recursion&lt;/h2&gt;
+&lt;p&gt;Recursion is a method of solving a computational problem where the solution depends on solutions to smaller instances of the same problem.&lt;/p&gt;
+&lt;h3 id="key-concepts"&gt;Key Concepts&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Base Case:&lt;/strong&gt; The condition under which the recursion stops.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Recursive Step:&lt;/strong&gt; The part of the function that calls itself.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="example-factorial"&gt;Example: Factorial&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;function factorial(n) {
  // Base case
  if (n === 0) {
  return 1;
@@ -17,32 +17,32 @@
  // Recursive step
  return n * factorial(n - 1);
 }
-&lt;/code>&lt;/pre>&lt;h2 id="backtracking">Backtracking&lt;/h2>
-&lt;p>Backtracking is a general algorithmic technique that considers searching every possible combination in order to solve a computational problem. It is a refined brute force approach that incrementally builds candidates to the solutions, and abandons a candidate (&amp;ldquo;backtracks&amp;rdquo;) as soon as it determines that the candidate cannot possibly be completed to a valid solution.&lt;/p></description></item><item><title>Arrays</title><link>https://deepskandpal.github.io/dsa-concepts/arrays/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/arrays/</guid><description>&lt;h2 id="introduction-to-arrays">Introduction to Arrays&lt;/h2>
-&lt;p>Okay, I&amp;rsquo;ve reviewed the OCR of Chapter 5 (Arrays) from EPI that you provided. This is an excellent chapter with many fundamental array manipulations.&lt;/p>
-&lt;p>Based on common interview patterns, the importance of the underlying techniques, and how well they illustrate core array concepts, here are my suggestions for &lt;strong>Keystone Problems&lt;/strong> from this chapter to focus on with the 6-step (or revised time-constrained) process:&lt;/p>
-&lt;p>&lt;strong>Keystone Problems for Chapter 5 (Arrays):&lt;/strong>&lt;/p></description></item><item><title>DSA</title><link>https://deepskandpal.github.io/dsa-concepts/dsa/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/dsa/</guid><description/></item><item><title>Hashing</title><link>https://deepskandpal.github.io/dsa-concepts/hashing/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/hashing/</guid><description>&lt;h2 id="introduction-to-hashing">Introduction to Hashing&lt;/h2>
-&lt;p>Hashing is the process of converting an input item (key) into a fixed-size value, typically an integer index, using a hash function. This index is then used to place or locate the item in a data structure, most commonly a hash table (hash map or dictionary).&lt;/p>
-&lt;h2 id="key-concepts">Key Concepts&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Hash Function:&lt;/strong> A function that maps keys to indices. A good hash function should be fast to compute and distribute keys uniformly across the available indices.&lt;/li>
-&lt;li>&lt;strong>Hash Table:&lt;/strong> A data structure that uses a hash function to map keys to values for efficient lookups.&lt;/li>
-&lt;li>&lt;strong>Collisions:&lt;/strong> Occur when two different keys map to the same index.&lt;/li>
-&lt;li>&lt;strong>Collision Resolution:&lt;/strong> Strategies to handle collisions, such as:
-* &lt;strong>Separate Chaining:&lt;/strong> Each index points to a linked list (or other structure) containing all keys that hash to that index.
-* &lt;strong>Open Addressing (Probing):&lt;/strong> If an index is occupied, probe for the next available slot (linear probing, quadratic probing, double hashing).&lt;/li>
-&lt;/ul>
-&lt;h2 id="common-operations--complexity-average-case-for-hash-tables">Common Operations &amp;amp; Complexity (Average Case for Hash Tables)&lt;/h2>
-&lt;ul>
-&lt;li>Insertion: O(1)&lt;/li>
-&lt;li>Deletion: O(1)&lt;/li>
-&lt;li>Search: O(1)&lt;/li>
-&lt;li>&lt;em>(Worst Case for all can be O(n) if collisions are poorly handled or hash function is bad)&lt;/em>&lt;/li>
-&lt;/ul>
-&lt;h2 id="use-cases">Use Cases&lt;/h2>
-&lt;ul>
-&lt;li>Implementing dictionaries/hash maps.&lt;/li>
-&lt;li>Database indexing.&lt;/li>
-&lt;li>Caching.&lt;/li>
-&lt;li>Checking for duplicates.&lt;/li>
-&lt;/ul></description></item><item><title>Linked Lists</title><link>https://deepskandpal.github.io/dsa-concepts/linked-lists/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/linked-lists/</guid><description/></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="backtracking"&gt;Backtracking&lt;/h2&gt;
+&lt;p&gt;Backtracking is a general algorithmic technique that considers searching every possible combination in order to solve a computational problem. It is a refined brute force approach that incrementally builds candidates to the solutions, and abandons a candidate (&amp;ldquo;backtracks&amp;rdquo;) as soon as it determines that the candidate cannot possibly be completed to a valid solution.&lt;/p&gt;</description></item><item><title>Arrays</title><link>https://deepskandpal.github.io/dsa-concepts/arrays/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/arrays/</guid><description>&lt;h2 id="introduction-to-arrays"&gt;Introduction to Arrays&lt;/h2&gt;
+&lt;p&gt;Okay, I&amp;rsquo;ve reviewed the OCR of Chapter 5 (Arrays) from EPI that you provided. This is an excellent chapter with many fundamental array manipulations.&lt;/p&gt;
+&lt;p&gt;Based on common interview patterns, the importance of the underlying techniques, and how well they illustrate core array concepts, here are my suggestions for &lt;strong&gt;Keystone Problems&lt;/strong&gt; from this chapter to focus on with the 6-step (or revised time-constrained) process:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keystone Problems for Chapter 5 (Arrays):&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>DSA</title><link>https://deepskandpal.github.io/dsa-concepts/dsa/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/dsa/</guid><description/></item><item><title>Hashing</title><link>https://deepskandpal.github.io/dsa-concepts/hashing/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/hashing/</guid><description>&lt;h2 id="introduction-to-hashing"&gt;Introduction to Hashing&lt;/h2&gt;
+&lt;p&gt;Hashing is the process of converting an input item (key) into a fixed-size value, typically an integer index, using a hash function. This index is then used to place or locate the item in a data structure, most commonly a hash table (hash map or dictionary).&lt;/p&gt;
+&lt;h2 id="key-concepts"&gt;Key Concepts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hash Function:&lt;/strong&gt; A function that maps keys to indices. A good hash function should be fast to compute and distribute keys uniformly across the available indices.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hash Table:&lt;/strong&gt; A data structure that uses a hash function to map keys to values for efficient lookups.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Collisions:&lt;/strong&gt; Occur when two different keys map to the same index.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Collision Resolution:&lt;/strong&gt; Strategies to handle collisions, such as:
+* &lt;strong&gt;Separate Chaining:&lt;/strong&gt; Each index points to a linked list (or other structure) containing all keys that hash to that index.
+* &lt;strong&gt;Open Addressing (Probing):&lt;/strong&gt; If an index is occupied, probe for the next available slot (linear probing, quadratic probing, double hashing).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="common-operations--complexity-average-case-for-hash-tables"&gt;Common Operations &amp;amp; Complexity (Average Case for Hash Tables)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Insertion: O(1)&lt;/li&gt;
+&lt;li&gt;Deletion: O(1)&lt;/li&gt;
+&lt;li&gt;Search: O(1)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;(Worst Case for all can be O(n) if collisions are poorly handled or hash function is bad)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="use-cases"&gt;Use Cases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Implementing dictionaries/hash maps.&lt;/li&gt;
+&lt;li&gt;Database indexing.&lt;/li&gt;
+&lt;li&gt;Caching.&lt;/li&gt;
+&lt;li&gt;Checking for duplicates.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Linked Lists</title><link>https://deepskandpal.github.io/dsa-concepts/linked-lists/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/linked-lists/</guid><description/></item></channel></rss>

@@ -1,190 +1,190 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Generative AI System Design Interview (Full Colour Edition) on 404EngineerNotFound</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/</link><description>Recent content in Generative AI System Design Interview (Full Colour Edition) on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 26 Jan 2025 12:00:00 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/index.xml" rel="self" type="application/rss+xml"/><item><title>Chapter 1: Introduction and Overview</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-1/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-1/</guid><description>&lt;h2 id="1-genai-overview-the-big-picture">1. GenAI Overview: The Big Picture&lt;/h2>
-&lt;p>Before we build anything, we need to know what we&amp;rsquo;re working with.&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>What are we trying to achieve?&lt;/strong> We&amp;rsquo;re trying to categorize our problem. Are we trying to &lt;em>classify&lt;/em> something that already exists, or are we trying to &lt;em>create&lt;/em> something new? This is the most fundamental decision you&amp;rsquo;ll make.&lt;/li>
-&lt;/ul>
-&lt;p>The book correctly breaks ML models into two camps: &lt;strong>Discriminative&lt;/strong> and &lt;strong>Generative&lt;/strong>.&lt;/p>
-&lt;p>Let&amp;rsquo;s break down these two categories of ML models. This is a classic interview question, and you need to nail it.&lt;/p></description></item><item><title>Chapter 2: Gmail Smart Compose</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-2/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-2/</guid><description>&lt;p>Excellent. Let&amp;rsquo;s dive into Chapter 6. This is one of the most important, practical patterns in the GenAI space right now: &lt;strong>Retrieval-Augmented Generation (RAG)&lt;/strong>.&lt;/p>
-&lt;p>If the last chapter was about the fundamentals of GenAI models, this chapter is about making them &lt;em>useful&lt;/em> in the real world. A base LLM is like a brilliant student who has read the entire internet up to 2023 but has never seen your company&amp;rsquo;s private documents and doesn&amp;rsquo;t know what happened in the news this morning. RAG is the system you build to give that student an &amp;ldquo;open-book exam,&amp;rdquo; allowing them to access specific, up-to-date information to answer questions.&lt;/p></description></item><item><title>Chapter 3: Google Translate</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-3/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-3/</guid><description>&lt;p>This chapter explores the system design behind Google Translate, covering neural machine translation at massive scale.&lt;/p>
-&lt;h2 id="key-concepts">Key Concepts&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Neural Machine Translation&lt;/strong>: Modern approaches using transformer models&lt;/li>
-&lt;li>&lt;strong>Multi-language Support&lt;/strong>: Handling 100+ languages efficiently&lt;/li>
-&lt;li>&lt;strong>Quality vs Speed&lt;/strong>: Balancing translation quality with response time&lt;/li>
-&lt;/ul>
-&lt;h2 id="main-topics-covered">Main Topics Covered&lt;/h2>
-&lt;ol>
-&lt;li>Google Translate system architecture&lt;/li>
-&lt;li>Model architecture (sequence-to-sequence, transformers)&lt;/li>
-&lt;li>Training data pipeline and multilingual models&lt;/li>
-&lt;li>Serving infrastructure and caching strategies&lt;/li>
-&lt;li>Quality evaluation and continuous improvement&lt;/li>
-&lt;/ol>
-&lt;h2 id="system-design-considerations">System Design Considerations&lt;/h2>
-&lt;ul>
-&lt;li>Supporting 100+ language pairs&lt;/li>
-&lt;li>Real-time translation for different modalities (text, speech, images)&lt;/li>
-&lt;li>Handling rare languages and domain-specific content&lt;/li>
-&lt;li>Model deployment and A/B testing at scale&lt;/li>
-&lt;/ul>
-&lt;p>(Your detailed notes for Chapter 3 go here&amp;hellip;)&lt;/p></description></item><item><title>Chapter 4: ChatGPT: Personal Assistant Chatbot</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-4/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-4/</guid><description>&lt;p>This chapter dives into the system design of ChatGPT-like conversational AI systems, covering large language model deployment and optimization.&lt;/p>
-&lt;h2 id="key-concepts">Key Concepts&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Large Language Model Serving&lt;/strong>: Challenges of deploying 175B+ parameter models&lt;/li>
-&lt;li>&lt;strong>Conversational Memory&lt;/strong>: Maintaining context across multi-turn conversations&lt;/li>
-&lt;li>&lt;strong>Safety and Alignment&lt;/strong>: Ensuring responsible AI behavior&lt;/li>
-&lt;/ul>
-&lt;h2 id="main-topics-covered">Main Topics Covered&lt;/h2>
-&lt;ol>
-&lt;li>ChatGPT system architecture&lt;/li>
-&lt;li>Model serving infrastructure (distributed inference)&lt;/li>
-&lt;li>Conversation management and memory&lt;/li>
-&lt;li>Safety systems and content moderation&lt;/li>
-&lt;li>Fine-tuning and reinforcement learning from human feedback (RLHF)&lt;/li>
-&lt;/ol>
-&lt;h2 id="system-design-considerations">System Design Considerations&lt;/h2>
-&lt;ul>
-&lt;li>Handling millions of concurrent users&lt;/li>
-&lt;li>Model optimization techniques (quantization, caching)&lt;/li>
-&lt;li>Context window management and conversation history&lt;/li>
-&lt;li>Real-time safety filtering and response generation&lt;/li>
-&lt;/ul>
-&lt;p>(Your detailed notes for Chapter 4 go here&amp;hellip;)&lt;/p></description></item><item><title>Chapter 5: Image Captioning</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-5/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-5/</guid><description>&lt;p>This chapter covers the design of image captioning systems that generate natural language descriptions from visual content.&lt;/p>
-&lt;h2 id="key-concepts">Key Concepts&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Vision-Language Models&lt;/strong>: Connecting visual and textual representations&lt;/li>
-&lt;li>&lt;strong>Multimodal Architecture&lt;/strong>: Handling both image and text inputs&lt;/li>
-&lt;li>&lt;strong>Caption Quality&lt;/strong>: Balancing accuracy, creativity, and informativeness&lt;/li>
-&lt;/ul>
-&lt;h2 id="main-topics-covered">Main Topics Covered&lt;/h2>
-&lt;ol>
-&lt;li>Image captioning system architecture&lt;/li>
-&lt;li>Vision encoder and language decoder design&lt;/li>
-&lt;li>Training pipeline for multimodal models&lt;/li>
-&lt;li>Evaluation metrics and quality assessment&lt;/li>
-&lt;li>Real-time inference optimization&lt;/li>
-&lt;/ol>
-&lt;h2 id="system-design-considerations">System Design Considerations&lt;/h2>
-&lt;ul>
-&lt;li>Handling high-resolution images efficiently&lt;/li>
-&lt;li>Supporting different image domains (photos, artwork, medical images)&lt;/li>
-&lt;li>Multilingual caption generation&lt;/li>
-&lt;li>Integration with content management systems&lt;/li>
-&lt;/ul>
-&lt;p>(Your detailed notes for Chapter 5 go here&amp;hellip;)&lt;/p></description></item><item><title>Chapter 6: Retrieval-Augmented Generation</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-6/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-6/</guid><description>&lt;p>&lt;strong>What are we trying to achieve?&lt;/strong> We&amp;rsquo;re solving the LLM&amp;rsquo;s biggest weaknesses:&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>Knowledge Cutoff:&lt;/strong> It doesn&amp;rsquo;t know about recent events.&lt;/li>
-&lt;li>&lt;strong>Lack of Private Data:&lt;/strong> It hasn&amp;rsquo;t been trained on your internal company wiki, your customer support database, or a PDF you just uploaded.&lt;/li>
-&lt;li>&lt;strong>Hallucination:&lt;/strong> It can make things up.&lt;/li>
-&lt;/ol>
-&lt;p>The book uses the example of building a &lt;strong>ChatPDF&lt;/strong> system for internal company use. An employee should be able to ask, &amp;ldquo;What is our policy on international travel reimbursement?&amp;rdquo; and get an answer based on the latest HR documents, not on some generic policy the LLM learned from the public internet.&lt;/p></description></item><item><title>Chapter 7: Realistic Face Generation</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-7/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-7/</guid><description>&lt;p>This chapter covers the design of systems for generating realistic human faces using generative adversarial networks (GANs) and diffusion models.&lt;/p>
-&lt;h2 id="key-concepts">Key Concepts&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Generative Adversarial Networks&lt;/strong>: GAN architecture for high-quality face generation&lt;/li>
-&lt;li>&lt;strong>Latent Space Manipulation&lt;/strong>: Controlling facial attributes and expressions&lt;/li>
-&lt;li>&lt;strong>Ethics and Safety&lt;/strong>: Addressing deepfake concerns and responsible AI&lt;/li>
-&lt;/ul>
-&lt;h2 id="main-topics-covered">Main Topics Covered&lt;/h2>
-&lt;ol>
-&lt;li>Face generation system architecture&lt;/li>
-&lt;li>GAN vs. diffusion model trade-offs&lt;/li>
-&lt;li>Training pipeline and data considerations&lt;/li>
-&lt;li>Quality control and artifact detection&lt;/li>
-&lt;li>Safety measures and content validation&lt;/li>
-&lt;/ol>
-&lt;h2 id="system-design-considerations">System Design Considerations&lt;/h2>
-&lt;ul>
-&lt;li>Generating high-resolution, photorealistic faces&lt;/li>
-&lt;li>Real-time vs. batch generation trade-offs&lt;/li>
-&lt;li>Preventing misuse and implementing safety guardrails&lt;/li>
-&lt;li>Handling diverse demographic representation&lt;/li>
-&lt;/ul>
-&lt;p>(Your detailed notes for Chapter 7 go here&amp;hellip;)&lt;/p></description></item><item><title>Chapter 8: High-Resolution Image Synthesis</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-8/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-8/</guid><description>&lt;p>This chapter explores the challenges and solutions for generating high-resolution images (1024x1024 and beyond) using advanced generative models.&lt;/p>
-&lt;h2 id="key-concepts">Key Concepts&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Progressive Generation&lt;/strong>: Building images from low to high resolution&lt;/li>
-&lt;li>&lt;strong>Memory Optimization&lt;/strong>: Handling large model inference efficiently&lt;/li>
-&lt;li>&lt;strong>Quality vs. Speed&lt;/strong>: Balancing generation quality with computational cost&lt;/li>
-&lt;/ul>
-&lt;h2 id="main-topics-covered">Main Topics Covered&lt;/h2>
-&lt;ol>
-&lt;li>High-resolution image generation architecture&lt;/li>
-&lt;li>Progressive growing and multi-scale approaches&lt;/li>
-&lt;li>Memory-efficient training and inference&lt;/li>
-&lt;li>Quality assessment and perceptual metrics&lt;/li>
-&lt;li>Distributed generation and model parallelism&lt;/li>
-&lt;/ol>
-&lt;h2 id="system-design-considerations">System Design Considerations&lt;/h2>
-&lt;ul>
-&lt;li>GPU memory constraints and optimization techniques&lt;/li>
-&lt;li>Generating images larger than 1K x 1K resolution&lt;/li>
-&lt;li>Batch processing for multiple image requests&lt;/li>
-&lt;li>Caching strategies for common generation patterns&lt;/li>
-&lt;/ul>
-&lt;p>(Your detailed notes for Chapter 8 go here&amp;hellip;)&lt;/p></description></item><item><title>Chapter 9: Text-to-Image Generation</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-9/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-9/</guid><description>&lt;p>This chapter covers text-to-image generation systems like DALL-E and Stable Diffusion that create images from natural language descriptions.&lt;/p>
-&lt;h2 id="key-concepts">Key Concepts&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Text-Image Alignment&lt;/strong>: Connecting textual descriptions with visual concepts&lt;/li>
-&lt;li>&lt;strong>Diffusion Models&lt;/strong>: Modern approach to controllable image generation&lt;/li>
-&lt;li>&lt;strong>Prompt Engineering&lt;/strong>: Optimizing text inputs for better image outputs&lt;/li>
-&lt;/ul>
-&lt;h2 id="main-topics-covered">Main Topics Covered&lt;/h2>
-&lt;ol>
-&lt;li>Text-to-image system architecture&lt;/li>
-&lt;li>CLIP embeddings and cross-modal understanding&lt;/li>
-&lt;li>Diffusion model training and inference&lt;/li>
-&lt;li>Prompt processing and optimization&lt;/li>
-&lt;li>Safety filtering and content moderation&lt;/li>
-&lt;/ol>
-&lt;h2 id="system-design-considerations">System Design Considerations&lt;/h2>
-&lt;ul>
-&lt;li>Handling complex and creative text prompts&lt;/li>
-&lt;li>Ensuring generated content aligns with user intent&lt;/li>
-&lt;li>Implementing content safety and filtering systems&lt;/li>
-&lt;li>Supporting multiple art styles and domains&lt;/li>
-&lt;/ul>
-&lt;p>(Your detailed notes for Chapter 9 go here&amp;hellip;)&lt;/p></description></item><item><title>Chapter 10: Personalized Headshot Generation</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-10/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-10/</guid><description>&lt;p>This chapter explores the design of systems that generate personalized professional headshots based on user photos and specifications.&lt;/p>
-&lt;h2 id="key-concepts">Key Concepts&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Face Identity Preservation&lt;/strong>: Maintaining user&amp;rsquo;s facial features across different styles&lt;/li>
-&lt;li>&lt;strong>Style Transfer&lt;/strong>: Applying professional photography styles to generated images&lt;/li>
-&lt;li>&lt;strong>Personalization Pipeline&lt;/strong>: End-to-end system for custom headshot creation&lt;/li>
-&lt;/ul>
-&lt;h2 id="main-topics-covered">Main Topics Covered&lt;/h2>
-&lt;ol>
-&lt;li>Personalized generation system architecture&lt;/li>
-&lt;li>Identity encoding and preservation techniques&lt;/li>
-&lt;li>Style control and background generation&lt;/li>
-&lt;li>Quality assurance and user feedback loops&lt;/li>
-&lt;li>Privacy and data handling considerations&lt;/li>
-&lt;/ol>
-&lt;h2 id="system-design-considerations">System Design Considerations&lt;/h2>
-&lt;ul>
-&lt;li>Processing and storing user-uploaded photos securely&lt;/li>
-&lt;li>Generating multiple style variations efficiently&lt;/li>
-&lt;li>Maintaining consistency across generated images&lt;/li>
-&lt;li>Handling diverse facial features and ethnicities&lt;/li>
-&lt;/ul>
-&lt;p>(Your detailed notes for Chapter 10 go here&amp;hellip;)&lt;/p></description></item><item><title>Chapter 11: Text-to-Video Generation</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-11/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-11/</guid><description>&lt;p>This chapter covers the most complex generative AI challenge: creating coherent videos from textual descriptions, involving temporal consistency and motion modeling.&lt;/p>
-&lt;h2 id="key-concepts">Key Concepts&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Temporal Consistency&lt;/strong>: Maintaining coherence across video frames&lt;/li>
-&lt;li>&lt;strong>Motion Modeling&lt;/strong>: Generating realistic movement and transitions&lt;/li>
-&lt;li>&lt;strong>Computational Scaling&lt;/strong>: Managing the extreme computational requirements&lt;/li>
-&lt;/ul>
-&lt;h2 id="main-topics-covered">Main Topics Covered&lt;/h2>
-&lt;ol>
-&lt;li>Text-to-video system architecture&lt;/li>
-&lt;li>Temporal modeling and frame consistency&lt;/li>
-&lt;li>Motion prediction and interpolation&lt;/li>
-&lt;li>Distributed training and inference strategies&lt;/li>
-&lt;li>Video quality assessment and metrics&lt;/li>
-&lt;/ol>
-&lt;h2 id="system-design-considerations">System Design Considerations&lt;/h2>
-&lt;ul>
-&lt;li>Handling massive computational and memory requirements&lt;/li>
-&lt;li>Ensuring temporal consistency across long sequences&lt;/li>
-&lt;li>Balancing video quality with generation time&lt;/li>
-&lt;li>Managing storage and bandwidth for video outputs&lt;/li>
-&lt;/ul>
-&lt;p>(Your detailed notes for Chapter 11 go here&amp;hellip;)&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Generative AI System Design Interview (Full Colour Edition) on 404EngineerNotFound</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/</link><description>Recent content in Generative AI System Design Interview (Full Colour Edition) on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 26 Jan 2025 12:00:00 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/index.xml" rel="self" type="application/rss+xml"/><item><title>Chapter 1: Introduction and Overview</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-1/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-1/</guid><description>&lt;h2 id="1-genai-overview-the-big-picture"&gt;1. GenAI Overview: The Big Picture&lt;/h2&gt;
+&lt;p&gt;Before we build anything, we need to know what we&amp;rsquo;re working with.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What are we trying to achieve?&lt;/strong&gt; We&amp;rsquo;re trying to categorize our problem. Are we trying to &lt;em&gt;classify&lt;/em&gt; something that already exists, or are we trying to &lt;em&gt;create&lt;/em&gt; something new? This is the most fundamental decision you&amp;rsquo;ll make.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The book correctly breaks ML models into two camps: &lt;strong&gt;Discriminative&lt;/strong&gt; and &lt;strong&gt;Generative&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s break down these two categories of ML models. This is a classic interview question, and you need to nail it.&lt;/p&gt;</description></item><item><title>Chapter 2: Gmail Smart Compose</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-2/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-2/</guid><description>&lt;p&gt;Excellent. Let&amp;rsquo;s dive into Chapter 6. This is one of the most important, practical patterns in the GenAI space right now: &lt;strong&gt;Retrieval-Augmented Generation (RAG)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If the last chapter was about the fundamentals of GenAI models, this chapter is about making them &lt;em&gt;useful&lt;/em&gt; in the real world. A base LLM is like a brilliant student who has read the entire internet up to 2023 but has never seen your company&amp;rsquo;s private documents and doesn&amp;rsquo;t know what happened in the news this morning. RAG is the system you build to give that student an &amp;ldquo;open-book exam,&amp;rdquo; allowing them to access specific, up-to-date information to answer questions.&lt;/p&gt;</description></item><item><title>Chapter 3: Google Translate</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-3/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-3/</guid><description>&lt;p&gt;This chapter explores the system design behind Google Translate, covering neural machine translation at massive scale.&lt;/p&gt;
+&lt;h2 id="key-concepts"&gt;Key Concepts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Neural Machine Translation&lt;/strong&gt;: Modern approaches using transformer models&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-language Support&lt;/strong&gt;: Handling 100+ languages efficiently&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Quality vs Speed&lt;/strong&gt;: Balancing translation quality with response time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="main-topics-covered"&gt;Main Topics Covered&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Google Translate system architecture&lt;/li&gt;
+&lt;li&gt;Model architecture (sequence-to-sequence, transformers)&lt;/li&gt;
+&lt;li&gt;Training data pipeline and multilingual models&lt;/li&gt;
+&lt;li&gt;Serving infrastructure and caching strategies&lt;/li&gt;
+&lt;li&gt;Quality evaluation and continuous improvement&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="system-design-considerations"&gt;System Design Considerations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Supporting 100+ language pairs&lt;/li&gt;
+&lt;li&gt;Real-time translation for different modalities (text, speech, images)&lt;/li&gt;
+&lt;li&gt;Handling rare languages and domain-specific content&lt;/li&gt;
+&lt;li&gt;Model deployment and A/B testing at scale&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Your detailed notes for Chapter 3 go here&amp;hellip;)&lt;/p&gt;</description></item><item><title>Chapter 4: ChatGPT: Personal Assistant Chatbot</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-4/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-4/</guid><description>&lt;p&gt;This chapter dives into the system design of ChatGPT-like conversational AI systems, covering large language model deployment and optimization.&lt;/p&gt;
+&lt;h2 id="key-concepts"&gt;Key Concepts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Large Language Model Serving&lt;/strong&gt;: Challenges of deploying 175B+ parameter models&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conversational Memory&lt;/strong&gt;: Maintaining context across multi-turn conversations&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Safety and Alignment&lt;/strong&gt;: Ensuring responsible AI behavior&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="main-topics-covered"&gt;Main Topics Covered&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;ChatGPT system architecture&lt;/li&gt;
+&lt;li&gt;Model serving infrastructure (distributed inference)&lt;/li&gt;
+&lt;li&gt;Conversation management and memory&lt;/li&gt;
+&lt;li&gt;Safety systems and content moderation&lt;/li&gt;
+&lt;li&gt;Fine-tuning and reinforcement learning from human feedback (RLHF)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="system-design-considerations"&gt;System Design Considerations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Handling millions of concurrent users&lt;/li&gt;
+&lt;li&gt;Model optimization techniques (quantization, caching)&lt;/li&gt;
+&lt;li&gt;Context window management and conversation history&lt;/li&gt;
+&lt;li&gt;Real-time safety filtering and response generation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Your detailed notes for Chapter 4 go here&amp;hellip;)&lt;/p&gt;</description></item><item><title>Chapter 5: Image Captioning</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-5/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-5/</guid><description>&lt;p&gt;This chapter covers the design of image captioning systems that generate natural language descriptions from visual content.&lt;/p&gt;
+&lt;h2 id="key-concepts"&gt;Key Concepts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Vision-Language Models&lt;/strong&gt;: Connecting visual and textual representations&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multimodal Architecture&lt;/strong&gt;: Handling both image and text inputs&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Caption Quality&lt;/strong&gt;: Balancing accuracy, creativity, and informativeness&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="main-topics-covered"&gt;Main Topics Covered&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Image captioning system architecture&lt;/li&gt;
+&lt;li&gt;Vision encoder and language decoder design&lt;/li&gt;
+&lt;li&gt;Training pipeline for multimodal models&lt;/li&gt;
+&lt;li&gt;Evaluation metrics and quality assessment&lt;/li&gt;
+&lt;li&gt;Real-time inference optimization&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="system-design-considerations"&gt;System Design Considerations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Handling high-resolution images efficiently&lt;/li&gt;
+&lt;li&gt;Supporting different image domains (photos, artwork, medical images)&lt;/li&gt;
+&lt;li&gt;Multilingual caption generation&lt;/li&gt;
+&lt;li&gt;Integration with content management systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Your detailed notes for Chapter 5 go here&amp;hellip;)&lt;/p&gt;</description></item><item><title>Chapter 6: Retrieval-Augmented Generation</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-6/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-6/</guid><description>&lt;p&gt;&lt;strong&gt;What are we trying to achieve?&lt;/strong&gt; We&amp;rsquo;re solving the LLM&amp;rsquo;s biggest weaknesses:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Knowledge Cutoff:&lt;/strong&gt; It doesn&amp;rsquo;t know about recent events.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lack of Private Data:&lt;/strong&gt; It hasn&amp;rsquo;t been trained on your internal company wiki, your customer support database, or a PDF you just uploaded.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hallucination:&lt;/strong&gt; It can make things up.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The book uses the example of building a &lt;strong&gt;ChatPDF&lt;/strong&gt; system for internal company use. An employee should be able to ask, &amp;ldquo;What is our policy on international travel reimbursement?&amp;rdquo; and get an answer based on the latest HR documents, not on some generic policy the LLM learned from the public internet.&lt;/p&gt;</description></item><item><title>Chapter 7: Realistic Face Generation</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-7/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-7/</guid><description>&lt;p&gt;This chapter covers the design of systems for generating realistic human faces using generative adversarial networks (GANs) and diffusion models.&lt;/p&gt;
+&lt;h2 id="key-concepts"&gt;Key Concepts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Generative Adversarial Networks&lt;/strong&gt;: GAN architecture for high-quality face generation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Latent Space Manipulation&lt;/strong&gt;: Controlling facial attributes and expressions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ethics and Safety&lt;/strong&gt;: Addressing deepfake concerns and responsible AI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="main-topics-covered"&gt;Main Topics Covered&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Face generation system architecture&lt;/li&gt;
+&lt;li&gt;GAN vs. diffusion model trade-offs&lt;/li&gt;
+&lt;li&gt;Training pipeline and data considerations&lt;/li&gt;
+&lt;li&gt;Quality control and artifact detection&lt;/li&gt;
+&lt;li&gt;Safety measures and content validation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="system-design-considerations"&gt;System Design Considerations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Generating high-resolution, photorealistic faces&lt;/li&gt;
+&lt;li&gt;Real-time vs. batch generation trade-offs&lt;/li&gt;
+&lt;li&gt;Preventing misuse and implementing safety guardrails&lt;/li&gt;
+&lt;li&gt;Handling diverse demographic representation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Your detailed notes for Chapter 7 go here&amp;hellip;)&lt;/p&gt;</description></item><item><title>Chapter 8: High-Resolution Image Synthesis</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-8/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-8/</guid><description>&lt;p&gt;This chapter explores the challenges and solutions for generating high-resolution images (1024x1024 and beyond) using advanced generative models.&lt;/p&gt;
+&lt;h2 id="key-concepts"&gt;Key Concepts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Progressive Generation&lt;/strong&gt;: Building images from low to high resolution&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory Optimization&lt;/strong&gt;: Handling large model inference efficiently&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Quality vs. Speed&lt;/strong&gt;: Balancing generation quality with computational cost&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="main-topics-covered"&gt;Main Topics Covered&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;High-resolution image generation architecture&lt;/li&gt;
+&lt;li&gt;Progressive growing and multi-scale approaches&lt;/li&gt;
+&lt;li&gt;Memory-efficient training and inference&lt;/li&gt;
+&lt;li&gt;Quality assessment and perceptual metrics&lt;/li&gt;
+&lt;li&gt;Distributed generation and model parallelism&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="system-design-considerations"&gt;System Design Considerations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GPU memory constraints and optimization techniques&lt;/li&gt;
+&lt;li&gt;Generating images larger than 1K x 1K resolution&lt;/li&gt;
+&lt;li&gt;Batch processing for multiple image requests&lt;/li&gt;
+&lt;li&gt;Caching strategies for common generation patterns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Your detailed notes for Chapter 8 go here&amp;hellip;)&lt;/p&gt;</description></item><item><title>Chapter 9: Text-to-Image Generation</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-9/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-9/</guid><description>&lt;p&gt;This chapter covers text-to-image generation systems like DALL-E and Stable Diffusion that create images from natural language descriptions.&lt;/p&gt;
+&lt;h2 id="key-concepts"&gt;Key Concepts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Text-Image Alignment&lt;/strong&gt;: Connecting textual descriptions with visual concepts&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Diffusion Models&lt;/strong&gt;: Modern approach to controllable image generation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prompt Engineering&lt;/strong&gt;: Optimizing text inputs for better image outputs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="main-topics-covered"&gt;Main Topics Covered&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Text-to-image system architecture&lt;/li&gt;
+&lt;li&gt;CLIP embeddings and cross-modal understanding&lt;/li&gt;
+&lt;li&gt;Diffusion model training and inference&lt;/li&gt;
+&lt;li&gt;Prompt processing and optimization&lt;/li&gt;
+&lt;li&gt;Safety filtering and content moderation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="system-design-considerations"&gt;System Design Considerations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Handling complex and creative text prompts&lt;/li&gt;
+&lt;li&gt;Ensuring generated content aligns with user intent&lt;/li&gt;
+&lt;li&gt;Implementing content safety and filtering systems&lt;/li&gt;
+&lt;li&gt;Supporting multiple art styles and domains&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Your detailed notes for Chapter 9 go here&amp;hellip;)&lt;/p&gt;</description></item><item><title>Chapter 10: Personalized Headshot Generation</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-10/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-10/</guid><description>&lt;p&gt;This chapter explores the design of systems that generate personalized professional headshots based on user photos and specifications.&lt;/p&gt;
+&lt;h2 id="key-concepts"&gt;Key Concepts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Face Identity Preservation&lt;/strong&gt;: Maintaining user&amp;rsquo;s facial features across different styles&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Style Transfer&lt;/strong&gt;: Applying professional photography styles to generated images&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Personalization Pipeline&lt;/strong&gt;: End-to-end system for custom headshot creation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="main-topics-covered"&gt;Main Topics Covered&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Personalized generation system architecture&lt;/li&gt;
+&lt;li&gt;Identity encoding and preservation techniques&lt;/li&gt;
+&lt;li&gt;Style control and background generation&lt;/li&gt;
+&lt;li&gt;Quality assurance and user feedback loops&lt;/li&gt;
+&lt;li&gt;Privacy and data handling considerations&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="system-design-considerations"&gt;System Design Considerations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Processing and storing user-uploaded photos securely&lt;/li&gt;
+&lt;li&gt;Generating multiple style variations efficiently&lt;/li&gt;
+&lt;li&gt;Maintaining consistency across generated images&lt;/li&gt;
+&lt;li&gt;Handling diverse facial features and ethnicities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Your detailed notes for Chapter 10 go here&amp;hellip;)&lt;/p&gt;</description></item><item><title>Chapter 11: Text-to-Video Generation</title><link>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-11/</link><pubDate>Sun, 26 Jan 2025 12:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/generative-ai-system-design-interview/chapter-11/</guid><description>&lt;p&gt;This chapter covers the most complex generative AI challenge: creating coherent videos from textual descriptions, involving temporal consistency and motion modeling.&lt;/p&gt;
+&lt;h2 id="key-concepts"&gt;Key Concepts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Temporal Consistency&lt;/strong&gt;: Maintaining coherence across video frames&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Motion Modeling&lt;/strong&gt;: Generating realistic movement and transitions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Computational Scaling&lt;/strong&gt;: Managing the extreme computational requirements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="main-topics-covered"&gt;Main Topics Covered&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Text-to-video system architecture&lt;/li&gt;
+&lt;li&gt;Temporal modeling and frame consistency&lt;/li&gt;
+&lt;li&gt;Motion prediction and interpolation&lt;/li&gt;
+&lt;li&gt;Distributed training and inference strategies&lt;/li&gt;
+&lt;li&gt;Video quality assessment and metrics&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="system-design-considerations"&gt;System Design Considerations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Handling massive computational and memory requirements&lt;/li&gt;
+&lt;li&gt;Ensuring temporal consistency across long sequences&lt;/li&gt;
+&lt;li&gt;Balancing video quality with generation time&lt;/li&gt;
+&lt;li&gt;Managing storage and bandwidth for video outputs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Your detailed notes for Chapter 11 go here&amp;hellip;)&lt;/p&gt;</description></item></channel></rss>

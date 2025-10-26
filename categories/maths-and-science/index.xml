@@ -1,70 +1,70 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Maths and Science on 404EngineerNotFound</title><link>https://deepskandpal.github.io/categories/maths-and-science/</link><description>Recent content in Maths and Science on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 15 Jun 2025 21:53:23 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/categories/maths-and-science/index.xml" rel="self" type="application/rss+xml"/><item><title>Fundamentals of Physics</title><link>https://deepskandpal.github.io/bookshelf/fundamentals-of-physics/</link><pubDate>Sun, 15 Jun 2025 21:53:23 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/fundamentals-of-physics/</guid><description>&lt;h1 id="notes--summary-for-the-book">Notes / Summary for the Book&lt;/h1>
-&lt;p>(Your general notes or summary about the book go here.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Maths and Science on 404EngineerNotFound</title><link>https://deepskandpal.github.io/categories/maths-and-science/</link><description>Recent content in Maths and Science on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 15 Jun 2025 21:53:23 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/categories/maths-and-science/index.xml" rel="self" type="application/rss+xml"/><item><title>Fundamentals of Physics</title><link>https://deepskandpal.github.io/bookshelf/fundamentals-of-physics/</link><pubDate>Sun, 15 Jun 2025 21:53:23 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/fundamentals-of-physics/</guid><description>&lt;h1 id="notes--summary-for-the-book"&gt;Notes / Summary for the Book&lt;/h1&gt;
+&lt;p&gt;(Your general notes or summary about the book go here.
 For chapter-specific notes, create separate .md files within this book&amp;rsquo;s folder, e.g., chapter-1.md, introduction.md etc.
-These will be automatically listed on the book&amp;rsquo;s page.)&lt;/p></description></item><item><title>Calculus Made Easy</title><link>https://deepskandpal.github.io/bookshelf/calculus-made-easy/</link><pubDate>Tue, 10 Jun 2025 09:54:37 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/calculus-made-easy/</guid><description>&lt;h1 id="notes--summary-for-the-book">Notes / Summary for the Book&lt;/h1>
-&lt;p>(Your general notes or summary about the book go here.
+These will be automatically listed on the book&amp;rsquo;s page.)&lt;/p&gt;</description></item><item><title>Calculus Made Easy</title><link>https://deepskandpal.github.io/bookshelf/calculus-made-easy/</link><pubDate>Tue, 10 Jun 2025 09:54:37 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/calculus-made-easy/</guid><description>&lt;h1 id="notes--summary-for-the-book"&gt;Notes / Summary for the Book&lt;/h1&gt;
+&lt;p&gt;(Your general notes or summary about the book go here.
 For chapter-specific notes, create separate .md files within this book&amp;rsquo;s folder, e.g., chapter-1.md, introduction.md etc.
-These will be automatically listed on the book&amp;rsquo;s page.)&lt;/p></description></item><item><title>The Elements of Statistical Learning</title><link>https://deepskandpal.github.io/bookshelf/elements/</link><pubDate>Sun, 01 Jun 2025 16:53:23 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/elements/</guid><description>&lt;h1 id="notes--summary-for-the-book">Notes / Summary for the Book&lt;/h1>
-&lt;p>(Your general notes or summary about the book go here.
+These will be automatically listed on the book&amp;rsquo;s page.)&lt;/p&gt;</description></item><item><title>The Elements of Statistical Learning</title><link>https://deepskandpal.github.io/bookshelf/elements/</link><pubDate>Sun, 01 Jun 2025 16:53:23 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/elements/</guid><description>&lt;h1 id="notes--summary-for-the-book"&gt;Notes / Summary for the Book&lt;/h1&gt;
+&lt;p&gt;(Your general notes or summary about the book go here.
 For chapter-specific notes, create separate .md files within this book&amp;rsquo;s folder, e.g., chapter-1.md, introduction.md etc.
-These will be automatically listed on the book&amp;rsquo;s page.)&lt;/p></description></item><item><title>Linear Done Right</title><link>https://deepskandpal.github.io/bookshelf/linear-done-right/</link><pubDate>Thu, 29 May 2025 21:45:19 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/linear-done-right/</guid><description>&lt;h1 id="to-be-read">TO BE READ&lt;/h1></description></item><item><title>Machine Learning: A Probabilistic Perspective</title><link>https://deepskandpal.github.io/bookshelf/machine-learning-prob-approach/</link><pubDate>Thu, 29 May 2025 21:45:19 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/machine-learning-prob-approach/</guid><description>&lt;p>To be Read&lt;/p></description></item><item><title>Linear Algebra</title><link>https://deepskandpal.github.io/bookshelf/linear-algebra-hefferon/</link><pubDate>Mon, 27 Jan 2025 00:15:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/linear-algebra-hefferon/</guid><description>&lt;h1 id="the-essential-foundation-for-data-science-and-ai">The Essential Foundation for Data Science and AI&lt;/h1>
-&lt;p>&lt;strong>A comprehensive, freely available linear algebra textbook that provides the mathematical foundation for machine learning, computer graphics, data science, and modern AI systems.&lt;/strong> Winner of the MAA Solow Award in 2020, this text has been adopted by hundreds of institutions worldwide.&lt;/p>
-&lt;h2 id="why-this-book-is-essential-for-modern-tech">Why This Book is Essential for Modern Tech&lt;/h2>
-&lt;p>Linear algebra is the mathematical language of:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Machine Learning&lt;/strong>: Understanding how neural networks, PCA, and optimization algorithms work&lt;/li>
-&lt;li>&lt;strong>Computer Graphics&lt;/strong>: Transformations, rotations, and 3D rendering&lt;/li>
-&lt;li>&lt;strong>Data Science&lt;/strong>: Dimensionality reduction, feature engineering, and statistical modeling&lt;/li>
-&lt;li>&lt;strong>Quantum Computing&lt;/strong>: State vectors and quantum operations&lt;/li>
-&lt;li>&lt;strong>Signal Processing&lt;/strong>: Fourier transforms and digital signal analysis&lt;/li>
-&lt;/ul>
-&lt;h2 id="connection-to-your-technical-knowledge-tree">Connection to Your Technical Knowledge Tree&lt;/h2>
-&lt;p>This book provides the mathematical foundation that makes advanced topics accessible:&lt;/p></description></item><item><title>Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition</title><link>https://deepskandpal.github.io/bookshelf/speech-language-processing-jurafsky-martin/</link><pubDate>Sun, 26 Jan 2025 18:30:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/speech-language-processing-jurafsky-martin/</guid><description>&lt;h1 id="the-definitive-guide-to-natural-language-processing">The Definitive Guide to Natural Language Processing&lt;/h1>
-&lt;p>&lt;strong>The authoritative textbook on NLP that provides the linguistic and computational foundation for understanding large language models and transformer architectures.&lt;/strong> This book bridges the gap between traditional computational linguistics and modern neural language models.&lt;/p>
-&lt;h2 id="why-this-book-is-essential-for-understanding-llms">Why This Book is Essential for Understanding LLMs&lt;/h2>
-&lt;p>Large Language Models are fundamentally natural language processing systems. This book provides the essential background:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Tokenization and Text Processing&lt;/strong>: How text is converted into tokens that transformers can process&lt;/li>
-&lt;li>&lt;strong>Language Modeling&lt;/strong>: Mathematical foundation for next-token prediction and perplexity&lt;/li>
-&lt;li>&lt;strong>Parsing and Syntax&lt;/strong>: Understanding how language structure relates to transformer attention patterns&lt;/li>
-&lt;li>&lt;strong>Semantics and Pragmatics&lt;/strong>: How meaning emerges from statistical patterns in text&lt;/li>
-&lt;li>&lt;strong>Evaluation in NLP&lt;/strong>: Metrics and methods for evaluating language generation systems&lt;/li>
-&lt;/ul>
-&lt;h2 id="connection-to-your-genai-knowledge-tree">Connection to Your GenAI Knowledge Tree&lt;/h2>
-&lt;p>Critical NLP concepts that directly apply to your GenAI materials:&lt;/p></description></item><item><title>Information Theory, Inference, and Learning Algorithms</title><link>https://deepskandpal.github.io/bookshelf/information-theory-mackay/</link><pubDate>Sun, 26 Jan 2025 18:20:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/information-theory-mackay/</guid><description>&lt;h1 id="the-information-theoretic-foundation-of-ai">The Information-Theoretic Foundation of AI&lt;/h1>
-&lt;p>&lt;strong>The definitive text connecting information theory, statistical inference, and machine learning.&lt;/strong> This book provides the theoretical framework for understanding compression, generalization, and the fundamental limits of learning in AI systems.&lt;/p>
-&lt;h2 id="why-this-book-is-essential-for-genai">Why This Book is Essential for GenAI&lt;/h2>
-&lt;p>Information theory underlies many fundamental concepts in your GenAI knowledge tree:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Entropy and Compression&lt;/strong>: Foundation for understanding tokenization and data efficiency&lt;/li>
-&lt;li>&lt;strong>Mutual Information&lt;/strong>: Mathematical basis for attention mechanisms and representation learning&lt;/li>
-&lt;li>&lt;strong>KL Divergence&lt;/strong>: Core metric used in VAEs, diffusion models, and alignment techniques&lt;/li>
-&lt;li>&lt;strong>Channel Capacity&lt;/strong>: Understanding the fundamental limits of information transfer&lt;/li>
-&lt;li>&lt;strong>Coding Theory&lt;/strong>: Mathematical foundation for efficient model compression&lt;/li>
-&lt;/ul>
-&lt;h2 id="connection-to-genai-systems">Connection to GenAI Systems&lt;/h2>
-&lt;p>Critical information-theoretic concepts that appear throughout your materials:&lt;/p></description></item><item><title>Convex Optimization</title><link>https://deepskandpal.github.io/bookshelf/convex-optimization-boyd/</link><pubDate>Sun, 26 Jan 2025 18:10:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/convex-optimization-boyd/</guid><description>&lt;h1 id="the-mathematical-foundation-of-ai-training">The Mathematical Foundation of AI Training&lt;/h1>
-&lt;p>&lt;strong>The definitive text on optimization theory that underlies all modern AI training algorithms.&lt;/strong> This book provides the mathematical rigor needed to understand why gradient descent, Adam, and other optimization techniques work in large-scale AI systems.&lt;/p>
-&lt;h2 id="why-this-book-is-essential-for-genai-training">Why This Book is Essential for GenAI Training&lt;/h2>
-&lt;p>Every aspect of training large language models and generative AI systems relies on optimization principles covered in this text:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Gradient Descent Theory&lt;/strong>: Mathematical foundations of backpropagation&lt;/li>
-&lt;li>&lt;strong>Convex Analysis&lt;/strong>: Understanding loss landscapes and convergence guarantees&lt;/li>
-&lt;li>&lt;strong>Duality Theory&lt;/strong>: Theoretical underpinnings of many ML algorithms&lt;/li>
-&lt;li>&lt;strong>Constrained Optimization&lt;/strong>: Foundation for techniques like RLHF and constitutional AI&lt;/li>
-&lt;li>&lt;strong>Algorithms and Convergence&lt;/strong>: Why modern optimizers like Adam and AdamW work&lt;/li>
-&lt;/ul>
-&lt;h2 id="connection-to-genai-training-systems">Connection to GenAI Training Systems&lt;/h2>
-&lt;p>Critical concepts from your GenAI training materials trace directly to this book:&lt;/p></description></item><item><title>Pattern Recognition and Machine Learning</title><link>https://deepskandpal.github.io/bookshelf/pattern-recognition-ml-bishop/</link><pubDate>Sun, 26 Jan 2025 18:05:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/pattern-recognition-ml-bishop/</guid><description>&lt;h1 id="the-bayesian-foundation-of-modern-ai">The Bayesian Foundation of Modern AI&lt;/h1>
-&lt;p>&lt;strong>The definitive guide to probabilistic approaches in machine learning.&lt;/strong> This book provides the mathematical rigor and Bayesian thinking that underlies much of modern AI safety, alignment, and uncertainty quantification in GenAI systems.&lt;/p>
-&lt;h2 id="why-this-book-is-critical-for-genai">Why This Book is Critical for GenAI&lt;/h2>
-&lt;p>Bishop&amp;rsquo;s text covers fundamental probabilistic concepts that are essential for understanding advanced GenAI topics:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Bayesian Inference&lt;/strong>: Foundation for uncertainty quantification in AI systems&lt;/li>
-&lt;li>&lt;strong>Probabilistic Graphical Models&lt;/strong>: Understanding relationships in complex AI systems&lt;/li>
-&lt;li>&lt;strong>Variational Methods&lt;/strong>: Mathematical foundation for VAEs and variational training&lt;/li>
-&lt;li>&lt;strong>Monte Carlo Methods&lt;/strong>: Sampling techniques used in modern training algorithms&lt;/li>
-&lt;li>&lt;strong>Model Selection&lt;/strong>: Principled approaches to choosing between different architectures&lt;/li>
-&lt;/ul>
-&lt;h2 id="connection-to-genai-systems">Connection to GenAI Systems&lt;/h2>
-&lt;p>Key concepts from this book appear throughout your GenAI knowledge tree:&lt;/p></description></item><item><title>Game Theory: A Multi-Leveled Approach (Springer Texts in Business and Economics)</title><link>https://deepskandpal.github.io/bookshelf/game-theory-peters/</link><pubDate>Tue, 30 Jul 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/game-theory-peters/</guid><description>&lt;p>This textbook presents the basics of game theory both on an undergraduate level and on a more advanced mathematical level. It is the second, revised version of the successful 2008 edition. The book covers most topics of interest in game theory, including cooperative game theory. Part I presents introductions to all these topics on a basic yet formally precise level. It includes chapters on repeated games, social choice theory, and selected topics such as bargaining theory, exchange economies, and matching. Part II goes deeper into noncooperative theory and treats the theory of zerosum games, refinements of Nash equilibrium in strategic as well as extensive form games, and evolutionary games. Part III covers basic concepts in the theory of transferable utility games, such as core and balancedness, Shapley value and variations, and nucleolus. Some mathematical tools on duality and convexity are collected in Part IV. Every chapter in the book contains a problem section. Hints, answers and solutions are included.&lt;/p></description></item></channel></rss>
+These will be automatically listed on the book&amp;rsquo;s page.)&lt;/p&gt;</description></item><item><title>Linear Done Right</title><link>https://deepskandpal.github.io/bookshelf/linear-done-right/</link><pubDate>Thu, 29 May 2025 21:45:19 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/linear-done-right/</guid><description>&lt;h1 id="to-be-read"&gt;TO BE READ&lt;/h1&gt;</description></item><item><title>Machine Learning: A Probabilistic Perspective</title><link>https://deepskandpal.github.io/bookshelf/machine-learning-prob-approach/</link><pubDate>Thu, 29 May 2025 21:45:19 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/machine-learning-prob-approach/</guid><description>&lt;p&gt;To be Read&lt;/p&gt;</description></item><item><title>Linear Algebra</title><link>https://deepskandpal.github.io/bookshelf/linear-algebra-hefferon/</link><pubDate>Mon, 27 Jan 2025 00:15:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/linear-algebra-hefferon/</guid><description>&lt;h1 id="the-essential-foundation-for-data-science-and-ai"&gt;The Essential Foundation for Data Science and AI&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;A comprehensive, freely available linear algebra textbook that provides the mathematical foundation for machine learning, computer graphics, data science, and modern AI systems.&lt;/strong&gt; Winner of the MAA Solow Award in 2020, this text has been adopted by hundreds of institutions worldwide.&lt;/p&gt;
+&lt;h2 id="why-this-book-is-essential-for-modern-tech"&gt;Why This Book is Essential for Modern Tech&lt;/h2&gt;
+&lt;p&gt;Linear algebra is the mathematical language of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Machine Learning&lt;/strong&gt;: Understanding how neural networks, PCA, and optimization algorithms work&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Computer Graphics&lt;/strong&gt;: Transformations, rotations, and 3D rendering&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data Science&lt;/strong&gt;: Dimensionality reduction, feature engineering, and statistical modeling&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Quantum Computing&lt;/strong&gt;: State vectors and quantum operations&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Signal Processing&lt;/strong&gt;: Fourier transforms and digital signal analysis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="connection-to-your-technical-knowledge-tree"&gt;Connection to Your Technical Knowledge Tree&lt;/h2&gt;
+&lt;p&gt;This book provides the mathematical foundation that makes advanced topics accessible:&lt;/p&gt;</description></item><item><title>Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition</title><link>https://deepskandpal.github.io/bookshelf/speech-language-processing-jurafsky-martin/</link><pubDate>Sun, 26 Jan 2025 18:30:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/speech-language-processing-jurafsky-martin/</guid><description>&lt;h1 id="the-definitive-guide-to-natural-language-processing"&gt;The Definitive Guide to Natural Language Processing&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;The authoritative textbook on NLP that provides the linguistic and computational foundation for understanding large language models and transformer architectures.&lt;/strong&gt; This book bridges the gap between traditional computational linguistics and modern neural language models.&lt;/p&gt;
+&lt;h2 id="why-this-book-is-essential-for-understanding-llms"&gt;Why This Book is Essential for Understanding LLMs&lt;/h2&gt;
+&lt;p&gt;Large Language Models are fundamentally natural language processing systems. This book provides the essential background:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Tokenization and Text Processing&lt;/strong&gt;: How text is converted into tokens that transformers can process&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Language Modeling&lt;/strong&gt;: Mathematical foundation for next-token prediction and perplexity&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Parsing and Syntax&lt;/strong&gt;: Understanding how language structure relates to transformer attention patterns&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Semantics and Pragmatics&lt;/strong&gt;: How meaning emerges from statistical patterns in text&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Evaluation in NLP&lt;/strong&gt;: Metrics and methods for evaluating language generation systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="connection-to-your-genai-knowledge-tree"&gt;Connection to Your GenAI Knowledge Tree&lt;/h2&gt;
+&lt;p&gt;Critical NLP concepts that directly apply to your GenAI materials:&lt;/p&gt;</description></item><item><title>Information Theory, Inference, and Learning Algorithms</title><link>https://deepskandpal.github.io/bookshelf/information-theory-mackay/</link><pubDate>Sun, 26 Jan 2025 18:20:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/information-theory-mackay/</guid><description>&lt;h1 id="the-information-theoretic-foundation-of-ai"&gt;The Information-Theoretic Foundation of AI&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;The definitive text connecting information theory, statistical inference, and machine learning.&lt;/strong&gt; This book provides the theoretical framework for understanding compression, generalization, and the fundamental limits of learning in AI systems.&lt;/p&gt;
+&lt;h2 id="why-this-book-is-essential-for-genai"&gt;Why This Book is Essential for GenAI&lt;/h2&gt;
+&lt;p&gt;Information theory underlies many fundamental concepts in your GenAI knowledge tree:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Entropy and Compression&lt;/strong&gt;: Foundation for understanding tokenization and data efficiency&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mutual Information&lt;/strong&gt;: Mathematical basis for attention mechanisms and representation learning&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;KL Divergence&lt;/strong&gt;: Core metric used in VAEs, diffusion models, and alignment techniques&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Channel Capacity&lt;/strong&gt;: Understanding the fundamental limits of information transfer&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Coding Theory&lt;/strong&gt;: Mathematical foundation for efficient model compression&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="connection-to-genai-systems"&gt;Connection to GenAI Systems&lt;/h2&gt;
+&lt;p&gt;Critical information-theoretic concepts that appear throughout your materials:&lt;/p&gt;</description></item><item><title>Convex Optimization</title><link>https://deepskandpal.github.io/bookshelf/convex-optimization-boyd/</link><pubDate>Sun, 26 Jan 2025 18:10:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/convex-optimization-boyd/</guid><description>&lt;h1 id="the-mathematical-foundation-of-ai-training"&gt;The Mathematical Foundation of AI Training&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;The definitive text on optimization theory that underlies all modern AI training algorithms.&lt;/strong&gt; This book provides the mathematical rigor needed to understand why gradient descent, Adam, and other optimization techniques work in large-scale AI systems.&lt;/p&gt;
+&lt;h2 id="why-this-book-is-essential-for-genai-training"&gt;Why This Book is Essential for GenAI Training&lt;/h2&gt;
+&lt;p&gt;Every aspect of training large language models and generative AI systems relies on optimization principles covered in this text:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Gradient Descent Theory&lt;/strong&gt;: Mathematical foundations of backpropagation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Convex Analysis&lt;/strong&gt;: Understanding loss landscapes and convergence guarantees&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Duality Theory&lt;/strong&gt;: Theoretical underpinnings of many ML algorithms&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Constrained Optimization&lt;/strong&gt;: Foundation for techniques like RLHF and constitutional AI&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Algorithms and Convergence&lt;/strong&gt;: Why modern optimizers like Adam and AdamW work&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="connection-to-genai-training-systems"&gt;Connection to GenAI Training Systems&lt;/h2&gt;
+&lt;p&gt;Critical concepts from your GenAI training materials trace directly to this book:&lt;/p&gt;</description></item><item><title>Pattern Recognition and Machine Learning</title><link>https://deepskandpal.github.io/bookshelf/pattern-recognition-ml-bishop/</link><pubDate>Sun, 26 Jan 2025 18:05:00 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/pattern-recognition-ml-bishop/</guid><description>&lt;h1 id="the-bayesian-foundation-of-modern-ai"&gt;The Bayesian Foundation of Modern AI&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;The definitive guide to probabilistic approaches in machine learning.&lt;/strong&gt; This book provides the mathematical rigor and Bayesian thinking that underlies much of modern AI safety, alignment, and uncertainty quantification in GenAI systems.&lt;/p&gt;
+&lt;h2 id="why-this-book-is-critical-for-genai"&gt;Why This Book is Critical for GenAI&lt;/h2&gt;
+&lt;p&gt;Bishop&amp;rsquo;s text covers fundamental probabilistic concepts that are essential for understanding advanced GenAI topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Bayesian Inference&lt;/strong&gt;: Foundation for uncertainty quantification in AI systems&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Probabilistic Graphical Models&lt;/strong&gt;: Understanding relationships in complex AI systems&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Variational Methods&lt;/strong&gt;: Mathematical foundation for VAEs and variational training&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Monte Carlo Methods&lt;/strong&gt;: Sampling techniques used in modern training algorithms&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Model Selection&lt;/strong&gt;: Principled approaches to choosing between different architectures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="connection-to-genai-systems"&gt;Connection to GenAI Systems&lt;/h2&gt;
+&lt;p&gt;Key concepts from this book appear throughout your GenAI knowledge tree:&lt;/p&gt;</description></item><item><title>Game Theory: A Multi-Leveled Approach (Springer Texts in Business and Economics)</title><link>https://deepskandpal.github.io/bookshelf/game-theory-peters/</link><pubDate>Tue, 30 Jul 2024 12:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/bookshelf/game-theory-peters/</guid><description>&lt;p&gt;This textbook presents the basics of game theory both on an undergraduate level and on a more advanced mathematical level. It is the second, revised version of the successful 2008 edition. The book covers most topics of interest in game theory, including cooperative game theory. Part I presents introductions to all these topics on a basic yet formally precise level. It includes chapters on repeated games, social choice theory, and selected topics such as bargaining theory, exchange economies, and matching. Part II goes deeper into noncooperative theory and treats the theory of zerosum games, refinements of Nash equilibrium in strategic as well as extensive form games, and evolutionary games. Part III covers basic concepts in the theory of transferable utility games, such as core and balancedness, Shapley value and variations, and nucleolus. Some mathematical tools on duality and convexity are collected in Part IV. Every chapter in the book contains a problem section. Hints, answers and solutions are included.&lt;/p&gt;</description></item></channel></rss>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DSA on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/dsa/</link><description>Recent content in DSA on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 01 Oct 2024 10:00:00 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/dsa/index.xml" rel="self" type="application/rss+xml"/><item><title>DSA Study Log &amp; Progress Tracker</title><link>https://deepskandpal.github.io/dsa-log/dsa-study-log/</link><pubDate>Tue, 01 Oct 2024 10:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/dsa-log/dsa-study-log/</guid><description>&lt;h1 id="dsa-study-log--progress-tracker">DSA Study Log &amp;amp; Progress Tracker&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DSA on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/dsa/</link><description>Recent content in DSA on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 01 Oct 2024 10:00:00 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/dsa/index.xml" rel="self" type="application/rss+xml"/><item><title>DSA Study Log &amp; Progress Tracker</title><link>https://deepskandpal.github.io/dsa-log/dsa-study-log/</link><pubDate>Tue, 01 Oct 2024 10:00:00 +0530</pubDate><guid>https://deepskandpal.github.io/dsa-log/dsa-study-log/</guid><description>&lt;h1 id="dsa-study-log--progress-tracker"&gt;DSA Study Log &amp;amp; Progress Tracker&lt;/h1&gt;
 
 
 
@@ -6,33 +6,33 @@
 
 
 
-&lt;div class="progress-chart">
-&lt;center>
-&lt;h3>Overall Progress&lt;/h3>
+&lt;div class="progress-chart"&gt;
+&lt;center&gt;
+&lt;h3&gt;Overall Progress&lt;/h3&gt;
 Completed: 3 | Learning: 0 | To Do: 57
-&lt;/center>
+&lt;/center&gt;
 
-&lt;pre>&lt;code class="language-mermaid">%%{init: {'pie': {'textPosition': 0.75}, 'themeVariables': {'pieOuterStrokeWidth': '2px'}}}%%
+&lt;pre&gt;&lt;code class="language-mermaid"&gt;%%{init: {'pie': {'textPosition': 0.75}, 'themeVariables': {'pieOuterStrokeWidth': '2px'}}}%%
 pie showData
  title Overall GenAI Study Progress
  "⚪️ To Do" : 57
  
  "✅ Completed" : 3
-&lt;/code>&lt;/pre>
-&lt;/div>
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
  
-&lt;p>This document serves as a centralized dashboard to track my learning progress through the DSA master list. The goal is to master these high-ROI problems and patterns.&lt;/p>
-&lt;p>&lt;strong>Status Legend:&lt;/strong>&lt;/p></description></item><item><title>Recursion and Backtracking</title><link>https://deepskandpal.github.io/dsa-concepts/recursion-and-backtracking/</link><pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/recursion-and-backtracking/</guid><description>&lt;h1 id="recursion-and-backtracking">Recursion and Backtracking&lt;/h1>
-&lt;p>This document covers the fundamental concepts of recursion and backtracking in the context of Data Structures and Algorithms (DSA).&lt;/p>
-&lt;h2 id="recursion">Recursion&lt;/h2>
-&lt;p>Recursion is a method of solving a computational problem where the solution depends on solutions to smaller instances of the same problem.&lt;/p>
-&lt;h3 id="key-concepts">Key Concepts&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Base Case:&lt;/strong> The condition under which the recursion stops.&lt;/li>
-&lt;li>&lt;strong>Recursive Step:&lt;/strong> The part of the function that calls itself.&lt;/li>
-&lt;/ul>
-&lt;h3 id="example-factorial">Example: Factorial&lt;/h3>
-&lt;pre tabindex="0">&lt;code>function factorial(n) {
+&lt;p&gt;This document serves as a centralized dashboard to track my learning progress through the DSA master list. The goal is to master these high-ROI problems and patterns.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Status Legend:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Recursion and Backtracking</title><link>https://deepskandpal.github.io/dsa-concepts/recursion-and-backtracking/</link><pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/recursion-and-backtracking/</guid><description>&lt;h1 id="recursion-and-backtracking"&gt;Recursion and Backtracking&lt;/h1&gt;
+&lt;p&gt;This document covers the fundamental concepts of recursion and backtracking in the context of Data Structures and Algorithms (DSA).&lt;/p&gt;
+&lt;h2 id="recursion"&gt;Recursion&lt;/h2&gt;
+&lt;p&gt;Recursion is a method of solving a computational problem where the solution depends on solutions to smaller instances of the same problem.&lt;/p&gt;
+&lt;h3 id="key-concepts"&gt;Key Concepts&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Base Case:&lt;/strong&gt; The condition under which the recursion stops.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Recursive Step:&lt;/strong&gt; The part of the function that calls itself.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="example-factorial"&gt;Example: Factorial&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;function factorial(n) {
  // Base case
  if (n === 0) {
  return 1;
@@ -40,5 +40,5 @@ pie showData
  // Recursive step
  return n * factorial(n - 1);
 }
-&lt;/code>&lt;/pre>&lt;h2 id="backtracking">Backtracking&lt;/h2>
-&lt;p>Backtracking is a general algorithmic technique that considers searching every possible combination in order to solve a computational problem. It is a refined brute force approach that incrementally builds candidates to the solutions, and abandons a candidate (&amp;ldquo;backtracks&amp;rdquo;) as soon as it determines that the candidate cannot possibly be completed to a valid solution.&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="backtracking"&gt;Backtracking&lt;/h2&gt;
+&lt;p&gt;Backtracking is a general algorithmic technique that considers searching every possible combination in order to solve a computational problem. It is a refined brute force approach that incrementally builds candidates to the solutions, and abandons a candidate (&amp;ldquo;backtracks&amp;rdquo;) as soon as it determines that the candidate cannot possibly be completed to a valid solution.&lt;/p&gt;</description></item></channel></rss>

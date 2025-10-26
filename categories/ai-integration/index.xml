@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI Integration on 404EngineerNotFound</title><link>https://deepskandpal.github.io/categories/ai-integration/</link><description>Recent content in AI Integration on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 15 Dec 2024 10:30:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/categories/ai-integration/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenPage - AI-Enhanced Writing App for macOS</title><link>https://deepskandpal.github.io/creations/openpage/</link><pubDate>Sun, 15 Dec 2024 10:30:00 +0000</pubDate><guid>https://deepskandpal.github.io/creations/openpage/</guid><description>&lt;h2 id="openpage-ia-writer--ai-for-macos">OpenPage: iA Writer + AI for macOS&lt;/h2>
-&lt;p>&lt;strong>A distraction-free, AI-enhanced writing environment that combines iA Writer&amp;rsquo;s legendary simplicity with intelligent writing assistance.&lt;/strong>&lt;/p>
-&lt;h3 id="-what-is-openpage">🎯 What is OpenPage?&lt;/h3>
-&lt;p>OpenPage is a native macOS writing application that seamlessly integrates AI capabilities while maintaining the elegant simplicity that Mac users expect. It demonstrates advanced Swift development skills, multi-provider AI integration, and deep understanding of macOS design principles.&lt;/p>
-&lt;h3 id="-key-features">🚀 Key Features&lt;/h3>
-&lt;p>&lt;strong>Native macOS Integration&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>SwiftUI + AppKit hybrid for optimal text editing performance&lt;/li>
-&lt;li>macOS Keychain integration for secure API key storage&lt;/li>
-&lt;li>Full sandboxed architecture with HIG compliance&lt;/li>
-&lt;li>Privacy-first design with local processing when possible&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Multi-Provider AI Support&lt;/strong>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI Integration on 404EngineerNotFound</title><link>https://deepskandpal.github.io/categories/ai-integration/</link><description>Recent content in AI Integration on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 15 Dec 2024 10:30:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/categories/ai-integration/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenPage - AI-Enhanced Writing App for macOS</title><link>https://deepskandpal.github.io/creations/openpage/</link><pubDate>Sun, 15 Dec 2024 10:30:00 +0000</pubDate><guid>https://deepskandpal.github.io/creations/openpage/</guid><description>&lt;h2 id="openpage-ia-writer--ai-for-macos"&gt;OpenPage: iA Writer + AI for macOS&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;A distraction-free, AI-enhanced writing environment that combines iA Writer&amp;rsquo;s legendary simplicity with intelligent writing assistance.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id="-what-is-openpage"&gt;🎯 What is OpenPage?&lt;/h3&gt;
+&lt;p&gt;OpenPage is a native macOS writing application that seamlessly integrates AI capabilities while maintaining the elegant simplicity that Mac users expect. It demonstrates advanced Swift development skills, multi-provider AI integration, and deep understanding of macOS design principles.&lt;/p&gt;
+&lt;h3 id="-key-features"&gt;🚀 Key Features&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Native macOS Integration&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SwiftUI + AppKit hybrid for optimal text editing performance&lt;/li&gt;
+&lt;li&gt;macOS Keychain integration for secure API key storage&lt;/li&gt;
+&lt;li&gt;Full sandboxed architecture with HIG compliance&lt;/li&gt;
+&lt;li&gt;Privacy-first design with local processing when possible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Multi-Provider AI Support&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

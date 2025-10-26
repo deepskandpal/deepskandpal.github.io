@@ -1,0 +1,63 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>404EngineerNotFound</title><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin=anonymous referrerpolicy=no-referrer><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.31/dist/flexsearch.bundle.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js></script></head><body>\<header><nav><div class=logo><a href=/>404EngineerNotFound</a></div><ul class=main-nav><li class="nav-item has-dropdown"><a href=#>Writings <i class="fas fa-caret-down fa-xs"></i></a><ul class=dropdown-menu><li class=dropdown-item><a href=/stories/>Stories</a></li><li class=dropdown-item><a href=/thoughts/>Thoughts</a></li><li class=dropdown-item><a href=/fitness-log/>Fitness Log</a></li></ul></li><li class="nav-item has-dropdown"><a href=#>Tech Lab <i class="fas fa-caret-down fa-xs"></i></a><ul class=dropdown-menu><li class=dropdown-item><a href=/papershelf/>Papershelf</a></li><li class=dropdown-item><a href=/creations/>Creations</a></li><li class=dropdown-item><a href=/dsa-log/>DSA Log</a></li><li class=dropdown-item><a href=/tech-writings/>Technical Writings</a></li></ul></li><li class=nav-item><a href=/bookshelf/>Bookshelf</a></li><li class=nav-item><a href=/about/>About</a></li></ul><div class=search-container><input type=search id=search-input placeholder=Search...>
+<i class="fa fa-search"></i></div></nav><div id=search-results-container><ul id=search-results></ul></div></header><main><div class=single-content-wrapper><aside class=article-sidebar><nav><h4>On this page</h4><nav id=TableOfContents><ul><li><a href=#part-1>Part 1</a></li><li><a href=#part-2>Part 2</a></li></ul></nav></nav></aside><article class=dsa-single><h1></h1><div class=dsa-meta><p><strong>Difficulty:</strong> <span class=difficulty->N/A</span> |
+<strong>Solved:</strong> January 1, 0001</p></div><div class=dsa-content><p>[[Linked List Stacks and Queues a Primer]]</p><h1 id=problem>Problem</h1><p>You are given the head of a singly linked list. It might be a normal list that ends in None, or it might contain a <strong>cycle</strong>, where some node&rsquo;s next pointer points back to a previous node in the list.</p><p><strong>Your task:</strong> Write a function has_cycle(head) that returns the node where the cycle begins. If there is no cycle, it should return None.</p><h1 id=brainstorming>Brainstorming</h1><p>So the idea is a very old mathematical algorithm called  Floyd&rsquo;s Tortoise and Hare algorithm. This algorithm uses 2 pointers fast and slow</p><p>The intuition is if we have a circular track and a 2 runners lets call them fast and slow, they start running from a starting place. The fact of the matter is the fast runner will eventually lap the slow runner.</p><p>This idea then gets expanded. Consider that there is a straight line that eventually leads to a circular track, here again the fast runner will enter the circle first. And then eventually lap the slow runner when he finally enters later the circular track.</p><p>This algorithm works in 2 parts</p><h2 id=part-1>Part 1</h2><ol><li>initialise 2 pointers slow and fast at the head</li><li>advance the slow pointer by 1 slow.next</li><li>advance the fast pointer by 2 fast.next.next</li><li>If fast.next.next hits <code>None</code> it means we there was no cycle we can return <code>None</code></li><li>If at any point the slow and fast are pointer to the same node then we detect a cycle</li></ol><p>Then we move to part 2</p><h2 id=part-2>Part 2</h2><ol><li>Leave the fast pointer there</li><li>Reset the slow pointer to None</li><li>Now advance both of them together , <code>slow = slow.next</code> <code>fast = fast.next</code></li><li>The node where they meet for the second time is where the cycle starts</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>ListNode</span>:
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>__init__</span>(self, data<span style=color:#f92672>=</span><span style=color:#66d9ef>None</span>, next_node<span style=color:#f92672>=</span><span style=color:#66d9ef>None</span>):
+</span></span><span style=display:flex><span>		self<span style=color:#f92672>.</span>data <span style=color:#f92672>=</span> data
+</span></span><span style=display:flex><span>		self<span style=color:#f92672>.</span>next <span style=color:#f92672>=</span> next_node
+</span></span><span style=display:flex><span>		
+</span></span><span style=display:flex><span><span style=color:#75715e># --- Setup for a CYCLICAL list ---</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Create the nodes</span>
+</span></span><span style=display:flex><span>node1_cycle <span style=color:#f92672>=</span> ListNode(<span style=color:#ae81ff>1</span>)
+</span></span><span style=display:flex><span>node2_cycle <span style=color:#f92672>=</span> ListNode(<span style=color:#ae81ff>2</span>)
+</span></span><span style=display:flex><span>node3_cycle <span style=color:#f92672>=</span> ListNode(<span style=color:#ae81ff>3</span>)
+</span></span><span style=display:flex><span>node4_cycle <span style=color:#f92672>=</span> ListNode(<span style=color:#ae81ff>4</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Link them together</span>
+</span></span><span style=display:flex><span>node1_cycle<span style=color:#f92672>.</span>next <span style=color:#f92672>=</span> node2_cycle
+</span></span><span style=display:flex><span>node2_cycle<span style=color:#f92672>.</span>next <span style=color:#f92672>=</span> node3_cycle
+</span></span><span style=display:flex><span>node3_cycle<span style=color:#f92672>.</span>next <span style=color:#f92672>=</span> node4_cycle
+</span></span><span style=display:flex><span>node4_cycle<span style=color:#f92672>.</span>next <span style=color:#f92672>=</span> node2_cycle  <span style=color:#75715e># &lt;-- THIS CREATES THE CYCLE!</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># The head is our entry point</span>
+</span></span><span style=display:flex><span>head_with_cycle <span style=color:#f92672>=</span> node1_cycle
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># For this list, your function should return node2_cycle.</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># now the helper function</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>has_cycle</span>(head:ListNode):
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>if</span> head <span style=color:#f92672>is</span> <span style=color:#66d9ef>None</span> <span style=color:#f92672>or</span> head<span style=color:#f92672>.</span>next <span style=color:#f92672>is</span> <span style=color:#66d9ef>None</span>:
+</span></span><span style=display:flex><span>		<span style=color:#66d9ef>return</span> <span style=color:#66d9ef>None</span>
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	slow <span style=color:#f92672>=</span> head
+</span></span><span style=display:flex><span>	fast <span style=color:#f92672>=</span> head
+</span></span><span style=display:flex><span>	has_cycle <span style=color:#f92672>=</span> <span style=color:#66d9ef>False</span>
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>while</span> fast <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> <span style=color:#66d9ef>None</span> <span style=color:#f92672>and</span> fast<span style=color:#f92672>.</span>next <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> <span style=color:#66d9ef>None</span>:
+</span></span><span style=display:flex><span>		slow <span style=color:#f92672>=</span> slow<span style=color:#f92672>.</span>next
+</span></span><span style=display:flex><span>		fast <span style=color:#f92672>=</span> fast<span style=color:#f92672>.</span>next<span style=color:#f92672>.</span>next
+</span></span><span style=display:flex><span>		<span style=color:#66d9ef>if</span> slow <span style=color:#f92672>is</span> fast:
+</span></span><span style=display:flex><span>			has_cycle <span style=color:#f92672>=</span> <span style=color:#66d9ef>True</span>
+</span></span><span style=display:flex><span>			<span style=color:#66d9ef>break</span>
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> has_cycle:
+</span></span><span style=display:flex><span>		<span style=color:#66d9ef>return</span> <span style=color:#66d9ef>None</span>
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	<span style=color:#75715e># Part 2: Find Cycle Start # </span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e># `fast` is at the meeting point. Reset `slow` to the head.</span>
+</span></span><span style=display:flex><span>	slow <span style=color:#f92672>=</span> head
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	<span style=color:#75715e># Move both pointers one step at a time until they meet again.</span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>while</span> slow <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> fast:
+</span></span><span style=display:flex><span>		slow <span style=color:#f92672>=</span> slow<span style=color:#f92672>.</span>next
+</span></span><span style=display:flex><span>		fast <span style=color:#f92672>=</span> fast<span style=color:#f92672>.</span>next
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	<span style=color:#75715e># The second meeting point IS the start of the cycle.</span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>return</span> slow 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	
+</span></span></code></pre></div></div></article></div></main><footer><p>&copy; 2025 Deepanshu Kandpal</p></footer><a id=scrollTopBtn title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
+<script src=/js/search.js></script><script>var mybutton=document.getElementById("scrollTopBtn");window.onscroll=function(){scrollFunction()};function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?mybutton.classList.add("show"):mybutton.classList.remove("show")}mybutton.onclick=function(){document.body.scrollTop=0,document.documentElement.scrollTop=0}</script><script>document.addEventListener("DOMContentLoaded",function(){const e=document.querySelectorAll("code.language-mermaid");e.forEach(function(e,t){const n=document.createElement("div");n.className="mermaid",n.textContent=e.textContent,n.id="mermaid-"+t,e.parentNode.parentNode.replaceChild(n,e.parentNode)}),mermaid.initialize({startOnLoad:!0,theme:"default",themeVariables:{primaryColor:"#4a90e2",primaryTextColor:"#333",primaryBorderColor:"#4a90e2",lineColor:"#333"}}),mermaid.init()})</script></body></html>

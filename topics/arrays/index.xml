@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arrays on 404EngineerNotFound</title><link>https://deepskandpal.github.io/topics/arrays/</link><description>Recent content in Arrays on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 11 Jun 2025 20:16:53 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/topics/arrays/index.xml" rel="self" type="application/rss+xml"/><item><title>Arbitrary_sum</title><link>https://deepskandpal.github.io/dsa-log/arbitrary_sum/</link><pubDate>Wed, 11 Jun 2025 20:16:53 +0530</pubDate><guid>https://deepskandpal.github.io/dsa-log/arbitrary_sum/</guid><description>&lt;h2 id="problem-description-optional-summary">Problem Description (Optional Summary)&lt;/h2>
-&lt;p>The Problem: Write a function that takes such an array A representing integer D and updates it in-place to represent D + 1. Handle potential carries, including the case where the number of digits increases (like 99 + 1 = 100).&lt;/p>
-&lt;h2 id="solution-approach">Solution Approach&lt;/h2>
-&lt;p>Brute-Force (and why it’s often not allowed/intended):&lt;/p>
-&lt;p>Convert the array [1, 2, 9] into the integer 129.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arrays on 404EngineerNotFound</title><link>https://deepskandpal.github.io/topics/arrays/</link><description>Recent content in Arrays on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 11 Jun 2025 20:16:53 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/topics/arrays/index.xml" rel="self" type="application/rss+xml"/><item><title>Arbitrary_sum</title><link>https://deepskandpal.github.io/dsa-log/arbitrary_sum/</link><pubDate>Wed, 11 Jun 2025 20:16:53 +0530</pubDate><guid>https://deepskandpal.github.io/dsa-log/arbitrary_sum/</guid><description>&lt;h2 id="problem-description-optional-summary"&gt;Problem Description (Optional Summary)&lt;/h2&gt;
+&lt;p&gt;The Problem: Write a function that takes such an array A representing integer D and updates it in-place to represent D + 1. Handle potential carries, including the case where the number of digits increases (like 99 + 1 = 100).&lt;/p&gt;
+&lt;h2 id="solution-approach"&gt;Solution Approach&lt;/h2&gt;
+&lt;p&gt;Brute-Force (and why it’s often not allowed/intended):&lt;/p&gt;
+&lt;p&gt;Convert the array [1, 2, 9] into the integer 129.
 Add 1: 129 + 1 = 130.
 Convert 130 back into an array [1, 3, 0].
-Limitation: This fails if the integer D is larger than the maximum value the language’s built-in integer type can hold (this isn’t an issue for Python’s runtime integers, but the problem setup often simulates fixed-precision constraints or asks you to avoid this conversion). It also doesn’t modify the array in-place directly.&lt;/p></description></item><item><title>Dutch National Flag</title><link>https://deepskandpal.github.io/dsa-log/dutch-national-flag/</link><pubDate>Wed, 14 May 2025 20:04:51 +0530</pubDate><guid>https://deepskandpal.github.io/dsa-log/dutch-national-flag/</guid><description>&lt;h2 id="problem-description">Problem Description&lt;/h2>
-&lt;p>Given an array A and an index pivot_idx, rearrange A such that all elements less than &lt;code>A[pivot_idx]&lt;/code> (the pivot value) come first, followed by all elements equal to the pivot, and finally all elements greater than the pivot. This must be done in-place.&lt;/p>
-&lt;h2 id="solution-approach">Solution Approach&lt;/h2>
-&lt;pre tabindex="0">&lt;code>Let 
+Limitation: This fails if the integer D is larger than the maximum value the language’s built-in integer type can hold (this isn’t an issue for Python’s runtime integers, but the problem setup often simulates fixed-precision constraints or asks you to avoid this conversion). It also doesn’t modify the array in-place directly.&lt;/p&gt;</description></item><item><title>Dutch National Flag</title><link>https://deepskandpal.github.io/dsa-log/dutch-national-flag/</link><pubDate>Wed, 14 May 2025 20:04:51 +0530</pubDate><guid>https://deepskandpal.github.io/dsa-log/dutch-national-flag/</guid><description>&lt;h2 id="problem-description"&gt;Problem Description&lt;/h2&gt;
+&lt;p&gt;Given an array A and an index pivot_idx, rearrange A such that all elements less than &lt;code&gt;A[pivot_idx]&lt;/code&gt; (the pivot value) come first, followed by all elements equal to the pivot, and finally all elements greater than the pivot. This must be done in-place.&lt;/p&gt;
+&lt;h2 id="solution-approach"&gt;Solution Approach&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Let 
 A = [0, 1, 2, 0, 2, 1, 1]
 pivot_idx = 1
 pivot_value = A[pivot_idx] = 1
@@ -54,15 +54,15 @@ while equal &amp;lt; larger:
  larger -= 1
  swap(A[equal], A[larger])
  # do not increment `equal`!
-&lt;/code>&lt;/pre>&lt;p>Step-by-Step Walkthrough&lt;/p></description></item><item><title>Zigzag Conversion</title><link>https://deepskandpal.github.io/dsa-log/zigzag-conversion/</link><pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/zigzag-conversion/</guid><description>&lt;h2 id="problem-description">Problem Description&lt;/h2>
-&lt;p>The string &lt;code>PAYPALISHIRING&lt;/code> is written in a zigzag pattern on a given number of rows like this:&lt;/p>
-&lt;pre tabindex="0">&lt;code>P A H N
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Step-by-Step Walkthrough&lt;/p&gt;</description></item><item><title>Zigzag Conversion</title><link>https://deepskandpal.github.io/dsa-log/zigzag-conversion/</link><pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/zigzag-conversion/</guid><description>&lt;h2 id="problem-description"&gt;Problem Description&lt;/h2&gt;
+&lt;p&gt;The string &lt;code&gt;PAYPALISHIRING&lt;/code&gt; is written in a zigzag pattern on a given number of rows like this:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;P A H N
 A P L S I I G
 Y I R
-&lt;/code>&lt;/pre>&lt;p>And then read line by line: &lt;code>&amp;quot;PAHNAPLSIIGYIR&amp;quot;&lt;/code>.&lt;/p>
-&lt;p>Write the code that will take a string and make this conversion given a number of rows.&lt;/p>
-&lt;h2 id="solution-approach">Solution Approach&lt;/h2>
-&lt;p>The problem asks us to reconstruct a string that is formed by reading a zigzag pattern row by row. We can solve this by simulating the placement of each character into its corresponding row.&lt;/p></description></item><item><title>Two Sum</title><link>https://deepskandpal.github.io/dsa-log/two-sum/</link><pubDate>Wed, 01 May 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/two-sum/</guid><description>&lt;h2 id="problem-description-optional-summary">Problem Description (Optional Summary)&lt;/h2>
-&lt;p>Given an array of integers &lt;code>nums&lt;/code> and an integer &lt;code>target&lt;/code>, return indices of the two numbers such that they add up to &lt;code>target&lt;/code>.&lt;/p>
-&lt;h2 id="solution-approach">Solution Approach&lt;/h2>
-&lt;p>Use a hash map (dictionary in Python) to store numbers encountered so far and their indices. For each number, check if &lt;code>target - current_number&lt;/code> exists in the hash map. If it does, we found the pair. Otherwise, add the current number and its index to the map.&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And then read line by line: &lt;code&gt;&amp;quot;PAHNAPLSIIGYIR&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Write the code that will take a string and make this conversion given a number of rows.&lt;/p&gt;
+&lt;h2 id="solution-approach"&gt;Solution Approach&lt;/h2&gt;
+&lt;p&gt;The problem asks us to reconstruct a string that is formed by reading a zigzag pattern row by row. We can solve this by simulating the placement of each character into its corresponding row.&lt;/p&gt;</description></item><item><title>Two Sum</title><link>https://deepskandpal.github.io/dsa-log/two-sum/</link><pubDate>Wed, 01 May 2024 10:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/two-sum/</guid><description>&lt;h2 id="problem-description-optional-summary"&gt;Problem Description (Optional Summary)&lt;/h2&gt;
+&lt;p&gt;Given an array of integers &lt;code&gt;nums&lt;/code&gt; and an integer &lt;code&gt;target&lt;/code&gt;, return indices of the two numbers such that they add up to &lt;code&gt;target&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="solution-approach"&gt;Solution Approach&lt;/h2&gt;
+&lt;p&gt;Use a hash map (dictionary in Python) to store numbers encountered so far and their indices. For each number, check if &lt;code&gt;target - current_number&lt;/code&gt; exists in the hash map. If it does, we found the pair. Otherwise, add the current number and its index to the map.&lt;/p&gt;</description></item></channel></rss>

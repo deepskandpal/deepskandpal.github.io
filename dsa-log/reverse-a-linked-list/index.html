@@ -1,0 +1,67 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>404EngineerNotFound</title><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin=anonymous referrerpolicy=no-referrer><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.31/dist/flexsearch.bundle.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js></script></head><body>\<header><nav><div class=logo><a href=/>404EngineerNotFound</a></div><ul class=main-nav><li class="nav-item has-dropdown"><a href=#>Writings <i class="fas fa-caret-down fa-xs"></i></a><ul class=dropdown-menu><li class=dropdown-item><a href=/stories/>Stories</a></li><li class=dropdown-item><a href=/thoughts/>Thoughts</a></li><li class=dropdown-item><a href=/fitness-log/>Fitness Log</a></li></ul></li><li class="nav-item has-dropdown"><a href=#>Tech Lab <i class="fas fa-caret-down fa-xs"></i></a><ul class=dropdown-menu><li class=dropdown-item><a href=/papershelf/>Papershelf</a></li><li class=dropdown-item><a href=/creations/>Creations</a></li><li class=dropdown-item><a href=/dsa-log/>DSA Log</a></li><li class=dropdown-item><a href=/tech-writings/>Technical Writings</a></li></ul></li><li class=nav-item><a href=/bookshelf/>Bookshelf</a></li><li class=nav-item><a href=/about/>About</a></li></ul><div class=search-container><input type=search id=search-input placeholder=Search...>
+<i class="fa fa-search"></i></div></nav><div id=search-results-container><ul id=search-results></ul></div></header><main><div class=single-content-wrapper><aside class=article-sidebar><nav><h4>On this page</h4><nav id=TableOfContents></nav></nav></aside><article class=dsa-single><h1></h1><div class=dsa-meta><p><strong>Difficulty:</strong> <span class=difficulty->N/A</span> |
+<strong>Solved:</strong> January 1, 0001</p></div><div class=dsa-content><p>[[Linked List Stacks and Queues a Primer]]</p><h1 id=problem>Problem</h1><p><strong>Problem:</strong> <strong>Reverse a Linked List</strong> (The whole thing).</p><ul><li><strong>Goal:</strong> If we have 11 -> 3 -> 5 -> None, we want to end up with 5 -> 3 -> 11 -> None.</li></ul><h1 id=brainstorming>Brainstorming</h1><p>The idea is we cannot start changing the the linked list directly otherwise we will break the continuation by losing the information</p><p>for eg in the example the current head <code>11</code> points to <code>3</code> but in the reversed form it points to <code>None</code> if we make <code>11|next-> None</code> then we will not know the address of the next pointer of 3</p><p>In order to make sure that does not happen before we proceed with the <code>reverse</code> operation we need to save the next node in a pointer
+<code>next_node = current.next</code>
+Now coming to the operation of reverse , we would need to make the current node previous the way it will happen is
+by default the <code>previous</code> is None because the new head will point to <code>None</code>
+<code>current.next</code> = <code>previous</code></p><p>now that we have reversed the node we now need to move the pointers for previous and current</p><p><code>previous = current</code>
+<code>current = next_node</code></p><p>below is the python code</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Node</span>:
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>__init__</span>(self, data<span style=color:#f92672>=</span><span style=color:#66d9ef>None</span> , next_node<span style=color:#f92672>=</span><span style=color:#66d9ef>None</span>)
+</span></span><span style=display:flex><span>		self<span style=color:#f92672>.</span>data <span style=color:#f92672>=</span> data
+</span></span><span style=display:flex><span>		self<span style=color:#f92672>.</span>next <span style=color:#f92672>=</span> next_node
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>11-&gt;3-&gt;6
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>node_11 <span style=color:#f92672>=</span> Node(<span style=color:#ae81ff>11</span>)
+</span></span><span style=display:flex><span>node_3 <span style=color:#f92672>=</span> Node(<span style=color:#ae81ff>3</span>)
+</span></span><span style=display:flex><span>node_6 <span style=color:#f92672>=</span> Node(<span style=color:#ae81ff>6</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>node_11<span style=color:#f92672>.</span>next <span style=color:#f92672>=</span> node_3
+</span></span><span style=display:flex><span>node_3<span style=color:#f92672>.</span>next <span style=color:#f92672>=</span> node_6
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>head <span style=color:#f92672>=</span> node_11
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Traversing a linked list</span>
+</span></span><span style=display:flex><span>current_node <span style=color:#f92672>=</span> head
+</span></span><span style=display:flex><span>previous <span style=color:#f92672>=</span> <span style=color:#66d9ef>None</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>while</span> current_node:
+</span></span><span style=display:flex><span>	next_node <span style=color:#f92672>=</span> current_node<span style=color:#f92672>.</span>next <span style=color:#75715e># save the next node </span>
+</span></span><span style=display:flex><span>	current_node<span style=color:#f92672>.</span>next <span style=color:#f92672>=</span> previous <span style=color:#75715e># point the current node next to previous</span>
+</span></span><span style=display:flex><span>	previous <span style=color:#f92672>=</span> current_node <span style=color:#75715e># assingn the previous node the current node </span>
+</span></span><span style=display:flex><span>	current_node <span style=color:#f92672>=</span> next_node
+</span></span></code></pre></div><h1 id=variation-reverse-a-sublist>Variation: Reverse a Sublist</h1><p><strong>Problem:</strong> Reverse a sublist from position s to f.<br>L = 11 -> 3 -> 5 -> 7 -> 2 -> None, s=2, f=4<br><strong>Goal:</strong> 11 -> 7 -> 5 -> 3 -> 2 -> None</p><p><strong>The Game Plan:</strong></p><ol><li><strong>Find the starting gate:</strong> We need to get to the node right before the reversal starts. In our example, we need a pointer to 11.</li><li><strong>Run the race:</strong> Perform the exact reversal logic you just wrote, but only for the sublist portion (3 -> 5 -> 7).</li><li><strong>Connect the finish line:</strong> After the reversal (7 -> 5 -> 3), we need to connect 11 to 7 and 3 to 2. This is the trickiest part.</li></ol><p>To make Step 1 and 3 easy, we use the <strong>Dummy Head</strong> pattern. We create a fake node that points to our real head. This way, even if we need to reverse from the very first element (s=1), our &ldquo;node before&rdquo; logic still works.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Node</span>:
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>__init__</span>(self, data<span style=color:#f92672>=</span><span style=color:#66d9ef>None</span> , next_node<span style=color:#f92672>=</span><span style=color:#66d9ef>None</span>)
+</span></span><span style=display:flex><span>		self<span style=color:#f92672>.</span>data <span style=color:#f92672>=</span> data
+</span></span><span style=display:flex><span>		self<span style=color:#f92672>.</span>next <span style=color:#f92672>=</span> next_node
+</span></span><span style=display:flex><span>		
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>reverse_sublist</span>(L, start, finish)
+</span></span><span style=display:flex><span>	dummy_node <span style=color:#f92672>=</span> Node(<span style=color:#ae81ff>0</span>, L)
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	prev_head <span style=color:#f92672>=</span> dummy_node
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	<span style=color:#75715e># iterate till the head is just before the start </span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(start <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>):
+</span></span><span style=display:flex><span>		prev_head <span style=color:#f92672>=</span> prev_head<span style=color:#f92672>.</span>next
+</span></span><span style=display:flex><span>		
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	<span style=color:#75715e># now we will apply our reverse logic from start to finish </span>
+</span></span><span style=display:flex><span>	current_node <span style=color:#f92672>=</span> prev_head<span style=color:#f92672>.</span>next
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(finish<span style=color:#f92672>-</span>start):
+</span></span><span style=display:flex><span>		next_node <span style=color:#f92672>=</span> current_node<span style=color:#f92672>.</span>next
+</span></span><span style=display:flex><span>		current_node<span style=color:#f92672>.</span>next, next_node<span style=color:#f92672>.</span>next, prev_head<span style=color:#f92672>.</span>next <span style=color:#f92672>=</span> next_node<span style=color:#f92672>.</span>next, prev_head<span style=color:#f92672>.</span>next, next_node 
+</span></span><span style=display:flex><span>		
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>11 -&gt; 3 -&gt; 5 -&gt; 7 -&gt; 2 -&gt; 
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>node_2 <span style=color:#f92672>=</span> Node(<span style=color:#ae81ff>2</span>, <span style=color:#66d9ef>None</span>)
+</span></span><span style=display:flex><span>node_7 <span style=color:#f92672>=</span> Node(<span style=color:#ae81ff>7</span>, node_2 )
+</span></span><span style=display:flex><span>node_5 <span style=color:#f92672>=</span> Node(<span style=color:#ae81ff>5</span>,node_7 )
+</span></span><span style=display:flex><span>node_3 <span style=color:#f92672>=</span> Node(<span style=color:#ae81ff>3</span>,node_5)
+</span></span><span style=display:flex><span>node_11 <span style=color:#f92672>=</span> Node(<span style=color:#ae81ff>11</span>, node_3)
+</span></span></code></pre></div></div></article></div></main><footer><p>&copy; 2025 Deepanshu Kandpal</p></footer><a id=scrollTopBtn title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
+<script src=/js/search.js></script><script>var mybutton=document.getElementById("scrollTopBtn");window.onscroll=function(){scrollFunction()};function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?mybutton.classList.add("show"):mybutton.classList.remove("show")}mybutton.onclick=function(){document.body.scrollTop=0,document.documentElement.scrollTop=0}</script><script>document.addEventListener("DOMContentLoaded",function(){const e=document.querySelectorAll("code.language-mermaid");e.forEach(function(e,t){const n=document.createElement("div");n.className="mermaid",n.textContent=e.textContent,n.id="mermaid-"+t,e.parentNode.parentNode.replaceChild(n,e.parentNode)}),mermaid.initialize({startOnLoad:!0,theme:"default",themeVariables:{primaryColor:"#4a90e2",primaryTextColor:"#333",primaryBorderColor:"#4a90e2",lineColor:"#333"}}),mermaid.init()})</script></body></html>

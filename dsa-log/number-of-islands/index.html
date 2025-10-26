@@ -1,0 +1,119 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>404EngineerNotFound</title><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin=anonymous referrerpolicy=no-referrer><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.31/dist/flexsearch.bundle.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js></script></head><body>\<header><nav><div class=logo><a href=/>404EngineerNotFound</a></div><ul class=main-nav><li class="nav-item has-dropdown"><a href=#>Writings <i class="fas fa-caret-down fa-xs"></i></a><ul class=dropdown-menu><li class=dropdown-item><a href=/stories/>Stories</a></li><li class=dropdown-item><a href=/thoughts/>Thoughts</a></li><li class=dropdown-item><a href=/fitness-log/>Fitness Log</a></li></ul></li><li class="nav-item has-dropdown"><a href=#>Tech Lab <i class="fas fa-caret-down fa-xs"></i></a><ul class=dropdown-menu><li class=dropdown-item><a href=/papershelf/>Papershelf</a></li><li class=dropdown-item><a href=/creations/>Creations</a></li><li class=dropdown-item><a href=/dsa-log/>DSA Log</a></li><li class=dropdown-item><a href=/tech-writings/>Technical Writings</a></li></ul></li><li class=nav-item><a href=/bookshelf/>Bookshelf</a></li><li class=nav-item><a href=/about/>About</a></li></ul><div class=search-container><input type=search id=search-input placeholder=Search...>
+<i class="fa fa-search"></i></div></nav><div id=search-results-container><ul id=search-results></ul></div></header><main><div class=single-content-wrapper><aside class=article-sidebar><nav><h4>On this page</h4><nav id=TableOfContents><ul><li><a href=#problem>Problem</a></li><li><a href=#brain-storming>Brain storming</a></li></ul></nav></nav></aside><article class=dsa-single><h1></h1><div class=dsa-meta><p><strong>Difficulty:</strong> <span class=difficulty->N/A</span> |
+<strong>Solved:</strong> January 1, 0001</p></div><div class=dsa-content><p>[[Graphs]]</p><h2 id=problem>Problem</h2><p>An &ldquo;island&rdquo; is defined as a group of &lsquo;1&rsquo;s that are connected either horizontally or vertically (but not diagonally). You can assume that the entire grid is surrounded by water, so you don&rsquo;t need to worry about islands extending beyond the edges of the grid.</p><p>Let me give you an example to make it concrete. If you were given this grid:</p><p>codeCode</p><pre tabindex=0><code>[
+  [&#34;1&#34;,&#34;1&#34;,&#34;0&#34;,&#34;0&#34;,&#34;0&#34;],
+  [&#34;1&#34;,&#34;1&#34;,&#34;0&#34;,&#34;0&#34;,&#34;0&#34;],
+  [&#34;0&#34;,&#34;0&#34;,&#34;1&#34;,&#34;0&#34;,&#34;0&#34;],
+  [&#34;0&#34;,&#34;0&#34;,&#34;0&#34;,&#34;1&#34;,&#34;1&#34;]
+]
+</code></pre><p>The expected output would be 3. The top-left cluster of &lsquo;1&rsquo;s forms one island, the single &lsquo;1&rsquo; in the middle is a second island, and the two &lsquo;1&rsquo;s in the bottom-right form a third.</p><h2 id=brain-storming>Brain storming</h2><p>the idea is we would need to keep a counter to know when we encounter an island , but what is an island? it is a group of land pieces</p><p>we also need to make sure that we don&rsquo;t recount the land piece that is already accounted for a an island
+for eg in the above case island 1 has 4 land pieces</p><pre tabindex=0><code>[1,1
+ 1,1]
+</code></pre><p>we also need to make sure that when we move ahead in the the counter gets incremented.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>count_islands <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> island found:
+</span></span><span style=display:flex><span>	count_islands <span style=color:#f92672>+=</span><span style=color:#ae81ff>1</span>
+</span></span></code></pre></div><p>now the thing is we need a helper function that triggers whenever we find a land piece , it checks the length and the breath of the island expanding in all the 4 directions . The way it checks is it it traverses recursively in all 4 directions from the coordinates of the 1st &lsquo;1&rsquo; and it only stops when it does not find land anymore . During this time it makes those land pieces &lsquo;invisible&rsquo; so that they are not counted again for a second island. lets call it sink_islands and it takes the row and col of the current land along with the grid for further traversal and the sinking operation</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>sink_island</span>(row, col, grid):
+</span></span><span style=display:flex><span>	<span style=color:#75715e># base case</span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>if</span> we have reached the end of row <span style=color:#f92672>or</span> colum:
+</span></span><span style=display:flex><span>	   <span style=color:#66d9ef>return</span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>if</span> grid[row][col] <span style=color:#f92672>!=</span> <span style=color:#ae81ff>1</span>:
+</span></span><span style=display:flex><span>	   <span style=color:#66d9ef>return</span>
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	<span style=color:#75715e># now for the current land piece sink it</span>
+</span></span><span style=display:flex><span>	grid[row][col] <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;#&#39;</span>
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	<span style=color:#75715e># now traverse in all 4 directions (right,left, up, down)</span>
+</span></span><span style=display:flex><span>	sink_island(row<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>, col, grid) <span style=color:#75715e># down</span>
+</span></span><span style=display:flex><span>	sink_island(row,col<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>, grid) <span style=color:#75715e># right</span>
+</span></span><span style=display:flex><span>	sink_island(row<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>, col, grid) <span style=color:#75715e>#  up</span>
+</span></span><span style=display:flex><span>	sink_island(row, col<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>, grid) <span style=color:#75715e># left</span>
+</span></span><span style=display:flex><span>	
+</span></span></code></pre></div><p>this recursive helper will make sure that we check all the four directions and count all the land for this island</p><p>now the main for loop for traversing the grid</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>number_of_islands  <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span> <span style=color:#75715e># initialize the count</span>
+</span></span><span style=display:flex><span>grid <span style=color:#f92672>=</span> [
+</span></span><span style=display:flex><span>  [<span style=color:#e6db74>&#34;1&#34;</span>,<span style=color:#e6db74>&#34;1&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>],
+</span></span><span style=display:flex><span>  [<span style=color:#e6db74>&#34;1&#34;</span>,<span style=color:#e6db74>&#34;1&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>],
+</span></span><span style=display:flex><span>  [<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;1&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>],
+</span></span><span style=display:flex><span>  [<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;1&#34;</span>,<span style=color:#e6db74>&#34;1&#34;</span>]
+</span></span><span style=display:flex><span>]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>n_rows <span style=color:#f92672>=</span> len(grid) <span style=color:#75715e># 4</span>
+</span></span><span style=display:flex><span>n_col <span style=color:#f92672>=</span> len(grid[<span style=color:#ae81ff>0</span>]) <span style=color:#75715e># 5</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># some edge cases</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># if the grid is empty or singular</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> n_rows <span style=color:#f92672>&lt;</span><span style=color:#ae81ff>1</span> <span style=color:#f92672>and</span> n_col <span style=color:#f92672>&lt;</span><span style=color:#ae81ff>1</span>:
+</span></span><span style=display:flex><span>   <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>   
+</span></span><span style=display:flex><span>   
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>sink_islands</span>(row, col, grid):
+</span></span><span style=display:flex><span>	<span style=color:#75715e># base case for boundary condition</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> row <span style=color:#f92672>&gt;</span> n_rows <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span> <span style=color:#f92672>or</span> col <span style=color:#f92672>&gt;</span> n_col <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>or</span>  row <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>or</span> col <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>0</span>  :
+</span></span><span style=display:flex><span>	    <span style=color:#66d9ef>return</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> grid[row][col] <span style=color:#f92672>!=</span> <span style=color:#ae81ff>1</span>:
+</span></span><span style=display:flex><span>	    <span style=color:#66d9ef>return</span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e># now for the current land piece sink it</span>
+</span></span><span style=display:flex><span>	grid[row][col] <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;#&#39;</span>
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	<span style=color:#75715e># now traverse in all 4 directions (right,left, up, down)</span>
+</span></span><span style=display:flex><span>	sink_island(row<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>, col, grid) <span style=color:#75715e># down</span>
+</span></span><span style=display:flex><span>	sink_island(row,col<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>, grid) <span style=color:#75715e># right</span>
+</span></span><span style=display:flex><span>	sink_island(row<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>, col, grid) <span style=color:#75715e>#  up</span>
+</span></span><span style=display:flex><span>	sink_island(row, col<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>, grid) <span style=color:#75715e># left</span>
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(n_col):
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(n_rows):
+</span></span><span style=display:flex><span>		<span style=color:#66d9ef>if</span> grid[j][i] <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;1&#34;</span>:
+</span></span><span style=display:flex><span>			number_of_islands <span style=color:#f92672>+=</span><span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>			sink_islands(j,i,grid)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>print(number_of_islands)
+</span></span></code></pre></div><p>the above code has one short coming
+in the recursive helper</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>sink_islands</span>(row, col, grid) 
+</span></span></code></pre></div><p>the boundary base case that checks the row and col took into account the top left or bottom right cases correctly where the rows and columns are 0 because of which it can&rsquo;t go more left or more down to fix this we can update the conditions as</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (row <span style=color:#f92672>==</span> n_rows <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span> <span style=color:#f92672>or</span> col <span style=color:#f92672>==</span> n_col <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>or</span>  row <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>or</span> col <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>0</span> ) :
+</span></span></code></pre></div><p>the other edge case still needs an update for eg the above check <code>row== n_rows-1</code> actually skips valid checks</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>if</span> row <span style=color:#f92672>&gt;</span> n_rows <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span> <span style=color:#f92672>or</span> col <span style=color:#f92672>&gt;</span> n_col <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>or</span>  row <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>or</span> col <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>0</span>  :
+</span></span></code></pre></div><p>final function</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>sink_islands</span>(row, col, grid):
+</span></span><span style=display:flex><span>	<span style=color:#75715e># base case for boundary condition</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> row <span style=color:#f92672>&gt;</span> len(grid) <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span> <span style=color:#f92672>or</span> col <span style=color:#f92672>&gt;</span> len(grid[<span style=color:#ae81ff>0</span>]) <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>or</span>  row <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>or</span> col <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>0</span> :
+</span></span><span style=display:flex><span>	    <span style=color:#66d9ef>return</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> grid[row][col] <span style=color:#f92672>!=</span> <span style=color:#ae81ff>1</span>:
+</span></span><span style=display:flex><span>	    <span style=color:#66d9ef>return</span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e># now for the current land piece sink it</span>
+</span></span><span style=display:flex><span>	grid[row][col] <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;#&#39;</span>
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	<span style=color:#75715e># now traverse in all 4 directions (right,left, up, down)</span>
+</span></span><span style=display:flex><span>	sink_island(row<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>, col, grid) <span style=color:#75715e># down</span>
+</span></span><span style=display:flex><span>	sink_island(row,col<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>, grid) <span style=color:#75715e># right</span>
+</span></span><span style=display:flex><span>	sink_island(row<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>, col, grid) <span style=color:#75715e>#  up</span>
+</span></span><span style=display:flex><span>	sink_island(row, col<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>, grid) <span style=color:#75715e># left</span>
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>number_of_islands</span>(grid):
+</span></span><span style=display:flex><span>	number_of_islands  <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span> <span style=color:#75715e># initialize the count</span>
+</span></span><span style=display:flex><span>	n_rows <span style=color:#f92672>=</span> len(grid) <span style=color:#75715e># 4</span>
+</span></span><span style=display:flex><span>	n_col <span style=color:#f92672>=</span> len(grid[<span style=color:#ae81ff>0</span>]) <span style=color:#75715e># 5</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e># some edge cases</span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e># if the grid is empty or singular</span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>if</span> n_rows <span style=color:#f92672>&lt;</span><span style=color:#ae81ff>1</span> <span style=color:#f92672>and</span> n_col <span style=color:#f92672>&lt;</span><span style=color:#ae81ff>1</span>:
+</span></span><span style=display:flex><span>	   <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(n_rows):
+</span></span><span style=display:flex><span>		<span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(n_cols):
+</span></span><span style=display:flex><span>			<span style=color:#66d9ef>if</span> grid[i][j] <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;1&#34;</span>:
+</span></span><span style=display:flex><span>				number_of_islands <span style=color:#f92672>+=</span><span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>				sink_islands(j,i,grid)
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>return</span> number_of_islands
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>grid <span style=color:#f92672>=</span> [
+</span></span><span style=display:flex><span>  [<span style=color:#e6db74>&#34;1&#34;</span>,<span style=color:#e6db74>&#34;1&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>],
+</span></span><span style=display:flex><span>  [<span style=color:#e6db74>&#34;1&#34;</span>,<span style=color:#e6db74>&#34;1&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>],
+</span></span><span style=display:flex><span>  [<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;1&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>],
+</span></span><span style=display:flex><span>  [<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;0&#34;</span>,<span style=color:#e6db74>&#34;1&#34;</span>,<span style=color:#e6db74>&#34;1&#34;</span>]
+</span></span><span style=display:flex><span>]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>answer <span style=color:#f92672>=</span> number_of_islands(grid)
+</span></span><span style=display:flex><span>print(answer)
+</span></span></code></pre></div></div></article></div></main><footer><p>&copy; 2025 Deepanshu Kandpal</p></footer><a id=scrollTopBtn title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
+<script src=/js/search.js></script><script>var mybutton=document.getElementById("scrollTopBtn");window.onscroll=function(){scrollFunction()};function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?mybutton.classList.add("show"):mybutton.classList.remove("show")}mybutton.onclick=function(){document.body.scrollTop=0,document.documentElement.scrollTop=0}</script><script>document.addEventListener("DOMContentLoaded",function(){const e=document.querySelectorAll("code.language-mermaid");e.forEach(function(e,t){const n=document.createElement("div");n.className="mermaid",n.textContent=e.textContent,n.id="mermaid-"+t,e.parentNode.parentNode.replaceChild(n,e.parentNode)}),mermaid.initialize({startOnLoad:!0,theme:"default",themeVariables:{primaryColor:"#4a90e2",primaryTextColor:"#333",primaryBorderColor:"#4a90e2",lineColor:"#333"}}),mermaid.init()})</script></body></html>

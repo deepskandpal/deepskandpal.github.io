@@ -1,165 +1,165 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Machine Learning Design Interview on 404EngineerNotFound</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/</link><description>Recent content in Machine Learning Design Interview on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 27 Jan 2025 18:27:35 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/bookshelf/ml-design-interview/index.xml" rel="self" type="application/rss+xml"/><item><title>Chapter 0: ML Design Primer</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-0/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-0/</guid><description>&lt;p>This chapter introduces the fundamentals of designing machine learning systems at scale. It covers the key differences between traditional software systems and ML systems, and outlines the unique challenges faced when building production ML systems.&lt;/p>
-&lt;h2 id="key-concepts">Key Concepts&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>ML System vs Traditional Systems&lt;/strong>: Understanding the differences in architecture, requirements, and challenges&lt;/li>
-&lt;li>&lt;strong>Scale Considerations&lt;/strong>: How scale affects ML system design decisions&lt;/li>
-&lt;li>&lt;strong>Production ML Pipeline&lt;/strong>: Components of a typical ML production pipeline&lt;/li>
-&lt;/ul>
-&lt;h2 id="main-topics-covered">Main Topics Covered&lt;/h2>
-&lt;ol>
-&lt;li>What makes ML systems different&lt;/li>
-&lt;li>Key components of ML systems&lt;/li>
-&lt;li>Common challenges in ML system design&lt;/li>
-&lt;li>Framework for approaching ML system design interviews&lt;/li>
-&lt;/ol>
-&lt;h2 id="interview-tips">Interview Tips&lt;/h2>
-&lt;ul>
-&lt;li>Always start with clarifying requirements&lt;/li>
-&lt;li>Think about data flow and system components&lt;/li>
-&lt;li>Consider scalability and performance trade-offs&lt;/li>
-&lt;li>Don&amp;rsquo;t forget about monitoring and maintenance&lt;/li>
-&lt;/ul>
-&lt;p>(Your detailed notes for Chapter 1 go here&amp;hellip;)&lt;/p></description></item><item><title>Chapter 1: Introduction to ML System Design</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-1/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-1/</guid><description>&lt;p>This chapter introduces the fundamentals of designing machine learning systems at scale. It covers the key differences between traditional software systems and ML systems, and outlines the unique challenges faced when building production ML systems.&lt;/p>
-&lt;hr>
-&lt;h2 id="chapter-1-machine-learning-primer">Chapter 1: Machine Learning Primer&lt;/h2>
-&lt;p>This chapter covers the building blocks. Mastering these fundamentals is non-negotiable. An interviewer will expect you to be fluent in this language.&lt;/p>
-&lt;h2 id="topic-feature-selection-and-feature-engineering">Topic: Feature Selection and Feature Engineering&lt;/h2>
-&lt;h3 id="1-one-hot-encoding-ohe">1. One-Hot Encoding (OHE)&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Book&amp;rsquo;s Core Idea (Timeless):&lt;/strong> OHE is used for low-cardinality categorical features (e.g., &lt;code>device_type&lt;/code> = [&amp;lsquo;mobile&amp;rsquo;, &amp;lsquo;desktop&amp;rsquo;, &amp;rsquo;tablet&amp;rsquo;]). It prevents the model from assuming a false numerical order (i.e., that &lt;code>tablet&lt;/code>(2) is somehow &amp;ldquo;more&amp;rdquo; than &lt;code>mobile&lt;/code>(0)). Its major drawback is creating very wide, sparse vectors for high-cardinality features, which is memory-intensive.&lt;/li>
-&lt;li>&lt;strong>The 2024+ Perspective:&lt;/strong> The principle is still valid, but its use is more limited. For any feature with more than a handful of categories (like &lt;code>user_id&lt;/code>, &lt;code>product_id&lt;/code>), OHE is a non-starter. The industry has almost completely moved to embeddings for these cases.&lt;/li>
-&lt;li>&lt;strong>Interview Focus &amp;amp; Phrasing:&lt;/strong>
-&lt;ul>
-&lt;li>&lt;strong>Good:&lt;/strong> &amp;ldquo;For a low-cardinality feature like &amp;lsquo;day_of_week&amp;rsquo;, we can use one-hot encoding.&amp;rdquo;&lt;/li>
-&lt;li>&lt;strong>Senior Level:&lt;/strong> &amp;ldquo;We&amp;rsquo;ll need to handle our categorical features. For low-cardinality ones like &lt;code>country_code&lt;/code>, one-hot encoding is a simple and effective baseline. However, for high-cardinality features like &lt;code>user_id&lt;/code>, OHE would lead to extreme sparsity and high dimensionality. We&amp;rsquo;ll use embeddings for those instead.&amp;rdquo;&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="2-mean-encoding-or-target-encoding">2. Mean Encoding (or Target Encoding)&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Book&amp;rsquo;s Core Idea (Timeless):&lt;/strong> Replace a category with the average value of the target variable for that category (e.g., replace &amp;lsquo;San Francisco&amp;rsquo; with the average click-through rate for all users from SF). It&amp;rsquo;s a very powerful technique for tree-based models (like XGBoost) because it packs a lot of signal into a single numerical feature. The book&amp;rsquo;s warning about &lt;strong>label leakage&lt;/strong> is its most critical point.&lt;/li>
-&lt;li>&lt;strong>The 2024+ Perspective:&lt;/strong> Still a highly relevant and powerful technique, especially in tabular data competitions (Kaggle) and for boosting models where latency isn&amp;rsquo;t the primary concern. Modern feature stores sometimes automate the robust calculation of these encodings (e.g., using out-of-fold calculations to prevent leakage).&lt;/li>
-&lt;li>&lt;strong>Interview Focus &amp;amp; Phrasing:&lt;/strong> Mention this as a strong option for tree-based models, but &lt;em>immediately&lt;/em> bring up the risks. &amp;ldquo;We could consider target encoding for features like &lt;code>city&lt;/code>, as it can provide a strong signal to a tree-based model. However, we must be extremely careful about data leakage. To mitigate this, we&amp;rsquo;d compute the encoding on a separate dataset or use an out-of-fold strategy during training to ensure the encoding for a given row doesn&amp;rsquo;t use its own label.&amp;rdquo;&lt;/li>
-&lt;/ul>
-&lt;h3 id="3-feature-hashing-the-hashing-trick">3. Feature Hashing (&amp;ldquo;The Hashing Trick&amp;rdquo;)&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Book&amp;rsquo;s Core Idea (Timeless):&lt;/strong> A technique to handle extremely high-cardinality features by hashing them into a fixed-size vector. It&amp;rsquo;s memory-efficient because you pre-define the vector size. The main drawback is hash collisions, where different features get mapped to the same index, which can hurt model performance.&lt;/li>
-&lt;li>&lt;strong>The 2024+ Perspective (Outdated):&lt;/strong> Feature hashing for model features is now largely a legacy technique. While the idea is clever, the performance loss from collisions is often not worth the memory savings, especially when compared to embeddings. Modern hardware and frameworks can handle large embedding tables more gracefully.&lt;/li>
-&lt;li>&lt;strong>Interview Focus &amp;amp; Phrasing:&lt;/strong> Acknowledge it historically. &amp;ldquo;In the past, for systems with millions of features like in AdTech, feature hashing was a common way to manage memory. It&amp;rsquo;s a trade-off between memory and performance due to collisions. Today, we&amp;rsquo;d almost always prefer to learn a dedicated embedding layer, as it captures semantic relationships and avoids collisions, leading to better model performance.&amp;rdquo;&lt;/li>
-&lt;/ul>
-&lt;h3 id="4-cross-features">4. Cross Features&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Book&amp;rsquo;s Core Idea (Timeless):&lt;/strong> Explicitly combining two or more categorical features to capture their interaction (e.g., &lt;code>feature_A&lt;/code>=&amp;lsquo;USA&amp;rsquo; + &lt;code>feature_B&lt;/code>=&amp;lsquo;iPhone&amp;rsquo; -&amp;gt; &lt;code>crossed_feature&lt;/code>=&amp;lsquo;USA_iPhone&amp;rsquo;). This helps linear models and shallow networks learn relationships they otherwise couldn&amp;rsquo;t. The book&amp;rsquo;s reference to Wide &amp;amp; Deep is the classic example.&lt;/li>
-&lt;li>&lt;strong>The 2024+ Perspective:&lt;/strong> The &lt;em>concept&lt;/em> of capturing feature interactions is more important than ever. The &lt;em>method&lt;/em> has evolved. While Wide &amp;amp; Deep is still a valid pattern, modern architectures like Transformers (with their self-attention mechanism) are exceptionally good at learning these interactions &lt;em>implicitly&lt;/em> from the raw feature embeddings. You don&amp;rsquo;t always need to manually define the crosses.&lt;/li>
-&lt;li>&lt;strong>Interview Focus &amp;amp; Phrasing:&lt;/strong> Focus on the &amp;ldquo;why.&amp;rdquo; &amp;ldquo;A key challenge in this problem is capturing the interaction between features, for example, a user&amp;rsquo;s country and their device type. A classic approach is the Wide &amp;amp; Deep model, where we&amp;rsquo;d manually create cross-product transformations for the &amp;lsquo;wide&amp;rsquo; part. A more modern approach would be to feed the embeddings for all features into a deep network, perhaps with a cross-network layer like DCN or an attention mechanism, which can learn these interactions automatically.&amp;rdquo;&lt;/li>
-&lt;/ul>
-&lt;h3 id="5-embedding">5. Embedding&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Book&amp;rsquo;s Core Idea (Timeless):&lt;/strong> This is the &lt;strong>most important&lt;/strong> feature engineering technique in the book and in modern ML. An embedding is a dense, low-dimensional, learned vector representation of a categorical feature. The book correctly explains the two main ways to get them:
-&lt;ol>
-&lt;li>&lt;strong>Co-trained:&lt;/strong> Learning the embedding as part of your main model (e.g., an embedding layer in Keras/PyTorch).&lt;/li>
-&lt;li>&lt;strong>Pre-trained:&lt;/strong> Learning the embedding separately on a different task (e.g., Word2Vec on text, or node2vec on a graph) and then using it as a static feature.&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>&lt;strong>The 2024+ Perspective:&lt;/strong> This is the heart of modern ML.
-&lt;ul>
-&lt;li>&lt;strong>The Rise of Foundation Models:&lt;/strong> The &amp;ldquo;pre-trained&amp;rdquo; paradigm now dominates. You don&amp;rsquo;t just use Word2Vec; you use embeddings from massive, powerful foundation models (e.g., OpenAI&amp;rsquo;s &lt;code>text-embedding-3-large&lt;/code>, Sentence-BERT, or image embeddings from CLIP). Your job is less about designing the pre-training task and more about choosing the right foundation model.&lt;/li>
-&lt;li>&lt;strong>The Two-Tower Model:&lt;/strong> The book&amp;rsquo;s description of the two-tower model for retrieval (e.g., at YouTube) is still &lt;strong>State-of-the-Art&lt;/strong> for recommendation and search. This is a critical pattern to know inside and out.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>Interview Focus &amp;amp; Phrasing:&lt;/strong> This should be your default answer for high-cardinality features.
-&lt;ul>
-&lt;li>&amp;ldquo;For user IDs and item IDs, we will learn dense embedding vectors. This allows the model to capture semantic similarities—for instance, users who buy similar products will have similar vectors.&amp;rdquo;&lt;/li>
-&lt;li>For a retrieval system, you &lt;em>must&lt;/em> bring up the two-tower model. &amp;ldquo;We&amp;rsquo;ll design a two-tower retrieval model. The query tower will ingest user features and produce a query embedding. The candidate tower will ingest item features and produce an item embedding. At training time, we&amp;rsquo;ll optimize these towers using a contrastive loss so that the dot product between a user and a relevant item is high. For serving, we can pre-compute all item embeddings and put them into a vector index for efficient retrieval.&amp;rdquo;&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>Here is the diagram for the Two-Tower Model, which is central to this discussion.&lt;/p></description></item><item><title>Chapter 2: Common Recommendation System Components.</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-2/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-2/</guid><description>&lt;p>This chapter is the heart of the book and arguably the most important for many ML system design interviews, as recommendation systems are a classic and recurring design question. We&amp;rsquo;ll break down the three key stages: &lt;strong>Candidate Generation&lt;/strong>, &lt;strong>Ranking&lt;/strong>, and &lt;strong>Re-ranking&lt;/strong>.&lt;/p>
-&lt;h2 id="candidate-generation---finding-the-haystack-needles">Candidate Generation - Finding the Haystack Needles&lt;/h2>
-&lt;p>This is the first and arguably most critical stage of a large-scale recommender.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Book&amp;rsquo;s Core Idea (Timeless):&lt;/strong> You cannot possibly score and rank every single item in your corpus (e.g., all 500 million videos on YouTube) for every user in real time. The goal of candidate generation (also called retrieval or sourcing) is to narrow down this massive set to a few hundred or a few thousand &amp;ldquo;pretty good&amp;rdquo; candidates, quickly and cheaply. The book presents the two classic approaches:&lt;/p></description></item><item><title>Chapter 3: Model Training and Deployment</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-3/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-3/</guid><description>&lt;h1 id="chapter-3-notes-model-training-and-deployment">Chapter 3 Notes: Model Training and Deployment&lt;/h1>
-&lt;h2 id="overview">Overview&lt;/h2>
-&lt;p>This chapter covers the design considerations for training ML models at scale and deploying them to production environments. It includes discussions on training infrastructure, model versioning, A/B testing, and deployment strategies.&lt;/p>
-&lt;h2 id="key-concepts">Key Concepts&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Training Infrastructure&lt;/strong>: Distributed training, resource allocation, and optimization&lt;/li>
-&lt;li>&lt;strong>Model Versioning&lt;/strong>: Managing different model versions and experiments&lt;/li>
-&lt;li>&lt;strong>Deployment Strategies&lt;/strong>: Blue-green deployments, canary releases, and shadow deployments&lt;/li>
-&lt;li>&lt;strong>Serving Architecture&lt;/strong>: Online vs offline serving, latency requirements&lt;/li>
-&lt;/ul>
-&lt;h2 id="main-topics-covered">Main Topics Covered&lt;/h2>
-&lt;ol>
-&lt;li>Distributed training systems&lt;/li>
-&lt;li>Model registry and versioning&lt;/li>
-&lt;li>Deployment patterns and strategies&lt;/li>
-&lt;li>Model serving architectures&lt;/li>
-&lt;li>Performance optimization&lt;/li>
-&lt;li>A/B testing for ML models&lt;/li>
-&lt;/ol>
-&lt;h2 id="design-considerations">Design Considerations&lt;/h2>
-&lt;ul>
-&lt;li>Latency vs throughput trade-offs&lt;/li>
-&lt;li>Model size and memory constraints&lt;/li>
-&lt;li>Scalability requirements&lt;/li>
-&lt;li>Rollback strategies&lt;/li>
-&lt;/ul>
-&lt;p>(Your detailed notes for Chapter 3 go here&amp;hellip;)&lt;/p></description></item><item><title>Chapter 4: ML Monitoring and Maintenance</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-4/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-4/</guid><description>&lt;h1 id="chapter-4-notes-ml-monitoring-and-maintenance">Chapter 4 Notes: ML Monitoring and Maintenance&lt;/h1>
-&lt;h2 id="overview">Overview&lt;/h2>
-&lt;p>This chapter covers the critical aspects of monitoring ML systems in production and maintaining their performance over time. It discusses various types of monitoring, alerting strategies, and approaches to handle model drift and performance degradation.&lt;/p>
-&lt;h2 id="key-concepts">Key Concepts&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Model Performance Monitoring&lt;/strong>: Tracking accuracy, precision, recall, and other metrics&lt;/li>
-&lt;li>&lt;strong>Data Drift Detection&lt;/strong>: Identifying when input data distribution changes&lt;/li>
-&lt;li>&lt;strong>Model Drift&lt;/strong>: Detecting when model performance degrades over time&lt;/li>
-&lt;li>&lt;strong>Infrastructure Monitoring&lt;/strong>: System health, resource utilization, and availability&lt;/li>
-&lt;/ul>
-&lt;h2 id="main-topics-covered">Main Topics Covered&lt;/h2>
-&lt;ol>
-&lt;li>Types of ML monitoring (performance, data, infrastructure)&lt;/li>
-&lt;li>Alerting and notification systems&lt;/li>
-&lt;li>Model retraining strategies&lt;/li>
-&lt;li>Feedback loops and continuous learning&lt;/li>
-&lt;li>Debugging ML systems in production&lt;/li>
-&lt;/ol>
-&lt;h2 id="common-monitoring-metrics">Common Monitoring Metrics&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Business Metrics&lt;/strong>: ROI, conversion rates, user engagement&lt;/li>
-&lt;li>&lt;strong>Model Metrics&lt;/strong>: Accuracy, precision, recall, F1-score&lt;/li>
-&lt;li>&lt;strong>System Metrics&lt;/strong>: Latency, throughput, error rates&lt;/li>
-&lt;li>&lt;strong>Data Quality Metrics&lt;/strong>: Missing values, distribution shifts&lt;/li>
-&lt;/ul>
-&lt;p>(Your detailed notes for Chapter 4 go here&amp;hellip;)&lt;/p></description></item><item><title>Chapter 5: Case Studies - Real-world ML Systems</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-5/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-5/</guid><description>&lt;h1 id="chapter-5-notes-case-studies---real-world-ml-systems">Chapter 5 Notes: Case Studies - Real-world ML Systems&lt;/h1>
-&lt;h2 id="overview">Overview&lt;/h2>
-&lt;p>This chapter presents detailed case studies of ML systems commonly found at major tech companies. Each case study walks through the complete system design process, from requirements gathering to deployment and monitoring.&lt;/p>
-&lt;h2 id="case-studies-covered">Case Studies Covered&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>Recommendation System&lt;/strong> (Netflix, Amazon, YouTube)&lt;/li>
-&lt;li>&lt;strong>Search Ranking System&lt;/strong> (Google, Bing)&lt;/li>
-&lt;li>&lt;strong>Feed Ranking System&lt;/strong> (Facebook, Twitter, Instagram)&lt;/li>
-&lt;li>&lt;strong>Fraud Detection System&lt;/strong> (PayPal, Stripe)&lt;/li>
-&lt;li>&lt;strong>Ad Targeting System&lt;/strong> (Google Ads, Facebook Ads)&lt;/li>
-&lt;/ol>
-&lt;h2 id="common-interview-questions">Common Interview Questions&lt;/h2>
-&lt;ul>
-&lt;li>Design a recommendation system for an e-commerce platform&lt;/li>
-&lt;li>How would you build a real-time fraud detection system?&lt;/li>
-&lt;li>Design a search ranking system for a social media platform&lt;/li>
-&lt;li>Build a news feed ranking algorithm&lt;/li>
-&lt;/ul>
-&lt;h2 id="design-patterns">Design Patterns&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Collaborative Filtering&lt;/strong>: User-based and item-based approaches&lt;/li>
-&lt;li>&lt;strong>Content-Based Filtering&lt;/strong>: Feature extraction and similarity computation&lt;/li>
-&lt;li>&lt;strong>Hybrid Approaches&lt;/strong>: Combining multiple recommendation strategies&lt;/li>
-&lt;li>&lt;strong>Real-time vs Batch Processing&lt;/strong>: When to use each approach&lt;/li>
-&lt;/ul>
-&lt;h2 id="key-takeaways">Key Takeaways&lt;/h2>
-&lt;ul>
-&lt;li>Start with simple solutions and iterate&lt;/li>
-&lt;li>Consider both technical and business requirements&lt;/li>
-&lt;li>Think about scalability from the beginning&lt;/li>
-&lt;li>Plan for monitoring and maintenance&lt;/li>
-&lt;/ul>
-&lt;p>(Your detailed notes for Chapter 5 go here&amp;hellip;)&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Machine Learning Design Interview on 404EngineerNotFound</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/</link><description>Recent content in Machine Learning Design Interview on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 27 Jan 2025 18:27:35 +0530</lastBuildDate><atom:link href="https://deepskandpal.github.io/bookshelf/ml-design-interview/index.xml" rel="self" type="application/rss+xml"/><item><title>Chapter 0: ML Design Primer</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-0/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-0/</guid><description>&lt;p&gt;This chapter introduces the fundamentals of designing machine learning systems at scale. It covers the key differences between traditional software systems and ML systems, and outlines the unique challenges faced when building production ML systems.&lt;/p&gt;
+&lt;h2 id="key-concepts"&gt;Key Concepts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ML System vs Traditional Systems&lt;/strong&gt;: Understanding the differences in architecture, requirements, and challenges&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scale Considerations&lt;/strong&gt;: How scale affects ML system design decisions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Production ML Pipeline&lt;/strong&gt;: Components of a typical ML production pipeline&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="main-topics-covered"&gt;Main Topics Covered&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;What makes ML systems different&lt;/li&gt;
+&lt;li&gt;Key components of ML systems&lt;/li&gt;
+&lt;li&gt;Common challenges in ML system design&lt;/li&gt;
+&lt;li&gt;Framework for approaching ML system design interviews&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="interview-tips"&gt;Interview Tips&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Always start with clarifying requirements&lt;/li&gt;
+&lt;li&gt;Think about data flow and system components&lt;/li&gt;
+&lt;li&gt;Consider scalability and performance trade-offs&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t forget about monitoring and maintenance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Your detailed notes for Chapter 1 go here&amp;hellip;)&lt;/p&gt;</description></item><item><title>Chapter 1: Introduction to ML System Design</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-1/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-1/</guid><description>&lt;p&gt;This chapter introduces the fundamentals of designing machine learning systems at scale. It covers the key differences between traditional software systems and ML systems, and outlines the unique challenges faced when building production ML systems.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="chapter-1-machine-learning-primer"&gt;Chapter 1: Machine Learning Primer&lt;/h2&gt;
+&lt;p&gt;This chapter covers the building blocks. Mastering these fundamentals is non-negotiable. An interviewer will expect you to be fluent in this language.&lt;/p&gt;
+&lt;h2 id="topic-feature-selection-and-feature-engineering"&gt;Topic: Feature Selection and Feature Engineering&lt;/h2&gt;
+&lt;h3 id="1-one-hot-encoding-ohe"&gt;1. One-Hot Encoding (OHE)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Book&amp;rsquo;s Core Idea (Timeless):&lt;/strong&gt; OHE is used for low-cardinality categorical features (e.g., &lt;code&gt;device_type&lt;/code&gt; = [&amp;lsquo;mobile&amp;rsquo;, &amp;lsquo;desktop&amp;rsquo;, &amp;rsquo;tablet&amp;rsquo;]). It prevents the model from assuming a false numerical order (i.e., that &lt;code&gt;tablet&lt;/code&gt;(2) is somehow &amp;ldquo;more&amp;rdquo; than &lt;code&gt;mobile&lt;/code&gt;(0)). Its major drawback is creating very wide, sparse vectors for high-cardinality features, which is memory-intensive.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The 2024+ Perspective:&lt;/strong&gt; The principle is still valid, but its use is more limited. For any feature with more than a handful of categories (like &lt;code&gt;user_id&lt;/code&gt;, &lt;code&gt;product_id&lt;/code&gt;), OHE is a non-starter. The industry has almost completely moved to embeddings for these cases.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interview Focus &amp;amp; Phrasing:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Good:&lt;/strong&gt; &amp;ldquo;For a low-cardinality feature like &amp;lsquo;day_of_week&amp;rsquo;, we can use one-hot encoding.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Senior Level:&lt;/strong&gt; &amp;ldquo;We&amp;rsquo;ll need to handle our categorical features. For low-cardinality ones like &lt;code&gt;country_code&lt;/code&gt;, one-hot encoding is a simple and effective baseline. However, for high-cardinality features like &lt;code&gt;user_id&lt;/code&gt;, OHE would lead to extreme sparsity and high dimensionality. We&amp;rsquo;ll use embeddings for those instead.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-mean-encoding-or-target-encoding"&gt;2. Mean Encoding (or Target Encoding)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Book&amp;rsquo;s Core Idea (Timeless):&lt;/strong&gt; Replace a category with the average value of the target variable for that category (e.g., replace &amp;lsquo;San Francisco&amp;rsquo; with the average click-through rate for all users from SF). It&amp;rsquo;s a very powerful technique for tree-based models (like XGBoost) because it packs a lot of signal into a single numerical feature. The book&amp;rsquo;s warning about &lt;strong&gt;label leakage&lt;/strong&gt; is its most critical point.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The 2024+ Perspective:&lt;/strong&gt; Still a highly relevant and powerful technique, especially in tabular data competitions (Kaggle) and for boosting models where latency isn&amp;rsquo;t the primary concern. Modern feature stores sometimes automate the robust calculation of these encodings (e.g., using out-of-fold calculations to prevent leakage).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interview Focus &amp;amp; Phrasing:&lt;/strong&gt; Mention this as a strong option for tree-based models, but &lt;em&gt;immediately&lt;/em&gt; bring up the risks. &amp;ldquo;We could consider target encoding for features like &lt;code&gt;city&lt;/code&gt;, as it can provide a strong signal to a tree-based model. However, we must be extremely careful about data leakage. To mitigate this, we&amp;rsquo;d compute the encoding on a separate dataset or use an out-of-fold strategy during training to ensure the encoding for a given row doesn&amp;rsquo;t use its own label.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="3-feature-hashing-the-hashing-trick"&gt;3. Feature Hashing (&amp;ldquo;The Hashing Trick&amp;rdquo;)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Book&amp;rsquo;s Core Idea (Timeless):&lt;/strong&gt; A technique to handle extremely high-cardinality features by hashing them into a fixed-size vector. It&amp;rsquo;s memory-efficient because you pre-define the vector size. The main drawback is hash collisions, where different features get mapped to the same index, which can hurt model performance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The 2024+ Perspective (Outdated):&lt;/strong&gt; Feature hashing for model features is now largely a legacy technique. While the idea is clever, the performance loss from collisions is often not worth the memory savings, especially when compared to embeddings. Modern hardware and frameworks can handle large embedding tables more gracefully.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interview Focus &amp;amp; Phrasing:&lt;/strong&gt; Acknowledge it historically. &amp;ldquo;In the past, for systems with millions of features like in AdTech, feature hashing was a common way to manage memory. It&amp;rsquo;s a trade-off between memory and performance due to collisions. Today, we&amp;rsquo;d almost always prefer to learn a dedicated embedding layer, as it captures semantic relationships and avoids collisions, leading to better model performance.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="4-cross-features"&gt;4. Cross Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Book&amp;rsquo;s Core Idea (Timeless):&lt;/strong&gt; Explicitly combining two or more categorical features to capture their interaction (e.g., &lt;code&gt;feature_A&lt;/code&gt;=&amp;lsquo;USA&amp;rsquo; + &lt;code&gt;feature_B&lt;/code&gt;=&amp;lsquo;iPhone&amp;rsquo; -&amp;gt; &lt;code&gt;crossed_feature&lt;/code&gt;=&amp;lsquo;USA_iPhone&amp;rsquo;). This helps linear models and shallow networks learn relationships they otherwise couldn&amp;rsquo;t. The book&amp;rsquo;s reference to Wide &amp;amp; Deep is the classic example.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The 2024+ Perspective:&lt;/strong&gt; The &lt;em&gt;concept&lt;/em&gt; of capturing feature interactions is more important than ever. The &lt;em&gt;method&lt;/em&gt; has evolved. While Wide &amp;amp; Deep is still a valid pattern, modern architectures like Transformers (with their self-attention mechanism) are exceptionally good at learning these interactions &lt;em&gt;implicitly&lt;/em&gt; from the raw feature embeddings. You don&amp;rsquo;t always need to manually define the crosses.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interview Focus &amp;amp; Phrasing:&lt;/strong&gt; Focus on the &amp;ldquo;why.&amp;rdquo; &amp;ldquo;A key challenge in this problem is capturing the interaction between features, for example, a user&amp;rsquo;s country and their device type. A classic approach is the Wide &amp;amp; Deep model, where we&amp;rsquo;d manually create cross-product transformations for the &amp;lsquo;wide&amp;rsquo; part. A more modern approach would be to feed the embeddings for all features into a deep network, perhaps with a cross-network layer like DCN or an attention mechanism, which can learn these interactions automatically.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="5-embedding"&gt;5. Embedding&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Book&amp;rsquo;s Core Idea (Timeless):&lt;/strong&gt; This is the &lt;strong&gt;most important&lt;/strong&gt; feature engineering technique in the book and in modern ML. An embedding is a dense, low-dimensional, learned vector representation of a categorical feature. The book correctly explains the two main ways to get them:
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Co-trained:&lt;/strong&gt; Learning the embedding as part of your main model (e.g., an embedding layer in Keras/PyTorch).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pre-trained:&lt;/strong&gt; Learning the embedding separately on a different task (e.g., Word2Vec on text, or node2vec on a graph) and then using it as a static feature.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The 2024+ Perspective:&lt;/strong&gt; This is the heart of modern ML.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The Rise of Foundation Models:&lt;/strong&gt; The &amp;ldquo;pre-trained&amp;rdquo; paradigm now dominates. You don&amp;rsquo;t just use Word2Vec; you use embeddings from massive, powerful foundation models (e.g., OpenAI&amp;rsquo;s &lt;code&gt;text-embedding-3-large&lt;/code&gt;, Sentence-BERT, or image embeddings from CLIP). Your job is less about designing the pre-training task and more about choosing the right foundation model.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Two-Tower Model:&lt;/strong&gt; The book&amp;rsquo;s description of the two-tower model for retrieval (e.g., at YouTube) is still &lt;strong&gt;State-of-the-Art&lt;/strong&gt; for recommendation and search. This is a critical pattern to know inside and out.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interview Focus &amp;amp; Phrasing:&lt;/strong&gt; This should be your default answer for high-cardinality features.
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;For user IDs and item IDs, we will learn dense embedding vectors. This allows the model to capture semantic similarities—for instance, users who buy similar products will have similar vectors.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;For a retrieval system, you &lt;em&gt;must&lt;/em&gt; bring up the two-tower model. &amp;ldquo;We&amp;rsquo;ll design a two-tower retrieval model. The query tower will ingest user features and produce a query embedding. The candidate tower will ingest item features and produce an item embedding. At training time, we&amp;rsquo;ll optimize these towers using a contrastive loss so that the dot product between a user and a relevant item is high. For serving, we can pre-compute all item embeddings and put them into a vector index for efficient retrieval.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here is the diagram for the Two-Tower Model, which is central to this discussion.&lt;/p&gt;</description></item><item><title>Chapter 2: Common Recommendation System Components.</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-2/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-2/</guid><description>&lt;p&gt;This chapter is the heart of the book and arguably the most important for many ML system design interviews, as recommendation systems are a classic and recurring design question. We&amp;rsquo;ll break down the three key stages: &lt;strong&gt;Candidate Generation&lt;/strong&gt;, &lt;strong&gt;Ranking&lt;/strong&gt;, and &lt;strong&gt;Re-ranking&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id="candidate-generation---finding-the-haystack-needles"&gt;Candidate Generation - Finding the Haystack Needles&lt;/h2&gt;
+&lt;p&gt;This is the first and arguably most critical stage of a large-scale recommender.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Book&amp;rsquo;s Core Idea (Timeless):&lt;/strong&gt; You cannot possibly score and rank every single item in your corpus (e.g., all 500 million videos on YouTube) for every user in real time. The goal of candidate generation (also called retrieval or sourcing) is to narrow down this massive set to a few hundred or a few thousand &amp;ldquo;pretty good&amp;rdquo; candidates, quickly and cheaply. The book presents the two classic approaches:&lt;/p&gt;</description></item><item><title>Chapter 3: Model Training and Deployment</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-3/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-3/</guid><description>&lt;h1 id="chapter-3-notes-model-training-and-deployment"&gt;Chapter 3 Notes: Model Training and Deployment&lt;/h1&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This chapter covers the design considerations for training ML models at scale and deploying them to production environments. It includes discussions on training infrastructure, model versioning, A/B testing, and deployment strategies.&lt;/p&gt;
+&lt;h2 id="key-concepts"&gt;Key Concepts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Training Infrastructure&lt;/strong&gt;: Distributed training, resource allocation, and optimization&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Model Versioning&lt;/strong&gt;: Managing different model versions and experiments&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deployment Strategies&lt;/strong&gt;: Blue-green deployments, canary releases, and shadow deployments&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Serving Architecture&lt;/strong&gt;: Online vs offline serving, latency requirements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="main-topics-covered"&gt;Main Topics Covered&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Distributed training systems&lt;/li&gt;
+&lt;li&gt;Model registry and versioning&lt;/li&gt;
+&lt;li&gt;Deployment patterns and strategies&lt;/li&gt;
+&lt;li&gt;Model serving architectures&lt;/li&gt;
+&lt;li&gt;Performance optimization&lt;/li&gt;
+&lt;li&gt;A/B testing for ML models&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="design-considerations"&gt;Design Considerations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Latency vs throughput trade-offs&lt;/li&gt;
+&lt;li&gt;Model size and memory constraints&lt;/li&gt;
+&lt;li&gt;Scalability requirements&lt;/li&gt;
+&lt;li&gt;Rollback strategies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Your detailed notes for Chapter 3 go here&amp;hellip;)&lt;/p&gt;</description></item><item><title>Chapter 4: ML Monitoring and Maintenance</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-4/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-4/</guid><description>&lt;h1 id="chapter-4-notes-ml-monitoring-and-maintenance"&gt;Chapter 4 Notes: ML Monitoring and Maintenance&lt;/h1&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This chapter covers the critical aspects of monitoring ML systems in production and maintaining their performance over time. It discusses various types of monitoring, alerting strategies, and approaches to handle model drift and performance degradation.&lt;/p&gt;
+&lt;h2 id="key-concepts"&gt;Key Concepts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Model Performance Monitoring&lt;/strong&gt;: Tracking accuracy, precision, recall, and other metrics&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data Drift Detection&lt;/strong&gt;: Identifying when input data distribution changes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Model Drift&lt;/strong&gt;: Detecting when model performance degrades over time&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Infrastructure Monitoring&lt;/strong&gt;: System health, resource utilization, and availability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="main-topics-covered"&gt;Main Topics Covered&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Types of ML monitoring (performance, data, infrastructure)&lt;/li&gt;
+&lt;li&gt;Alerting and notification systems&lt;/li&gt;
+&lt;li&gt;Model retraining strategies&lt;/li&gt;
+&lt;li&gt;Feedback loops and continuous learning&lt;/li&gt;
+&lt;li&gt;Debugging ML systems in production&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="common-monitoring-metrics"&gt;Common Monitoring Metrics&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Business Metrics&lt;/strong&gt;: ROI, conversion rates, user engagement&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Model Metrics&lt;/strong&gt;: Accuracy, precision, recall, F1-score&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;System Metrics&lt;/strong&gt;: Latency, throughput, error rates&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data Quality Metrics&lt;/strong&gt;: Missing values, distribution shifts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Your detailed notes for Chapter 4 go here&amp;hellip;)&lt;/p&gt;</description></item><item><title>Chapter 5: Case Studies - Real-world ML Systems</title><link>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-5/</link><pubDate>Mon, 27 Jan 2025 18:27:35 +0530</pubDate><guid>https://deepskandpal.github.io/bookshelf/ml-design-interview/chapter-5/</guid><description>&lt;h1 id="chapter-5-notes-case-studies---real-world-ml-systems"&gt;Chapter 5 Notes: Case Studies - Real-world ML Systems&lt;/h1&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This chapter presents detailed case studies of ML systems commonly found at major tech companies. Each case study walks through the complete system design process, from requirements gathering to deployment and monitoring.&lt;/p&gt;
+&lt;h2 id="case-studies-covered"&gt;Case Studies Covered&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Recommendation System&lt;/strong&gt; (Netflix, Amazon, YouTube)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search Ranking System&lt;/strong&gt; (Google, Bing)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Feed Ranking System&lt;/strong&gt; (Facebook, Twitter, Instagram)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fraud Detection System&lt;/strong&gt; (PayPal, Stripe)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ad Targeting System&lt;/strong&gt; (Google Ads, Facebook Ads)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="common-interview-questions"&gt;Common Interview Questions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Design a recommendation system for an e-commerce platform&lt;/li&gt;
+&lt;li&gt;How would you build a real-time fraud detection system?&lt;/li&gt;
+&lt;li&gt;Design a search ranking system for a social media platform&lt;/li&gt;
+&lt;li&gt;Build a news feed ranking algorithm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="design-patterns"&gt;Design Patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Collaborative Filtering&lt;/strong&gt;: User-based and item-based approaches&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content-Based Filtering&lt;/strong&gt;: Feature extraction and similarity computation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hybrid Approaches&lt;/strong&gt;: Combining multiple recommendation strategies&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Real-time vs Batch Processing&lt;/strong&gt;: When to use each approach&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Start with simple solutions and iterate&lt;/li&gt;
+&lt;li&gt;Consider both technical and business requirements&lt;/li&gt;
+&lt;li&gt;Think about scalability from the beginning&lt;/li&gt;
+&lt;li&gt;Plan for monitoring and maintenance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Your detailed notes for Chapter 5 go here&amp;hellip;)&lt;/p&gt;</description></item></channel></rss>

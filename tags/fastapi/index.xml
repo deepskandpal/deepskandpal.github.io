@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FastAPI on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/fastapi/</link><description>Recent content in FastAPI on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 15 Dec 2024 22:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/fastapi/index.xml" rel="self" type="application/rss+xml"/><item><title>LangChef - End-to-End LLM Workflow Platform</title><link>https://deepskandpal.github.io/creations/langchef/</link><pubDate>Sun, 15 Dec 2024 22:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/creations/langchef/</guid><description>&lt;h2 id="langchef-end-to-end-llm-workflow-platform">LangChef: End-to-End LLM Workflow Platform&lt;/h2>
-&lt;p>&lt;strong>A comprehensive platform for prompt engineering, dataset management, and LLM experimentation that streamlines the entire lifecycle of LLM applications.&lt;/strong>&lt;/p>
-&lt;h3 id="-what-is-langchef">🎯 What is LangChef?&lt;/h3>
-&lt;p>LangChef is a production-ready platform designed for teams who need to iterate fast and maintain quality in their AI workflows. It addresses the complete LLM development lifecycle from initial prompt engineering to production evaluation and monitoring.&lt;/p>
-&lt;h3 id="-key-features">🚀 Key Features&lt;/h3>
-&lt;p>&lt;strong>Prompt Management&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Create, version, and organize prompts with full lifecycle tracking&lt;/li>
-&lt;li>A/B test prompt variations with statistical significance&lt;/li>
-&lt;li>Template management and reusable prompt components&lt;/li>
-&lt;li>Performance tracking across different prompt versions&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Dataset Management&lt;/strong>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FastAPI on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/fastapi/</link><description>Recent content in FastAPI on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 15 Dec 2024 22:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/fastapi/index.xml" rel="self" type="application/rss+xml"/><item><title>LangChef - End-to-End LLM Workflow Platform</title><link>https://deepskandpal.github.io/creations/langchef/</link><pubDate>Sun, 15 Dec 2024 22:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/creations/langchef/</guid><description>&lt;h2 id="langchef-end-to-end-llm-workflow-platform"&gt;LangChef: End-to-End LLM Workflow Platform&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;A comprehensive platform for prompt engineering, dataset management, and LLM experimentation that streamlines the entire lifecycle of LLM applications.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id="-what-is-langchef"&gt;🎯 What is LangChef?&lt;/h3&gt;
+&lt;p&gt;LangChef is a production-ready platform designed for teams who need to iterate fast and maintain quality in their AI workflows. It addresses the complete LLM development lifecycle from initial prompt engineering to production evaluation and monitoring.&lt;/p&gt;
+&lt;h3 id="-key-features"&gt;🚀 Key Features&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Prompt Management&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create, version, and organize prompts with full lifecycle tracking&lt;/li&gt;
+&lt;li&gt;A/B test prompt variations with statistical significance&lt;/li&gt;
+&lt;li&gt;Template management and reusable prompt components&lt;/li&gt;
+&lt;li&gt;Performance tracking across different prompt versions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Dataset Management&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

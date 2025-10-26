@@ -1,28 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Backtracking on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/backtracking/</link><description>Recent content in Backtracking on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 29 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/backtracking/index.xml" rel="self" type="application/rss+xml"/><item><title>Restore Ip Addresses</title><link>https://deepskandpal.github.io/dsa-log/restore-ip-addresses/</link><pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/restore-ip-addresses/</guid><description>&lt;h2 id="problem-description">Problem Description&lt;/h2>
-&lt;p>Given a string &lt;code>s&lt;/code> containing only digits, return all possible valid IP addresses that can be formed by inserting three dots into &lt;code>s&lt;/code>.&lt;/p>
-&lt;p>A valid IP address consists of exactly four integers separated by single dots. Each integer is between 0 and 255 (inclusive) and cannot have leading zeros (e.g., &amp;ldquo;01&amp;rdquo; is invalid, but &amp;ldquo;0&amp;rdquo; is valid).&lt;/p>
-&lt;p>For example, given &lt;code>s = &amp;quot;25525511135&amp;quot;&lt;/code>, the valid IP addresses are &lt;code>[&amp;quot;255.255.11.135&amp;quot;]&lt;/code>.&lt;/p></description></item><item><title>Letter Combinations Of A Phone Number</title><link>https://deepskandpal.github.io/dsa-log/letter-combinations-of-a-phone-number/</link><pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/letter-combinations-of-a-phone-number/</guid><description>&lt;h2 id="problem-description">Problem Description&lt;/h2>
-&lt;p>&lt;a href="https://colab.research.google.com/drive/1udH4eyb9bToLC_ZPPaK-n3T-jPdbAANw#scrollTo=pD7bP8UR5oiP">rough nb&lt;/a>&lt;/p>
-&lt;p>Given a string containing digits from &lt;code>2-9&lt;/code> inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.&lt;/p>
-&lt;p>A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.&lt;/p>
-&lt;p>&lt;strong>Example 1:&lt;/strong>&lt;/p>
-&lt;pre tabindex="0">&lt;code>Input: digits = &amp;#34;23&amp;#34;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Backtracking on 404EngineerNotFound</title><link>https://deepskandpal.github.io/tags/backtracking/</link><description>Recent content in Backtracking on 404EngineerNotFound</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 29 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://deepskandpal.github.io/tags/backtracking/index.xml" rel="self" type="application/rss+xml"/><item><title>Restore Ip Addresses</title><link>https://deepskandpal.github.io/dsa-log/restore-ip-addresses/</link><pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/restore-ip-addresses/</guid><description>&lt;h2 id="problem-description"&gt;Problem Description&lt;/h2&gt;
+&lt;p&gt;Given a string &lt;code&gt;s&lt;/code&gt; containing only digits, return all possible valid IP addresses that can be formed by inserting three dots into &lt;code&gt;s&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A valid IP address consists of exactly four integers separated by single dots. Each integer is between 0 and 255 (inclusive) and cannot have leading zeros (e.g., &amp;ldquo;01&amp;rdquo; is invalid, but &amp;ldquo;0&amp;rdquo; is valid).&lt;/p&gt;
+&lt;p&gt;For example, given &lt;code&gt;s = &amp;quot;25525511135&amp;quot;&lt;/code&gt;, the valid IP addresses are &lt;code&gt;[&amp;quot;255.255.11.135&amp;quot;]&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Letter Combinations Of A Phone Number</title><link>https://deepskandpal.github.io/dsa-log/letter-combinations-of-a-phone-number/</link><pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/letter-combinations-of-a-phone-number/</guid><description>&lt;h2 id="problem-description"&gt;Problem Description&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://colab.research.google.com/drive/1udH4eyb9bToLC_ZPPaK-n3T-jPdbAANw#scrollTo=pD7bP8UR5oiP"&gt;rough nb&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Given a string containing digits from &lt;code&gt;2-9&lt;/code&gt; inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.&lt;/p&gt;
+&lt;p&gt;A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Input: digits = &amp;#34;23&amp;#34;
 Output: [&amp;#34;ad&amp;#34;,&amp;#34;ae&amp;#34;,&amp;#34;af&amp;#34;,&amp;#34;bd&amp;#34;,&amp;#34;be&amp;#34;,&amp;#34;bf&amp;#34;,&amp;#34;cd&amp;#34;,&amp;#34;ce&amp;#34;,&amp;#34;cf&amp;#34;]
-&lt;/code>&lt;/pre>&lt;p>&lt;strong>Example 2:&lt;/strong>&lt;/p>
-&lt;pre tabindex="0">&lt;code>Input: digits = &amp;#34;&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Input: digits = &amp;#34;&amp;#34;
 Output: []
-&lt;/code>&lt;/pre>&lt;h2 id="solution-approach">Solution Approach&lt;/h2>
-&lt;p>This problem is a classic example of a backtracking or recursion problem. We need to explore all possible combinations of letters for the given digits.&lt;/p></description></item><item><title>Recursion and Backtracking</title><link>https://deepskandpal.github.io/dsa-concepts/recursion-and-backtracking/</link><pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/recursion-and-backtracking/</guid><description>&lt;h1 id="recursion-and-backtracking">Recursion and Backtracking&lt;/h1>
-&lt;p>This document covers the fundamental concepts of recursion and backtracking in the context of Data Structures and Algorithms (DSA).&lt;/p>
-&lt;h2 id="recursion">Recursion&lt;/h2>
-&lt;p>Recursion is a method of solving a computational problem where the solution depends on solutions to smaller instances of the same problem.&lt;/p>
-&lt;h3 id="key-concepts">Key Concepts&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Base Case:&lt;/strong> The condition under which the recursion stops.&lt;/li>
-&lt;li>&lt;strong>Recursive Step:&lt;/strong> The part of the function that calls itself.&lt;/li>
-&lt;/ul>
-&lt;h3 id="example-factorial">Example: Factorial&lt;/h3>
-&lt;pre tabindex="0">&lt;code>function factorial(n) {
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="solution-approach"&gt;Solution Approach&lt;/h2&gt;
+&lt;p&gt;This problem is a classic example of a backtracking or recursion problem. We need to explore all possible combinations of letters for the given digits.&lt;/p&gt;</description></item><item><title>Recursion and Backtracking</title><link>https://deepskandpal.github.io/dsa-concepts/recursion-and-backtracking/</link><pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-concepts/recursion-and-backtracking/</guid><description>&lt;h1 id="recursion-and-backtracking"&gt;Recursion and Backtracking&lt;/h1&gt;
+&lt;p&gt;This document covers the fundamental concepts of recursion and backtracking in the context of Data Structures and Algorithms (DSA).&lt;/p&gt;
+&lt;h2 id="recursion"&gt;Recursion&lt;/h2&gt;
+&lt;p&gt;Recursion is a method of solving a computational problem where the solution depends on solutions to smaller instances of the same problem.&lt;/p&gt;
+&lt;h3 id="key-concepts"&gt;Key Concepts&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Base Case:&lt;/strong&gt; The condition under which the recursion stops.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Recursive Step:&lt;/strong&gt; The part of the function that calls itself.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="example-factorial"&gt;Example: Factorial&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;function factorial(n) {
  // Base case
  if (n === 0) {
  return 1;
@@ -30,5 +30,5 @@ Output: []
  // Recursive step
  return n * factorial(n - 1);
 }
-&lt;/code>&lt;/pre>&lt;h2 id="backtracking">Backtracking&lt;/h2>
-&lt;p>Backtracking is a general algorithmic technique that considers searching every possible combination in order to solve a computational problem. It is a refined brute force approach that incrementally builds candidates to the solutions, and abandons a candidate (&amp;ldquo;backtracks&amp;rdquo;) as soon as it determines that the candidate cannot possibly be completed to a valid solution.&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="backtracking"&gt;Backtracking&lt;/h2&gt;
+&lt;p&gt;Backtracking is a general algorithmic technique that considers searching every possible combination in order to solve a computational problem. It is a refined brute force approach that incrementally builds candidates to the solutions, and abandons a candidate (&amp;ldquo;backtracks&amp;rdquo;) as soon as it determines that the candidate cannot possibly be completed to a valid solution.&lt;/p&gt;</description></item></channel></rss>
