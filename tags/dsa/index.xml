@@ -9,15 +9,15 @@
 &lt;div class="progress-chart"&gt;
 &lt;center&gt;
 &lt;h3&gt;Overall Progress&lt;/h3&gt;
-Completed: 3 | Learning: 0 | To Do: 57
+Completed: 20 | Learning: 0 | To Do: 40
 &lt;/center&gt;
 
 &lt;pre&gt;&lt;code class="language-mermaid"&gt;%%{init: {'pie': {'textPosition': 0.75}, 'themeVariables': {'pieOuterStrokeWidth': '2px'}}}%%
 pie showData
  title Overall GenAI Study Progress
- "⚪️ To Do" : 57
+ "⚪️ To Do" : 40
  
- "✅ Completed" : 3
+ "✅ Completed" : 20
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
  
