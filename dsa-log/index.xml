@@ -68,15 +68,15 @@ while equal &amp;lt; larger:
 &lt;div class="progress-chart"&gt;
 &lt;center&gt;
 &lt;h3&gt;Overall Progress&lt;/h3&gt;
-Completed: 20 | Learning: 0 | To Do: 40
+Completed: 39 | Learning: 0 | To Do: 24
 &lt;/center&gt;
 
 &lt;pre&gt;&lt;code class="language-mermaid"&gt;%%{init: {'pie': {'textPosition': 0.75}, 'themeVariables': {'pieOuterStrokeWidth': '2px'}}}%%
 pie showData
  title Overall GenAI Study Progress
- "⚪️ To Do" : 40
+ "⚪️ To Do" : 24
  
- "✅ Completed" : 20
+ "✅ Completed" : 39
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
  
@@ -143,14 +143,41 @@ so it 5 - 2 or 5 -1&lt;/p&gt;</description></item><item><title/><link>https://de
 &lt;p&gt;Given a reference of a node in a &lt;strong&gt;&lt;a href="https://en.wikipedia.org/wiki/Connectivity_(graph_theory)#Connected_graph"&gt;connected&lt;/a&gt;&lt;/strong&gt; undirected graph.
 Return a &lt;a href="https://en.wikipedia.org/wiki/Object_copying#Deep_copy"&gt;&lt;strong&gt;deep copy&lt;/strong&gt;&lt;/a&gt; (clone) of the graph.&lt;/p&gt;
 &lt;h1 id="brainstorming"&gt;Brainstorming&lt;/h1&gt;
-&lt;p&gt;So the whole idea is based on one thing , If my existing node has say 2 neighbours and the all point back to some previous node , it means the my graph has cycle , if i don&amp;rsquo;t keep a track of what nodes are processed there is a high chance that my deep copy can go in finite loop&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/copy-list-with-random-pointer---deep-copy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/copy-list-with-random-pointer---deep-copy/</guid><description>&lt;p&gt;[[Linked List Stacks and Queues a Primer]]&lt;/p&gt;
+&lt;p&gt;So the whole idea is based on one thing , If my existing node has say 2 neighbours and the all point back to some previous node , it means the my graph has cycle , if i don&amp;rsquo;t keep a track of what nodes are processed there is a high chance that my deep copy can go in finite loop&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/coin-change/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/coin-change/</guid><description>&lt;p&gt;[[Dynamic Programming Primer]]&lt;/p&gt;
+&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;The &amp;ldquo;Unbounded Knapsack&amp;rdquo; Pattern.&lt;/p&gt;
+&lt;p&gt;You are given an array of coin denominations (e.g., &lt;code&gt;[1, 2, 5]&lt;/code&gt;) and a total amount of money (e.g., 11). Find the &lt;strong&gt;fewest&lt;/strong&gt; number of coins that you need to make up that amount. You can use each coin type as many times as you want. If it&amp;rsquo;s impossible, return -1. its an unbounded knapsack problem because there is no contraint on how many times we can reuse the same coins
+for eg to make target 3 we can
+use 1 3 times ( 3 coins)
+use a 1 and a 2 hence (2 coins)
+the answer is 2 since thats the least number of coins we need&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/copy-list-with-random-pointer---deep-copy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/copy-list-with-random-pointer---deep-copy/</guid><description>&lt;p&gt;[[Linked List Stacks and Queues a Primer]]&lt;/p&gt;
 &lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;The Problem:&lt;/strong&gt; You are given a linked list where each node has two pointers:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;A standard next pointer.&lt;/li&gt;
 &lt;li&gt;A random pointer, which can point to any node in the list (or None).&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Your task:&lt;/strong&gt; Create a &lt;strong&gt;deep copy&lt;/strong&gt; of this entire list. A deep copy means you must create a brand new Node for every original node. The next and random pointers of your new nodes must point to the corresponding new nodes, not the original ones.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/evaluate---rpn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/evaluate---rpn/</guid><description>&lt;p&gt;[[Linked List Stacks and Queues a Primer]]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Your task:&lt;/strong&gt; Create a &lt;strong&gt;deep copy&lt;/strong&gt; of this entire list. A deep copy means you must create a brand new Node for every original node. The next and random pointers of your new nodes must point to the corresponding new nodes, not the original ones.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/course-schedule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/course-schedule/</guid><description>&lt;p&gt;[[Graphs]]&lt;/p&gt;
+&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;There are a total of &lt;code&gt;numCourses&lt;/code&gt; courses you have to take, labeled from &lt;code&gt;0&lt;/code&gt; to &lt;code&gt;numCourses - 1&lt;/code&gt;. You are given an array &lt;code&gt;prerequisites&lt;/code&gt; where &lt;code&gt;prerequisites[i] = [ai, bi]&lt;/code&gt; indicates that you &lt;strong&gt;must&lt;/strong&gt; take course &lt;code&gt;bi&lt;/code&gt; first if you want to take course &lt;code&gt;ai&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For example, the pair &lt;code&gt;[0, 1]&lt;/code&gt;, indicates that to take course &lt;code&gt;0&lt;/code&gt; you have to first take course &lt;code&gt;1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Return &lt;code&gt;true&lt;/code&gt; if you can finish all courses. Otherwise, return &lt;code&gt;false&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/edit-distance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/edit-distance/</guid><description>&lt;p&gt;[[Dynamic Programming Primer]]&lt;/p&gt;
+&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;You are given two words, word1 and word2. You want to find the &lt;strong&gt;minimum&lt;/strong&gt; number of operations required to convert word1 into word2.&lt;/p&gt;
+&lt;p&gt;You are allowed three types of operations, and each one costs 1:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Insert&lt;/strong&gt; a character.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Delete&lt;/strong&gt; a character.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Replace&lt;/strong&gt; a character.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Example: word1 = &amp;ldquo;horse&amp;rdquo;, word2 = &amp;ldquo;ros&amp;rdquo;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;1. Horse -&amp;gt; Rorse (replace &amp;#39;h&amp;#39; with &amp;#39;r&amp;#39;)
+2. Rorse -&amp;gt; Rors (delete &amp;#39;e&amp;#39;)
+3. Rors -&amp;gt; Ros (delete &amp;#39;o&amp;#39;) 
+
+The minimum number of operations is **3**.
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id="brainstorming"&gt;Brainstorming&lt;/h1&gt;
+&lt;p&gt;This is again a 2D dp problem with grids as we are dealing with 2 strings comparison again similar to [[Longest Common Subsequence]] but it has an added complexity for the operation&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/evaluate-rpn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/evaluate-rpn/</guid><description>&lt;p&gt;[[Linked List Stacks and Queues a Primer]]&lt;/p&gt;
 &lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
 &lt;p&gt;You are given a string representing an arithmetic expression in &lt;strong&gt;Reverse Polish Notation (RPN)&lt;/strong&gt;. RPN is a way of writing expressions where the operator comes after its operands.&lt;/p&gt;
 &lt;ul&gt;
@@ -172,7 +199,21 @@ Return a &lt;a href="https://en.wikipedia.org/wiki/Object_copying#Deep_copy"&gt
 &lt;p&gt;A binary tree&amp;rsquo;s &lt;strong&gt;maximum depth&lt;/strong&gt; is the number of nodes along the longest path from the root node down to the farthest leaf node.&lt;/p&gt;
 &lt;p&gt;![[binary_tree_height.png]]&lt;/p&gt;
 &lt;h1 id="brain-storming"&gt;Brain storming&lt;/h1&gt;
-&lt;p&gt;The height of a binary tree can be defined at each level by &amp;ldquo;the maximum height of any of my left and right child plus 1&amp;rdquo; . The core here is at each node ,&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/invert-a-binary-tree/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/invert-a-binary-tree/</guid><description>&lt;p&gt;[[Recursion]] [[Binary trees and Binary search trees]]&lt;/p&gt;
+&lt;p&gt;The height of a binary tree can be defined at each level by &amp;ldquo;the maximum height of any of my left and right child plus 1&amp;rdquo; . The core here is at each node ,&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/group-anagrams/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/group-anagrams/</guid><description>&lt;p&gt;[[Hasmaps and hash sets]]&lt;/p&gt;
+&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;Given an array of strings &lt;code&gt;strs&lt;/code&gt;, group the anagrams together. You can return the answer in &lt;strong&gt;any order&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Input:&lt;/strong&gt; strs = &lt;code&gt;[&amp;quot;eat&amp;quot;,&amp;quot;tea&amp;quot;,&amp;quot;tan&amp;quot;,&amp;quot;ate&amp;quot;,&amp;quot;nat&amp;quot;,&amp;quot;bat&amp;quot;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Output:&lt;/strong&gt; &lt;code&gt;[[&amp;quot;bat&amp;quot;],[&amp;quot;nat&amp;quot;,&amp;quot;tan&amp;quot;],[&amp;quot;ate&amp;quot;,&amp;quot;eat&amp;quot;,&amp;quot;tea&amp;quot;]]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Explanation:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There is no string in strs that can be rearranged to form &lt;code&gt;&amp;quot;bat&amp;quot;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The strings &lt;code&gt;&amp;quot;nat&amp;quot;&lt;/code&gt; and &lt;code&gt;&amp;quot;tan&amp;quot;&lt;/code&gt; are anagrams as they can be rearranged to form each other.&lt;/li&gt;
+&lt;li&gt;The strings &lt;code&gt;&amp;quot;ate&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;eat&amp;quot;&lt;/code&gt;, and &lt;code&gt;&amp;quot;tea&amp;quot;&lt;/code&gt; are anagrams as they can be rearranged to form each other.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/insert-interval/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/insert-interval/</guid><description>&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;You are given an array of non-overlapping intervals &lt;code&gt;intervals&lt;/code&gt; where &lt;code&gt;intervals[i] = [starti, endi]&lt;/code&gt; represent the start and the end of the &lt;code&gt;ith&lt;/code&gt; interval and &lt;code&gt;intervals&lt;/code&gt; is sorted in ascending order by &lt;code&gt;starti&lt;/code&gt;. You are also given an interval &lt;code&gt;newInterval = [start, end]&lt;/code&gt; that represents the start and end of another interval.&lt;/p&gt;
+&lt;p&gt;Insert &lt;code&gt;newInterval&lt;/code&gt; into &lt;code&gt;intervals&lt;/code&gt; such that &lt;code&gt;intervals&lt;/code&gt; is still sorted in ascending order by &lt;code&gt;starti&lt;/code&gt; and &lt;code&gt;intervals&lt;/code&gt; still does not have any overlapping intervals (merge overlapping intervals if necessary).&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/invert-a-binary-tree/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/invert-a-binary-tree/</guid><description>&lt;p&gt;[[Recursion]] [[Binary trees and Binary search trees]]&lt;/p&gt;
 &lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
 &lt;p&gt;You are given the root of a binary tree. Your task is to swap the left and right child of every single node in the tree. The result is a tree that is a mirror image of the original.&lt;/p&gt;
 &lt;h1 id="brainstorming"&gt;Brainstorming&lt;/h1&gt;
@@ -202,10 +243,83 @@ Return a &lt;a href="https://en.wikipedia.org/wiki/Object_copying#Deep_copy"&gt
 &lt;li&gt;Output: &lt;code&gt;4&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Explanation:&lt;/strong&gt; The longest consecutive elements sequence is &lt;code&gt;[1, 2, 3, 4]&lt;/code&gt;. Its length is 4. Notice that these numbers are not next to each other in the input array.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/merge-two-sorted-lists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/merge-two-sorted-lists/</guid><description>&lt;p&gt;[[Linked List Stacks and Queues a Primer]]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/longest-increasing-subsequence/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/longest-increasing-subsequence/</guid><description>&lt;p&gt;[[Dynamic Programming Primer]]&lt;/p&gt;
+&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;You are given an array of integers, &lt;code&gt;nums&lt;/code&gt;. A subsequence is a sequence that can be derived from the array by deleting some or no elements without changing the order of the remaining elements. Your goal is to find the &lt;strong&gt;length&lt;/strong&gt; of the longest &lt;strong&gt;strictly increasing&lt;/strong&gt; subsequence.&lt;/p&gt;
+&lt;p&gt;Example: &lt;code&gt;nums&lt;/code&gt; = &lt;code&gt;[10, 9, 2, 5, 3, 7, 101, 18]&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;[2, 3, 7, 101]&lt;/code&gt; is one LIS.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[2, 5, 7, 101]&lt;/code&gt; is another.
+The answer is &lt;strong&gt;4&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="brainstorming"&gt;Brainstorming&lt;/h1&gt;
+&lt;p&gt;The core idea here is simple what should we track in our dp state?&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/longest-palindromic-substring/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/longest-palindromic-substring/</guid><description>&lt;p&gt;[[Dynamic Programming Primer]]&lt;/p&gt;
+&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;You are given one string, s. Your goal is to find the longest &lt;strong&gt;substring&lt;/strong&gt; (a contiguous block) that is a palindrome.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Example: s = &amp;quot;babads&amp;quot;. The answer is &amp;quot;bab&amp;quot; (or &amp;quot;aba&amp;quot;). Length is 3.&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id="brain-storming"&gt;Brain storming&lt;/h1&gt;
+&lt;p&gt;lets start with the basics a substring of string &lt;code&gt;s&lt;/code&gt; is defined as &lt;code&gt;s[start:end]&lt;/code&gt; start and end being the index inside this string that represent this substring. Why do we care about this? its because for a palindrome this play a very important role.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/longest-substring-without-repeating-characters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/longest-substring-without-repeating-characters/</guid><description>&lt;p&gt;[[Arrays]]&lt;/p&gt;
+&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;Given a string &lt;code&gt;s&lt;/code&gt;, find the length of the &lt;strong&gt;longest&lt;/strong&gt; &lt;strong&gt;substring&lt;/strong&gt; without duplicate characters.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Input:&lt;/strong&gt; s = &amp;ldquo;abcabcbb&amp;rdquo;
+&lt;strong&gt;Output:&lt;/strong&gt; 3
+&lt;strong&gt;Explanation:&lt;/strong&gt; The answer is &amp;ldquo;abc&amp;rdquo;, with the length of 3. Note that &lt;code&gt;&amp;quot;bca&amp;quot;&lt;/code&gt; and &lt;code&gt;&amp;quot;cab&amp;quot;&lt;/code&gt; are also correct answers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Input:&lt;/strong&gt; s = &amp;ldquo;bbbbb&amp;rdquo;
+&lt;strong&gt;Output:&lt;/strong&gt; 1
+&lt;strong&gt;Explanation:&lt;/strong&gt; The answer is &amp;ldquo;b&amp;rdquo;, with the length of 1.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Input:&lt;/strong&gt; s = &amp;ldquo;pwwkew&amp;rdquo;
+&lt;strong&gt;Output:&lt;/strong&gt; 3
+&lt;strong&gt;Explanation:&lt;/strong&gt; The answer is &amp;ldquo;wke&amp;rdquo;, with the length of 3.
+Notice that the answer must be a substring, &amp;ldquo;pwke&amp;rdquo; is a subsequence and not a substring.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/lowest-common-ancestor-of-a-binary-search-tree/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/lowest-common-ancestor-of-a-binary-search-tree/</guid><description>&lt;p&gt;[[Binary trees and Binary search trees]]&lt;/p&gt;
+&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;Same problem as [[LCA in a binary tree]] , but this time you are &lt;em&gt;guaranteed&lt;/em&gt; that the input tree is a valid Binary Search Tree with distinct keys.&lt;/p&gt;
+&lt;h1 id="brainstorming"&gt;Brainstorming&lt;/h1&gt;
+&lt;p&gt;The added advantage we have now is that the tree is guaranteed to be a binary search tree. A binary search tree has a very significant property&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;node.left.data &amp;lt;= node.data &amp;lt;= node.right.data&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;so in this case we can look at &lt;code&gt;p&lt;/code&gt; and &lt;code&gt;q&lt;/code&gt; and decide using this property where to look for our LCA.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/lowest-common-ancestor-of-a-binary-tree/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/lowest-common-ancestor-of-a-binary-tree/</guid><description>&lt;p&gt;[[Binary trees and Binary search trees]]&lt;/p&gt;
+&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;you are given the root of a binary tree and two nodes, &lt;code&gt;p&lt;/code&gt; and &lt;code&gt;q&lt;/code&gt;, that are in the tree. Find the node that is the &amp;ldquo;lowest&amp;rdquo; (deepest) common ancestor of both &lt;code&gt;p&lt;/code&gt; and &lt;code&gt;q&lt;/code&gt;. The node itself can be an ancestor.&lt;/p&gt;
+&lt;p&gt;Example 1&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt; A
+ / \
+ B C
+/ / \
+D E F
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;LCA of D and E:&lt;/strong&gt; The path to D is &lt;code&gt;A -&amp;gt; B -&amp;gt; D&lt;/code&gt;. The path to E is &lt;code&gt;A -&amp;gt; C -&amp;gt; E&lt;/code&gt;. The first (and only) common node in those paths is &lt;strong&gt;A&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/merge-intervals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/merge-intervals/</guid><description>&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;Given an array of &lt;code&gt;intervals&lt;/code&gt; where &lt;code&gt;intervals[i] = [starti, endi]&lt;/code&gt;, merge all overlapping intervals, and return &lt;em&gt;an array of the non-overlapping intervals that cover all the intervals in the input&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Input:&lt;/strong&gt; intervals =&lt;code&gt;[[1,3],[2,6],[8,10],[15,18]]&lt;/code&gt;
+&lt;strong&gt;Output:&lt;/strong&gt; &lt;code&gt;[[1,6],[8,10],[15,18]]&lt;/code&gt;
+&lt;strong&gt;Explanation:&lt;/strong&gt; Since intervals &lt;code&gt;[1,3]&lt;/code&gt; and &lt;code&gt;[2,6]&lt;/code&gt; overlap, merge them into &lt;code&gt;[1,6]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Input:&lt;/strong&gt; intervals = &lt;code&gt;[[1,4],[4,5]]&lt;/code&gt;
+&lt;strong&gt;Output:&lt;/strong&gt; &lt;code&gt;[[1,5]]&lt;/code&gt;
+&lt;strong&gt;Explanation:&lt;/strong&gt; Intervals &lt;code&gt;[1,4]&lt;/code&gt; and &lt;code&gt;[4,5]&lt;/code&gt; are considered overlapping.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Input:&lt;/strong&gt; intervals =&lt;code&gt;[[4,7],[1,4]]&lt;/code&gt;
+&lt;strong&gt;Output:&lt;/strong&gt;&lt;code&gt;[[1,7]]&lt;/code&gt;
+&lt;strong&gt;Explanation:&lt;/strong&gt; Intervals &lt;code&gt;[1,4]&lt;/code&gt; and &lt;code&gt;[4,7]&lt;/code&gt; are considered overlapping.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/merge-two-sorted-lists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/merge-two-sorted-lists/</guid><description>&lt;p&gt;[[Linked List Stacks and Queues a Primer]]&lt;/p&gt;
 &lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
 &lt;p&gt;You are given two linked lists, L1 and L2, and you are guaranteed that each list is already sorted in ascending order.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Your task:&lt;/strong&gt; Write a function merge_two_sorted_lists(L1, L2) that merges the two lists into a single, perfectly sorted linked list that contains all the nodes from L1 and L2. You should do this by rearranging the existing nodes, not creating new ones.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/number-of-islands/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/number-of-islands/</guid><description>&lt;p&gt;[[Graphs]]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Your task:&lt;/strong&gt; Write a function merge_two_sorted_lists(L1, L2) that merges the two lists into a single, perfectly sorted linked list that contains all the nodes from L1 and L2. You should do this by rearranging the existing nodes, not creating new ones.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/minimum-window-substring/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/minimum-window-substring/</guid><description>&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;You are given two strings, s (the &amp;ldquo;search string&amp;rdquo;) and t (the &amp;ldquo;pattern&amp;rdquo;). You need to find the &lt;strong&gt;minimum length substring&lt;/strong&gt; of s that contains &lt;strong&gt;all the characters&lt;/strong&gt; of t. The frequency of characters in the substring must be greater than or equal to the frequency in t.&lt;/p&gt;
+&lt;p&gt;Example: s = &amp;ldquo;ADOBECODEBANC&amp;rdquo;, t = &amp;ldquo;ABC&amp;rdquo;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;ADOBEC&amp;rdquo; contains &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo;, &amp;ldquo;C&amp;rdquo;. Length 6.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;CODEBA&amp;rdquo; is not valid (missing &amp;ldquo;C&amp;rdquo;).&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;BANC&amp;rdquo; contains &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo;, &amp;ldquo;C&amp;rdquo;. Length 4. This is the minimum.&lt;/li&gt;
+&lt;li&gt;The answer is &amp;ldquo;BANC&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="brainstorming"&gt;Brainstorming&lt;/h1&gt;
+&lt;p&gt;i think a has map should should work an example for it would be like t = &amp;ldquo;ABC&amp;rdquo; {&amp;ldquo;A&amp;rdquo; : 1 , &amp;ldquo;B&amp;rdquo;: 1, &amp;ldquo;C&amp;rdquo;:1}&lt;br&gt;
+as we move right we need to ask if the character we are looking at is it in our hash map? if we collect it we can simply reduce the counts of the char by 1
+now an idea would be a sum of all the chars counts in the has map which for our example be 3 that helps us keep a track of how many we have found by removing each char found from it for eg we found A so we remove one from this char_counts but this may not keep track of the char individually the form and needed can work if the counts of chars is 1 in the pattern string but i am not sure how it will work for more than 1 occurance.
+in the while loop we will move the left pointer till we have not hit 1 of the chars from our pattern string&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/number-of-islands/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/number-of-islands/</guid><description>&lt;p&gt;[[Graphs]]&lt;/p&gt;
 &lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;An &amp;ldquo;island&amp;rdquo; is defined as a group of &amp;lsquo;1&amp;rsquo;s that are connected either horizontally or vertically (but not diagonally). You can assume that the entire grid is surrounded by water, so you don&amp;rsquo;t need to worry about islands extending beyond the edges of the grid.&lt;/p&gt;
 &lt;p&gt;Let me give you an example to make it concrete. If you were given this grid:&lt;/p&gt;
@@ -231,7 +345,17 @@ Return a &lt;a href="https://en.wikipedia.org/wiki/Object_copying#Deep_copy"&gt
 &lt;li&gt;Example Path: &lt;code&gt;root(1) -&amp;gt; child(0) -&amp;gt; leaf(1)&lt;/code&gt; represents binary &lt;code&gt;101&lt;/code&gt;, which is 5.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id="brainstorming"&gt;Brainstorming&lt;/h1&gt;
-&lt;p&gt;The key idea is we need to calculate the partial sum at the node we are processing &lt;em&gt;before&lt;/em&gt; we pass it on to the child nodes. that way we are essentially &lt;em&gt;carrying&lt;/em&gt; down the results and adding values to it as we go down. This is a pre order traversal ( root -&amp;gt; left -&amp;gt; right) along with the node we would also need to maintain the &amp;ldquo;sum&amp;rdquo; as input to the recursive helper as &lt;em&gt;partial sum so far&lt;/em&gt;&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/top-k-frequent-words/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/top-k-frequent-words/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;The key idea is we need to calculate the partial sum at the node we are processing &lt;em&gt;before&lt;/em&gt; we pass it on to the child nodes. that way we are essentially &lt;em&gt;carrying&lt;/em&gt; down the results and adding values to it as we go down. This is a pre order traversal ( root -&amp;gt; left -&amp;gt; right) along with the node we would also need to maintain the &amp;ldquo;sum&amp;rdquo; as input to the recursive helper as &lt;em&gt;partial sum so far&lt;/em&gt;&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/test-palindromicity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/test-palindromicity/</guid><description>&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;A phrase is a &lt;strong&gt;palindrome&lt;/strong&gt; if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.&lt;/p&gt;
+&lt;p&gt;Given a string &lt;code&gt;s&lt;/code&gt;, return &lt;code&gt;true&lt;/code&gt; &lt;em&gt;if it is a &lt;strong&gt;palindrome&lt;/strong&gt;, or&lt;/em&gt; &lt;code&gt;false&lt;/code&gt; &lt;em&gt;otherwise&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Input:&lt;/strong&gt; s = &amp;ldquo;A man, a plan, a canal: Panama&amp;rdquo;
+&lt;strong&gt;Output:&lt;/strong&gt; true
+&lt;strong&gt;Explanation:&lt;/strong&gt; &amp;ldquo;amanaplanacanalpanama&amp;rdquo; is a palindrome.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Input:&lt;/strong&gt; s = &amp;ldquo;race a car&amp;rdquo;
+&lt;strong&gt;Output:&lt;/strong&gt; false
+&lt;strong&gt;Explanation:&lt;/strong&gt; &amp;ldquo;raceacar&amp;rdquo; is not a palindrome.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/top-k-frequent-words/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/top-k-frequent-words/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;Given a non-empty list of words, return the k most frequent words.
 &lt;strong&gt;The Twist:&lt;/strong&gt; Your answer should be sorted by frequency from highest to lowest. If two words have the same frequency, the word with the &lt;strong&gt;lower alphabetical order&lt;/strong&gt; comes first.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
@@ -264,7 +388,11 @@ Return a &lt;a href="https://en.wikipedia.org/wiki/Object_copying#Deep_copy"&gt
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;A Trie node would look like this&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/valid-paranthesis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/valid-paranthesis/</guid><description>&lt;p&gt;[[Linked List Stacks and Queues a Primer]]&lt;/p&gt;
+&lt;p&gt;A Trie node would look like this&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/unique-paths/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/unique-paths/</guid><description>&lt;p&gt;[[Dynamic Programming Primer]]&lt;/p&gt;
+&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;You are on an m x n grid. You start at the top-left corner (0, 0). Your goal is to reach the bottom-right corner (m-1, n-1). At any point, you can only move &lt;strong&gt;right&lt;/strong&gt; or &lt;strong&gt;down&lt;/strong&gt;. Find the total number of unique paths.&lt;/p&gt;
+&lt;h1 id="brainstorming"&gt;Brainstorming&lt;/h1&gt;
+&lt;p&gt;Well 2D dp is back , and this time it is not as crazy as the previous 2 times. The idea here we are discussing is how many unique paths can we use to reach path from top left to bottom right. Given that we can only move right and down the problem can be thought of as:&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/valid-paranthesis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/valid-paranthesis/</guid><description>&lt;p&gt;[[Linked List Stacks and Queues a Primer]]&lt;/p&gt;
 &lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
 &lt;p&gt;You are given a string containing just the characters (, ), {, }, &lt;code&gt;[ and ].&lt;/code&gt;
 &lt;strong&gt;Your task:&lt;/strong&gt; Write a function is_well_formed(s) that determines if the input string is &amp;ldquo;well-formed&amp;rdquo; (also known as &amp;ldquo;valid parentheses&amp;rdquo;).&lt;/p&gt;
@@ -282,7 +410,29 @@ Return a &lt;a href="https://en.wikipedia.org/wiki/Object_copying#Deep_copy"&gt
 &lt;li&gt;&lt;code&gt;&amp;quot;[&amp;quot;&lt;/code&gt; -&amp;gt; False (Unclosed)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id="brainstorm"&gt;Brainstorm&lt;/h1&gt;
-&lt;p&gt;This again is a classic stack problem since we plan to keep a &lt;code&gt;track&lt;/code&gt; of what have we seen so far and what do we need &lt;code&gt;now&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/word-break/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/word-break/</guid><description>&lt;p&gt;[[Dynamic Programming Primer]]&lt;/p&gt;
+&lt;p&gt;This again is a classic stack problem since we plan to keep a &lt;code&gt;track&lt;/code&gt; of what have we seen so far and what do we need &lt;code&gt;now&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/validate-binary-search-tree/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/validate-binary-search-tree/</guid><description>&lt;p&gt;[[Binary trees and Binary search trees]]&lt;/p&gt;
+&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;Given a binary tree validate that its a binary search tree&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;valid BST&lt;/strong&gt; is defined as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The left subtree of a node contains only nodes with keys &lt;strong&gt;strictly less than&lt;/strong&gt; the node&amp;rsquo;s key.&lt;/li&gt;
+&lt;li&gt;The right subtree of a node contains only nodes with keys &lt;strong&gt;strictly greater than&lt;/strong&gt; the node&amp;rsquo;s key.&lt;/li&gt;
+&lt;li&gt;Both the left and right subtrees must also be binary search trees.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;. 2
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; /. \
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;1. 3
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Valid tree
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id="brain-storming"&gt;Brain storming&lt;/h1&gt;
+&lt;p&gt;Initial idea is node.left.data &amp;lt;= node.data and node.data &amp;lt;= node.right.data. a simple check across the traversal would ideally work if at each level we just do this check , but here in lies the key problem.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/word-break/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/word-break/</guid><description>&lt;p&gt;[[Dynamic Programming Primer]]&lt;/p&gt;
 &lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;So, the problem is this: you are given a string s and a dictionary of strings wordDict. Your task is to write a function that returns true if s can be segmented into a space-separated sequence of one or more words from the dictionary. You can assume that the dictionary does not contain duplicate words, and you are allowed to reuse words from the dictionary.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s look at a few examples:&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Let&amp;rsquo;s look at a few examples:&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/word-ladder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/word-ladder/</guid><description>&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;A &lt;strong&gt;transformation sequence&lt;/strong&gt; from word &lt;code&gt;beginWord&lt;/code&gt; to word &lt;code&gt;endWord&lt;/code&gt; using a dictionary &lt;code&gt;wordList&lt;/code&gt; is a sequence of words &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&lt;/code&gt; such that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Every adjacent pair of words differs by a single letter.&lt;/li&gt;
+&lt;li&gt;Every &lt;code&gt;si&lt;/code&gt; for &lt;code&gt;1 &amp;lt;= i &amp;lt;= k&lt;/code&gt; is in &lt;code&gt;wordList&lt;/code&gt;. Note that &lt;code&gt;beginWord&lt;/code&gt; does not need to be in &lt;code&gt;wordList&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sk == endWord&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Given two words, &lt;code&gt;beginWord&lt;/code&gt; and &lt;code&gt;endWord&lt;/code&gt;, and a dictionary &lt;code&gt;wordList&lt;/code&gt;, return &lt;em&gt;the &lt;strong&gt;number of words&lt;/strong&gt; in the &lt;strong&gt;shortest transformation sequence&lt;/strong&gt; from&lt;/em&gt; &lt;code&gt;beginWord&lt;/code&gt; &lt;em&gt;to&lt;/em&gt; &lt;code&gt;endWord&lt;/code&gt;&lt;em&gt;, or&lt;/em&gt; &lt;code&gt;0&lt;/code&gt; &lt;em&gt;if no such sequence exists.&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>
