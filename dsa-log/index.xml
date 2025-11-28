@@ -68,15 +68,15 @@ while equal &amp;lt; larger:
 &lt;div class="progress-chart"&gt;
 &lt;center&gt;
 &lt;h3&gt;Overall Progress&lt;/h3&gt;
-Completed: 39 | Learning: 0 | To Do: 24
+Completed: 43 | Learning: 0 | To Do: 20
 &lt;/center&gt;
 
 &lt;pre&gt;&lt;code class="language-mermaid"&gt;%%{init: {'pie': {'textPosition': 0.75}, 'themeVariables': {'pieOuterStrokeWidth': '2px'}}}%%
 pie showData
  title Overall GenAI Study Progress
- "⚪️ To Do" : 24
+ "⚪️ To Do" : 20
  
- "✅ Completed" : 39
+ "✅ Completed" : 43
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
  
@@ -119,7 +119,16 @@ Explanation:
 (-1) + 0 + 1 = 0
 (-1) + 2 + (-1) = 0
 Notice [0, 1, -1]
-is the same triplet as [-1, 0, 1], so we only include it once.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/binary-tree---level-order-traversal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/binary-tree---level-order-traversal/</guid><description>&lt;p&gt;[[Linked List Stacks and Queues a Primer]] [[Binary trees and Binary search trees]]&lt;/p&gt;
+is the same triplet as [-1, 0, 1], so we only include it once.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/balanced-binary-tree/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/balanced-binary-tree/</guid><description>&lt;p&gt;[[Binary trees and Binary search trees]]&lt;/p&gt;
+&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;Given a binary tree, determine if it is &lt;strong&gt;height-balanced&lt;/strong&gt;.&lt;/p&gt;
+&lt;h1 id="brainstorming"&gt;Brainstorming&lt;/h1&gt;
+&lt;p&gt;what is a balanced tree? its a tree where the height of its left child and right child is at most 1 . When you are at a node you would need the left tree height and the right tree height , we can check the difference between them if its more than 1 then we can return False. Once the traversal ends and we don&amp;rsquo;t short the traversal even once then we can safely return True.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/binary-search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/binary-search/</guid><description>&lt;p&gt;[[Arrays]]&lt;/p&gt;
+&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;Imagine I have a list of numbers, sorted from smallest to largest. I will not show you the list, but I will answer questions about it. Your goal is to devise a strategy to find out if a specific number, your &amp;ldquo;target,&amp;rdquo; is in my list using the minimum number of questions.&lt;/p&gt;
+&lt;p&gt;The list is: &lt;code&gt;[2, 5, 8, 12, 16, 23, 38, 56, 72, 91]&lt;/code&gt;
+The list has 10 items. Indices are 0 through 9.&lt;br&gt;
+Your target number to find is 23.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/binary-tree---level-order-traversal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/binary-tree---level-order-traversal/</guid><description>&lt;p&gt;[[Linked List Stacks and Queues a Primer]] [[Binary trees and Binary search trees]]&lt;/p&gt;
 &lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
 &lt;p&gt;You are given the root of a binary tree.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Your task:&lt;/strong&gt; Write a function level_order_traversal(root) that returns a list of lists, where each inner list contains the values of the nodes at that level, from left to right.&lt;/p&gt;
@@ -345,7 +354,18 @@ in the while loop we will move the left pointer till we have not hit 1 of the ch
 &lt;li&gt;Example Path: &lt;code&gt;root(1) -&amp;gt; child(0) -&amp;gt; leaf(1)&lt;/code&gt; represents binary &lt;code&gt;101&lt;/code&gt;, which is 5.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id="brainstorming"&gt;Brainstorming&lt;/h1&gt;
-&lt;p&gt;The key idea is we need to calculate the partial sum at the node we are processing &lt;em&gt;before&lt;/em&gt; we pass it on to the child nodes. that way we are essentially &lt;em&gt;carrying&lt;/em&gt; down the results and adding values to it as we go down. This is a pre order traversal ( root -&amp;gt; left -&amp;gt; right) along with the node we would also need to maintain the &amp;ldquo;sum&amp;rdquo; as input to the recursive helper as &lt;em&gt;partial sum so far&lt;/em&gt;&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/test-palindromicity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/test-palindromicity/</guid><description>&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;The key idea is we need to calculate the partial sum at the node we are processing &lt;em&gt;before&lt;/em&gt; we pass it on to the child nodes. that way we are essentially &lt;em&gt;carrying&lt;/em&gt; down the results and adding values to it as we go down. This is a pre order traversal ( root -&amp;gt; left -&amp;gt; right) along with the node we would also need to maintain the &amp;ldquo;sum&amp;rdquo; as input to the recursive helper as &lt;em&gt;partial sum so far&lt;/em&gt;&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/root-to-leaf-paths-binary-numbers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/root-to-leaf-paths-binary-numbers/</guid><description>&lt;p&gt;[[Binary trees and Binary search trees]]&lt;/p&gt;
+&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;You are given a binary tree where each node contains a binary digit (0 or 1). Each root-to-leaf path represents a binary number. Compute the sum of all these numbers.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Example Path: &lt;code&gt;root(1) -&amp;gt; child(0) -&amp;gt; leaf(1)&lt;/code&gt; represents binary &lt;code&gt;101&lt;/code&gt;, which is 5.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="brainstorming"&gt;Brainstorming&lt;/h1&gt;
+&lt;p&gt;The key idea is we need to calculate the partial sum at the node we are processing &lt;em&gt;before&lt;/em&gt; we pass it on to the child nodes. that way we are essentially &lt;em&gt;carrying&lt;/em&gt; down the results and adding values to it as we go down. This is a pre order traversal ( root -&amp;gt; left -&amp;gt; right) along with the node we would also need to maintain the &amp;ldquo;sum&amp;rdquo; as input to the recursive helper as &lt;em&gt;partial sum so far&lt;/em&gt;&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/search-in-rotated-sorted-array/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/search-in-rotated-sorted-array/</guid><description>&lt;p&gt;[[Arrays]]&lt;/p&gt;
+&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;There is an integer array &lt;code&gt;nums&lt;/code&gt; sorted in ascending order (with &lt;strong&gt;distinct&lt;/strong&gt; values).
+Prior to being passed to your function, &lt;code&gt;nums&lt;/code&gt; is &lt;strong&gt;possibly left rotated&lt;/strong&gt; at an unknown index &lt;code&gt;k&lt;/code&gt; (&lt;code&gt;1 &amp;lt;= k &amp;lt; nums.length&lt;/code&gt;) such that the resulting array is &lt;code&gt;[nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]&lt;/code&gt; (&lt;strong&gt;0-indexed&lt;/strong&gt;). For example, &lt;code&gt;[0,1,2,4,5,6,7]&lt;/code&gt; might be left rotated by &lt;code&gt;3&lt;/code&gt; indices and become &lt;code&gt;[4,5,6,7,0,1,2]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Given the array &lt;code&gt;nums&lt;/code&gt; &lt;strong&gt;after&lt;/strong&gt; the possible rotation and an integer &lt;code&gt;target&lt;/code&gt;, return &lt;em&gt;the index of&lt;/em&gt; &lt;code&gt;target&lt;/code&gt; &lt;em&gt;if it is in&lt;/em&gt; &lt;code&gt;nums&lt;/code&gt;&lt;em&gt;, or&lt;/em&gt; &lt;code&gt;-1&lt;/code&gt; &lt;em&gt;if it is not in&lt;/em&gt; &lt;code&gt;nums&lt;/code&gt;.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/test-palindromicity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/test-palindromicity/</guid><description>&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
 &lt;p&gt;A phrase is a &lt;strong&gt;palindrome&lt;/strong&gt; if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.&lt;/p&gt;
 &lt;p&gt;Given a string &lt;code&gt;s&lt;/code&gt;, return &lt;code&gt;true&lt;/code&gt; &lt;em&gt;if it is a &lt;strong&gt;palindrome&lt;/strong&gt;, or&lt;/em&gt; &lt;code&gt;false&lt;/code&gt; &lt;em&gt;otherwise&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
@@ -355,7 +375,19 @@ in the while loop we will move the left pointer till we have not hit 1 of the ch
 &lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Input:&lt;/strong&gt; s = &amp;ldquo;race a car&amp;rdquo;
 &lt;strong&gt;Output:&lt;/strong&gt; false
-&lt;strong&gt;Explanation:&lt;/strong&gt; &amp;ldquo;raceacar&amp;rdquo; is not a palindrome.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/top-k-frequent-words/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/top-k-frequent-words/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;strong&gt;Explanation:&lt;/strong&gt; &amp;ldquo;raceacar&amp;rdquo; is not a palindrome.&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/top-k-frequent-elements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/top-k-frequent-elements/</guid><description>&lt;p&gt;[[Heaps]]&lt;/p&gt;
+&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;Given an integer array &lt;code&gt;nums&lt;/code&gt; and an integer &lt;code&gt;k&lt;/code&gt;, return &lt;em&gt;the&lt;/em&gt; &lt;code&gt;k&lt;/code&gt; &lt;em&gt;most frequent elements&lt;/em&gt;. You may return the answer in &lt;strong&gt;any order&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Input:&lt;/strong&gt; nums = [1,1,1,2,2,3], k = 2&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Output:&lt;/strong&gt; [1,2]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Input:&lt;/strong&gt; nums = [1], k = 1&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Output:&lt;/strong&gt; [1]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Input:&lt;/strong&gt; nums = [1,2,1,2,1,2,3,1,3,2], k = 2&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Output:&lt;/strong&gt; [1,2]&lt;/p&gt;
+&lt;h1 id="brainstorming"&gt;Brainstorming&lt;/h1&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/top-k-frequent-words/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/top-k-frequent-words/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;Given a non-empty list of words, return the k most frequent words.
 &lt;strong&gt;The Twist:&lt;/strong&gt; Your answer should be sorted by frequency from highest to lowest. If two words have the same frequency, the word with the &lt;strong&gt;lower alphabetical order&lt;/strong&gt; comes first.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
@@ -392,7 +424,7 @@ in the while loop we will move the left pointer till we have not hit 1 of the ch
 &lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
 &lt;p&gt;You are on an m x n grid. You start at the top-left corner (0, 0). Your goal is to reach the bottom-right corner (m-1, n-1). At any point, you can only move &lt;strong&gt;right&lt;/strong&gt; or &lt;strong&gt;down&lt;/strong&gt;. Find the total number of unique paths.&lt;/p&gt;
 &lt;h1 id="brainstorming"&gt;Brainstorming&lt;/h1&gt;
-&lt;p&gt;Well 2D dp is back , and this time it is not as crazy as the previous 2 times. The idea here we are discussing is how many unique paths can we use to reach path from top left to bottom right. Given that we can only move right and down the problem can be thought of as:&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/valid-paranthesis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/valid-paranthesis/</guid><description>&lt;p&gt;[[Linked List Stacks and Queues a Primer]]&lt;/p&gt;
+&lt;p&gt;Well 2D dp is back , and this time it is not as crazy as the previous 2 times. The idea here we are discussing is how many unique paths can we use to reach path from top left to bottom right. Given that we can only move right and down the problem can be thought of as:&lt;/p&gt;</description></item><item><title/><link>https://deepskandpal.github.io/dsa-log/valid-anagram/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/valid-anagram/</guid><description/></item><item><title/><link>https://deepskandpal.github.io/dsa-log/valid-paranthesis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://deepskandpal.github.io/dsa-log/valid-paranthesis/</guid><description>&lt;p&gt;[[Linked List Stacks and Queues a Primer]]&lt;/p&gt;
 &lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
 &lt;p&gt;You are given a string containing just the characters (, ), {, }, &lt;code&gt;[ and ].&lt;/code&gt;
 &lt;strong&gt;Your task:&lt;/strong&gt; Write a function is_well_formed(s) that determines if the input string is &amp;ldquo;well-formed&amp;rdquo; (also known as &amp;ldquo;valid parentheses&amp;rdquo;).&lt;/p&gt;
