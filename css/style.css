@@ -1146,3 +1146,43 @@ main:not(:has(.single-content-wrapper)) {
     margin: 2rem auto;
     max-width: 100%;
 }
+/* ---------- Phones and small tablets ---------- */
+@media (max-width: 760px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 0 1rem;
+        row-gap: 0.75rem;
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
+    .search-container {
+        margin-left: auto;
+    }
+    .search-container input[type="search"],
+    .search-container input[type="search"]:focus {
+        width: 140px;
+    }
+    nav ul.main-nav {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0.4rem 1.25rem;
+    }
+    nav ul li {
+        margin-left: 0;
+    }
+    #search-results-container {
+        top: 120px;
+        width: calc(100% - 2rem);
+    }
+    main:not(:has(.single-content-wrapper)) {
+        padding: 0 1rem;
+    }
+    section {
+        padding: 1.25rem;
+    }
+    #hero h1 {
+        font-size: 2rem;
+    }
+}

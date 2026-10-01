@@ -4,10 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchResultsContainer = document.getElementById('search-results-container');
     let index;
 
-    // Disable input until index is loaded
-    searchInput.disabled = true;
-    searchInput.placeholder = "Loading...";
-
     // Initialize FlexSearch
     function initFlexSearch(data) {
         index = new FlexSearch.Document({
@@ -23,30 +19,39 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Fetch the search index
-    fetch('/index.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            // Check if we're in development mode (empty array)
-            if (Array.isArray(data) && data.length === 0) {
-                searchInput.placeholder = "Search disabled in development";
-                searchInput.disabled = true;
-                return;
-            }
-            
-            initFlexSearch(data);
-            searchInput.placeholder = "Search...";
-            searchInput.disabled = false;
-        })
-        .catch(error => {
-            console.error('Error fetching or parsing search index:', error);
-            searchInput.placeholder = "Search failed to load";
-        });
+    // The index is large (every page's text), so fetch it only when someone
+    // actually goes to search, not on every page load.
+    let loading = null;
+    function loadIndex() {
+        if (loading) return loading;
+        searchInput.placeholder = "Loading...";
+        loading = fetch('/index.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Check if we're in development mode (empty array)
+                if (Array.isArray(data) && data.length === 0) {
+                    searchInput.placeholder = "Search disabled in development";
+                    return;
+                }
+                initFlexSearch(data);
+                searchInput.placeholder = "Search...";
+                performSearch();
+            })
+            .catch(error => {
+                console.error('Error fetching or parsing search index:', error);
+                searchInput.placeholder = "Search failed to load";
+                loading = null;
+            });
+        return loading;
+    }
+
+    searchInput.addEventListener('focus', loadIndex);
+    searchInput.addEventListener('pointerenter', loadIndex, { once: true });
 
     // Perform search and display results
     function performSearch() {
@@ -107,7 +112,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    searchInput.addEventListener('input', performSearch);
+    searchInput.addEventListener('input', function () {
+        if (!index) { loadIndex(); return; }
+        performSearch();
+    });
 
     // Hide results when clicking outside
     document.addEventListener('click', function(event) {
