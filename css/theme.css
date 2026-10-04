@@ -1,10 +1,10 @@
 /* 404engineernotfound.com, set 2026-10-04 and frozen for Q4 2026.
    A's stage (poster type, electric orange, dark) and B's notebook (Fig. labels, § numbers, margin note).
-   Loaded last, so it overrides style.css and papershelf.css. Dark for everyone; the footer switch gives light. */
-:root { --bg: #0f0f10; --ink: #efe9dc; --body: #cfc8ba; --muted: #8f897f; --rule: #2a2a2b;
-  --accent: #ff4d1f; --note: #ff8a5c; --card: #151516; color-scheme: dark; }
-html[data-theme="light"] { --bg: #f6f2e9; --ink: #141414; --body: #2a2a2a; --muted: #6b665d; --rule: #d9d3c6;
+   Loaded last, so it overrides style.css and papershelf.css. Light by default (04 Oct); the footer switch gives dark. */
+:root { --bg: #f6f2e9; --ink: #141414; --body: #2a2a2a; --muted: #6b665d; --rule: #d9d3c6;
   --accent: #ff3d14; --note: #d4231a; --card: #fffdf7; color-scheme: light; }
+html[data-theme="dark"] { --bg: #0f0f10; --ink: #efe9dc; --body: #cfc8ba; --muted: #8f897f; --rule: #2a2a2b;
+  --accent: #ff4d1f; --note: #ff8a5c; --card: #151516; color-scheme: dark; }
 
 html, body { background: var(--bg) !important; }
 body { color: var(--body); font-family: 'Fraunces', Georgia, serif; font-size: 18px; line-height: 1.6; }
