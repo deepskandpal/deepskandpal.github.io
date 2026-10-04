@@ -1,0 +1,95 @@
+/* Papershelf: the paper list and the post + paper card page.
+   Ported from papershelf.dev (04 Oct 2026); colours and type follow style.css. */
+
+.ps {
+    --ps-ink: #333;
+    --ps-ink-2: #555;
+    --ps-muted: #777;
+    --ps-rule: #e6e6e6;
+    --ps-accent: #007bff;
+    --ps-accent-soft: #e7f1ff;
+    --ps-surface: #fff;
+}
+
+.ps-wrap { max-width: 760px; margin: 0 auto; padding: 0 1.25rem 3rem; }
+.ps-wrap h1 { font-size: 2rem; margin: 0 0 .5rem; }
+.ps-lede { color: var(--ps-ink-2); font-size: 1.1rem; margin: 0 0 2rem; }
+.ps-empty { color: var(--ps-muted); }
+
+.paper-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--ps-rule); }
+.paper-item a {
+    display: grid; grid-template-columns: 2.75rem minmax(0, 1fr); gap: 1rem;
+    padding: 1.25rem 0; border-bottom: 1px solid var(--ps-rule);
+    color: inherit; text-decoration: none;
+}
+.paper-item .num { font: 500 .85rem/2 ui-monospace, Menlo, monospace; color: var(--ps-muted); }
+.paper-item .body { display: flex; flex-direction: column; gap: .2rem; }
+.paper-item .title { font-size: 1.2rem; font-weight: 600; line-height: 1.3; }
+.paper-item a:hover .title { color: var(--ps-accent); }
+.paper-item .by { font-size: .9rem; color: var(--ps-ink-2); }
+.paper-item .when { font-size: .85rem; color: var(--ps-muted); }
+
+/* Paper page: the post, with the paper's card beside it on wide screens. */
+.paper-page {
+    max-width: 1100px; margin: 0 auto; padding: 0 1.25rem 4rem;
+    display: grid; grid-template-columns: minmax(0, 1fr);
+}
+.paper-head, .paper-body { max-width: 72ch; min-width: 0; }
+/* style.css styles every <header> as the site bar; this one is the post's title block. */
+.ps .paper-head { background: none; padding: 0; border: 0; box-shadow: none; }
+.kicker {
+    font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--ps-accent); margin: 0 0 .75rem;
+}
+.kicker a { color: inherit; text-decoration: none; }
+.paper-head h1 { font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.3rem); line-height: 1.2; margin: 0 0 1.5rem; }
+
+.paper-card {
+    background: var(--ps-surface); border: 1px solid var(--ps-rule); border-radius: 10px;
+    padding: 1.1rem 1.2rem 1rem; margin: 0 0 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .05);
+}
+.card-label { font-size: .7rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ps-muted); margin: 0 0 .5rem; }
+.card-title { font-weight: 600; line-height: 1.35; margin: 0 0 .5rem; color: var(--ps-ink); }
+.card-authors { font-size: .875rem; color: var(--ps-ink-2); margin: 0 0 .2rem; }
+.card-authors span { color: var(--ps-muted); }
+.card-meta { display: flex; flex-wrap: wrap; font-size: .8125rem; color: var(--ps-muted); margin: 0 0 1rem; }
+.card-meta > * + *::before { content: "·"; margin: 0 .45rem; }
+.card-links { display: flex; flex-wrap: wrap; gap: .5rem; }
+.card-license { margin: .85rem 0 0; font-size: .75rem; color: var(--ps-muted); }
+
+.ps .btn {
+    display: inline-flex; align-items: center; gap: .4rem;
+    font-size: .85rem; font-weight: 500; line-height: 1; padding: .6rem .9rem; border-radius: 6px;
+    border: 1px solid var(--ps-rule); background: var(--ps-surface); color: var(--ps-ink); text-decoration: none;
+}
+.ps .btn:hover { border-color: var(--ps-accent); color: var(--ps-accent); }
+.ps .btn.primary { background: var(--ps-accent); border-color: transparent; color: #fff; }
+.ps .btn.primary:hover { filter: brightness(1.08); color: #fff; }
+
+@media (min-width: 1024px) {
+    .paper-page { grid-template-columns: minmax(0, 72ch) 280px; column-gap: 3rem; justify-content: center; }
+    .paper-head { grid-column: 1; grid-row: 1; }
+    .paper-body { grid-column: 1; grid-row: 2; }
+    .paper-card { grid-column: 2; grid-row: 1 / span 2; align-self: start; position: sticky; top: 1.5rem; margin: .3rem 0 0; }
+}
+
+/* "p. 4": opens the paper's PDF at that page. */
+.pref {
+    font-size: .74em; font-weight: 600; line-height: 1; white-space: nowrap; text-decoration: none;
+    color: var(--ps-accent, #007bff); background: var(--ps-accent-soft, #e7f1ff);
+    padding: .22em .5em; border-radius: 5px; vertical-align: .08em;
+}
+a.pref:hover { background: var(--ps-accent, #007bff); color: #fff; }
+
+.ps .prose img { max-width: 100%; height: auto; border-radius: 6px; }
+.ps .fig { margin: 2rem 0; }
+.ps .fig img { display: block; margin: 0 auto; }
+.ps .fig figcaption { font-size: .85rem; color: var(--ps-muted); margin-top: .6rem; }
+.ps .video { position: relative; aspect-ratio: 16 / 9; margin: 2rem 0; border-radius: 8px; overflow: hidden; background: #000; }
+.ps .video iframe, .ps .video video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.ps .math-block { overflow-x: auto; overflow-y: hidden; padding: .25rem 0; margin: 1.25rem 0; }
+
+@media (max-width: 560px) {
+    .paper-card { margin-bottom: 1.5rem; }
+}
