@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+<rect width="760" height="430" fill="#ffffff"/>
+<text x="70" y="30" font-size="19" font-weight="700" fill="#111">US businesses spent 76 times more on software in 2025 than in 1980</text>
+<text x="70" y="52" font-size="13.5" fill="#555">Private investment in software, billions of US dollars a year (current dollars, not adjusted for inflation)</text>
+<line x1="70" x2="730" y1="370.0" y2="370.0" stroke="#e3e3e3"/>
+<text x="62" y="374.0" font-size="12.5" fill="#666" text-anchor="end">$0B</text>
+<line x1="70" x2="730" y1="295.0" y2="295.0" stroke="#e3e3e3"/>
+<text x="62" y="299.0" font-size="12.5" fill="#666" text-anchor="end">$200B</text>
+<line x1="70" x2="730" y1="220.0" y2="220.0" stroke="#e3e3e3"/>
+<text x="62" y="224.0" font-size="12.5" fill="#666" text-anchor="end">$400B</text>
+<line x1="70" x2="730" y1="145.0" y2="145.0" stroke="#e3e3e3"/>
+<text x="62" y="149.0" font-size="12.5" fill="#666" text-anchor="end">$600B</text>
+<line x1="70" x2="730" y1="70.0" y2="70.0" stroke="#e3e3e3"/>
+<text x="62" y="74.0" font-size="12.5" fill="#666" text-anchor="end">$800B</text>
+<text x="70.0" y="390" font-size="12.5" fill="#666" text-anchor="middle">1980</text>
+<text x="143.3" y="390" font-size="12.5" fill="#666" text-anchor="middle">1985</text>
+<text x="216.7" y="390" font-size="12.5" fill="#666" text-anchor="middle">1990</text>
+<text x="290.0" y="390" font-size="12.5" fill="#666" text-anchor="middle">1995</text>
+<text x="363.3" y="390" font-size="12.5" fill="#666" text-anchor="middle">2000</text>
+<text x="436.7" y="390" font-size="12.5" fill="#666" text-anchor="middle">2005</text>
+<text x="510.0" y="390" font-size="12.5" fill="#666" text-anchor="middle">2010</text>
+<text x="583.3" y="390" font-size="12.5" fill="#666" text-anchor="middle">2015</text>
+<text x="656.7" y="390" font-size="12.5" fill="#666" text-anchor="middle">2020</text>
+<text x="730.0" y="390" font-size="12.5" fill="#666" text-anchor="middle">2025</text>
+<polygon points="70.0,370.0 70.0,366.3 84.7,365.6 99.3,364.7 114.0,363.9 128.7,362.4 143.3,361.1 158.0,360.4 172.7,359.1 187.3,357.5 202.0,354.8 216.7,353.0 231.3,351.7 246.0,350.9 260.7,348.6 275.3,347.4 290.0,345.4 304.7,342.1 319.3,334.8 334.0,329.0 348.7,318.8 363.3,311.2 378.0,310.9 392.7,312.8 407.3,311.9 422.0,307.6 436.7,303.0 451.3,298.9 466.0,292.6 480.7,286.1 495.3,285.2 510.0,285.1 524.7,276.3 539.3,268.0 554.0,262.9 568.7,256.1 583.3,251.4 598.0,239.5 612.7,226.4 627.3,211.5 642.0,202.2 656.7,190.7 671.3,170.1 686.0,144.6 700.7,130.8 715.3,112.8 730.0,88.2 730.0,370.0" fill="#2563eb" fill-opacity="0.12"/>
+<polyline points="70.0,366.3 84.7,365.6 99.3,364.7 114.0,363.9 128.7,362.4 143.3,361.1 158.0,360.4 172.7,359.1 187.3,357.5 202.0,354.8 216.7,353.0 231.3,351.7 246.0,350.9 260.7,348.6 275.3,347.4 290.0,345.4 304.7,342.1 319.3,334.8 334.0,329.0 348.7,318.8 363.3,311.2 378.0,310.9 392.7,312.8 407.3,311.9 422.0,307.6 436.7,303.0 451.3,298.9 466.0,292.6 480.7,286.1 495.3,285.2 510.0,285.1 524.7,276.3 539.3,268.0 554.0,262.9 568.7,256.1 583.3,251.4 598.0,239.5 612.7,226.4 627.3,211.5 642.0,202.2 656.7,190.7 671.3,170.1 686.0,144.6 700.7,130.8 715.3,112.8 730.0,88.2" fill="none" stroke="#2563eb" stroke-width="2.6"/>
+<circle cx="70.0" cy="366.3" r="4" fill="#2563eb"/>
+<text x="76.0" y="354.3" font-size="13" fill="#222" text-anchor="start">1980: $9.8B</text>
+<circle cx="392.7" cy="312.8" r="4" fill="#2563eb"/>
+<text x="384.7" y="272.8" font-size="13" fill="#222" text-anchor="end">2002: the only fall since 1980</text>
+<text x="384.7" y="288.8" font-size="13" fill="#222" text-anchor="end">(dot-com bust, −3%)</text>
+<circle cx="730.0" cy="88.2" r="4" fill="#2563eb"/>
+<text x="722.0" y="74.2" font-size="13" fill="#222" text-anchor="end">2025: $751B</text>
+<text x="70" y="418" font-size="11.5" fill="#777">Source: US Bureau of Economic Analysis, via FRED (series B985RC1A027NBEA)</text></svg>
