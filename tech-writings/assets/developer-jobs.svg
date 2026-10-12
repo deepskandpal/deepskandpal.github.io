@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 450" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+<rect width="760" height="450" fill="#ffffff"/>
+<text x="70" y="30" font-size="19" font-weight="700" fill="#111">Programmer jobs fell by two-thirds; developer jobs doubled</text>
+<text x="70" y="52" font-size="13.5" fill="#555">People employed in the US, by occupation, May of each year, 2005–2023</text>
+<line x1="70" x2="730" y1="386.0" y2="386.0" stroke="#e3e3e3"/>
+<text x="62" y="390.0" font-size="12.5" fill="#666" text-anchor="end">0.0M</text>
+<line x1="70" x2="730" y1="315.8" y2="315.8" stroke="#e3e3e3"/>
+<text x="62" y="319.8" font-size="12.5" fill="#666" text-anchor="end">0.4M</text>
+<line x1="70" x2="730" y1="245.6" y2="245.6" stroke="#e3e3e3"/>
+<text x="62" y="249.6" font-size="12.5" fill="#666" text-anchor="end">0.8M</text>
+<line x1="70" x2="730" y1="175.3" y2="175.3" stroke="#e3e3e3"/>
+<text x="62" y="179.3" font-size="12.5" fill="#666" text-anchor="end">1.2M</text>
+<line x1="70" x2="730" y1="105.1" y2="105.1" stroke="#e3e3e3"/>
+<text x="62" y="109.1" font-size="12.5" fill="#666" text-anchor="end">1.6M</text>
+<text x="70.0" y="406" font-size="12.5" fill="#666" text-anchor="middle">2005</text>
+<text x="180.0" y="406" font-size="12.5" fill="#666" text-anchor="middle">2008</text>
+<text x="290.0" y="406" font-size="12.5" fill="#666" text-anchor="middle">2011</text>
+<text x="400.0" y="406" font-size="12.5" fill="#666" text-anchor="middle">2014</text>
+<text x="510.0" y="406" font-size="12.5" fill="#666" text-anchor="middle">2017</text>
+<text x="620.0" y="406" font-size="12.5" fill="#666" text-anchor="middle">2020</text>
+<text x="730.0" y="406" font-size="12.5" fill="#666" text-anchor="middle">2023</text>
+<polyline points="70.0,317.7 106.7,316.5 143.3,316.7 180.0,316.8 216.7,321.4 253.3,327.4 290.0,329.8 326.7,330.4 363.3,331.2 400.0,333.0 436.7,335.2 473.3,338.4 510.0,342.5 546.7,345.5 583.3,351.0 620.0,354.7 656.7,359.2 693.3,362.7 730.0,364.9" fill="none" stroke="#dc2626" stroke-width="2.6"/>
+<polyline points="70.0,249.6 106.7,245.3 143.3,237.7 180.0,232.2 216.7,231.4 253.3,231.8 290.0,223.3 326.7,214.3 363.3,207.4 400.0,198.4 436.7,186.1 473.3,174.7 510.0,167.6 546.7,156.3" fill="none" stroke="#2563eb" stroke-width="2.6"/>
+<polyline points="656.7,146.5 693.3,116.6 730.0,95.1" fill="none" stroke="#2563eb" stroke-width="2.6"/>
+<line x1="546.7" y1="156.3" x2="656.7" y2="146.5" stroke="#2563eb" stroke-width="2" stroke-dasharray="4 5"/>
+<text x="601.7" y="190.3" font-size="11.5" fill="#666" text-anchor="middle">2019–20: codes changed,</text>
+<text x="601.7" y="204.3" font-size="11.5" fill="#666" text-anchor="middle">no like-for-like count</text>
+<circle cx="70.0" cy="249.6" r="4" fill="#2563eb"/>
+<text x="74.0" y="273.6" font-size="13" fill="#222" text-anchor="start">Software developers 777K</text>
+<circle cx="730.0" cy="95.1" r="4" fill="#2563eb"/>
+<text x="722.0" y="83.1" font-size="13" fill="#222" text-anchor="end">1.66M</text>
+<circle cx="70.0" cy="317.7" r="4" fill="#dc2626"/>
+<text x="74.0" y="305.7" font-size="13" fill="#222" text-anchor="start">Computer programmers 389K</text>
+<circle cx="730.0" cy="364.9" r="4" fill="#dc2626"/>
+<text x="722.0" y="352.9" font-size="13" fill="#222" text-anchor="end">120K</text>
+<text x="70" y="436" font-size="11.5" fill="#777">Source: US Bureau of Labor Statistics, Occupational Employment and Wage Statistics (national estimates)</text></svg>
